@@ -5,7 +5,7 @@ Abstract Test Suite for INSPIRE Metadata Technical Guidance version 1.3 (implici
 
 This Conformance Class contains the following tests:
 
-| Identifier                        | Origin | Mechanical |
-| --------------------------------- | ------ | ---------- |
-| A.2.2.3 Resource Type - TGR 1     | IR     | Yes        |
+| Identifier                        | Origin | Mechanical | Status   |
+| --------------------------------- | ------ | ---------- | -------- |
+| A.2.2.3 Resource Type - TGR 1     | IR     | Yes        | Missing  |
 
