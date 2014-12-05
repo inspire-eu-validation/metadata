@@ -22,4 +22,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-title <a name="title"></a>   | ./gmd:identificationInfo[1]/*/gmd:citation/*/title
+title <a name="title"></a>   | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/title
