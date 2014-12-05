@@ -50,3 +50,11 @@ valid reference to the thesaurus or ontology if the keyword they use originates 
 vocabulary.
 
 Maybe a manual tests?
+
+Feedback to TG editors: Use resolvable URIs/URLs for thesauri references instead of the (translated) document titles. This would require entries in the INSPIRE registry?
+
+## TG Requirement 18
+
+If the vocabulary is mentioned, the date must be given.
+
+Validation for titles (and other "free text"?): text content must include at least one alpha-numeric letter
