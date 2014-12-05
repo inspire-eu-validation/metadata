@@ -1,15 +1,11 @@
 
 # Coupled resource
 
-# Test case identifier	
-
-md_IR226
-
-# Test purpose	
+**Purpose**	
 
 If the type of the resource was service, a resource type should be given.
 
-# Test method	
+**Test method**	
 
 Test method	The test first checks if coupling type is given at gmd:identificationInfo[1]/*/srv:couplingType/srv:SV_CouplingType 
 and if it has a codeList and a codeListValue attribute, codeListValue must be either tight, coupled or mixed. If this codeListValue 
@@ -26,13 +22,21 @@ if soap
 
 //srv:
 
-# Reference	 
+**Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.2.6
+IR, Chap. 2.2.6
 TG req 4 
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
 
 

@@ -1,26 +1,31 @@
 
 # Keywords from vocabulary 
 
-# Test case identifier	
-
-A14IR242TGR19
-
-# Test purpose	
+**Purpose**	
 
 keyword values originating from a single version of a single controlled vocabulary
 shall be grouped in a single instance
 
-# Test method	
+**Test method**	
 
 In order to be consistent with ISO 19115, all the keyword values
 originating from a single version of a single controlled vocabulary
 shall be grouped in a single instance of the ISO 19115
 descriptiveKeywords property. 
 
-# Reference	 
+**Reference(s)**	 
 
 TG Req 19 
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
+

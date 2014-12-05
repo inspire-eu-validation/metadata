@@ -1,15 +1,11 @@
 
 # Keywords for Resource type Service
 
-# Test case identifier	
-
-md_IR223_service
-
-# Test purpose	
+**Purpose**	
 
 If the resource is a service, the type of service should be specified
 
-# Test method	
+**Test method**	
 
 If the resource is a service, at least one keyword must originate from EU commission regulation No. 1205/2008, Annex part D, No. 4.
 The codelist is duplicated in the INSPIRE registry http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory
@@ -18,12 +14,21 @@ In the latter case, a schema validation is performed depending on the GML versio
 can be found among the keywords given in EU commission regulation No. 1205/2008, Annex part D, No. 4. If at least one keyword from that source is found, the test succeeds, otherwise it will fail.
 If the type of the resource is not service, this test is omitted. 
 
-# Reference	 
+**Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.2.3
+IR, Chap. 2.2.3
 Article 4, part D of the EU commission regulation No 1205/2008
 TG Req 15
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
+

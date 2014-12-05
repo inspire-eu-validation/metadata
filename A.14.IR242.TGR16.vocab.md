@@ -1,15 +1,11 @@
 
 # Originating controlled vocabulary
 
-# Test case identifier	
-
-md_IR242
-
-# Test purpose	
+**Purpose**	
 
 A keyword value (see md_241) can give a controlled vocalbulary from where it originates from. This element is optional but, if given, must follow certain guidelines.
 
-# Test method	
+**Test method**	
 
 The test performs the following check for each element at gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:thesaurusName:
 *	the node must contain a title at ./gmd:CI_Citation/gmd:title
@@ -20,13 +16,21 @@ The test performs the following check for each element at gmd:identificationInfo
 Validating if the keyword is actually available in the indicated vocabulary is a challenge, since the vocabulary is usually not referenced by a URL. 
 If a vocabulary is indicated that is available to the validator, then this check can be performed.
 
-# Reference	 
+**Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.4.2 
+IR, Chap. 2.4.2 
 TG Req 16, 17 & 18
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
 
 

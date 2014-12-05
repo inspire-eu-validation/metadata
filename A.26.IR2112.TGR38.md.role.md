@@ -1,24 +1,28 @@
 
 # Metadata date
 
-# Test case identifier	
-
-md_2112
-
-# Test purpose	
+**Purpose**	
 
 A metadata date must be given.
 
-# Test method	
+**Test method**	
 
 The test checks if there is an element of type gco:Date at gmd:dateStamp.
 
-# Reference	 
+**Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.11.2
+IR, Chap. 2.11.2
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
 
 

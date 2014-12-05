@@ -1,15 +1,15 @@
 
 # Resource type
 
-# Test case identifier	
+	
 
 md_IR223
 
-# Test purpose	
+**Purpose**	
 
 Type of the cited resource must be provided
 
-# Test method	
+**Test method**	
 
 Checks if a resource type is provided and is formatted as MD_ScopeCode object.
 To be relevant for INSPIRE the value should be either 'dataset', 'service' or 'series'
@@ -22,12 +22,10 @@ To be relevant for INSPIRE the value should be either 'dataset', 'service' or 's
 
 //gmd:metadata/gmd:identificationInfo[1]/* <!-- todo: check context -->
 
-# Reference	 
+**Reference(s)**	 
 
 IR Chap. 2.2.3
 TG Requirement 1 <!-- todo: check pagenr -->
 TG Requirement 2
 
-# Test type	
-
-Automated
+**Test type:** Automated

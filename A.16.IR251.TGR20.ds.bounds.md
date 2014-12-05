@@ -1,15 +1,11 @@
 
 # Geographic bounding box
 
-# Test case identifier	
-
-md_IR251
-
-# Test purpose	
+**Purpose**	
 
 If the type of the resource was dataset or series or if the type was service, a geographic bounding box must be given.
 
-# Test method	
+**Test method**	
 
 Check if it's a valid geographic extend. It is described by 4 elements: westBoundLongitude, eastBoundLongitude, southBoundLatitude and northBoundLatitude. The test performs the following checks on them:
 *	Is a correctly formatted westBoundLongitude given at gmd:identificationInfo[1]/*/gmd:extent/*/gmd:geographicElement/*/gm d:westBoundLongitude/gco:Decimal.
@@ -26,13 +22,21 @@ The bounding box shall be as small as possible. Quite hard to honour. Data shoul
 The bounding box shall be expressed in decimal degree with a precision of at least 2 decimals.
 
 
-# Reference	 
+**Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.5.1 
+IR, Chap. 2.5.1 
 TG Req 20 & 21 
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
 
 

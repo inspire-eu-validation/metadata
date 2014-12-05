@@ -1,16 +1,12 @@
 
 # Resource Locator
 
-# Test case identifier	
-
-md_IR224
-
-# Test purpose	
+**Purpose**	
 
 If a linkage is available, a resource locator must be given.
 If the resource is a service, the linkage should be checked.
 
-# Test method	
+**Test method**	
 
 The test first checks if a linkage is provided. If none is given, the test will complete successfully. 
 
@@ -32,14 +28,22 @@ if Atom, the link is in //feed[uuidhref={id}&&namespace={codespace}]
 
 gmd:distributionInfo/*/gmd:transferOptions/*/gmd:onLine/*
 
-# Reference	 
+**Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.2.4
+IR, Chap. 2.2.4
 TG req 3
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
 
 
 

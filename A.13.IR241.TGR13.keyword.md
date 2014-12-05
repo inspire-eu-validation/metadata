@@ -1,24 +1,28 @@
 
 # Keyword value
 
-# Test case identifier	
-
-md_IR241
-
-# Test purpose	
+**Purpose**	
 
 At least one keyword must be given to descripe the subject.
 
-# Test method	
+**Test method**	
 
 The test checks if one keyword element is given at gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword.
 
-# Reference	 
+**Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.4.1 
+IR, Chap. 2.4.1 
 
-# Test type	
+**Test type:** Automated
 
-Automated
+**Notes**
+
+**Contextual XPath references**
+
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
+
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+-----------------------------------------------| -------------------------------------------------------------------------
+<a name=""></a>   |
 
 
