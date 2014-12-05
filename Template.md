@@ -13,7 +13,9 @@ A paragraph of the for describing the test flow. Use bullets or any markdown for
 
 **Test type**: Automated or Manual
 
-**Notes**: Any additional notes. We can also use this for open questions during drafting.
+**Notes**
+
+Any additional notes. We can also use this for open questions during drafting.
 
 
 ## Contextual XPath references
