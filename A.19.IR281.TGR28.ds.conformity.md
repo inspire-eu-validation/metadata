@@ -12,7 +12,7 @@ For every conformity statement, one conformance result indicated by a boolean va
 # Test method	
 
 The test first checks if there is at least one conformance result of type gco:Boolean at gmd:dataQualityInfo/*/gmd:report/*/gmd:result. It then performs the following actions for every element at gmd:dataQualityInfo/*/gmd:report/*/gmd:result:
-•	If the element has an element /*/gmd:pass, it must contain a value of type gco:Boolean.
+*	If the element has an element /*/gmd:pass, it must contain a value of type gco:Boolean.
 
 
 # Reference	 
