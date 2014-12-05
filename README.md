@@ -8,6 +8,8 @@ References
 * [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
 metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
 
+*Note*: This ATS is in draft stage, none of the tests have an official INSPIRE MIG approval.
+
 This Conformance Class contains the following tests:
 
 | Identifier                                                        | Origin | Mechanical | Status   |
@@ -40,3 +42,10 @@ This Conformance Class contains the following tests:
 | [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR     | Yes        | Draft  |
 | [A.27.IR2113.TGR39.date](A.27.IR2113.TGR39.date.md)    | IR     | Yes        | Draft  |
 
+## XML namespace prefixes <a name="namespaces"></a>
+
+The following prefixes are used to refer to the corresponding XML namespaces in all test descriptions:
+
+Prefix     | Namespace
+---------- | -------------------------------------------------
+gmd        | http://www.isotc211.org/2005/gmd
