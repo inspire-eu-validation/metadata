@@ -11,7 +11,7 @@ Performs a schema validation of the document.
 
 **References**	 
 
-**Test type: ** Automated
+**Test type:** Automated
 
 **Notes**
 
