@@ -42,6 +42,12 @@ This Conformance Class contains the following tests:
 | [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR     | Yes        | Draft  |
 | [A.27.IR2113.TGR39.date](A.27.IR2113.TGR39.date.md)    | IR     | Yes        | Draft  |
 
+## Vocabulary
+
+**Resolve:** Goal is to check if a URL references to an existing document. A [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) 
+can give an indication of the availability of the document without fully downloading it. The operation might fail due to a number of reasons: the service is 
+temporarily unavailable, the service is protected (status 403)  
+
 ## XML namespace prefixes <a name="namespaces"></a>
 
 The following prefixes are used to refer to the corresponding XML namespaces in all test descriptions:
@@ -49,3 +55,5 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 Prefix     | Namespace
 ---------- | -------------------------------------------------
 gmd        | http://www.isotc211.org/2005/gmd
+
+
