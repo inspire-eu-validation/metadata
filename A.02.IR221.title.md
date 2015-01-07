@@ -7,8 +7,7 @@ The title by which the cited resource is known
 
 **Test method**	
 
-Validates if a [title](#title) is provided (available and not empty) and is formatted as either gco:CharacterString, gmx:Anchor or gmd:PT_FreeText. 
-In the latter case, a schema validation is performed depending on the GML version (see About schema validation).
+Validates if a [title](#title) is provided and not an [empty characterstring](./README.md#emptychar)
 
 **Reference(s)**	 
 

@@ -44,9 +44,18 @@ This Conformance Class contains the following tests:
 
 ## Vocabulary
 
-**Resolve:** Goal is to check if a URL references to an existing document. A [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) 
+<a name="emptychar"></a>
+**Empty characterstring:** iso19139 allows (if proper namespaces are available) to express any characterstring as either gco:CharacterString, gmd:Anchor or gmd:PT_FreeText. 
+To check an element for having an empty characterstring, each of these representations should be considered. The PT_freetext element can be used to supply multilingual values for a characterstring. 
+If PT_FreeText is used the validator should check if a value of the string is available in the main language of the document. gmx:Anchor is typically used to reference a URI on which the characterstring content is available.
+The validator should resolve the URI in the gmx:Anchor to validate if the content is available.
+
+<a name="resolve"></a>
+**Resolve:** Goal is to check if a URL references to an existing document. First the url can be checked on syntactical correctness. Then a [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) 
 can give an indication of the availability of the document without fully downloading it. The operation might fail due to a number of reasons: the service is 
-temporarily unavailable, the service is protected (status 403)  
+(temporarily) unavailable, the service is protected (status 403).   
+
+
 
 ## XML namespace prefixes <a name="namespaces"></a>
 

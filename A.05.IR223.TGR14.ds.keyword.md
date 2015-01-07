@@ -7,11 +7,9 @@ If the resource is a dataset or a dataset series, at least one keyword must orig
 
 **Test method**	
 
-Checks for every gmd:keyword found at gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/ 
-if it is formatted as either gco:CharacterString or gmd:PT_FreeText. In the latter case, a schema validation is 
-performed depending on the GML version (see About schema validation). It the checks for every keyword if its text content 
-can be found in either the indicated language or english version 
- of the INSPIRE GEMET Thesaurus ( http://inspire.ec.europa.eu/theme ). If at least one keyword from that source is found, the test succeeds, otherwise it will fail.
+Checks for every [keyword](#keyword) if it is not an [empty characterstring](./README.md#emptychar).  The text content for every keyword
+can be found in either the indicated language or english version of the [INSPIRE GEMET Thesaurus](http://inspire.ec.europa.eu/theme). 
+If at least one keyword from that source is found, the test succeeds, otherwise it will fail.
 If the type of the resource is not dataset or series, this test is omitted.
 
 **Reference(s)**	 
@@ -30,5 +28,5 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name=""></a>   |
-
+<a name="keyword"></a> keyword   | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword
+ 
