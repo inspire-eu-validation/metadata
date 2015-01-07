@@ -13,7 +13,8 @@ If the type of the resource is not dataset or series, this test is omitted.
 
 **Reference(s)**	 
 
-* IR, Chap. 2.2.7
+* [IR](./README.md#IR), 2.2.7
+* [TG](./README.md#TG), Req 8
 * ISO 639-2
 
 **Test type:** Automated

@@ -14,9 +14,9 @@ If the type of the resource is not dataset or series, this test is omitted.
 
 **Reference(s)**	 
 
-* IR Chap. 2.2.3
+* [IR](./README.md#IR), Chap. 2.2.3
 * http://inspire.ec.europa.eu/theme
-* TG Req 14
+* [TG](./README.md#TG) Req 14
 
 **Test type:** Automated
 

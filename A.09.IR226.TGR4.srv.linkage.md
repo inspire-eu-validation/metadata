@@ -12,7 +12,7 @@ valid URL providing one of the following:
 
 **Test method**	
 
-Test method	The test first checks if [coupling type](#coupling) is given 
+The test first checks if [coupling type](#coupling) is given 
 and if it has a codeList and a codeListValue attribute, codeListValue must be either tight, coupled or mixed. If this codeListValue 
 attribute doesn't exist, an gco:nilReason attribute must be given at gmd:identificationInfo[1]/*/srv:couplingType and must have a 
 value of missing, inapplicable, template, unknown or withheld (This will lead to a warning).
@@ -26,8 +26,9 @@ Any of the onlineresources should be checked if it [resolves](./README.md#resolv
 
 **Reference(s)**	 
 
-* IR, Chap. 2.2.6
-* TG req 4 
+ 
+* [IR](./README.md#IR), 2.2.6
+* [TG](./README.md#TG), Req 4
 
 **Test type:** Automated
 

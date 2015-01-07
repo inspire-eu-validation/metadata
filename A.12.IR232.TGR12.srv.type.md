@@ -16,9 +16,8 @@ If the type of the resource was not service, this test is omitted.
 
 **Reference(s)**	
  
-* IR, Chap. 1.3.1
-* IR, Chap. 2.3.2
-* TG, Req 12
+* [IR](./README.md#IR), 1.3.1 & 2.3.2
+* [TG](./README.md#TG), Req 12
 * http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType
 
 **Test type:** Automated
@@ -31,6 +30,6 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-serviceType <a name="serviceType"></a>   | gmd:identificationInfo[1]/*/srv:serviceType
+serviceType <a name="serviceType"></a>   | ./gmd:identificationInfo[1]/*/srv:serviceType
 
 

@@ -18,9 +18,9 @@ If the type of the resource was not dataset or series, this test is omitted.
 
 **Reference(s)**	 
 
-* IR, Chap. 2.3.1
-* TG Req 10 & 11
-* ISO 19115, B.5.27
+* [IR](./README.md#IR), 2.3.1
+* [TG](./README.md#TG), Req 10 & 11
+* [B.5.27 of ISO 19115](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory)
 
 **Test type:** Automated
 
@@ -32,7 +32,7 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="topic"></a> topicCategory  | gmd:identificationInfo[1]/*/gmd:topicCategory
+<a name="topic"></a> topicCategory  | ./gmd:identificationInfo[1]/*/gmd:topicCategory
 
 
 

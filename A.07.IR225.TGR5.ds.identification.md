@@ -22,8 +22,8 @@ If the type of the resource is not dataset or series, this test is omitted.
 
 **Reference(s)**	 
 
-* IR, Chap. 2.2.5
-* TG Req 5 & 6
+* [IR](./README.md#IR), 2.2.5
+* [TG](./README.md#TG), Req 5 & 6
 * ISO 19115, B.2.7.3
 
 **Test type:** Automated

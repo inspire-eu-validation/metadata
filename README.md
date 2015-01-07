@@ -23,6 +23,7 @@ This Conformance Class contains the following tests:
 | [A.07.IR225.TGR5.ds.identification](A.07.IR225.TGR5.ds.identification.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.08.IR224.TGR3.ds.linkage](A.08.IR224.TGR3.ds.linkage.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.09.IR226.TGR4.srv.linkage](A.09.IR226.TGR4.srv.linkage.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.09.IR226.TGR7.srv.identification](A.09.IR226.TGR7.srv.identification.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.10.IR227.TGR8.ds.language](A.10.IR227.TGR8.ds.language.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.11.IR231.TGR10.ds.topic](A.11.IR231.TGR10.ds.topic.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.12.IR232.TGR12.srv.type](A.12.IR232.TGR12.srv.type.md)  	    | IR/TG     | Yes        | Draft  |
@@ -32,11 +33,12 @@ This Conformance Class contains the following tests:
 | [A.16.IR251.TGR20.ds.bounds](A.16.IR251.TGR20.ds.bounds.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.17.IR261.TGR22.ds.temporal](A.17.IR261.TGR22.ds.temporal.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.18.IR271.TGR26.ds.lineage](A.18.IR271.TGR26.ds.lineage.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.18.TGR27.ds.resolution](A.18.TGR27.ds.resolution.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.19.IR281.TGR28.ds.conformity](A.19.IR281.TGR28.ds.conformity.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.20.IR282.TGR29.ds.specification](A.20.IR282.TGR29.ds.specification.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.21.IR291.TGR30.ds.limitation](A.21.IR291.TGR30.ds.limitation.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.21.IR291.TGR30.ds.limitation.md](A.21.IR291.TGR30.ds.limitation.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.22.IR292.TGR33.ds.access](A.22.IR292.TGR33.ds.access.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.23.IR2101.TGR35.contact](A.23.IR2101.TGR35.contact.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.23.IR2101.TGR35.contact.md](A.23.IR2101.TGR35.contact.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.24.IR2102.TGR36.role](A.24.IR2102.TGR36.role.md)  	  | IR/TG     | Yes        | Draft  |
 | [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR/TG     | Yes        | Draft  |
 | [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR/TG     | Yes        | Draft  |

@@ -7,12 +7,23 @@ Performs a schema validation of the document.
 
 **Test method**	
 
-Performs a schema validation of the document. 
+Document should pass schema validation without errors.
+
+One of the following schema locations should be referenced in the xml header.
+
+To Validate XML against ISO AP 1.0:
+* http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd
+To Validate XML against ISO 19139 with GML 3.2.0:
+* http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd
+To Validate XML against ISO 19139 with GML 3.2.1:
+* http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/gmd/gmd.xsd or
+http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd
 
 **References**	 
+
+* [IR](./README.md#IR) p16
 
 **Test type:** Automated
 
 **Notes**
 
-Several schema's are in use, either a combined GMD+SRV, only GMD or both SRV and GMD. Different schema's depend on different versions of the GML schema.

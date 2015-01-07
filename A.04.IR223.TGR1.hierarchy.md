@@ -19,9 +19,8 @@ To be relevant for INSPIRE the value should be either 'dataset', 'service' or 's
 
 **Reference(s)**	 
 
-* IR Chap. 2.2.3
-* TG Requirement 1 
-* TG Requirement 2
+* [IR](./README.md#IR), 2.2.3
+* [TG](./README.md#TG), Req 1 & 2
 
 **Test type:** Automated
 
@@ -31,4 +30,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-hierarchyLevel <a name="hierarchyLevel"></a>   | gmd:hierarchyLevel/*/@codeListValue
+hierarchyLevel <a name="hierarchyLevel"></a>   | ./gmd:hierarchyLevel/*/@codeListValue

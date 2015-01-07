@@ -13,9 +13,10 @@ If the type of the resource is not service, this test is omitted.
 
 **Reference(s)**	 
 
-* IR, Chap. 2.2.3
+* [IR](./README.md#IR), 2.2.3
+* [TG](./README.md#TG), Req 15
 * Article 4, part D of the EU commission regulation No 1205/2008
-* TG Req 15
+
 
 **Test type:** Automated
 
@@ -27,5 +28,5 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="keyword"></a> keyword   | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword
+<a name="keyword"></a> keyword   | ./gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword
 
