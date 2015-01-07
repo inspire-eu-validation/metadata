@@ -27,8 +27,8 @@ if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}]
 
 **Reference(s)**	 
 
-IR, Chap. 2.2.4
-TG req 3
+* IR, Chap. 2.2.4
+* TG req 3
 
 **Test type:** Automated
 

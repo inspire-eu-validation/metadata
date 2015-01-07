@@ -11,7 +11,7 @@ Validates if a [title](#title) is provided and not an [empty characterstring](./
 
 **Reference(s)**	 
 
-INSPIRE Metadata Implementing Rules, Chap. 2.2.1
+* INSPIRE Metadata Implementing Rules, Chap. 2.2.1
 
 **Test type:** Automated
 

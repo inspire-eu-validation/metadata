@@ -19,9 +19,9 @@ To be relevant for INSPIRE the value should be either 'dataset', 'service' or 's
 
 **Reference(s)**	 
 
-IR Chap. 2.2.3
-TG Requirement 1 
-TG Requirement 2
+* IR Chap. 2.2.3
+* TG Requirement 1 
+* TG Requirement 2
 
 **Test type:** Automated
 

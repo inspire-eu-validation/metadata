@@ -13,9 +13,9 @@ If the type of the resource is not service, this test is omitted.
 
 **Reference(s)**	 
 
-IR, Chap. 2.2.3
-Article 4, part D of the EU commission regulation No 1205/2008
-TG Req 15
+* IR, Chap. 2.2.3
+* Article 4, part D of the EU commission regulation No 1205/2008
+* TG Req 15
 
 **Test type:** Automated
 
