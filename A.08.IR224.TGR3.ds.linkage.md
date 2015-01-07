@@ -8,25 +8,22 @@ If the resource is a service, the linkage should be checked.
 
 **Test method**	
 
-The test first checks if a linkage is provided. If none is given, the test will complete successfully. 
+The test first checks if a [linkage](#online) is provided. If none is given, the test will complete successfully. 
 
-If one or more are provided. For each linkage the test checks if the linkage element contains an element of type gmd:URL. (todo: if not one or any = empty then ... fail?)
-A validity check of the contained URL using regular expressions is performed. 
-The URL is resolved (should not throw 404/500).
-If the response indicates any of the resources is a service capabilities or WSDL document, else a final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions
+If one or more are provided. For each linkage the test checks if the linkage element contains an element of type gmd:URL. 
+
+The URL is [resolved](./README.md#resolve).
+
+If the response indicates a linkage is a service capabilities or WSDL document, some basic params in the service response are analysed.
+Else a final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions
 or a client application that directly accesses the service).
 
+Any service response should be checked if it provides proper linkage. The service wsdl or capabilities document should have a featuretype that shares the [resource unique identification](A.07.IR225.TGR5.ds.identification.md) 
 
-Optional tests:
-Each of the responses that are a service should be checked if they provide proper linkage. The service wsdl or capabilities document should have a layer that shares the resources unique identificatien (see md_IR225)
-
-if WMS/WMTS/WFS, the link is in //layer[id={id}&&codespace={codespace}]
-if Soap ...
-if Atom, the link is in //feed[uuidhref={id}&&namespace={codespace}]
+if WMS/WMTS/WFS, the link is in //layer[identifier={id}&&@authority={codespace}]
+if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}]
 
 # Context
-
-gmd:distributionInfo/*/gmd:transferOptions/*/gmd:onLine/*
 
 **Reference(s)**	 
 
@@ -43,7 +40,7 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name=""></a>   |
+<a name="online"></a> Online   | gmd:distributionInfo/*/gmd:transferOptions/*/gmd:onLine/*
 
 
 

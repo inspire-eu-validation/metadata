@@ -8,13 +8,17 @@ If the type of the resource was dataset or series, a unique identifier identifyi
 
 **Test method**	
 
-The test first checks if a unique identifier is given as gmd:identifier and if it is of type MD_Identifier or RS_Identifier. 
+The test first checks if a unique [identifier](#identifier) is given and if it is of type MD_Identifier or RS_Identifier.
 The contained code element may not be empty.
+
+In case of RS_identifier, de codespace element should not be empty. 
+In case of MD_identifier, discussion is ongoing on how to match this element against a namespace-identifier in a capabilities document/service metadata.
+
 If the type of the resource is not dataset or series, this test is omitted.
 
 # Context
 
-gmd:identificationInfo[1]/*/gmd:citation/*
+
 
 **Reference(s)**	 
 
@@ -32,6 +36,6 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name=""></a>   |
+<a name="identifier"></a> identifier   | gmd:identificationInfo[1]/*/gmd:citation/*/gmd:identifier
 
 
