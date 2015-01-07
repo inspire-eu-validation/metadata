@@ -3,7 +3,7 @@
 
 **Purpose**	
 
-keyword values originating from a single version of a single controlled vocabulary
+Keyword values originating from a single version of a single controlled vocabulary
 shall be grouped in a single instance
 
 **Test method**	
@@ -13,9 +13,11 @@ originating from a single version of a single controlled vocabulary
 shall be grouped in a single instance of the ISO 19115
 descriptiveKeywords property. 
 
+For each [descriptiveKeywords](#keyword) element, the referenced controlled vocabulary should be unique
+
 **Reference(s)**	 
 
-TG Req 19 
+[TG](./README.md#TG) Req 19 
 
 **Test type:** Automated
 
@@ -27,5 +29,5 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name=""></a>   |
+<a name="keyword"></a> Keyword   | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords
 

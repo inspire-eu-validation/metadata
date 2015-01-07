@@ -11,7 +11,7 @@ Checks if an [abstract](#abstract) is present and not an [empty characterstring]
 
 **Reference(s)**	 
 
-* IR, Chap. 2.2.2
+* [IR](./README.md#IR), Chap. 2.2.2
 
 **Test type:** Automated
 	

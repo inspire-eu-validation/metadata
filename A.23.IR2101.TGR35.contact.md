@@ -3,21 +3,18 @@
 
 **Purpose**	
 
-Name and contact to a responsible party must be given for every responsible organization in the metadata.
+Name and contact email to a responsible party must be given for every responsible organization in the metadata.
 
 **Test method**	
 
-The test first checks if there is at least one element at gmd:identificationInfo[1]/*/gmd:pointOfContact. Furthermore, the following checks are performed for every element at gmd:identificationInfo[1]/*/gmd:pointOfContact:
-*	There must be an element gmd:CI_ResponsibleParty.
-*	There must be an organization name at gmd:CI_ResponsibleParty/gmd:organisationName.
-*	There must be a mail address of type gco:CharacterString at gmd:CI_ResponsibleParty/gmd:contactInfo/*/gmd:address/*/gmd:elec tronicMailAddress
-*	The type of the organization name must be either gco:CharacterString or gmd:PT_FreeText. In the latter case, a schema validation is performed depending on the GML version (see About schema validation).
-
+The test first checks if there is at least one element at gmd:identificationInfo/*/gmd:pointOfContact. Furthermore, the following checks are performed
+*	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:organisationName
+*	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:contactInfo/*/gmd:address/*/gmd:electronicMailAddress 
 
 **Reference(s)**	 
 
-IR, Chap. 2.10.1 
-
+* [IR](./README.md#IR), Chap. 2.10.1 
+* [TG](./README.md#TG) Req 35
 
 **Test type:** Automated
 	
@@ -29,5 +26,6 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name=""></a>   |
+
+<a name="CI_ResponsibleParty"></a> CI_ResponsibleParty   | ./gmd:identificationInfo/*/gmd:pointOfContact/*/gmd:CI_ResponsibleParty
 

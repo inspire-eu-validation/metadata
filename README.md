@@ -17,30 +17,30 @@ This Conformance Class contains the following tests:
 | [A.01.validate](A.01.validate.md)  	    | IR     | Yes        | Draft  |
 | [A.02.IR221.title](A.02.IR221.title.md)  	    | IR     | Yes        | Draft  |
 | [A.03.IR222.abstract](A.03.IR222.abstract.md)  	    | IR     | Yes        | Draft  |
-| [A.04.IR223.TGR1.hierarchy](A.04.IR223.TGR1.hierarchy.md)  	    | IR     | Yes        | Draft  |
-| [A.05.IR223.TGR14.ds.keyword](A.05.IR223.TGR14.ds.keyword.md)  	    | IR     | Yes        | Draft  |
-| [A.06.IR223.TGR15.srv.keyword](A.06.IR223.TGR15.srv.keyword.md)  	    | IR     | Yes        | Draft  |
-| [A.07.IR225.TGR5.ds.identification](A.07.IR225.TGR5.ds.identification.md)  	    | IR     | Yes        | Draft  |
-| [A.08.IR224.TGR3.ds.linkage](A.08.IR224.TGR3.ds.linkage.md)  	    | IR     | Yes        | Draft  |
-| [A.09.IR226.TGR4.srv.linkage](A.09.IR226.TGR4.srv.linkage.md)  	    | IR     | Yes        | Draft  |
-| [A.10.IR227.TGR8.ds.language](A.10.IR227.TGR8.ds.language.md)  	    | IR     | Yes        | Draft  |
-| [A.11.IR231.TGR10.ds.topic](A.11.IR231.TGR10.ds.topic.md)  	    | IR     | Yes        | Draft  |
-| [A.12.IR232.TGR12.srv.type](A.12.IR232.TGR12.srv.type.md)  	    | IR     | Yes        | Draft  |
-| [A.13.IR241.TGR13.keyword](A.13.IR241.TGR13.keyword.md)  	    | IR     | Yes        | Draft  |
-| [A.14.IR242.TGR16.vocab](A.14.IR242.TGR16.vocab.md)  	    | IR     | Yes        | Draft  |
-| [A.15.IR242.TGR19.kws-in-vocab](A.15.IR242.TGR19.kws-in-vocab.md)  	    | IR     | Yes        | Draft  |
-| [A.16.IR251.TGR20.ds.bounds](A.16.IR251.TGR20.ds.bounds.md)  	    | IR     | Yes        | Draft  |
-| [A.17.IR261.TGR22.ds.temporal](A.17.IR261.TGR22.ds.temporal.md)  	    | IR     | Yes        | Draft  |
-| [A.18.IR271.TGR26.ds.lineage](A.18.IR271.TGR26.ds.lineage.md)  	    | IR     | Yes        | Draft  |
-| [A.19.IR281.TGR28.ds.conformity](A.19.IR281.TGR28.ds.conformity.md)  	    | IR     | Yes        | Draft  |
-| [A.20.IR282.TGR29.ds.specification](A.20.IR282.TGR29.ds.specification.md)  	    | IR     | Yes        | Draft  |
-| [A.21.IR291.TGR30.ds.limitation](A.21.IR291.TGR30.ds.limitation.md)  	    | IR     | Yes        | Draft  |
-| [A.22.IR292.TGR33.ds.access](A.22.IR292.TGR33.ds.access.md)  	    | IR     | Yes        | Draft  |
-| [A.23.IR2101.TGR35.contact](A.23.IR2101.TGR35.contact.md)  	    | IR     | Yes        | Draft  |
-| [A.24.IR2102.TGR36.role](A.24.IR2102.TGR36.role.md)  	  | IR     | Yes        | Draft  |
-| [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR     | Yes        | Draft  |
-| [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR     | Yes        | Draft  |
-| [A.27.IR2113.TGR39.date](A.27.IR2113.TGR39.date.md)    | IR     | Yes        | Draft  |
+| [A.04.IR223.TGR1.hierarchy](A.04.IR223.TGR1.hierarchy.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.05.IR223.TGR14.ds.keyword](A.05.IR223.TGR14.ds.keyword.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.06.IR223.TGR15.srv.keyword](A.06.IR223.TGR15.srv.keyword.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.07.IR225.TGR5.ds.identification](A.07.IR225.TGR5.ds.identification.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.08.IR224.TGR3.ds.linkage](A.08.IR224.TGR3.ds.linkage.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.09.IR226.TGR4.srv.linkage](A.09.IR226.TGR4.srv.linkage.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.10.IR227.TGR8.ds.language](A.10.IR227.TGR8.ds.language.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.11.IR231.TGR10.ds.topic](A.11.IR231.TGR10.ds.topic.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.12.IR232.TGR12.srv.type](A.12.IR232.TGR12.srv.type.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.13.IR241.TGR13.keyword](A.13.IR241.TGR13.keyword.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.14.IR242.TGR16.vocab](A.14.IR242.TGR16.vocab.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.15.IR242.TGR19.kws-in-vocab](A.15.IR242.TGR19.kws-in-vocab.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.16.IR251.TGR20.ds.bounds](A.16.IR251.TGR20.ds.bounds.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.17.IR261.TGR22.ds.temporal](A.17.IR261.TGR22.ds.temporal.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.18.IR271.TGR26.ds.lineage](A.18.IR271.TGR26.ds.lineage.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.19.IR281.TGR28.ds.conformity](A.19.IR281.TGR28.ds.conformity.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.20.IR282.TGR29.ds.specification](A.20.IR282.TGR29.ds.specification.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.21.IR291.TGR30.ds.limitation](A.21.IR291.TGR30.ds.limitation.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.22.IR292.TGR33.ds.access](A.22.IR292.TGR33.ds.access.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.23.IR2101.TGR35.contact](A.23.IR2101.TGR35.contact.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.24.IR2102.TGR36.role](A.24.IR2102.TGR36.role.md)  	  | IR/TG     | Yes        | Draft  |
+| [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR/TG     | Yes        | Draft  |
+| [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR/TG     | Yes        | Draft  |
+| [A.27.IR2113.TGR39.date](A.27.IR2113.TGR39.date.md)    | IR/TG     | Yes        | Draft  |
 
 ## Vocabulary
 
@@ -51,11 +51,21 @@ If PT_FreeText is used the validator should check if a value of the string is av
 The validator should resolve the URI in the gmx:Anchor to validate if the content is available.
 
 <a name="resolve"></a>
-**Resolve:** Goal is to check if a URL references to an existing document. First the url can be checked on syntactical correctness. Then a [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) 
+**Resolve:** Goal is to check if a URL references an existing document. First the URL can be checked on syntactical correctness. Then a [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) 
 can give an indication of the availability of the document without fully downloading it. The operation might fail due to a number of reasons: the service is 
 (temporarily) unavailable, the service is protected (status 403).   
 
-
+## References
+<a name="IR"></a>
+* [Implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R1205&from=EN)
+<a name="TG"></a>
+* [INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119](http://inspire.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf)
+<a name="REG"></a>
+* [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
+<a name="ISO19115"></a>
+* [ISO 19115:2003 Geographic information - Metadata](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26020)
+<a name="ISO19119"></a>
+* [ISO 19119:2005 Geographic information - Services](http://www.iso.org/iso/catalogue_detail.htm?csnumber=39890)
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
