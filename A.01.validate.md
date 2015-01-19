@@ -7,7 +7,7 @@ Performs a schema validation of the document.
 
 **Test method**	
 
-Document should pass schema validation without errors.
+Document shall pass schema validation without errors.
 
 One of the following schema locations should be referenced in the xml header.
 
