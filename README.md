@@ -49,7 +49,7 @@ This Conformance Class contains the following tests:
 <a name="emptychar"></a>
 **Empty characterstring:** iso19139 allows (if proper namespaces are available) to express any characterstring as either gco:CharacterString, gmd:Anchor or gmd:PT_FreeText. 
 To check an element for having an empty characterstring, each of these representations should be considered. The PT_freetext element can be used to supply multilingual values for a characterstring. 
-If PT_FreeText is used the validator should check if a value of the string is available in the main language of the document. gmx:Anchor is typically used to reference a URI on which additional information is available.
+If only PT_FreeText is used the validator should check if a value of the string is available in the main language of the document. gmx:Anchor is typically used to reference a URI on which additional information is available.
 The validator could resolve the URI in the gmx:Anchor to validate if that content is available.
 
 Some examples for valid string content:
