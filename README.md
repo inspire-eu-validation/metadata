@@ -53,19 +53,19 @@ If PT_FreeText is used the validator should check if a value of the string is av
 The validator could resolve the URI in the gmx:Anchor to validate if that content is available.
 
 Some examples for valid string content:
-'''
+```
   <gmd:keyword>
     <gco:CharacterString>Addresses</gco:CharacterString>
   </gmd:keyword>
-'''
+```
   or
-''' 
+``` 
   <gmd:keyword>
     <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/en/inspire-theme/5297/">Addresses</gmx:Anchor>
   </gmd:keyword>
-'''
+```
   or 
-'''  
+```  
   <gmd:keyword>
     <gmd:PT_FreeText>
        <gmd:textGroup>
@@ -73,7 +73,7 @@ Some examples for valid string content:
        </gmd:textGroup>
     </gmd:PT_FreeText>
   </gmd:keyword>
-'''
+```
 
 <a name="resolve"></a>
 **Resolve:** Goal is to check if a URL references an existing document. First the URL can be checked on syntactical correctness. Then a [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) 
