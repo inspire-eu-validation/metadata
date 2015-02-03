@@ -3,7 +3,7 @@
 
 **Purpose**	
 
-At least one [keyword](#keyword) must be given to descripe the subject.
+At least one [keyword](#keyword) must be given to describe the subject.
 
 **Test method**	
 
