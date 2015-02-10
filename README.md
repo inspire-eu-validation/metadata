@@ -8,41 +8,43 @@ References
 * [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
 metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
 
-*Note*: This ATS is in draft stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: This ATS is in ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
 This Conformance Class contains the following tests:
 
 | Identifier                                                        | Origin | Mechanical | Status   |
 | ----------------------------------------------------------------- | ------ | ---------- | -------- |
-| [A.01.validate](A.01.validate.md)  	    | IR     | Yes        | Draft  |
-| [A.02.IR221.title](A.02.IR221.title.md)  	    | IR     | Yes        | Draft  |
-| [A.03.IR222.abstract](A.03.IR222.abstract.md)  	    | IR     | Yes        | Draft  |
-| [A.04.IR223.TGR1.hierarchy](A.04.IR223.TGR1.hierarchy.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.05.IR223.TGR14.ds.keyword](A.05.IR223.TGR14.ds.keyword.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.06.IR223.TGR15.srv.keyword](A.06.IR223.TGR15.srv.keyword.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.07.IR225.TGR5.ds.identification](A.07.IR225.TGR5.ds.identification.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.08.IR224.TGR3.ds.linkage](A.08.IR224.TGR3.ds.linkage.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.09.IR226.TGR4.srv.linkage](A.09.IR226.TGR4.srv.linkage.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.09.IR226.TGR7.srv.identification](A.09.IR226.TGR7.srv.identification.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.10.IR227.TGR8.ds.language](A.10.IR227.TGR8.ds.language.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.11.IR231.TGR10.ds.topic](A.11.IR231.TGR10.ds.topic.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.12.IR232.TGR12.srv.type](A.12.IR232.TGR12.srv.type.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.13.IR241.TGR13.keyword](A.13.IR241.TGR13.keyword.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.14.IR242.TGR16.vocab](A.14.IR242.TGR16.vocab.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.15.IR242.TGR19.kws-in-vocab](A.15.IR242.TGR19.kws-in-vocab.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.16.IR251.TGR20.ds.bounds](A.16.IR251.TGR20.ds.bounds.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.17.IR261.TGR22.ds.temporal](A.17.IR261.TGR22.ds.temporal.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.18.IR271.TGR26.ds.lineage](A.18.IR271.TGR26.ds.lineage.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.18.TGR27.ds.resolution](A.18.TGR27.ds.resolution.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.19.IR281.TGR28.ds.conformity](A.19.IR281.TGR28.ds.conformity.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.20.IR282.TGR29.ds.specification](A.20.IR282.TGR29.ds.specification.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.21.IR291.TGR30.ds.limitation.md](A.21.IR291.TGR30.ds.limitation.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.22.IR292.TGR33.ds.access](A.22.IR292.TGR33.ds.access.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.23.IR2101.TGR35.contact.md](A.23.IR2101.TGR35.contact.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.24.IR2102.TGR36.role](A.24.IR2102.TGR36.role.md)  	  | IR/TG     | Yes        | Draft  |
-| [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR/TG     | Yes        | Draft  |
-| [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR/TG     | Yes        | Draft  |
-| [A.27.IR2113.TGR39.date](A.27.IR2113.TGR39.date.md)    | IR/TG     | Yes        | Draft  |
+| [A.01.validate](A.01.validate.md)  	    | IR     | Yes        | Ready for review  |
+| [A.02.IR221.title](A.02.IR221.title.md)  	    | IR     | Yes        | Ready for review  |
+| [A.03.IR222.abstract](A.03.IR222.abstract.md)  	    | IR     | Yes        | Ready for review  |
+| [A.04.IR223.TGR1.hierarchy](A.04.IR223.TGR1.hierarchy.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.05.IR223.TGR14.ds.keyword](A.05.IR223.TGR14.ds.keyword.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.06.IR223.TGR15.srv.keyword](A.06.IR223.TGR15.srv.keyword.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.07.IR225.TGR5.ds.identification](A.07.IR225.TGR5.ds.identification.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.08.IR224.TGR3.ds.linkage](A.08.IR224.TGR3.ds.linkage.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.09.IR226.TGR4.srv.linkage](A.09.IR226.TGR4.srv.linkage.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.09.IR226.TGR7.srv.identification](A.09.IR226.TGR7.srv.identification.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.10.IR227.TGR8.ds.language](A.10.IR227.TGR8.ds.language.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.11.IR231.TGR10.ds.topic](A.11.IR231.TGR10.ds.topic.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.12.IR232.TGR12.srv.type](A.12.IR232.TGR12.srv.type.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.13.IR241.TGR13.keyword](A.13.IR241.TGR13.keyword.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.14.IR242.TGR16.vocab](A.14.IR242.TGR16.vocab.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.15.IR242.TGR19.kws-in-vocab](A.15.IR242.TGR19.kws-in-vocab.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.16.IR251.TGR20.ds.bounds](A.16.IR251.TGR20.ds.bounds.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.17.IR261.TGR22.ds.temporal](A.17.IR261.TGR22.ds.temporal.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.18.IR271.TGR26.ds.lineage](A.18.IR271.TGR26.ds.lineage.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.18.TGR27.ds.resolution](A.18.TGR27.ds.resolution.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.19.IR281.TGR28.ds.conformity](A.19.IR281.TGR28.ds.conformity.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.20.IR282.TGR29.ds.specification](A.20.IR282.TGR29.ds.specification.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.21.IR291.TGR30.ds.limitation.md](A.21.IR291.TGR30.ds.limitation.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.22.IR292.TGR33.ds.access](A.22.IR292.TGR33.ds.access.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.23.IR2101.TGR35.contact.md](A.23.IR2101.TGR35.contact.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.24.IR2102.TGR36.role](A.24.IR2102.TGR36.role.md)  	  | IR/TG     | Yes        | Ready for review  |
+| [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR/TG     | Yes        | Ready for review  |
+| [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR/TG     | Yes        | Ready for review  |
+| [A.27.IR2113.TGR39.date](A.27.IR2113.TGR39.date.md)    | IR/TG     | Yes        | Ready for review  |
+
+Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are seperated from above because they have a different timeline for implementation.
 
 ## Vocabulary
 
