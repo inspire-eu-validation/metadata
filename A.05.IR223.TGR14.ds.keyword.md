@@ -6,11 +6,12 @@
 If the resource is a dataset or a dataset series, at least one keyword must originate from the INSPIRE theme of the GEMET Thesaurus
 
 **Test method**	
-
-Checks for every [keyword](#keyword) if it is not an [empty characterstring](./README.md#emptychar).  The text content for every keyword
-can be found in either the indicated language or english version of the [INSPIRE GEMET Thesaurus](http://inspire.ec.europa.eu/theme). 
-If at least one keyword from that source is found, the test succeeds, otherwise it will fail.
 If the type of the resource is not dataset or series, this test is omitted.
+
+The test should check for each descriptiveKeywords block if it references either http://www.eionet.europa.eu/gemet/inspire_themes or any duplicate of that thesaurus (eg http://inspire.ec.europa.eu/theme). If a block is referencing that thesaurus the test should check if at least one [keyword](#keyword) is available and it matches with a concept in the thesaurus.
+
+If a keyword from that source is found, the test succeeds, otherwise it will fail.
+
 
 **Reference(s)**	 
 
