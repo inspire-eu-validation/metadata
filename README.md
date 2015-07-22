@@ -42,15 +42,16 @@ This Conformance Class contains the following tests:
 | [A.24.IR2102.TGR36.role](A.24.IR2102.TGR36.role.md)  	  | IR/TG     | Yes        | Ready for review  |
 | [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR/TG     | Yes        | Ready for review  |
 | [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR/TG     | Yes        | Ready for review  |
-| [A.27.IR2113.TGR39.date](A.27.IR2113.TGR39.date.md)    | IR/TG     | Yes        | Ready for review  |
+| [A.27.IR2113.TGR39.language](A.27.IR2113.TGR39.language.md)    | IR/TG     | Yes        | Ready for review  |
+| [A.28.IR2112.metdata.date](A.28.IR2112.metdata.date.md)    | IR/TG     | Yes        | Ready for review  |
 
 Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are seperated from above because they have a different timeline for implementation.
 
 ## Vocabulary
 
 <a name="emptychar"></a>
-**Empty characterstring:** iso19139 allows (if proper namespaces are available) to express any characterstring as either gco:CharacterString, gmd:Anchor or gmd:PT_FreeText. 
-To check an element for having an empty characterstring, each of these representations should be considered. The PT_freetext element can be used to supply multilingual values for a characterstring. 
+**Empty characterstring:** iso19139 allows (if proper namespaces are available) to express any characterstring as either gco:CharacterString, gmd:Anchor or gmd:PT_FreeText.
+To check an element for having an empty characterstring, each of these representations should be considered. The PT_freetext element can be used to supply multilingual values for a characterstring.
 If only PT_FreeText is used the validator should check if a value of the string is available in the main language of the document. gmx:Anchor is typically used to reference a URI on which additional information is available.
 The validator could resolve the URI in the gmx:Anchor to validate if that content is available.
 
@@ -61,12 +62,12 @@ Some examples for valid string content:
   </gmd:keyword>
 ```
   or
-``` 
+```
   <gmd:keyword>
     <gmx:Anchor xlink:href="http://www.eionet.europa.eu/gemet/en/inspire-theme/5297/">Addresses</gmx:Anchor>
   </gmd:keyword>
 ```
-  or 
+  or
 ```  
   <gmd:keyword>
     <gmd:PT_FreeText>
@@ -78,9 +79,9 @@ Some examples for valid string content:
 ```
 
 <a name="resolve"></a>
-**Resolve:** Goal is to check if a URL references an existing document. First the URL can be checked on syntactical correctness. Then a [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4) 
-can give an indication of the availability of the document without fully downloading it. The operation might fail due to a number of reasons: the service is 
-(temporarily) unavailable, the service is protected (status 403).   
+**Resolve:** Goal is to check if a URL references an existing document. First the URL can be checked on syntactical correctness. Then a [http head operation](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9.4)
+can give an indication of the availability of the document without fully downloading it. The operation might fail due to a number of reasons: the service is
+(temporarily) unavailable, the service is protected (status 403).
 
 ## References
 <a name="IR"></a>
@@ -101,5 +102,3 @@ The following prefixes are used to refer to the corresponding XML namespaces in 
 Prefix     | Namespace
 ---------- | -------------------------------------------------
 gmd        | http://www.isotc211.org/2005/gmd
-
-
