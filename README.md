@@ -43,7 +43,7 @@ This Conformance Class contains the following tests:
 | [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR/TG     | Yes        | Ready for review  |
 | [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR/TG     | Yes        | Ready for review  |
 | [A.27.IR2113.TGR39.language](A.27.IR2113.TGR39.language.md)    | IR/TG     | Yes        | Ready for review  |
-| [A.28.IR2112.metdata.date](A.28.IR2112.metdata.date.md)    | IR/TG     | Yes        | Ready for review  |
+| [A.28.IR2112.metadata.date](A.28.IR2112.metadata.date.md)    | IR/TG     | Yes        | Ready for review  |
 
 Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are seperated from above because they have a different timeline for implementation.
 
