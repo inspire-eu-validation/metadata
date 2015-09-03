@@ -12,7 +12,7 @@ The element must contain an element at gmd:CI_RoleCode[@codeListValue=x], where 
 
 **Reference(s)**
 
-* IR, Chap. 2.10.2
+* [IR](./README.md#IR), Annex B. 9.2
 * ISO 19115, B.5.5
 * [TG](./README.md#TG), Req 36
 

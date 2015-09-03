@@ -14,7 +14,7 @@ The role information of the responsible party serving as metadata point of conta
 
 **Reference(s)**
 
-* IR, Chap. 2.11.2
+* ISO 19115
 * [TG](./README.md#TG), Req 38
 
 **Test type:** Automated

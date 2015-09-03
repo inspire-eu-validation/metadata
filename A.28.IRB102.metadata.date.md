@@ -10,7 +10,7 @@ The test checks if there is an element of type gco:Date at [dateStamp](#dateStam
 
 **Reference(s)**
 
-* IR, Chap. 2.11.2
+* [IR](./README.md#IR), Annex B. 10.2
 
 **Test type:** Automated
 

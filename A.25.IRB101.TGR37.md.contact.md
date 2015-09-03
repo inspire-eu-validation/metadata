@@ -13,7 +13,7 @@ The test first checks if a [contact](#contact) element is given. It then perform
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.11.1
+* [IR](./README.md#IR), Annex B. 10.1
 * [TG](./README.md#TG), Req 37
 
 **Test type:** Automated

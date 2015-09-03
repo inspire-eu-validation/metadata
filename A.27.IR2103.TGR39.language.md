@@ -12,8 +12,8 @@ contains a valid 3-letter language code according to [ISO 639-2](http://en.wikip
 
 **Reference(s)**	 
 
-* [INSPIRE Metadata Implementing Rules](./README.md#IR), Chap. 2.11.3
-* ISO 639-2
+* [IR](./README.md#IR), Annex B. 10.3
+* [TG](./README.md#TG), Req 39
 
 **Test type:** Automated
 
