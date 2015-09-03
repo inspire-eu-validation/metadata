@@ -15,7 +15,7 @@ If a keyword from that source is found, the test succeeds, otherwise it will fai
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.2.3
+* [IR](./README.md#IR), Annex B. 3.1
 * http://inspire.ec.europa.eu/theme
 * [TG](./README.md#TG) Req 14
 

@@ -13,7 +13,7 @@ The test first checks if there is at least one element at gmd:identificationInfo
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.10.1 
+* [IR](./README.md#IR), Annex B. 3.5
 * [TG](./README.md#TG) Req 35
 
 **Test type:** Automated

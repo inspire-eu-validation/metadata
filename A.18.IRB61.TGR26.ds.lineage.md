@@ -12,7 +12,7 @@ It then validates that exactly one lineage statement like the one above is given
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.7.1
+* [IR](./README.md#IR), Annex B. 2.6
 * [TG](./README.md#TG) Req 26
 
 **Test type:** Automated

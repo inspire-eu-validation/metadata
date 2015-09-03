@@ -24,7 +24,7 @@ The bounding box shall be expressed in decimal degree with a precision of at lea
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.5.1 
+* [IR](./README.md#IR), Annex B. 4.1
 * [TG](./README.md#TG) Req 20 & 21 
 
 **Test type:** Automated

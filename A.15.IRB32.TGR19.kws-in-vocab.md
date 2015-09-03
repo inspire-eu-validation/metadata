@@ -17,7 +17,8 @@ For each [descriptiveKeywords](#keyword) element, the referenced controlled voca
 
 **Reference(s)**	 
 
-[TG](./README.md#TG) Req 19 
+* [IR](./README.md#IR), Annex B. 3.2
+* [TG](./README.md#TG) Req 19 
 
 **Test type:** Automated
 

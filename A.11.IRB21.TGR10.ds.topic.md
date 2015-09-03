@@ -18,7 +18,7 @@ If the type of the resource was not dataset or series, this test is omitted.
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.3.1
+* [IR](./README.md#IR), Annex B. 2.1
 * [TG](./README.md#TG), Req 10 & 11
 * [B.5.27 of ISO 19115](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory)
 

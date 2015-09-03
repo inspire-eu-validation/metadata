@@ -17,7 +17,7 @@ If a vocabulary is indicated that is available to the validator, then this check
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.4.2
+* [IR](./README.md#IR), Annex B. 3.2
 * [TG](./README.md#TG), Req 16, 17 & 18
 
 **Test type:** Automated

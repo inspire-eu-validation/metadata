@@ -15,7 +15,7 @@ The operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentificati
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.2.6
+* [IR](./README.md#IR), Annex B. 1.6
 * [TG](./README.md#TG), req 7 
 
 **Test type:** Automated

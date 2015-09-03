@@ -27,7 +27,7 @@ if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}]
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.2.4
+* [IR](./README.md#IR), Annex B. 1.4
 * [TG](./README.md#TG), Req 3
 
 **Test type:** Automated

@@ -21,7 +21,7 @@ http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd
 
 **References**	 
 
-* [IR](./README.md#IR) p16
+* [IR](./README.md#IR) page 1 #3
 
 **Test type:** Automated
 

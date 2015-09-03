@@ -17,7 +17,7 @@ It then performs the following actions for every element at ./*/gmd:result:
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.8.1
+* [IR](./README.md#IR), Annex B. 2.8
 * [TG](./README.md#TG) Req 28
  
 **Test type:** Automated

@@ -33,7 +33,7 @@ If none of the four elements is found, the test fails.
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.9.1
+* [IR](./README.md#IR), Annex B. 8.1
 * [ISO 19115](./README.md#ISO19115), B.5.24
 * [TG](./README.md#TG) Req 30, 31 & 32
 

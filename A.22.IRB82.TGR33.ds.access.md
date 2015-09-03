@@ -19,7 +19,7 @@ corresponding fees shall be provided through this element or a link
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.9.2 
+* [IR](./README.md#IR), Annex B. 8.2 
 * [TG](./README.md#TG), Req 33,34
 
 **Test type:** Automated

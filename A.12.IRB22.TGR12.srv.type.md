@@ -16,7 +16,7 @@ If the type of the resource was not service, this test is omitted.
 
 **Reference(s)**	
  
-* [IR](./README.md#IR), 1.3.1 & 2.3.2
+* [IR](./README.md#IR), Annex B. 2.2
 * [TG](./README.md#TG), Req 12
 * http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType
 

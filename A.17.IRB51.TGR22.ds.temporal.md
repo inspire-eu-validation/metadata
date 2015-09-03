@@ -15,7 +15,7 @@ The four types of which one must be provided are Temporal extent, Date of public
 The test will fail if and only if all of the above checks evaluate to false.
 
 **Reference(s)**	 
-* [IR](./README.md#IR), Chap. 2.6.1 - 2.6.4
+* [IR](./README.md#IR), Annex B. 5.1
 * ISO 19108
 * ISO 8601
 * [TG](./README.md#TG) Req 22 & 23

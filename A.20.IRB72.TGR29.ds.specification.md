@@ -14,7 +14,7 @@ It then performs the following checks
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.8.2
+* [IR](./README.md#IR), Annex B. 7.2
 * [TG](./README.md#TG), Req 29
 
 **Test type:** Automated

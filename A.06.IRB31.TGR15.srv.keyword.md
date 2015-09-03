@@ -13,7 +13,7 @@ If the type of the resource is not service, this test is omitted.
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.2.3
+* [IR](./README.md#IR), Annex B. 1.5
 * [TG](./README.md#TG), Req 15
 * Article 4, part D of the EU commission regulation No 1205/2008
 

@@ -19,7 +19,7 @@ To be relevant for INSPIRE the value should be either 'dataset', 'service' or 's
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.2.3
+* [IR](./README.md#IR), Annex B. 1.3
 * [TG](./README.md#TG), Req 1 & 2
 
 **Test type:** Automated
