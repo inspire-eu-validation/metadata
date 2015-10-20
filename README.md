@@ -3,49 +3,102 @@ ats-metadata
 
 Abstract Test Suite for the Metadata (implicit) Conformance Class.
 
-References
-* [INSPIRE Metadata Technical Guidance version 1.3](http://inspire.jrc.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf)
-* [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards
-metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
-
 *Note*: This ATS is in ready for review stage, none of the tests have an official INSPIRE MIG approval.
+
+## External document references
+
+| Abbreviation | Document name                       |
+| ------------ | ----------------------------------- |
+| IR MD <a name="ref_IR_MD"></a> | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
+| TG MD <a name="ref_TG_MD"></a> | [INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119, version 1.3](http://inspire.jrc.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf)
+| REG <a name="ref_REG"></a> | [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
+| ISO 19115 <a name="ref_ISO_19115"></a> | [ISO 19115:2003 Geographic information - Metadata](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26020)
+| ISO 19119 <a name="ref_ISO_19119"></a> | [ISO 19119:2005 Geographic information - Services](http://www.iso.org/iso/catalogue_detail.htm?csnumber=39890)
+| ISO 19108 <a name="ref_ISO_19108"></a> | [ISO 19108:2002 Geographic information -- Temporal schema](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26013)
+| ISO 8601 <a name="ref_ISO_8601"></a> | [ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times](http://www.iso.org/iso/catalogue_detail?csnumber=40874)
+
+
+## TG Requirement coverage
+
+Based on requirement numbering in [TG MD](#ref_TG_MD).
+
+| Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
+| ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
+| 1      | hierachyLevel mandated               | [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3 |
+| 2      | MD_ScopeCode values                  | [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) | |
+| 3      | Resource Locator for data linkage    | [A.08.IR03.ds.linkage](A.08.IR03.ds.linkage.md) | |
+| 4      | Resource Locator for service linkage | [A.09.IR04.srv.linkage](A.09.IR04.srv.linkage.md) | |
+| 5      | Unique Resource Identifier code is mandatory | [A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md)| |
+| 6      | Use RS_Identifier if URI codeSpace provided |[A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md) | |
+| 7      | operatesOn as a reference     | [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)| |
+| 8      | Resource language is mandated        | [A.10.IR08.IR09.ds.language](A.10.IR08.IR09.ds.language.md) | |
+| 9      | ISO 19139 codes used for language    | [A.10.IR08.IR09.ds.language](A.10.IR08.IR09.ds.language.md) | |
+| 10     | Use MD_TopicCategoryCode values in topicCategory |[A.11.IR10.IR11.ds.topic](A.11.IR10.IR11.ds.topic.md) | |
+| 11     | Use language neutral name in topicCategory | [A.11.IR10.IR11.ds.topic](A.11.IR10.IR11.ds.topic.md) | |
+| 12     | Use language neutral name for serviceType | [A.12.IR12.srv.type](A.12.IR12.srv.type.md) | |
+| 13     | Provide at least one keyword         |[A.13.IR13.keyword](A.13.IR13.keyword.md) | |
+| 14     | Use theme for the only dataset keyword | [A.05.IR14.ds.keyword](A.05.IR14.ds.keyword.md) | |
+| 15     | Use category for the inly service keyword | [A.06.IR15.srv.keyword](A.06.IR15.srv.keyword.md) | |
+| 16     | Use citation for other controlled keywords | [A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) | |
+| 17     | Cite the originating controlled vocabulary |[A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) | |
+| 18     | At least title and date for controlled vocabulary citations |[A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) | |
+| 19     | Group keywords from the same controlled vocabulary | [A.15.IR19.kws-in-vocab](A.15.IR19.kws-in-vocab.md) | |
+| 20     | Use the minimum geographic bounding box  | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md) | |
+| 21     | At least two decimals for coordinates | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md) | |
+| 22     | Use at least one of INSPIRE temporal reference types | [A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) | |
+| 23     | Use at least one ISO 19115 temporal reference types |[A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) | |
+| 24     | Gregorian calendar and ISO 8601 date as defaults | not testable | |
+| 25     | Single creation date mandatory       | [A.30.IR25.resource.creation.date](A.30.IR25.resource.creation.date) | |
+| 26     | Only one dataQualityInfo             | [A.18.IR26.lineage](A.18.IR26.lineage.md) | |
+| 27     | Spatial resolution as either scale or ground sample distance | [A.18.IR27.spatial.resolution](A.18.IR27.spatial.resolution.md) | |
+| 28     | Degree of conformity mandatory       |[A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md) | |
+| 29     | Use DQ_DomainConsistency for spec. conformity |[A.20.IR29.ds.specification](A.20.IR29.ds.specification.md) | |
+| 30     | Declare both limitations on "public access" and "constraints on access and use" |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | |
+| 31     | At least one MD_Contraints even if no limitations |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | |
+| 32     | Expressing limitations on public access |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | |
+| 33     | No conditions and unknown conditions |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | |
+| 34     | Terms and conditions either embedded or linked |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | |
+| 35     | Responsible organisation name and email |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) | |
+| 36     | MD_DataIdentification and SV_ServiceIdentification for responsible party info |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) | |
+| 37     | Metadata point of contact organisation name and email | [A.25.IR37.md.contact](A.25.IR37.md.contact.md) | |
+| 38     | Metadata point of contact role code 'pointOfContact'| [A.26.IR38.md.contact.role](A.26.IR38.md.contact.role.md) | |
+| 39     | Metadata language is mandatory | [A.26.IR39.language](A.26.IR39.language.md) | |
+
+## Test
 
 This Conformance Class contains the following tests:
 
-| Identifier                                                        | Origin | Mechanical | Status   |
-| ----------------------------------------------------------------- | ------ | ---------- | -------- |
-| [A.01.validate](A.01.validate.md)  	    | IR     | Yes        | Ready for review  |
-| [A.02.IR221.title](A.02.IR221.title.md)  	    | IR     | Yes        | Ready for review  |
-| [A.03.IR222.abstract](A.03.IR222.abstract.md)  	    | IR     | Yes        | Ready for review  |
-| [A.04.IR223.TGR1.hierarchy](A.04.IR223.TGR1.hierarchy.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.05.IR223.TGR14.ds.keyword](A.05.IR223.TGR14.ds.keyword.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.06.IR223.TGR15.srv.keyword](A.06.IR223.TGR15.srv.keyword.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.07.IR225.TGR5.ds.identification](A.07.IR225.TGR5.ds.identification.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.08.IR224.TGR3.ds.linkage](A.08.IR224.TGR3.ds.linkage.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.09.IR226.TGR4.srv.linkage](A.09.IR226.TGR4.srv.linkage.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.09.IR226.TGR7.srv.identification](A.09.IR226.TGR7.srv.identification.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.10.IR227.TGR8.ds.language](A.10.IR227.TGR8.ds.language.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.11.IR231.TGR10.ds.topic](A.11.IR231.TGR10.ds.topic.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.12.IR232.TGR12.srv.type](A.12.IR232.TGR12.srv.type.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.13.IR241.TGR13.keyword](A.13.IR241.TGR13.keyword.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.14.IR242.TGR16.vocab](A.14.IR242.TGR16.vocab.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.15.IR242.TGR19.kws-in-vocab](A.15.IR242.TGR19.kws-in-vocab.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.16.IR251.TGR20.ds.bounds](A.16.IR251.TGR20.ds.bounds.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.17.IR261.TGR22.ds.temporal](A.17.IR261.TGR22.ds.temporal.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.18.IR271.TGR26.ds.lineage](A.18.IR271.TGR26.ds.lineage.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.18.TGR27.ds.resolution](A.18.TGR27.ds.resolution.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.19.IR281.TGR28.ds.conformity](A.19.IR281.TGR28.ds.conformity.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.20.IR282.TGR29.ds.specification](A.20.IR282.TGR29.ds.specification.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.21.IR291.TGR30.ds.limitation.md](A.21.IR291.TGR30.ds.limitation.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.22.IR292.TGR33.ds.access](A.22.IR292.TGR33.ds.access.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.23.IR2101.TGR35.contact.md](A.23.IR2101.TGR35.contact.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.24.IR2102.TGR36.role](A.24.IR2102.TGR36.role.md)  	  | IR/TG     | Yes        | Ready for review  |
-| [A.25.IR2111.TGR37.md.contact](A.25.IR2111.TGR37.md.contact.md)  	    | IR/TG     | Yes        | Ready for review  |
-| [A.26.IR2112.TGR38.md.role](A.26.IR2112.TGR38.md.role.md)  	 | IR/TG     | Yes        | Ready for review  |
-| [A.27.IR2113.TGR39.language](A.27.IR2113.TGR39.language.md)    | IR/TG     | Yes        | Ready for review  |
-| [A.28.IR2112.metadata.date](A.28.IR2112.metadata.date.md)    | IR/TG     | Yes        | Ready for review  |
+| Identifier                                                        | Status   |
+| ----------------------------------------------------------------- | -------- |
+| [A.01.validate](A.01.validate.md)  	                              | Ready for review  |
+| [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md)           | Ready for review  |
+| [A.05.IR14.ds.keyword](A.05.IR14.ds.keyword.md)                   | Ready for review  |
+| [A.06.IR15.srv.keyword](A.06.15.srv.keyword.md)                   | Ready for review  |
+| [A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md) | Ready for review  |
+| [A.08.IR03.ds.linkage](A.08.IR03.ds.linkage.md)                   | Ready for review  |
+| [A.09.IR04.srv.linkage](A.09.IR04.srv.linkage.md)                 | Ready for review  |
+| [A.10.IR08.IR09.ds.language](A.10.IR08.IR09.ds.language.md)       | Ready for review  |
+| [A.11.IR10.ds.topic](A.11.IR10.ds.topic.md)                       | Ready for review  |
+| [A.12.IR12.srv.type](A.12.IR12.srv.type.md)                       | Ready for review  |
+| [A.13.IR13.keyword](A.13.IR13.keyword.md)                         | Ready for review  |
+| [A.14.IR16.vocab](A.14.IR16.vocab.md)                             | Ready for review  |
+| [A.15.IR19.kws-in-vocab](A.15.IR19.kws-in-vocab.md)               | Ready for review  |
+| [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md)           | Ready for review  |
+| [A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md)       | Ready for review  |
+| [A.18.IR26.ds.lineage](A.18.IR26.ds.lineage.md)                   | Ready for review  |
+| [A.18.IR27.ds.spatial.resolution](A.18.IR27.ds.spatial.resolution.md) | Ready for review  |
+| [A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md)             | Ready for review  |
+| [A.20.IR29.ds.specification](A.20.IR29.ds.specification.md)       | Ready for review  |
+| [A.21.IR30.IR31.IR32.ds.public.access.md](A.21.IR30.IR31.IR32.ds.public.access.md) | Ready for review  |
+| [A.22.IR33.IR34.ds.access.use](A.22.IR33.IR34.ds.access.use.md)   | Ready for review  |
+| [A.23.IR35.responsible.party.contact.info.md](A.23.IR35.responsible.party.contact.info.md) | Ready for review  |
+| [A.25.IR37.md.contact](A.25.IR37.md.contact.md)                   | Ready for review  |
+| [A.26.IR38.md.contact.role](A.26.IR38.md.contact.role.md)         | Ready for review  |
+| [A.27.IR39.language](A.27.IR39.language.md)                       | Ready for review  |
+| [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)   | Ready for review  
+| [A.30.IR25.resource.creation.date](A.30.IR25.resource.creation.date) | missing |
 
-Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are seperated from above because they have a different timeline for implementation.
+Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are separated from above because they have a different timeline for implementation.
 
 ## Vocabulary
 
@@ -83,17 +136,15 @@ Some examples for valid string content:
 can give an indication of the availability of the document without fully downloading it. The operation might fail due to a number of reasons: the service is
 (temporarily) unavailable, the service is protected (status 403).
 
-## References
-<a name="IR"></a>
-* [Implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32008R1205&from=EN)
-<a name="TG"></a>
-* [INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119](http://inspire.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf)
-<a name="REG"></a>
-* [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
-<a name="ISO19115"></a>
-* [ISO 19115:2003 Geographic information - Metadata](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26020)
-<a name="ISO19119"></a>
-* [ISO 19119:2005 Geographic information - Services](http://www.iso.org/iso/catalogue_detail.htm?csnumber=39890)
+## Open questions
+
+* There is no explicit Implementation Requirement in [TG MD](README.md#ref_TG_MD) for the following tests:
+  * [A.02.title](A.02.title.md)
+  * [A.03.abstract](A.03.abstract.md)
+  * [A.24.responsible.party.role](A.24.responsible.party.role.md)
+  * [A.28.md.creation.date](A.28.md.creation.date.md)
+
+Should these be excluded or included in the ATS? Or added as requirements in the [TG MD](#ref_TG_MD)?
 
 ## XML namespace prefixes <a name="namespaces"></a>
 

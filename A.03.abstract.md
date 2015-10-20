@@ -1,23 +1,24 @@
+#A.03.abstract
 
-# Resource abstract
+**Purpose**: Validates if a resource abstract is provided
 
-**Purpose**	
+**Prerequisites**
 
-Validates if a resource abstract is provided 
+* [A.01.validate](A.01.validate.md) must be passed
 
-**Test method**	
+**Test method**
 
 Checks if an [abstract](#abstract) is present and not an [empty characterstring](./README.md#emptychar)
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.2.2
+* [TG MD](./README.md#ref_TG_MD), Chap. 2.2.2
 
 **Test type:** Automated
-	
+
 **Notes**
 
-**Contextual XPath references**
+##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

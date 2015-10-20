@@ -1,11 +1,10 @@
+# A.01.validate
 
-# Schema validation of the resource
+**Purpose**: Performs a schema validation of the document.
 
-**Purpose**	
+**Prerequisites**
 
-Performs a schema validation of the document.
-
-**Test method**	
+**Test method**
 
 Document shall pass schema validation without errors, using one of the following XML schema definitions:
 
@@ -21,9 +20,15 @@ http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd
 
 **References**	 
 
-* [IR](./README.md#IR) p16
+* [TG MD](README.md#ref_TG_MD) 2.1.2
 
 **Test type:** Automated
 
 **Notes**
 
+## Contextual XPath references
+
+The namespace prefixes used as described in [README.md](README.md#namespaces).
+
+Abbreviation                                               |  XPath expression
+---------------------------------------------------------- | -------------------------------------------------------------------------

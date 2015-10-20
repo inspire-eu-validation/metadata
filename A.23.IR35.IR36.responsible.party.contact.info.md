@@ -1,26 +1,25 @@
+#A.23.IR35.IR36.responsible.party.contact.info
 
-# Responsible party
+**Purpose**: Name and contact email to a responsible party must be given for every responsible organization in the metadata.
 
-**Purpose**	
+**Prerequisites**
+* [A.01.validate](A.01.validate.md) must be passed
 
-Name and contact email to a responsible party must be given for every responsible organization in the metadata.
-
-**Test method**	
+**Test method**
 
 The test first checks if there is at least one element at gmd:identificationInfo/*/gmd:pointOfContact. Furthermore, the following checks are performed
 *	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:organisationName
-*	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:contactInfo/*/gmd:address/*/gmd:electronicMailAddress 
+*	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:contactInfo/*/gmd:address/*/gmd:electronicMailAddress
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.10.1 
-* [TG](./README.md#TG) Req 35
+* [TG MD](./README.md#ref_TG_MD) 2.10.1, Req 35
 
 **Test type:** Automated
-	
+
 **Notes**
 
-**Contextual XPath references**
+##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
@@ -28,4 +27,3 @@ Abbreviation                                   |  XPath expression (relative to 
 -----------------------------------------------| -------------------------------------------------------------------------
 
 <a name="CI_ResponsibleParty"></a> CI_ResponsibleParty   | ./gmd:identificationInfo/*/gmd:pointOfContact/*/gmd:CI_ResponsibleParty
-

@@ -1,23 +1,24 @@
+#A.02.title
 
-# Resource title
+**Purpose**: The title by which the cited resource is known
 
-**Purpose**	
+**Prerequisites**
 
-The title by which the cited resource is known
+* [A.01.validate](A.01.validate.md) must be passed
 
-**Test method**	
+**Test method**
 
 Validates if a [title](#title) is provided and not an [empty characterstring](./README.md#emptychar)
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), Chap. 2.2.1
+* [IR MD](./README.md#ref_IR_MD), Part B, 1.1
 
 **Test type:** Automated
 
 **Notes**
 
-**Contextual XPath references**
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

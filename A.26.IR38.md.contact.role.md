@@ -1,10 +1,9 @@
+#A.26.IR38.md.contact.role
 
-# Role of the metadata point of contact
+**Purpose**: The role information of the responsible party serving as metadata point of contact is mandatory by the ISO 19115. Role code "pointOfContact" must be used.
 
-**Purpose**
-
-The role information of the responsible party serving as metadata point of contact is mandatory by the ISO 19115. Role code
-"pointOfContact" must be used.
+**Prerequisites**
+* [A.01.validate](A.01.validate.md) must be passed
 
 **Test method**
 
@@ -14,8 +13,7 @@ The role information of the responsible party serving as metadata point of conta
 
 **Reference(s)**
 
-* IR, Chap. 2.11.2
-* [TG](./README.md#TG), Req 38
+* [TG MD](./README.md#ref_TG_MD) 2.11.2, Req 38
 
 **Test type:** Automated
 
@@ -24,15 +22,14 @@ The role information of the responsible party serving as metadata point of conta
 The TG Requirement 38 is not clear: The requirement text says that "the default value is
 pointOfContact", but it refers to SC16, which seems to mandate a fixed value:
 
-> SC16.The value of MD_Metadata.contact[1].CI_ResponsibleParty.role.CI_RoleCode shall be
-pointOfContact.
+    SC16.The value of MD_Metadata.contact[1].CI_ResponsibleParty.role.CI_RoleCode shall be pointOfContact.
 
-Questions:
+Open questions:
 
 * The the codeList URL above the only approved way to refer to the CI_RoleCode codelist?
 * Does the string value of the [RoleCode](#roleCode) element have any significance? Does it have to also be "pointOfContact" or can it be missing entirely?
 
-**Contextual XPath references**
+##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

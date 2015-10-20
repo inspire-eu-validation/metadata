@@ -1,9 +1,9 @@
+#A.24.responsible.party.role
 
-# Responsible party role
+**Purpose**: Every responsible organization must name a responsible party role.
 
-**Purpose**
-
-Every responsible organization must name a responsible party role.
+**Prerequisites**
+* [A.01.validate](A.01.validate.md) must be passed
 
 **Test method**
 
@@ -12,15 +12,16 @@ The element must contain an element at gmd:CI_RoleCode[@codeListValue=x], where 
 
 **Reference(s)**
 
-* IR, Chap. 2.10.2
 * ISO 19115, B.5.5
-* [TG](./README.md#TG), Req 36
+* [TG MD](./README.md#ref_TG_MD), 2.10.2
 
 **Test type:** Automated
 
 **Notes**
 
-**Contextual XPath references**
+* There is no explicit Implementation Requirement in [TG MD](README.md#ref_TG_MD) for this test.
+
+##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

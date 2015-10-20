@@ -1,11 +1,11 @@
+#A.11.IR10.IR11.ds.topic
 
-# Topic Category
+**Purpose**: If the type of the resource is dataset or series, at least one Topic category describing the category of the resource must be given.
 
-**Purpose**	
+**Prerequisites**
+* [A.01.validate](A.01.validate.md) must be passed
 
-If the type of the resource is dataset or series, at least one Topic category describing the category of the resource must be given.
-
-**Test method**	
+**Test method**
 
 The test first checks if at least one element of type [topicCategory](#topic) is given. If so, the following conditions are checked for all topic categories:
 *	The topic category is of type [MD_TopicCategoryCode](#topic)
@@ -14,25 +14,19 @@ The value saved in the XML metadata element shall be a language neutral name.
 
 If the type of the resource was not dataset or series, this test is omitted.
 
-# Context
-
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.3.1
-* [TG](./README.md#TG), Req 10 & 11
+* [TG MD](./README.md#ref_TG_MD), 2.3.1, Req 10 & 11
 * [B.5.27 of ISO 19115](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory)
 
 **Test type:** Automated
 
 **Notes**
 
-**Contextual XPath references**
+##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="topic"></a> topicCategory  | ./gmd:identificationInfo[1]/*/gmd:topicCategory
-
-
-

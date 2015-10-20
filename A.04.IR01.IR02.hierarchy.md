@@ -1,26 +1,23 @@
+#A.04.IR01.IR02.hierarchy
 
-# Resource type
+**Purpose**: Type of the cited resource must be provided
 
-	
+**Prerequisites**
 
-md_IR223
+* [A.01.validate](A.01.validate.md) must be passed
 
-**Purpose**	
-
-Type of the cited resource must be provided
-
-**Test method**	
+**Test method**
 
 Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is taken from the [MD_ScopeCode](http://inspire.ec.europa.eu/metadata-codelist/ResourceType/) codelist.
 
-To be relevant for INSPIRE the value should be either 'dataset', 'service' or 'series' 
-  
-# Context 
+To be relevant for INSPIRE the value should be either 'dataset', 'service' or 'series'
+
+# Context
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.2.3
-* [TG](./README.md#TG), Req 1 & 2
+* [IR MD](./README.md#ref_IR_MD), Part B 1.3, Part D 1
+* [TG MD](./README.md#ref_TG_MD),2.2.3, Req 1 & 2
 
 **Test type:** Automated
 

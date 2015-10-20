@@ -1,8 +1,9 @@
-# Metadata date
+#A.28.md.creation.date
 
-**Purpose**
+**Purpose**: A metadata date must be given.
 
-A metadata date must be given.
+**Prerequisites**
+* [A.01.validate](A.01.validate.md) must be passed
 
 **Test method**
 
@@ -10,7 +11,7 @@ The test checks if there is an element of type gco:Date at [dateStamp](#dateStam
 
 **Reference(s)**
 
-* IR, Chap. 2.11.2
+* [TG MD](./README.md#ref_TG_MD) Chap. 2.11.2
 
 **Test type:** Automated
 

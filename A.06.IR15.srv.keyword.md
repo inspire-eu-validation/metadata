@@ -1,32 +1,30 @@
+#A.06.IR15.srv.keyword
 
-# Keywords for Resource type Service
+**Purpose**: Keywords for Resource type Service. If the resource is a service, the type of service should be specified
 
-**Purpose**	
+**Prerequisites**
+* [A.01.validate](A.01.validate.md) must be passed
 
-If the resource is a service, the type of service should be specified
-
-**Test method**	
+**Test method**
 
 If the resource is a service, at least one [keyword](#keyword) must originate from [EU commission regulation No. 1205/2008, Annex part D, No. 4.](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory)
 
-If the type of the resource is not service, this test is omitted. 
+If the type of the resource is not service, this test is omitted.
 
 **Reference(s)**	 
 
-* [IR](./README.md#IR), 2.2.3
-* [TG](./README.md#TG), Req 15
-* Article 4, part D of the EU commission regulation No 1205/2008
+* [TG MD](./README.md#ref_TG_MD), 2.2.3, Req 15
+* [ID MD](README.md#ref_IR_MD), Article 4, part D
 
 
 **Test type:** Automated
 
 **Notes**
 
-**Contextual XPath references**
+##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="keyword"></a> keyword   | ./gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword
-
