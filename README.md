@@ -9,6 +9,7 @@ Abstract Test Suite for the Metadata (implicit) Conformance Class.
 
 | Abbreviation | Document name                       |
 | ------------ | ----------------------------------- |
+| INSPIRE <a name="ref_INSPIRE"></a> | [Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32007L0002&from=EN)
 | IR MD <a name="ref_IR_MD"></a> | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
 | TG MD <a name="ref_TG_MD"></a> | [INSPIRE Metadata Implementing Rules: Technical Guidelines based on EN ISO 19115 and EN ISO 19119, version 1.3](http://inspire.jrc.ec.europa.eu/documents/Metadata/MD_IR_and_ISO_20131029.pdf)
 | REG <a name="ref_REG"></a> | [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
@@ -24,45 +25,45 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 1      | hierachyLevel mandated               | [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3 |
-| 2      | MD_ScopeCode values                  | [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) | |
-| 3      | Resource Locator for data linkage    | [A.08.IR03.ds.linkage](A.08.IR03.ds.linkage.md) | |
-| 4      | Resource Locator for service linkage | [A.09.IR04.srv.linkage](A.09.IR04.srv.linkage.md) | |
-| 5      | Unique Resource Identifier code is mandatory | [A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md)| |
-| 6      | Use RS_Identifier if URI codeSpace provided |[A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md) | |
-| 7      | operatesOn as a reference     | [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)| |
-| 8      | Resource language is mandated        | [A.10.IR08.IR09.ds.language](A.10.IR08.IR09.ds.language.md) | |
-| 9      | ISO 19139 codes used for language    | [A.10.IR08.IR09.ds.language](A.10.IR08.IR09.ds.language.md) | |
-| 10     | Use MD_TopicCategoryCode values in topicCategory |[A.11.IR10.IR11.ds.topic](A.11.IR10.IR11.ds.topic.md) | |
-| 11     | Use language neutral name in topicCategory | [A.11.IR10.IR11.ds.topic](A.11.IR10.IR11.ds.topic.md) | |
-| 12     | Use language neutral name for serviceType | [A.12.IR12.srv.type](A.12.IR12.srv.type.md) | |
-| 13     | Provide at least one keyword         |[A.13.IR13.keyword](A.13.IR13.keyword.md) | |
-| 14     | Use theme for the only dataset keyword | [A.05.IR14.ds.keyword](A.05.IR14.ds.keyword.md) | |
-| 15     | Use category for the inly service keyword | [A.06.IR15.srv.keyword](A.06.IR15.srv.keyword.md) | |
-| 16     | Use citation for other controlled keywords | [A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) | |
-| 17     | Cite the originating controlled vocabulary |[A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) | |
-| 18     | At least title and date for controlled vocabulary citations |[A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) | |
-| 19     | Group keywords from the same controlled vocabulary | [A.15.IR19.kws-in-vocab](A.15.IR19.kws-in-vocab.md) | |
-| 20     | Use the minimum geographic bounding box  | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md) | |
-| 21     | At least two decimals for coordinates | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md) | |
-| 22     | Use at least one of INSPIRE temporal reference types | [A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) | |
-| 23     | Use at least one ISO 19115 temporal reference types |[A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) | |
-| 24     | Gregorian calendar and ISO 8601 date as defaults | not testable | |
-| 25     | Single creation date mandatory       | [A.30.IR25.resource.creation.date](A.30.IR25.resource.creation.date) | |
-| 26     | Only one dataQualityInfo             | [A.18.IR26.lineage](A.18.IR26.lineage.md) | |
-| 27     | Spatial resolution as either scale or ground sample distance | [A.18.IR27.spatial.resolution](A.18.IR27.spatial.resolution.md) | |
-| 28     | Degree of conformity mandatory       |[A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md) | |
-| 29     | Use DQ_DomainConsistency for spec. conformity |[A.20.IR29.ds.specification](A.20.IR29.ds.specification.md) | |
-| 30     | Declare both limitations on "public access" and "constraints on access and use" |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | |
-| 31     | At least one MD_Contraints even if no limitations |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | |
-| 32     | Expressing limitations on public access |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | |
-| 33     | No conditions and unknown conditions |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | |
-| 34     | Terms and conditions either embedded or linked |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | |
-| 35     | Responsible organisation name and email |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) | |
-| 36     | MD_DataIdentification and SV_ServiceIdentification for responsible party info |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) | |
-| 37     | Metadata point of contact organisation name and email | [A.25.IR37.md.contact](A.25.IR37.md.contact.md) | |
-| 38     | Metadata point of contact role code 'pointOfContact'| [A.26.IR38.md.contact.role](A.26.IR38.md.contact.role.md) | |
-| 39     | Metadata language is mandatory | [A.26.IR39.language](A.26.IR39.language.md) | |
+| 1      | hierachyLevel mandated               | [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
+| 2      | MD_ScopeCode values                  | [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
+| 3      | Resource Locator for data linkage    | [A.08.IR03.ds.linkage](A.08.IR03.ds.linkage.md) |[IR MD](#ref_IR_MD), Part B 1.4 |
+| 4      | Resource Locator for service linkage | [A.09.IR04.srv.linkage](A.09.IR04.srv.linkage.md) | [IR MD](#ref_IR_MD), Part B 1.4 |
+| 5      | Unique Resource Identifier code is mandatory | [A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md)|[IR MD](#ref_IR_MD) Part B 1.5 |
+| 6      | Use RS_Identifier if URI codeSpace provided |[A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md) | [IR MD](#ref_IR_MD) Part B 1.5 |
+| 7      | operatesOn as a reference     | [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)| [IR MD](#ref_IR_MD) Part B 1.6 |
+| 8      | Resource language is mandated        | [A.10.IR08.IR09.ds.language](A.10.IR08.IR09.ds.language.md) |[IR MD](#ref_IR_MD) Part B 1.7 |
+| 9      | ISO 19139 codes used for language    | [A.10.IR08.IR09.ds.language](A.10.IR08.IR09.ds.language.md) | [IR MD](#ref_IR_MD) Part B 1.7 |
+| 10     | Use MD_TopicCategoryCode values in topicCategory |[A.11.IR10.IR11.ds.topic](A.11.IR10.IR11.ds.topic.md) |[IR MD](#ref_IR_MD) Part B 2.1 |
+| 11     | Use language neutral name in topicCategory | [A.11.IR10.IR11.ds.topic](A.11.IR10.IR11.ds.topic.md) |[IR MD](#ref_IR_MD) Part B 2.1|
+| 12     | Use language neutral name for serviceType | [A.12.IR12.srv.type](A.12.IR12.srv.type.md) |[IR MD](#ref_IR_MD) Part B 2.2 |
+| 13     | Provide at least one keyword         |[A.13.IR13.keyword](A.13.IR13.keyword.md) |[IR MD](#ref_IR_MD) Part B 3.1 |
+| 14     | Use theme for the only dataset keyword | [A.05.IR14.ds.keyword](A.05.IR14.ds.keyword.md) |[IR MD](#ref_IR_MD) Part B 3.1  |
+| 15     | Use category for the inly service keyword | [A.06.IR15.srv.keyword](A.06.IR15.srv.keyword.md) |[IR MD](#ref_IR_MD) Part B 1.5, Article 4, part D  |
+| 16     | Use citation for other controlled keywords | [A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) |[IR MD](#ref_IR_MD) Part B  3.2|
+| 17     | Cite the originating controlled vocabulary |[A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) |[IR MD](#ref_IR_MD) Part B 3.2|
+| 18     | At least title and date for controlled vocabulary citations |[A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) |[IR MD](#ref_IR_MD) Part B 3.2 |
+| 19     | Group keywords from the same controlled vocabulary | [A.15.IR19.kws-in-vocab](A.15.IR19.kws-in-vocab.md) | [IR MD](#ref_IR_MD) Part B 3.2|
+| 20     | Use the minimum geographic bounding box  | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md) | [IR MD](#ref_IR_MD) Part B. 4.1|
+| 21     | At least two decimals for coordinates | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md) | [IR MD](#ref_IR_MD) Part B. 4.1|
+| 22     | Use at least one of INSPIRE temporal reference types | [A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) | [IR MD](#ref_IR_MD) Part B. 5.1|
+| 23     | Use at least one ISO 19115 temporal reference types |[A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) |[IR MD](#ref_IR_MD) Part B. 5.1 |
+| 24     | Gregorian calendar and ISO 8601 date as defaults | not testable | [IR MD](#ref_IR_MD) Part B 5 |
+| 25     | Single creation date mandatory       | [A.30.IR25.resource.creation.date](A.30.IR25.resource.creation.date) | [IR MD](#ref_IR_MD) Part B 5.4|
+| 26     | Only one dataQualityInfo             | [A.18.IR26.lineage](A.18.IR26.lineage.md) |[IR MD](#ref_IR_MD) Part B. 2.6 |
+| 27     | Spatial resolution as either scale or ground sample distance | [A.18.IR27.spatial.resolution](A.18.IR27.spatial.resolution.md) | [IR MD](#ref_IR_MD) Part B. 2.6|
+| 28     | Degree of conformity mandatory       |[A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md) | [IR MD](#ref_IR_MD) Part B. 2.8|
+| 29     | Use DQ_DomainConsistency for spec. conformity |[A.20.IR29.ds.specification](A.20.IR29.ds.specification.md) | [IR MD](#ref_IR_MD) Part B. 7.2|
+| 30     | Declare both limitations on "public access" and "constraints on access and use" |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | [INSPIRE](#ref_INSPIRE), Article 13|
+| 31     | At least one MD_Contraints even if no limitations |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | - |
+| 32     | Expressing limitations on public access |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | - |
+| 33     | No conditions and unknown conditions |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
+| 34     | Terms and conditions either embedded or linked |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
+| 35     | Responsible organisation name and email |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) |[IR MD](#ref_IR_MD) Part B. 3.5 |
+| 36     | MD_DataIdentification and SV_ServiceIdentification for responsible party info |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) | [IR MD](#ref_IR_MD) Part B. 3.5 |
+| 37     | Metadata point of contact organisation name and email | [A.25.IR37.md.contact](A.25.IR37.md.contact.md) |[IR MD](#ref_IR_MD) Part B. 10.1 |
+| 38     | Metadata point of contact role code 'pointOfContact'| [A.26.IR38.md.contact.role](A.26.IR38.md.contact.role.md) | - |
+| 39     | Metadata language is mandatory | [A.26.IR39.language](A.26.IR39.language.md) | [IR MD](#ref_IR_MD) Part B. 10.3|
 
 ## Test
 

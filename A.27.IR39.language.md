@@ -12,7 +12,7 @@ The test first check is if a [gmd:LanguageCode](#lang) object is given at gmd:la
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) Chap. 2.11.3, Req 39
-* ISO 639-2
+* [IR MD](README.md#ref_IR_MD) Part B. 10.3
 
 **Test type:** Automated
 

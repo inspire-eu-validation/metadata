@@ -12,6 +12,7 @@ The test checks if there is an element of type gco:Date at [dateStamp](#dateStam
 **Reference(s)**
 
 * [TG MD](./README.md#ref_TG_MD) Chap. 2.11.2
+* [IR MD](README.md#ref_IR_MD) Part B. 10.2
 
 **Test type:** Automated
 

@@ -20,6 +20,7 @@ corresponding fees shall be provided through this element or a link
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.9.2, Req 33,34
+* [IR MD](README.md#ref_IR_MD) Part B. 8.2
 
 **Test type:** Automated
 

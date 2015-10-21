@@ -3,7 +3,6 @@
 **Purpose**: Type of the cited resource must be provided
 
 **Prerequisites**
-
 * [A.01.validate](A.01.validate.md) must be passed
 
 **Test method**

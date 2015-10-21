@@ -26,6 +26,7 @@ if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}]
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.2.4, Req 3
+* [IR MD](README.md#ref_IR_MD) Part B. 1.4
 
 **Test type:** Automated
 

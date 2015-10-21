@@ -13,6 +13,7 @@ Checks if an [abstract](#abstract) is present and not an [empty characterstring]
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), Chap. 2.2.2
+* [IR MD](./README.md#ref_IR_MD), Part B 1.1
 
 **Test type:** Automated
 

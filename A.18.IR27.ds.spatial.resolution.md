@@ -12,6 +12,7 @@ Each spatialResolution element must contain either an equivalent scale or a dist
 **Reference(s)**	 
 
 * [TG MD](README.md#ref_TG_MD), Req 27
+* [IR MD](README.md#ref_IR_MD) Part B. 6.2
 
 **Test type:** Automated
 

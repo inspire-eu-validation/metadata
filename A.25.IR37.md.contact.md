@@ -14,6 +14,7 @@ The test first checks if a [contact](#contact) element is given. It then perform
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) 2.11.1, Req 37
+* [IR MD](README.md#ref_IR_MD) Part B. 10.1
 
 **Test type:** Automated
 

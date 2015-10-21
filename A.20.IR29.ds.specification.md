@@ -15,6 +15,7 @@ It then performs the following checks
 **Reference(s)**
 
 * [TG MD](./README.md#ref_TG_MD), 2.8.2, Req 29
+* [IR MD](README.md#ref_IR_MD) Part B. 7.2
 
 **Test type:** Automated
 

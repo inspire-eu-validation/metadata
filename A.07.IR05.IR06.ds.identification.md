@@ -18,6 +18,7 @@ If the type of the resource is not dataset or series, this test is omitted.
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.2.5, Req 5 & 6
+* [IR MD](README.md#ref_IR_MD) Part B. 1.5
 * [ISO 19115](README.md#ref_ISO_19115), B.2.7.3
 
 **Test type:** Automated

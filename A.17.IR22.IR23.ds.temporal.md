@@ -19,6 +19,7 @@ The test will fail if and only if all of the above checks evaluate to false.
 * [ISO 19108](README.md#ref_ISO_19108)
 * [ISO 8601](README.md#ref_ISO_8601)
 * [TG MD](./README.md#ref_TG_MD) Chap. 2.6.1 - 2.6.4, Req 22 & 23
+* [IR MD](README.md#ref_IR_MD) Part B. 5.1
 
 **Test type:** Automated
 

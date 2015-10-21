@@ -14,8 +14,7 @@ If the type of the resource is not service, this test is omitted.
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.2.3, Req 15
-* [ID MD](README.md#ref_IR_MD), Article 4, part D
-
+* [IR MD](README.md#ref_IR_MD) Part B. 1.5, Article 4, part D
 
 **Test type:** Automated
 

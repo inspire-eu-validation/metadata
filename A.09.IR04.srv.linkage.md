@@ -26,6 +26,7 @@ Any of the onlineresources should be checked if it [resolves](./README.md#resolv
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.2.6, Req 4
+* [IR MD](README.md#ref_IR_MD) Part B. 1.4
 
 **Test type:** Automated
 

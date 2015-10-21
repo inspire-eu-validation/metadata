@@ -17,6 +17,7 @@ If the type of the resource was not service, this test is omitted.
 **Reference(s)**
 
 * [TG MD](./README.md#ref_TG_MD), 1.3.1 & 2.3.2, Req 12
+* [IR MD](README.md#ref_IR_MD) Part B. 2.2
 * http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType
 
 **Test type**: Automated
