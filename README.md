@@ -51,7 +51,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | 24     | Gregorian calendar and ISO 8601 date as defaults | not testable | [IR MD](#ref_IR_MD) Part B 5 |
 | 25     | Single creation date mandatory       | [A.30.IR25.resource.creation.date](A.30.IR25.resource.creation.date) | [IR MD](#ref_IR_MD) Part B 5.4|
 | 26     | Only one dataQualityInfo             | [A.18.IR26.lineage](A.18.IR26.lineage.md) |[IR MD](#ref_IR_MD) Part B. 2.6 |
-| 27     | Spatial resolution as either scale or ground sample distance | [A.18.IR27.spatial.resolution](A.18.IR27.spatial.resolution.md) | [IR MD](#ref_IR_MD) Part B. 2.6|
+| 27     | Spatial resolution as either scale or ground sample distance | [A.30.IR27.spatial.resolution](A.30.IR27.spatial.resolution.md) | [IR MD](#ref_IR_MD) Part B. 2.6|
 | 28     | Degree of conformity mandatory       |[A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md) | [IR MD](#ref_IR_MD) Part B. 2.8|
 | 29     | Use DQ_DomainConsistency for spec. conformity |[A.20.IR29.ds.specification](A.20.IR29.ds.specification.md) | [IR MD](#ref_IR_MD) Part B. 7.2|
 | 30     | Declare both limitations on "public access" and "constraints on access and use" |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | [INSPIRE](#ref_INSPIRE), Article 13|
@@ -87,7 +87,7 @@ This Conformance Class contains the following tests:
 | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md)           | Ready for review  |
 | [A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md)       | Ready for review  |
 | [A.18.IR26.ds.lineage](A.18.IR26.ds.lineage.md)                   | Ready for review  |
-| [A.18.IR27.ds.spatial.resolution](A.18.IR27.ds.spatial.resolution.md) | Ready for review  |
+| [A.30.IR27.ds.spatial.resolution](A.30.IR27.ds.spatial.resolution.md) | Ready for review  |
 | [A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md)             | Ready for review  |
 | [A.20.IR29.ds.specification](A.20.IR29.ds.specification.md)       | Ready for review  |
 | [A.21.IR30.IR31.IR32.ds.public.access.md](A.21.IR30.IR31.IR32.ds.public.access.md) | Ready for review  |
