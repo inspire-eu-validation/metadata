@@ -97,7 +97,7 @@ This Conformance Class contains the following tests:
 | [A.27.IR39.language](A.27.IR39.language.md)                       | Ready for review  |
 | [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)   | Ready for review  
 | [A.30.IR27.ds.spatial.resolution](A.30.IR27.ds.spatial.resolution.md) | Ready for review  |
-| [A.31.IR25.resource.creation.date](A.31.IR25.resource.creation.date) | missing |
+| [A.31.IR25.resource.creation.date](A.31.IR25.resource.creation.date) | Ready for review |
 
 Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are separated from above because they have a different timeline for implementation.
 
