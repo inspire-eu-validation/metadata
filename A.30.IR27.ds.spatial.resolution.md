@@ -1,4 +1,4 @@
-#A.18.IR27.spatial.resolution
+#A.18.IR27.ds.spatial.resolution
 
 **Purpose**: If the type of the resource was dataset or series, Each [spatial resolution](#spatialResolution) is either an [equivalentScale](#equivalentScale) OR a ground sample [distance](#distance).
 
