@@ -74,7 +74,7 @@ This Conformance Class contains the following tests:
 | [A.01.validate](A.01.validate.md)  	                              | Ready for review  |
 | [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md)           | Ready for review  |
 | [A.05.IR14.ds.keyword](A.05.IR14.ds.keyword.md)                   | Ready for review  |
-| [A.06.IR15.srv.keyword](A.06.15.srv.keyword.md)                   | Ready for review  |
+| [A.06.IR15.srv.keyword](A.06.IR15.srv.keyword.md)                   | Ready for review  |
 | [A.07.IR05.IR06.ds.identification](A.07.IR05.IR06.ds.identification.md) | Ready for review  |
 | [A.08.IR03.ds.linkage](A.08.IR03.ds.linkage.md)                   | Ready for review  |
 | [A.09.IR04.srv.linkage](A.09.IR04.srv.linkage.md)                 | Ready for review  |
