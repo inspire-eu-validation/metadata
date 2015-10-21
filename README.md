@@ -49,7 +49,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | 22     | Use at least one of INSPIRE temporal reference types | [A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) | [IR MD](#ref_IR_MD) Part B. 5.1|
 | 23     | Use at least one ISO 19115 temporal reference types |[A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md) |[IR MD](#ref_IR_MD) Part B. 5.1 |
 | 24     | Gregorian calendar and ISO 8601 date as defaults | not testable | [IR MD](#ref_IR_MD) Part B 5 |
-| 25     | Single creation date mandatory       | [A.30.IR25.resource.creation.date](A.30.IR25.resource.creation.date) | [IR MD](#ref_IR_MD) Part B 5.4|
+| 25     | Single creation date mandatory       | [A.31.IR25.resource.creation.date](A.31.IR25.resource.creation.date) | [IR MD](#ref_IR_MD) Part B 5.4|
 | 26     | Only one dataQualityInfo             | [A.18.IR26.lineage](A.18.IR26.lineage.md) |[IR MD](#ref_IR_MD) Part B. 2.6 |
 | 27     | Spatial resolution as either scale or ground sample distance | [A.30.IR27.spatial.resolution](A.30.IR27.spatial.resolution.md) | [IR MD](#ref_IR_MD) Part B. 2.6|
 | 28     | Degree of conformity mandatory       |[A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md) | [IR MD](#ref_IR_MD) Part B. 2.8|
@@ -87,7 +87,6 @@ This Conformance Class contains the following tests:
 | [A.16.IR20.IR21.ds.bounds](A.16.IR20.IR21.ds.bounds.md)           | Ready for review  |
 | [A.17.IR22.IR23.ds.temporal](A.17.IR22.IR23.ds.temporal.md)       | Ready for review  |
 | [A.18.IR26.ds.lineage](A.18.IR26.ds.lineage.md)                   | Ready for review  |
-| [A.30.IR27.ds.spatial.resolution](A.30.IR27.ds.spatial.resolution.md) | Ready for review  |
 | [A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md)             | Ready for review  |
 | [A.20.IR29.ds.specification](A.20.IR29.ds.specification.md)       | Ready for review  |
 | [A.21.IR30.IR31.IR32.ds.public.access.md](A.21.IR30.IR31.IR32.ds.public.access.md) | Ready for review  |
@@ -97,7 +96,8 @@ This Conformance Class contains the following tests:
 | [A.26.IR38.md.contact.role](A.26.IR38.md.contact.role.md)         | Ready for review  |
 | [A.27.IR39.language](A.27.IR39.language.md)                       | Ready for review  |
 | [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)   | Ready for review  
-| [A.30.IR25.resource.creation.date](A.30.IR25.resource.creation.date) | missing |
+| [A.30.IR27.ds.spatial.resolution](A.30.IR27.ds.spatial.resolution.md) | Ready for review  |
+| [A.31.IR25.resource.creation.date](A.31.IR25.resource.creation.date) | missing |
 
 Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are separated from above because they have a different timeline for implementation.
 
