@@ -55,14 +55,14 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | 28     | Degree of conformity mandatory       |[A.19.IR28.ds.conformity](A.19.IR28.ds.conformity.md) | [IR MD](#ref_IR_MD) Part B. 2.8|
 | 29     | Use DQ_DomainConsistency for spec. conformity |[A.20.IR29.ds.specification](A.20.IR29.ds.specification.md) | [IR MD](#ref_IR_MD) Part B. 7.2|
 | 30     | Declare both limitations on "public access" and "constraints on access and use" |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | [INSPIRE](#ref_INSPIRE), Article 13|
-| 31     | At least one MD_Contraints even if no limitations |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | - |
-| 32     | Expressing limitations on public access |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | - |
+| 31     | At least one MD_Contraints even if no limitations |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | n/a |
+| 32     | Expressing limitations on public access |[A.21.IR30.IR31.IR31.ds.public.access](A.21.IR30.IR31.IR31.ds.public.access.md) | n/a |
 | 33     | No conditions and unknown conditions |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
 | 34     | Terms and conditions either embedded or linked |[A.22.IR33.IR34.ds.access](A.22.IR33.IR34.ds.access.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
 | 35     | Responsible organisation name and email |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) |[IR MD](#ref_IR_MD) Part B. 3.5 |
 | 36     | MD_DataIdentification and SV_ServiceIdentification for responsible party info |[A.23.IR35.IR36.responsible.party.contact.info](A.23.IR35.IR36.responsible.party.contact.info.md) | [IR MD](#ref_IR_MD) Part B. 3.5 |
 | 37     | Metadata point of contact organisation name and email | [A.25.IR37.md.contact](A.25.IR37.md.contact.md) |[IR MD](#ref_IR_MD) Part B. 10.1 |
-| 38     | Metadata point of contact role code 'pointOfContact'| [A.26.IR38.md.contact.role](A.26.IR38.md.contact.role.md) | - |
+| 38     | Metadata point of contact role code 'pointOfContact'| [A.26.IR38.md.contact.role](A.26.IR38.md.contact.role.md) | n/a |
 | 39     | Metadata language is mandatory | [A.26.IR39.language](A.26.IR39.language.md) | [IR MD](#ref_IR_MD) Part B. 10.3|
 
 ## Test
