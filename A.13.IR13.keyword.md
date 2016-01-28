@@ -11,7 +11,7 @@ The test checks if one keyword element is given and not .
 
 **Reference(s)**	 
 
-* [TG MD](./README.md#ref_TG_MD), 2.4.1, Req 13
+* [TG MD](./README.md#ref_TG_MD), 2.4, Req 13
 * [IR MD](README.md#ref_IR_MD) Part B. 3.1
 
 **Test type:** Automated
