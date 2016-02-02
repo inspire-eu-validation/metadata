@@ -19,7 +19,7 @@ The test checks if there is an element of type gco:Date at [dateStamp](#dateStam
 **Notes**
 
 The metadata date is not explicitly a requirement in the TG, but it's still mentioned as "Mandatory" INSPIRE element(?).
-
+This is mandatory in ISO 19115, and is therefore implicit in [A.01.validate]
 **Contextual XPath references**
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
