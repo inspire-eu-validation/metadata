@@ -9,17 +9,19 @@ valid URL providing one of the following:
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* the hierarchylevel of resource should be "service" 
 
 **Test method**
 
-If the type of the resource is not service, this test is omitted.
+The test first checks if a linkage is provided. If none is given, the test will complete successfully.
 
-Any of the onlineresources should be checked if it [resolves](./README.md#resolve)
-* if wm(t)s/wfs/wcs; in one of the featuretypes/layers in the capabilities there should be a link back to the metadata, it should be the same metadata.
-* if atom: ... <!-- todo: -->
-* if soap: ... <!-- todo: -->
+If one or more are provided. For each linkage the test checks if the linkage element contains an element of type gmd:URL.
+The URL is resolved.
 
-Either a link to a web with further instructions or a link to a client application are not machine testable
+If the response indicates a linkage is a service capabilities or WSDL document, some basic params in the service response are analysed. Else a final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions or a client application that directly accesses the service).
+
+Any service response should be checked if it provides proper linkage. The service wsdl or capabilities document should have a featuretype that shares the resource unique identification
+if WMS/WMTS/WFS, the link is in //layer[identifier={id}&&@authority={codespace}] if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}] 
 
 **Reference(s)**	 
 
