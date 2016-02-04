@@ -26,12 +26,12 @@ these metadata elements:
 
 **Test method**
 
-Four types of [constraints](#resourceConstraints) may occur: gmd:accessConstraints (1), gmd:otherConstraints (2), gmd:classification (3) and gmd:useLimitation (4). The following actions are performed for each one of the possible types:
-* The element must have an element at gmd:MD_RestrictionCode[@codeListValue=x], where x is of type MD_RestrictionCode as defined in [ISO 19115, chapter B.5.24](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode).
-* The element is free text and not [empty characterstring](./README.md#emptychar)
-* The element must have an element at gmd:MD_ClassificationCode[@codeListValue=x], where x is of type MD_ClassificationCode as defined in [ISO 19115, chapter B.5.24](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ClassificationCode).
+Check whether at least one of the elements available inside [gmd:resourceConstraints](#resourceConstraints) passes at least one of the following checks:
+* Check whether it contains an element accessConstraints of type gmd:MD_RestrictionCode[@codeListValue=x], where x is of type MD_RestrictionCode as defined in [ISO 19115, chapter B.5.24](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_RestrictionCode).
+If x is “otherRestrictions” check also whether the element inside [gmd:resourceConstraints](#resourceConstraints) contains an element otherConstraints of type CharacterString and which is not an [empty characterstring](./README.md#emptychar). 
+* Check whether it contains an element classification of type gmd:MD_ClassificationCode[@codeListValue=x], where x is of type MD_ClassificationCode as defined in [ISO 19115, chapter B.5.24](http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#MD_ClassificationCode).
 
-If none of the four elements is found, the test fails.
+If none of the elements inside [gmd:resourceConstraints](#resourceConstraints) passes at least one of the checks, the test fails.
 
 **Reference(s)**	 
 
