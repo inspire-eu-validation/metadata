@@ -12,7 +12,8 @@ The four types of which one must be provided are Temporal extent, Date of public
 *	Is a valid [date](#date) of publication given at [dateType](#dateType)='publication'
 *	Is a valid [date](#date) of last revision given at [dateType](#dateType)='revision'
 *	Is a valid [date](#date) of creation given at [dateType](#dateType)='creation'
-The test will fail if and only if all of the above checks evaluate to false.
+
+The test will fail if and only if at least one check among date of publication, date of last revision or date of creation doesn’t evaluate to true.
 
 **Reference(s)**
 

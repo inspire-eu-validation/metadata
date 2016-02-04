@@ -7,7 +7,7 @@
 
 **Test method**
 
-The test checks if a [useLimitation](#useLimitation) element is provided.
+The test checks if a [useLimitation](#useLimitation) element is provided and it is not an [empty characterstring](./README.md#emptychar).
 
 If no conditions apply to the access and use of the resource, "no
 conditions apply" shall be used. If conditions are unknown, "conditions
