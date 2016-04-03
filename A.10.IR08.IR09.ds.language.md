@@ -1,14 +1,16 @@
 #A.10.IR08.IR09.ds.language
 
-**Purpose**: If the type of the resource was dataset or series and the resource contains textual information, a resource language must be given.
+**Purpose**: If the type of the resource is dataset or series, a resource language must be given.
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* [A.04.IR01.IR02.hierarchy] (A.04.IR01.IR02.hierarchy.md) contains "dataset" or "series"
 
 **Test method**
 
 The test first checks if a [gmd:LanguageCode](#langcode) object is given  and contains a codeList and codeListValue attribute.
-It is then checked if the codeListValue attribute contains a valid 3-letter language code according to ISO/TS 19139.
+It is then checked if the codeListValue attribute contains a valid 3-letter language code according to http://www.loc.gov/standards/iso639-2/.
+
 If the type of the resource is not dataset or series, this test is omitted.
 
 **Reference(s)**	 
