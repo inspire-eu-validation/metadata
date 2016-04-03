@@ -4,6 +4,7 @@
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) should contain "service"
 
 **Test method**
 
