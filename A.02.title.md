@@ -1,6 +1,6 @@
 #A.02.title
 
-**Purpose**: The title by which the cited resource is known
+**Purpose**: Checks that a resource title is provided
 
 **Prerequisites**
 
