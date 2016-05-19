@@ -7,13 +7,11 @@
 
 **Test method**
 
-The test performs the following check for each vocabulary:
+The test performs the following check for each [vocabulary](#thesaurus):
 * the node must contain a title at ./gmd:CI_Citation/gmd:title and should not be an [empty characterstring](./README.md#emptychar)
 * the node must contain a date at /gmd:CI_Citation/gmd:date/*/gmd:date/gco:Date
 * the node must contain a dateType element at /gmd:CI_Citation/gmd:date/*/gmd:dateType which contains text that equals one of publication, revision or creation.
 
-Validating if the keyword is actually available in the indicated vocabulary is a challenge, since the vocabulary is usually not referenced by a URL.
-If a vocabulary is indicated that is available to the validator, then this check can be performed.
 
 **Reference(s)**	 
 
