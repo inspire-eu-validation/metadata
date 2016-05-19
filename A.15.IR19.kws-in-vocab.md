@@ -8,16 +8,13 @@ shall be grouped in a single instance
 
 **Test method**
 
-In order to be consistent with ISO 19115, all the keyword values
-originating from a single version of a single controlled vocabulary
-shall be grouped in a single instance of the ISO 19115
-descriptiveKeywords property.
+1. For each [descriptiveKeywords](#keyword) element, the referenced controlled vocabulary should be unique
+2. Each referenced controlled vocabulary must appear in at most one [descriptiveKeywords](#keyword) element
 
-For each [descriptiveKeywords](#keyword) element, the referenced controlled vocabulary should be unique
 
 **Reference(s)**	 
 
-* [TG MD](./README.md#ref_TG_MD) Req 19
+* [TG MD](./README.md#ref_TG_MD) 2.4.2, Req 19
 * [IR MD](README.md#ref_IR_MD) Part B. 3.2
 
 **Test type:** Automated
