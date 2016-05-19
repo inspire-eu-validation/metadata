@@ -9,7 +9,8 @@
 
 The test first checks if there is at least one element at gmd:identificationInfo/*/gmd:pointOfContact. Furthermore, the following checks are performed
 *	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:organisationName
-*	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:contactInfo/*/gmd:address/*/gmd:electronicMailAddress
+*	There must not be an [empty characterstring](./README.md#emptychar) at ./gmd:contactInfo/*/gmd:address/*/gmd:electronicMailAddress. Check [electronicMailAddress](#electronicMailAddress) with the regular expresion ^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$.
+If the string does not match the regular expression, the test fails (note: regex built for case insensitive match).
 
 **Reference(s)**	 
 
@@ -28,3 +29,5 @@ Abbreviation                                   |  XPath expression (relative to 
 -----------------------------------------------| -------------------------------------------------------------------------
 
 <a name="CI_ResponsibleParty"></a> CI_ResponsibleParty   | ./gmd:identificationInfo/*/gmd:pointOfContact/*/gmd:CI_ResponsibleParty
+<a name="organisationName"></a> Organisation Name |./gmd:organisationName
+<a name="electronicMailAddress"></a> Electronic Mail Address  |./gmd:contactInfo//gmd:address//gmd:electronicMailAddress
