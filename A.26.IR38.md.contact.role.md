@@ -12,7 +12,7 @@
 
 **Reference(s)**
 
-* [TG MD](./README.md#ref_TG_MD) 2.11.2, Req 38
+* [TG MD](./README.md#ref_TG_MD) 2.11.1, Req 38
 * [ISO 19115](README.md#ref_ISO_19115)
 
 **Test type:** Automated
