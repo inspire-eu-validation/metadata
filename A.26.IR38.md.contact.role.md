@@ -8,7 +8,6 @@
 **Test method**
 
 * Check that the metadata record contains the [RoleCode](#roleCode) element under contact.
-* Check that the attribute [codeList](#codeList) has value "http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode"
 * Check that the attribute [codeListValue](#codeListValue) has value "pointOfContact".
 
 **Reference(s)**
