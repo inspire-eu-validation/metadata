@@ -4,6 +4,7 @@
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* [A.13.IR13.keyword](A.13.IR13.keyword.md) must be passed
 
 **Test method**
 
