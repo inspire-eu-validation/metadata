@@ -26,7 +26,7 @@ pointOfContact", but it refers to SC16, which seems to mandate a fixed value:
 
 Open questions:
 
-* The the codeList URL above the only approved way to refer to the CI_RoleCode codelist?
+* Is the codeList URL above the only approved way to refer to the CI_RoleCode codelist?
 * Does the string value of the [RoleCode](#roleCode) element have any significance? Does it have to also be "pointOfContact" or can it be missing entirely?
 
 ##Contextual XPath references
