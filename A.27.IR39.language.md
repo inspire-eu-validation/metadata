@@ -7,7 +7,7 @@
 
 **Test method**
 
-The test first check is if a [gmd:LanguageCode](#lang) object is given at gmd:language and contains a codeListValue attribute. It is then checked if the codeListValue attribute contains a valid 3-letter language code according to [ISO 639-2](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+The test first check is if a [gmd:LanguageCode](#lang) object is given at gmd:language and contains a codeListValue attribute. It is then checked if the codeListValue attribute contains a valid 3-letter language code according to [ISO 639-2/B](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
 
 **Reference(s)**	 
 
