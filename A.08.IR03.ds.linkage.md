@@ -5,23 +5,22 @@ If the referenced resource is recognized as a Network Service, it checks whether
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) must be passed
 
 **Test method**
 
-The test first checks if a [linkage](#online) is provided. If none is given, the test will complete successfully.
+The test checks if a [linkage](#online) is provided.
+If none is given, the test will complete successfully.
+If one or more are provided, for each [linkage](#online) the test checks:
 
-If one or more are provided. For each linkage the test checks if the linkage element contains an element of type gmd:URL.
+* if the [linkage](#online) element contains an element of type gmd:URL.
+* if the element content is a syntactically correct URL
+* if the referenced resource is accessible.
+* if the response identifies the [linkage](#online) as a Harmonised Spatial Data Service or a Network Service, the test checks if appropriate [linkage](#online) to dataset is available.
+The [linkage](#online) is established via the Metadata URL for WMS, WFS and Atom based services.
 
-The URL is [resolved](./README.md#resolve).
+A final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions or a client application that directly accesses the service).
 
-If the response indicates a linkage is a service capabilities or WSDL document, some basic params in the service response are analysed.
-Else a final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions
-or a client application that directly accesses the service).
-
-Any service response should be checked if it provides proper linkage. The service wsdl or capabilities document should have a featuretype that shares the [resource unique identification](A.07.IR05.IR06.ds.identification.md)
-
-if WMS/WMTS/WFS, the link is in //layer[identifier={id}&&@authority={codespace}]
-if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}]
 
 **Reference(s)**	 
 
