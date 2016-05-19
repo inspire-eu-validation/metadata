@@ -5,6 +5,7 @@ rules on interoperability of spatial data sets and services.
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) must be passed. The outcome has to be 'service' or 'dataset'.
 
 **Test method**
 
