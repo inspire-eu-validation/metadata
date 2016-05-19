@@ -9,8 +9,9 @@
 
 The test first checks if there is at least one [specification](#specification). In case there is none, a warning is thrown.
 It then performs the following checks
-*	The specification must contain an element of type gmd:CI_Citation/gmd:title which should not be an [empty characterstring](./README.md#emptychar)
-*	The specification must contain an element of type gmd:CI_Citation/gmd:date[./*/gmd:dateType/*/text()='{type}']/*/gmd:date, where {type} is one of creation, revision and publication.
+*	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:title which should not be an [empty characterstring](./README.md#emptychar)
+*	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:date[./*/gmd:dateType/*/text()='{type}']/*/gmd:date, where {type} is one of creation, revision and publication.
+*	The [specification](#specification) has gmd:DQ_DomainConsistency as a parent element.
 
 **Reference(s)**
 
