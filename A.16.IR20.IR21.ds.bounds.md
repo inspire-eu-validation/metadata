@@ -1,4 +1,4 @@
-#A.16.IR20.IR21.ds.bounds
+#A.16.IR21.ds.bounds
 
 **Purpose**: A geographic bounding box must be given and it should be as small as possible
 
@@ -17,13 +17,13 @@ Check if it's a valid geographic [extend](#extent). It is described by 4 element
 *	Is a correctly formatted northBoundLongitude given at gmd:northBoundLongitude/gco:Decimal.
 *	Is the following constraint given: southBoundLatitude ≤ northBoundLatitude ≤ 90.00;
 
-The bounding box shall be as small as possible. Quite hard to honour. Data should be downloaded and a minimal bounds could be calculated and compared to the indicated bounds.
+The bounding box shall be as small as possible. Quite hard to honour.
 
 The bounding box shall be expressed in decimal degree with a precision of at least 2 decimals.
 
 **Reference(s)**	 
 
-* [TG MD](./README.md#ref_TG_MD) 2.5.1, Req 20 & 21
+* [TG MD](./README.md#ref_TG_MD) 2.5.1, Req 21
 * [IR MD](README.md#ref_IR_MD) Part B. 4.1
 
 **Test type:** Automated
