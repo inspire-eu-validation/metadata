@@ -1,7 +1,7 @@
 #A.08.IR03.ds.linkage
 
-**Purpose**: If a linkage is available, a resource locator must be given.
-If the resource is a service, the linkage should be checked.
+**Purpose**: This test checks each resource locator URL to see if it is syntactically correct and if the resource it references can be accessed, in order to determine its type.
+If the referenced resource is recognized as a Network Service, it checks whether the linkage to the dataset is declared and implemented.
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
