@@ -20,6 +20,7 @@ Then, the test evaluate whether the element [gmd:DQ_ConformanceResult](#Conforma
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD),2.8.1, Req 28
+* [TG MD](./README.md#ref_TG_MD),2.8
 * [IR MD](README.md#ref_IR_MD) Part B. 2.8
 * [ISO 19115] (README.md#user-content-ref_ISO_19115)
 
