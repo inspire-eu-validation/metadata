@@ -8,10 +8,11 @@
 * [A.15.IR19.kws-in-vocab](A.15.IR19.kws-in-vocab.md) must be passed
 * [A.26.IR39.language](A.26.IR39.language.md) must be passed
 * [A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) must be passed
+* [A.04.IR01.IR02.hierarchy.md](A.04.IR01.IR02.hierarchy.md) must be passed
 
 **Test method**
 
-If the resource type is not dataset or series, this test is omitted.
+If the resource type ([hierarchyLevel](#hierarchyLevel)) is not dataset or series, this test is omitted.
 
 The test should check whether a descriptiveKeywords block exists which references http://www.eionet.europa.eu/gemet/inspire_themes. If a block is referencing that thesaurus the test should check if at least one [keyword](#keyword) is available and it matches with a concept in the thesaurus, in the language of the metadata OR using a language neutral URI. 
 
@@ -40,3 +41,4 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="keyword"></a> keyword   | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword
 <a name="CI_Citation"></a> CI_Citation  | gmd:identificationInfo/*/gmd:CI_Citation
 <a name="title"></a> title  | gmd:identificationInfo/*/gmd:CI_Citation/gmd:title
+<a name="hierarchyLevel"></a> hierarchyLevel  | ./gmd:hierarchyLevel/*/@codeListValue
