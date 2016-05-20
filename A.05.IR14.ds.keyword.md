@@ -29,6 +29,8 @@ If at least one descriptiveKeywords block references INSPIRE GEMET and at least 
 
 **Notes**
 
+Currently, the INSPIRE Geoportal looks for a case-insenstitive match of 'GEMET' in the [title](#title) of a [CI_Citation](#CI_Citation) to determine whether the GEMET Thesaurus is referenced.
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
@@ -36,3 +38,5 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="keyword"></a> keyword   | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword
+<a name="CI_Citation"></a> CI_Citation  | gmd:identificationInfo/*/gmd:CI_Citation
+<a name="title"></a> title  | gmd:identificationInfo/*/gmd:CI_Citation/gmd:title
