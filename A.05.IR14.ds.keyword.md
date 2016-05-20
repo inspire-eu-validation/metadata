@@ -7,6 +7,7 @@
 * [A.13.IR13.keyword](A.13.IR13.keyword.md) must be passed
 * [A.15.IR19.kws-in-vocab](A.15.IR19.kws-in-vocab.md) must be passed
 * [A.26.IR39.language](A.26.IR39.language.md) must be passed
+* [A.14.IR16.IR17.IR18.vocab](A.14.IR16.IR17.IR18.vocab.md) must be passed
 
 **Test method**
 
