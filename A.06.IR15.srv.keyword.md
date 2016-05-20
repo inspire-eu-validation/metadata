@@ -5,16 +5,17 @@
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
 * [A.13.IR13.keyword](A.13.IR13.keyword.md) must be passed
+* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) must be passed
 
 **Test method**
 
-If the resource is a service, at least one [keyword](#keyword) must originate from [EU commission regulation No. 1205/2008, Annex part D, No. 4.](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory)
+If the resource is a service, at least one [keyword](#keyword) must originate from [EU commission regulation No. 1205/2008, Annex part D, No. 4.](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory). The keyword must match the language neutral name
 
 If the type of the resource is not service, this test is omitted.
 
 **Reference(s)**	 
 
-* [TG MD](./README.md#ref_TG_MD), 2.2.3, Req 15
+* [TG MD](./README.md#ref_TG_MD), 2.4, Req 15
 * [IR MD](README.md#ref_IR_MD) Part B. 1.5, Article 4, part D
 
 **Test type:** Automated
