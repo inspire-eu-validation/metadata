@@ -4,16 +4,11 @@
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) must be passed
 
 **Test method**
 
-The test first checks if a unique [identifier](#identifier) is given and if it is of type MD_Identifier or RS_Identifier.
-The contained code element may not be empty.
-
-* In case of RS_identifier, the codespace element should not be empty.
-* In case of MD_identifier, discussion is ongoing on how to match this element against a namespace-identifier in a capabilities document/service metadata.
-
-If the type of the resource is not dataset or series, this test is omitted.
+If the type of the resource is dataset or series, it is checked whether at least one unique [identifier](#identifier) is given. For each gmd:identifier block, a check is performed to see whether it is of type MD_Identifier or RS_Identifier. The contained code element must not be an empty characterstring. In case of RS_identifier, the codespace element is not an empty characterstring either.
 
 **Reference(s)**	 
 
