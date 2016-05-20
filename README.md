@@ -143,7 +143,7 @@ can give an indication of the availability of the document without fully downloa
   * [A.02.title](A.02.title.md)
   * [A.03.abstract](A.03.abstract.md)
   * [A.24.responsible.party.role](A.24.responsible.party.role.md)
-  * [A.28.md.creation.date](A.28.md.creation.date.md)
+ 
 
 Should these be excluded or included in the ATS? Or added as requirements in the [TG MD](#ref_TG_MD)?
 
