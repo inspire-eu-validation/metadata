@@ -8,7 +8,7 @@
 
 **Test method**
 
-Validates if a [title](#title) is provided and not an [empty characterstring](./README.md#emptychar)
+If [A.01.validate](A.01.validate.md) is passed, no further checks are required.
 
 **Reference(s)**	 
 
