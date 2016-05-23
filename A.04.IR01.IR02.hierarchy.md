@@ -1,13 +1,19 @@
 #A.04.IR01.IR02.hierarchy
 
-**Purpose**: Type of the cited resource must be provided
+**Purpose**: Checks that a resource type is provided
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
 
 **Test method**
 
+<<<<<<< HEAD
 Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is taken from the list of [valid values](#validvalues), i.e. 'dataset', 'series' or 'service'.
+=======
+Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is taken from the [MD_ScopeCode]() codelist.
+
+The test succeeds if the value is either 'dataset', 'service' or 'series'
+>>>>>>> origin/ats-issue-resolution
 
 # Context
 
@@ -15,6 +21,7 @@ Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is
 
 * [IR MD](./README.md#ref_IR_MD), Part B 1.3, Part D 1
 * [TG MD](./README.md#ref_TG_MD),2.2.3, Req 1 & 2
+* [ISO 19115](./README.md#ref_ISO_19115) table B.5.25 MD_ScopeCode 
 
 **Test type:** Automated
 
