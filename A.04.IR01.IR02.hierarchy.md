@@ -7,13 +7,7 @@
 
 **Test method**
 
-<<<<<<< HEAD
 Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is taken from the list of [valid values](#validvalues), i.e. 'dataset', 'series' or 'service'.
-=======
-Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is taken from the [MD_ScopeCode]() codelist.
-
-The test succeeds if the value is either 'dataset', 'service' or 'series'
->>>>>>> origin/ats-issue-resolution
 
 # Context
 
