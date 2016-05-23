@@ -7,9 +7,7 @@
 
 **Test method**
 
-Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is taken from the [MD_ScopeCode](http://inspire.ec.europa.eu/metadata-codelist/ResourceType/) codelist.
-
-To be relevant for INSPIRE the value should be either 'dataset', 'service' or 'series'
+Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is taken from the list of [valid values](#validvalues), i.e. 'dataset', 'series' or 'service'.
 
 # Context
 
@@ -26,4 +24,5 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-hierarchyLevel <a name="hierarchyLevel"></a>   | ./gmd:hierarchyLevel/*/@codeListValue
+<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="validvalues"></a> valid values | doc(http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='MD_ScopeCode']//gml:identifier/text()
