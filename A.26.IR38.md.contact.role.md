@@ -8,7 +8,7 @@
 **Test method**
 
 * Check that the metadata record contains the [RoleCode](#roleCode) element under contact.
-* Check that the attribute [codeListValue](#codeListValue) has value "pointOfContact".
+* Check that the attribute [codeListValue](#codeListValue) has the string value "pointOfContact".
 
 **Reference(s)**
 
@@ -18,16 +18,6 @@
 **Test type:** Automated
 
 **Notes**
-
-The TG Requirement 38 is not clear: The requirement text says that "the default value is
-pointOfContact", but it refers to SC16, which seems to mandate a fixed value:
-
-    SC16.The value of MD_Metadata.contact[1].CI_ResponsibleParty.role.CI_RoleCode shall be pointOfContact.
-
-Open questions:
-
-* Is the codeList URL above the only approved way to refer to the CI_RoleCode codelist?
-* Does the string value of the [RoleCode](#roleCode) element have any significance? Does it have to also be "pointOfContact" or can it be missing entirely?
 
 ##Contextual XPath references
 
