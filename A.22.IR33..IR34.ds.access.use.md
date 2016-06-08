@@ -15,7 +15,7 @@ unknown" shall be used.
 
 Descriptions of terms and conditions, including where applicable, the
 corresponding fees shall be provided through this element or a link
-(URL) where these terms and conditions are described.
+(URL) where these terms and conditions are described. The content will need to be checked manually.
 
 **Reference(s)**	 
 
