@@ -4,6 +4,8 @@
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
+* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) must be passed and must return dataset
+
 
 **Test method**
 
@@ -37,3 +39,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="extent"></a> extent  | gmd:identificationInfo[1]/*/gmd:extent/*/gmd:geographicElement/*/
+<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel
