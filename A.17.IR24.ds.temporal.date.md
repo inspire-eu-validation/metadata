@@ -14,6 +14,8 @@ Test whether dates are expressed in accordance with ISO 8601 (yyyy-mm-dd).
 * If a [date](#date) of publication is given at [dateType](#dateType)='publication', check whether the date is valid
 * If a [date](#date) of publication is given at [dateType](#dateType)='revision', check whether the date is valid
 * If a [date](#date) of publication is given at [dateType](#dateType)='creation', check whether the date is valid
+*  Check that [beginPosition](#beginPosition) does not have attribute @frame (which means that the default reference system is used) and whether the date is valid 
+*  Check that [endPosition](#endPosition) does not have attribute @frame (which means that the default reference system is used) and whether the date is valid
 
 The test case fails if any of the above steps returns false.
 
@@ -29,6 +31,8 @@ The test case fails if any of the above steps returns false.
 
 **Notes**
 
+The following regular expression can be used to check the validity of the date ^[0-9]{4}-[0-9]{2}-[0-9]{2}(T.*)?
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
@@ -38,3 +42,5 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="period"></a> TimePeriod   | gmd:identificationInfo[1]/*/gmd:extent/*/gmd:temporalElement/*/gmd:extent/gml:TimePeriod
 <a name="date"></a> date   | gmd:identificationInfo[1]/*/gmd:citation/*/gmd:date
 <a name="dateType"></a> dateType   | gmd:identificationInfo[1]/*/gmd:citation/*/gmd:date/*/gmd:dateType
+<a name="beginPosition"></a> beginPosition   | gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:beginPosition
+<a name="endPosition"></a> endPosition   | gmd:extent/gmd:EX_Extent/gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimePeriod/gml:endPosition
