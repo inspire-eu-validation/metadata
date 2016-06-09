@@ -18,7 +18,7 @@ The test performs the following check for each [vocabulary](#thesaurus):
 * [TG MD](./README.md#ref_TG_MD), 2.4.2, Req 16, 17 & 18
 * [IR MD](README.md#ref_IR_MD) Part B. 3.2
 
-**Test type:** Automated
+**Test type:** Manual
 
 **Notes**
 
