@@ -9,7 +9,7 @@
 **Test method**
 
 The test first checks if a [gmd:LanguageCode](#langcode) object is given  and contains a codeList and codeListValue attribute.
-It is then checked if the codeListValue attribute contains a valid 3-letter language code according to http://www.loc.gov/standards/iso639-2/.
+It is then checked if the codeListValue attribute contains a valid 3-letter language code.
 
 If the type of the resource is not dataset or series, this test is omitted.
 
