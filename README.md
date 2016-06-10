@@ -123,13 +123,21 @@ Some examples for valid string content:
 ```
   or
 ```  
-  <gmd:keyword>
-    <gmd:PT_FreeText>
-       <gmd:textGroup>
-         <gmd:LocalisedCharacterString locale="#EN">Addresses</gmd:LocalisedCharacterString>
-       </gmd:textGroup>
-    </gmd:PT_FreeText>
-  </gmd:keyword>
+<abstract xsi:type="PT_FreeText_PropertyType">
+  <gco:CharacterString>Brief narrative summary of the content of the
+resource</gco:CharacterString>
+  <!--== Alternative values ==-->
+  <PT_FreeText>
+    <textGroup>
+      <LocalisedCharacterString locale="locale-fr">Résumé succint du contenu du jeu de données</LocalisedCharacterString>
+    </textGroup>
+    <textGroup>
+      <LocalisedCharacterString locale="locale=it">
+        Succinta descrizione del contenuto della risorsa
+      </LocalisedCharacterString>
+    </textGroup>
+  </PT_FreeText>
+</abstract>
 ```
 
 <a name="resolve"></a>
