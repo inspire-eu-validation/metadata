@@ -1,4 +1,4 @@
-#A.29.IR07.srv.identification
+#A.29.IR07.coupled.resource
 
 **Purpose**: If the resource is a spatial data service, this metadata element refers to the
 target spatial data set(s) of the service. It is implemented by reference, i.e. through a URL that
