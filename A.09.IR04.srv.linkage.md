@@ -9,7 +9,7 @@ valid URL providing one of the following:
 
 **Prerequisites**
 * [A.01.validate](A.01.validate.md) must be passed
-* the hierarchylevel of resource should be "service" 
+* [hierarchyLevel](A.04.IR01.IR02.hierarchy.md) of resource should be "service" 
 
 **Test method**
 
