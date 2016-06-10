@@ -9,8 +9,7 @@
 **Test method**
 
 If the type of the resource is service, exactly one name describing the type of service must be given.
-The test first checks if a service type element is given at [serviceType](#serviceType) and if it is
-unique throughout the document. The test then checks if the element [serviceType](#serviceType) contains text that equals one of
+First, a check is performed to establish whether the [serviceType](#serviceType) element occurs exactly once in the document. The test then checks if the element [serviceType](#serviceType) contains text that equals one of
 the types given in http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType ([TG MD](./README.md#ref_TG_MD) Chap. 1.3.1.)
 
 If the type of the resource was not service, this test is omitted.
