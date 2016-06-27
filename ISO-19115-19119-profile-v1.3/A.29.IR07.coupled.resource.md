@@ -1,11 +1,11 @@
-#A.29.IR07.coupled.resource
+#Coupled resource
 
 **Purpose**: If the resource is a spatial data service, this metadata element refers to the
 target spatial data set(s) of the service. It is implemented by reference, i.e. through a URL that
 points to the metadata record of the data on which the service operates.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -16,7 +16,7 @@ The operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentificati
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.2.6, req 7
-* [IR MD](README.md#ref_IR_MD) Part B. 1.6
+
 
 **Test type:** Automated
 

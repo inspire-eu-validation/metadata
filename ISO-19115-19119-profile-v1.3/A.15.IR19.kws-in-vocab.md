@@ -1,10 +1,10 @@
-#A.15.IR19.kws-in-vocab
+#Keywords in vocabulary
 
 **Purpose**: Keyword values originating from a single version of a single controlled vocabulary
 shall be grouped in a single instance
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -15,7 +15,7 @@ shall be grouped in a single instance
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) 2.4.2, Req 19
-* [IR MD](README.md#ref_IR_MD) Part B. 3.2
+
 
 **Test type:** Automated
 

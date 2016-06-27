@@ -1,10 +1,10 @@
-#A.11.IR10.IR11.ds.topic
+# Ds topic
 
 **Purpose**: If the type of the resource is dataset or series, at least one Topic category describing the category of the resource must be given.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
-* [A.04.IR01.IR02.hierarchy] (A.04.IR01.IR02.hierarchy.md) contains "dataset" or "series"
+* [Schema validation](Schema validation.md) must be passed
+* [Hierarchy](Hierarchy.md) contains "dataset" or "series"
 
 **Test method**
 
@@ -18,7 +18,6 @@ If the type of the resource was not dataset or series, this test is omitted.
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.3.1, Req 10 & 11
-* [IR MD](README.md#ref_IR_MD) Part B. 2.1
 * [B.5.27 of ISO 19115](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory)
 
 **Test type:** Automated

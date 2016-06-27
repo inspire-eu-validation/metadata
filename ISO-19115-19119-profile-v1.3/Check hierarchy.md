@@ -1,9 +1,9 @@
-#A.04.IR01.IR02.hierarchy
+# Hierarchy
 
 **Purpose**: Checks that a resource type is provided
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -13,7 +13,6 @@ Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is
 
 **Reference(s)**	 
 
-* [IR MD](./README.md#ref_IR_MD), Part B 1.3, Part D 1
 * [TG MD](./README.md#ref_TG_MD),2.2.3, Req 1 & 2
 * [ISO 19115](./README.md#ref_ISO_19115) table B.5.25 MD_ScopeCode 
 

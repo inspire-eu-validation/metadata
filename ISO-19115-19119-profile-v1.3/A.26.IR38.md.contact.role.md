@@ -1,9 +1,9 @@
-#A.26.IR38.md.contact.role
+#Md contact role
 
 **Purpose**: The role information of the responsible party serving as metadata point of contact is mandatory by the ISO 19115. Role code "pointOfContact" must be used.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 

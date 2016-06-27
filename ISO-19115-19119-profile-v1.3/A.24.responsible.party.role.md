@@ -1,9 +1,9 @@
-#A.24.responsible.party.role
+#Responsible party role
 
 **Purpose**: Every responsible organization must name a responsible party role.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -14,7 +14,6 @@ The element must contain an element at gmd:CI_RoleCode[@codeListValue=x], where 
 
 * ISO 19115, B.5.5
 * [TG MD](./README.md#ref_TG_MD), 2.10.2
-* [IR MD](README.md#ref_IR_MD) Part B. 9.2
 
 **Test type:** Automated
 

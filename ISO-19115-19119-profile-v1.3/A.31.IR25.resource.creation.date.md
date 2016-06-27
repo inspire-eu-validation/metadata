@@ -1,9 +1,9 @@
-#A.31.IR25.resource.creation.date
+#Resource creation date
 
 **Purpose**: There cannot be more than one creation date.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -12,7 +12,7 @@ Check that at most one [Creation date](#creationDate) exists. If it does, pass t
 **Reference(s)**
 
 * [TG MD](README.md#ref_TG_MD) 2.6.4, TG Requirement 25
-* [IR MD](README.md#ref_IR_MD), Part B 5.4
+
 
 **Test type**: Automated
 

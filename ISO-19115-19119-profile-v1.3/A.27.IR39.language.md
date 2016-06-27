@@ -1,9 +1,9 @@
-#A.26.IR39.language
+#Language
 
 **Purpose**: A metadata language must be given.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -12,7 +12,7 @@ The test first check is if a [gmd:LanguageCode](#lang) object is given at gmd:la
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) Chap. 2.11.3, Req 39
-* [IR MD](README.md#ref_IR_MD) Part B. 10.3
+
 
 **Test type:** Automated
 

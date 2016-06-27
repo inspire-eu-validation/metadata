@@ -1,10 +1,10 @@
-#A.10.IR08.IR09.ds.language
+# Ds language
 
 **Purpose**: If the type of the resource is dataset or series, a resource language must be given.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
-* [A.04.IR01.IR02.hierarchy] (A.04.IR01.IR02.hierarchy.md) contains "dataset" or "series"
+* [Schema validation](Schema validation.md) must be passed
+* [Hierarchy](Hierarchy.md) contains "dataset" or "series"
 
 **Test method**
 
@@ -16,7 +16,6 @@ If the type of the resource is not dataset or series, this test is omitted.
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.2.7, Req 8 & 9
-* [IR MD](README.md#ref_IR_MD) Part B. 1.7
 * ISO 639-2
 
 **Test type:** Automated

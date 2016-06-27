@@ -1,9 +1,9 @@
-#A.14.IR16.IR17.IR18.vocab
+#Check vocabulary
 
-**Purpose**: A [keyword value](A.13.IR13.keyword.md) reference can contain a [controlled vocabulary](#thesaurus) from where it originates. This element is optional but, if given, must follow certain guidelines.
+**Purpose**: A [keyword value](Check keyword.md) reference can contain a [controlled vocabulary](#thesaurus) from where it originates. This element is optional but, if given, must follow certain guidelines.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -16,7 +16,7 @@ The test performs the following check for each [vocabulary](#thesaurus):
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.4.2, Req 16, 17 & 18
-* [IR MD](README.md#ref_IR_MD) Part B. 3.2
+
 
 **Test type:** Manual
 

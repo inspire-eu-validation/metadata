@@ -1,9 +1,9 @@
-#A.18.IR26.lineage
+#Lineage
 
 **Purpose**: If the type of the resource was dataset or series, exactly one explanation about the lineage of a dataset must be given
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -13,7 +13,7 @@ It then validates that exactly one lineage statement like the one above is given
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) 2.7.1, Req 26
-* [IR MD](README.md#ref_IR_MD) Part B. 2.6
+
 
 **Test type:** Automated
 

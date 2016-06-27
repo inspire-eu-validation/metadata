@@ -1,9 +1,9 @@
-#A.18.IR27.ds.spatial.resolution
+#Ds spatial resolution
 
 **Purpose**: If the type of the resource was dataset or series, Each [spatial resolution](#spatialResolution) is either an [equivalentScale](#equivalentScale) OR a ground sample [distance](#distance).
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -12,7 +12,7 @@ Each spatialResolution element must contain either an equivalent scale or a dist
 **Reference(s)**	 
 
 * [TG MD](README.md#ref_TG_MD) 2.7.2, Req 27
-* [IR MD](README.md#ref_IR_MD) Part B. 6.2
+
 
 **Test type:** Automated
 

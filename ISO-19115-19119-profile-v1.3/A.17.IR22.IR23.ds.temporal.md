@@ -1,9 +1,9 @@
-#A.17.IR22.IR23.ds.temporal
+#Ds temporal
 
 **Purpose**: INSPIRE provides 4 types of temporal reference, which are all conditional elements on their own. However, at least one of them must be provided. To be compliant with ISO 19115 it is necessary to use at least one among date of publication, date of last revision, or the date of creation.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -20,7 +20,6 @@ The test case will fail if the results to steps 2, 3 and 4 all equal false.
 * [ISO 19108](README.md#ref_ISO_19108)
 * [ISO 8601](README.md#ref_ISO_8601)
 * [TG MD](./README.md#ref_TG_MD) Chap. 2.6.1 - 2.6.4, Req 22 & 23
-* [IR MD](README.md#ref_IR_MD) Part B. 5.1
 
 **Test type:** Automated
 

@@ -1,10 +1,10 @@
-#A.16.IR21.ds.bounds
+#Geographic bounding box
 
 **Purpose**: A geographic bounding box must be given and it should be as small as possible
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
-* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) must be passed and must return dataset
+* [Schema validation](Schema validation.md) must be passed
+* [Check hierarchy](Check hierarchy.md) must be passed and must return dataset
 
 
 **Test method**
@@ -26,7 +26,7 @@ The bounding box shall be expressed in decimal degree with a precision of at lea
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) 2.5.1, Req 21
-* [IR MD](README.md#ref_IR_MD) Part B. 4.1
+
 
 **Test type:** Manual
 

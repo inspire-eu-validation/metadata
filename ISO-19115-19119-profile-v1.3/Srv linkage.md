@@ -1,4 +1,4 @@
-#A.09.IR04.srv.linkage
+# Srv linkage
 
 **Purpose**: If a linkage for a service is available, the Resource Locator shall be a
 valid URL providing one of the following:
@@ -8,8 +8,8 @@ valid URL providing one of the following:
 * a link to a client application that directly accesses the service
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
-* [hierarchyLevel](A.04.IR01.IR02.hierarchy.md) of resource should be "service" 
+* [Schema validation](Schema validation.md) must be passed
+* [Hierarchy](Hierarchy.md) of resource should be "service" 
 
 **Test method**
 
@@ -26,7 +26,7 @@ if WMS/WMTS/WFS, the link is in //layer[identifier={id}&&@authority={codespace}]
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.2.4, Req 4
-* [IR MD](README.md#ref_IR_MD) Part B. 1.4
+
 
 **Test type:** Automated
 

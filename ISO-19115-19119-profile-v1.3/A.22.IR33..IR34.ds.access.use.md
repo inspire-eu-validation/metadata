@@ -1,9 +1,9 @@
-#A.22.IR33.IR34.ds.access.use
+#Ds access use
 
 **Purpose**: Conditions applying to access and use must be described at least once for the resource.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -20,7 +20,6 @@ corresponding fees shall be provided through this element or a link
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.9.2, Req 33,34
-* [IR MD](README.md#ref_IR_MD) Part B. 8.2
 
 **Test type:** Automated
 

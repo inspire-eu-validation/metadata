@@ -1,11 +1,11 @@
-#A.19.IR28.ds.conformity
+#Ds conformity
 
 **Purpose**: The metadata shall include information on the degree of conformity with the implementing
 rules on interoperability of spatial data sets and services.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
-* [A.04.IR01.IR02.hierarchy](A.04.IR01.IR02.hierarchy.md) must be passed. The outcome has to be 'service' or 'dataset'.
+* [Schema validation](Schema validation.md) must be passed
+* [Hierarchy](Hierarchy.md) must be passed. The outcome has to be 'service' or 'dataset'.
 
 **Test method**
 
@@ -21,8 +21,7 @@ Then, the test evaluate whether the element [gmd:DQ_ConformanceResult](#Conforma
 
 * [TG MD](./README.md#ref_TG_MD),2.8.1, Req 28
 * [TG MD](./README.md#ref_TG_MD),2.8
-* [IR MD](README.md#ref_IR_MD) Part B. 2.8
-* [ISO 19115] (README.md#user-content-ref_ISO_19115)
+* [ISO 19115](README.md#user-content-ref_ISO_19115)
 
 **Test type:** Automated
 

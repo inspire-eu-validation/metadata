@@ -1,4 +1,4 @@
-#A.21.IR30.IR31.ds.public.access
+#Ds public access
 
 **Purpose**
 
@@ -22,7 +22,7 @@ these metadata elements:
 * MD_SecurityConstraints.classification
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 

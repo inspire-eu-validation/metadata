@@ -1,12 +1,12 @@
-#A.17.IR24.ds.temporal.date
+# Ds temporal date
 
 **Purpose**: 
 
 Test whether dates are expressed in accordance with ISO 8601 (yyyy-mm-dd).
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
-* [A.17.IR22.IR23](A.17.IR22.IR23.ds.temporal.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
+* [Ds temporal](Ds temporal.md) must be passed
 
 **Test method**
 
@@ -25,7 +25,7 @@ The test case fails if any of the above steps returns false.
 * [ISO 19108](README.md#ref_ISO_19108)
 * [ISO 8601](README.md#ref_ISO_8601)
 * [TG MD](./README.md#ref_TG_MD) Chap. 2.6.1 - 2.6.4, Req 24
-* [IR MD](README.md#ref_IR_MD) Part B. 5.1
+
 
 **Test type:** Automated
 

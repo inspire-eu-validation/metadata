@@ -1,10 +1,10 @@
-#A.05.IR14.ds.keyword
+# Ds keyword
 
-**Purpose**: Keyword for datasets. If the resource is a dataset or a dataset series, at least one keyword must originate from the INSPIRE theme of the GEMET Thesaurus
+**Purpose**: Ds keyword. If the resource is a dataset or a dataset series, at least one keyword must originate from the INSPIRE theme of the GEMET Thesaurus
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
-* [A.13.IR13.keyword](A.13.IR13.keyword.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
+* [Keyword](Keyword.md) must be passed
 
 **Test method**
 If the type of the resource is not dataset or series, this test is omitted.
@@ -16,7 +16,6 @@ If a keyword from that source is found, the test succeeds, otherwise it will fai
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) Chap. 2.2.3, Req 14
-* [IR MD](README.md#ref_IR_MD) Part B. 3.1
 * http://inspire.ec.europa.eu/theme
 
 

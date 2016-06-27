@@ -1,9 +1,9 @@
-#A.25.IR37.md.contact
+#Md contact
 
 **Purpose**: At least one point of contact must be given.
 
 **Prerequisites**
-* [A.01.validate](A.01.validate.md) must be passed
+* [Schema validation](Schema validation.md) must be passed
 
 **Test method**
 
@@ -15,7 +15,6 @@ If the string does not match the regular expression, the test fails (note: regex
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) 2.11.1, Req 37
-* [IR MD](README.md#ref_IR_MD) Part B. 10.1
 
 **Test type:** Automated
 
