@@ -1,4 +1,4 @@
-#Check vocabulary
+#Vocabulary
 
 **Purpose**: A [keyword value](Check keyword.md) reference can contain a [controlled vocabulary](#thesaurus) from where it originates. This element is optional but, if given, must follow certain guidelines.
 

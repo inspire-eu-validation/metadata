@@ -1,4 +1,4 @@
-# A.01.validate
+# Schema validation
 
 **Purpose**: Performs a schema validation of the document.
 
@@ -14,7 +14,6 @@ http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd
 **References**	 
 
 * [TG MD](README.md#ref_TG_MD) 2.1.2
-* [IR MD](./README.md#ref_IR_MD), page 1 #3 (?)
 
 **Test type:** Automated
 

@@ -4,7 +4,7 @@
 
 **Prerequisites**
 * [Schema validation](Schema validation.md) must be passed
-* [Check hierarchy](Check hierarchy.md) must be passed and must return dataset
+* [Hierarchy](Hierarchy.md) must be passed and must return dataset
 
 
 **Test method**

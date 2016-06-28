@@ -33,7 +33,7 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [validate-schema](validate-schema.md)                             | Ready for review  |
+| [Schema validation](Schema validation.md)                             | Ready for review  |
 
 
 ## XML namespace prefixes <a name="namespaces"></a>

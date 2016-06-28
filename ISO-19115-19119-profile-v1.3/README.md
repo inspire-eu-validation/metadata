@@ -72,7 +72,7 @@ This Conformance Class contains the following tests:
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
 | [Schema validation](Schema validation.md)  	                              | Ready for review  |
-| [Check hierarchy](Check hierarchy.md)           | Ready for review  |
+| [Hierarchy](Hierarchy.md)           | Ready for review  |
 | [Ds keyword](Ds keyword.md)                   | Ready for review  |
 | [Srv keyword](Srv keyword.md)                   | Ready for review  |
 | [Ds identification](Ds identification.md) | Ready for review  |
@@ -81,8 +81,8 @@ This Conformance Class contains the following tests:
 | [Ds language](Ds language.md)       | Ready for review  |
 | [Ds topic](Ds topic.md)                       | Ready for review  |
 | [Srv type](Srv type.md)                       | Ready for review  |
-| [Check keyword](Check keyword.md)                         | Ready for review  |
-| [A.14.IR16.vocab](A.14.IR16.vocab.md)                             | Ready for review  |
+| [Keyword](Keyword.md)                         | Ready for review  |
+| [Vocabulary](Vocabulary.md)                             | Ready for review  |
 | [Keywords in vocabulary](Keywords in vocabulary.md)               | Ready for review  |
 | [Geographic bounding box](Geographic bounding box.md)           | Ready for review  |
 | [Ds temporal](Ds temporal.md)       | Ready for review  |
