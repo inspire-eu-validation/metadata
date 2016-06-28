@@ -3,7 +3,7 @@
 **Purpose**: Conditions applying to access and use must be described at least once for the resource.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

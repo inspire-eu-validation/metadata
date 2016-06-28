@@ -8,8 +8,8 @@ valid URL providing one of the following:
 * a link to a client application that directly accesses the service
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Hierarchy](Hierarchy.md) of resource should be "service" 
+* [Schema validation](schema-validation.md) must be passed
+* [Hierarchy](hierarchy.md) of resource should be "service" 
 
 **Test method**
 

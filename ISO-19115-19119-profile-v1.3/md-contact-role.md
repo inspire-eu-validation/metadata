@@ -3,7 +3,7 @@
 **Purpose**: The role information of the responsible party serving as metadata point of contact is mandatory by the ISO 19115. Role code "pointOfContact" must be used.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

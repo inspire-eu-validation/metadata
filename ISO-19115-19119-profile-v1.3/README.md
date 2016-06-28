@@ -25,45 +25,45 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 1      | hierachyLevel mandated               | [Hierarchy](Hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
-| 2      | MD_ScopeCode values                  | [Hierarchy](Hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
-| 3      | Resource Locator for data linkage    | [Ds linkage](Ds linkage.md) |[IR MD](#ref_IR_MD), Part B 1.4 |
-| 4      | Resource Locator for service linkage | [Srv linkage](Srv linkage.md) | [IR MD](#ref_IR_MD), Part B 1.4 |
-| 5      | Unique Resource Identifier code is mandatory | [Ds identification](Ds identification.md)|[IR MD](#ref_IR_MD) Part B 1.5 |
-| 6      | Use RS_Identifier if URI codeSpace provided |[Ds identification](Ds identification.md) | [IR MD](#ref_IR_MD) Part B 1.5 |
-| 7      | operatesOn as a reference     | [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)| [IR MD](#ref_IR_MD) Part B 1.6 |
-| 8      | Resource language is mandated        | [Ds language](Ds language.md) |[IR MD](#ref_IR_MD) Part B 1.7 |
-| 9      | ISO 19139 codes used for language    | [Ds language](Ds language.md) | [IR MD](#ref_IR_MD) Part B 1.7 |
-| 10     | Use MD_TopicCategoryCode values in topicCategory |[Ds topic](Ds topic.md) |[IR MD](#ref_IR_MD) Part B 2.1 |
-| 11     | Use language neutral name in topicCategory | [Ds topic](Ds topic.md) |[IR MD](#ref_IR_MD) Part B 2.1|
-| 12     | Use language neutral name for serviceType | [Srv type](Srv type.md) |[IR MD](#ref_IR_MD) Part B 2.2 |
-| 13     | Provide at least one keyword         |[Keyword](Keyword.md) |[IR MD](#ref_IR_MD) Part B 3.1 |
-| 14     | Use theme for the only dataset keyword | [Ds keyword](Ds keyword.md) |[IR MD](#ref_IR_MD) Part B 3.1  |
-| 15     | Use category for the inly service keyword | [Srv keyword](Srv keyword.md) |[IR MD](#ref_IR_MD) Part B 1.5, Article 4, part D  |
-| 16     | Use citation for other controlled keywords | [Vocabulary](Vocabulary.md) |[IR MD](#ref_IR_MD) Part B  3.2|
-| 17     | Cite the originating controlled vocabulary |[Vocabulary](Vocabulary.md) |[IR MD](#ref_IR_MD) Part B 3.2|
-| 18     | At least title and date for controlled vocabulary citations |[Vocabulary](Vocabulary.md) |[IR MD](#ref_IR_MD) Part B 3.2 |
-| 19     | Group keywords from the same controlled vocabulary | [Keywords in vocabulary](Keywords in vocabulary.md) | [IR MD](#ref_IR_MD) Part B 3.2|
-| 20     | Use the minimum geographic bounding box  | [Geographic bounding box](Geographic bounding box.md) | [IR MD](#ref_IR_MD) Part B. 4.1|
-| 21     | At least two decimals for coordinates | [Geographic bounding box](Geographic bounding box.md) | [IR MD](#ref_IR_MD) Part B. 4.1|
-| 22     | Use at least one of INSPIRE temporal reference types | [Ds temporal](Ds temporal.md) | [IR MD](#ref_IR_MD) Part B. 5.1|
-| 23     | Use at least one ISO 19115 temporal reference types |[Ds temporal](Ds temporal.md) |[IR MD](#ref_IR_MD) Part B. 5.1 |
+| 1      | hierachyLevel mandated               | [Hierarchy](hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
+| 2      | MD_ScopeCode values                  | [Hierarchy](hierarchy.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
+| 3      | Resource Locator for data linkage    | [Ds linkage](ds-linkage.md) |[IR MD](#ref_IR_MD), Part B 1.4 |
+| 4      | Resource Locator for service linkage | [Srv linkage](srv-linkage.md) | [IR MD](#ref_IR_MD), Part B 1.4 |
+| 5      | Unique Resource Identifier code is mandatory | [Ds identification](ds-identification.md)|[IR MD](#ref_IR_MD) Part B 1.5 |
+| 6      | Use RS_Identifier if URI codeSpace provided |[Ds identification](ds-identification.md) | [IR MD](#ref_IR_MD) Part B 1.5 |
+| 7      | operatesOn as a reference     | | |
+| 8      | Resource language is mandated        | [Ds language](ds-language.md) |[IR MD](#ref_IR_MD) Part B 1.7 |
+| 9      | ISO 19139 codes used for language    | [Ds language](ds-language.md) | [IR MD](#ref_IR_MD) Part B 1.7 |
+| 10     | Use MD_TopicCategoryCode values in topicCategory |[Ds topic](ds-topic.md) |[IR MD](#ref_IR_MD) Part B 2.1 |
+| 11     | Use language neutral name in topicCategory | [Ds topic](ds-topic.md) |[IR MD](#ref_IR_MD) Part B 2.1|
+| 12     | Use language neutral name for serviceType | [Srv type](srv-type.md) |[IR MD](#ref_IR_MD) Part B 2.2 |
+| 13     | Provide at least one keyword         |[Keyword](keyword.md) |[IR MD](#ref_IR_MD) Part B 3.1 |
+| 14     | Use theme for the only dataset keyword | [Ds keyword](ds-keyword.md) |[IR MD](#ref_IR_MD) Part B 3.1  |
+| 15     | Use category for the inly service keyword | [Srv keyword](srv-keyword.md) |[IR MD](#ref_IR_MD) Part B 1.5, Article 4, part D  |
+| 16     | Use citation for other controlled keywords | [Vocabulary](vocabulary.md) |[IR MD](#ref_IR_MD) Part B  3.2|
+| 17     | Cite the originating controlled vocabulary |[Vocabulary](vocabulary.md) |[IR MD](#ref_IR_MD) Part B 3.2|
+| 18     | At least title and date for controlled vocabulary citations |[Vocabulary](vocabulary.md) |[IR MD](#ref_IR_MD) Part B 3.2 |
+| 19     | Group keywords from the same controlled vocabulary | [Keywords in vocabulary](keywords-in-vocabulary.md) | [IR MD](#ref_IR_MD) Part B 3.2|
+| 20     | Use the minimum geographic bounding box  | [Geographic bounding box](geographic-bounding-box.md) | [IR MD](#ref_IR_MD) Part B. 4.1|
+| 21     | At least two decimals for coordinates | [Geographic bounding box](geographic-bounding-box.md) | [IR MD](#ref_IR_MD) Part B. 4.1|
+| 22     | Use at least one of INSPIRE temporal reference types | [Ds temporal](ds-temporal.md) | [IR MD](#ref_IR_MD) Part B. 5.1|
+| 23     | Use at least one ISO 19115 temporal reference types |[Ds temporal](ds-temporal.md) |[IR MD](#ref_IR_MD) Part B. 5.1 |
 | 24     | Gregorian calendar and ISO 8601 date as defaults | not testable | [IR MD](#ref_IR_MD) Part B 5 |
 | 25     | Single creation date mandatory       | [Resource creation date](Resource creation date) | [IR MD](#ref_IR_MD) Part B 5.4|
-| 26     | Only one dataQualityInfo             | [Lineage](Lineage.md) |[IR MD](#ref_IR_MD) Part B. 2.6 |
-| 27     | Spatial resolution as either scale or ground sample distance | [Ds spatial resolution](Ds spatial resolution.md) | [IR MD](#ref_IR_MD) Part B. 2.6|
-| 28     | Degree of conformity mandatory       |[Ds conformity](Ds conformity.md) | [IR MD](#ref_IR_MD) Part B. 2.8|
-| 29     | Use DQ_DomainConsistency for spec. conformity |[Ds specification](Ds specification.md) | [IR MD](#ref_IR_MD) Part B. 7.2|
-| 30     | Declare both limitations on "public access" and "constraints on access and use" |[Ds public access](Ds public access.md) | [INSPIRE](#ref_INSPIRE), Article 13|
-| 31     | At least one MD_Contraints even if no limitations |[Ds public access](Ds public access.md) | n/a |
-| 32     | Expressing limitations on public access |[Ds public access](Ds public access.md) | n/a |
-| 33     | No conditions and unknown conditions |[Ds access use](Ds access use.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
-| 34     | Terms and conditions either embedded or linked |[Ds access use](Ds access use.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
-| 35     | Responsible organisation name and email |[Responsible party contact info](Responsible party contact info.md) |[IR MD](#ref_IR_MD) Part B. 3.5 |
-| 36     | MD_DataIdentification and SV_ServiceIdentification for responsible party info |[Responsible party contact info](Responsible party contact info.md) | [IR MD](#ref_IR_MD) Part B. 3.5 |
-| 37     | Metadata point of contact organisation name and email | [Md contact](Md contact.md) |[IR MD](#ref_IR_MD) Part B. 10.1 |
-| 38     | Metadata point of contact role code 'pointOfContact'| [Md contact role](Md contact role.md) | n/a |
-| 39     | Metadata language is mandatory | [Language](Language.md) | [IR MD](#ref_IR_MD) Part B. 10.3|
+| 26     | Only one dataQualityInfo             | [Lineage](lineage.md) |[IR MD](#ref_IR_MD) Part B. 2.6 |
+| 27     | Spatial resolution as either scale or ground sample distance | [Ds spatial resolution](ds-spatial-resolution.md) | [IR MD](#ref_IR_MD) Part B. 2.6|
+| 28     | Degree of conformity mandatory       |[Ds conformity](ds-conformity.md) | [IR MD](#ref_IR_MD) Part B. 2.8|
+| 29     | Use DQ_DomainConsistency for spec. conformity |[Ds specification](ds-specification.md) | [IR MD](#ref_IR_MD) Part B. 7.2|
+| 30     | Declare both limitations on "public access" and "constraints on access and use" |[Ds public access](ds-public-access.md) | [INSPIRE](#ref_INSPIRE), Article 13|
+| 31     | At least one MD_Contraints even if no limitations |[Ds public access](ds-public-access.md) | n/a |
+| 32     | Expressing limitations on public access |[Ds public access](ds-public-access.md) | n/a |
+| 33     | No conditions and unknown conditions |[Ds access use](ds-access-use.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
+| 34     | Terms and conditions either embedded or linked |[Ds access use](ds-access-use.md) | [IR MD](#ref_IR_MD) Part B. 8.2|
+| 35     | Responsible organisation name and email |[Responsible party contact info](responsible-party-contact-info.md) |[IR MD](#ref_IR_MD) Part B. 3.5 |
+| 36     | MD_DataIdentification and SV_ServiceIdentification for responsible party info |[Responsible party contact info](responsible-party-contact-info.md) | [IR MD](#ref_IR_MD) Part B. 3.5 |
+| 37     | Metadata point of contact organisation name and email | [Md contact](md-contact.md) |[IR MD](#ref_IR_MD) Part B. 10.1 |
+| 38     | Metadata point of contact role code 'pointOfContact'| [Md contact role](md-contact-role.md) | n/a |
+| 39     | Metadata language is mandatory | [Language](language.md) | [IR MD](#ref_IR_MD) Part B. 10.3|
 
 ## Test
 
@@ -71,33 +71,32 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [Schema validation](Schema validation.md)  	                              | Ready for review  |
-| [Hierarchy](Hierarchy.md)           | Ready for review  |
-| [Ds keyword](Ds keyword.md)                   | Ready for review  |
-| [Srv keyword](Srv keyword.md)                   | Ready for review  |
-| [Ds identification](Ds identification.md) | Ready for review  |
-| [Ds linkage](Ds linkage.md)                   | Ready for review  |
-| [Srv linkage](Srv linkage.md)                 | Ready for review  |
-| [Ds language](Ds language.md)       | Ready for review  |
-| [Ds topic](Ds topic.md)                       | Ready for review  |
-| [Srv type](Srv type.md)                       | Ready for review  |
-| [Keyword](Keyword.md)                         | Ready for review  |
-| [Vocabulary](Vocabulary.md)                             | Ready for review  |
-| [Keywords in vocabulary](Keywords in vocabulary.md)               | Ready for review  |
-| [Geographic bounding box](Geographic bounding box.md)           | Ready for review  |
-| [Ds temporal](Ds temporal.md)       | Ready for review  |
-| [Lineage](Lineage.md)                   | Ready for review  |
-| [Ds conformity](Ds conformity.md)             | Ready for review  |
-| [Ds specification](Ds specification.md)       | Ready for review  |
-| [Ds public access](Ds public access.md) | Ready for review  |
-| [Ds access use](Ds access use.md)   | Ready for review  |
-| [Responsible party contact info](Responsible party contact info.md) | Ready for review  |
-| [Md contact](Md contact.md)                   | Ready for review  |
-| [Md contact role](Md contact role.md)         | Ready for review  |
-| [Language](Language.md)                       | Ready for review  |
-| [A.29.IR07.srv.identification](A.29.IR07.srv.identification.md)   | Ready for review  
-| [Ds spatial resolution](Ds spatial resolution.md) | Ready for review  |
-| [Resource creation date](Resource creation date.md) | Ready for review |
+| [Schema validation](schema-validation.md)  	                              | Ready for review  |
+| [Hierarchy](hierarchy.md)           | Ready for review  |
+| [Ds keyword](ds-keyword.md)                   | Ready for review  |
+| [Srv keyword](srv-keyword.md)                   | Ready for review  |
+| [Ds identification](ds-identification.md) | Ready for review  |
+| [Ds linkage](ds-linkage.md)                   | Ready for review  |
+| [Srv linkage](srv-linkage.md)                 | Ready for review  |
+| [Ds language](ds-language.md)       | Ready for review  |
+| [Ds topic](ds-topic.md)                       | Ready for review  |
+| [Srv type](srv-type.md)                       | Ready for review  |
+| [Keyword](keyword.md)                         | Ready for review  |
+| [Vocabulary](vocabulary.md)                             | Ready for review  |
+| [Keywords in vocabulary](keywords-in-vocabulary.md)               | Ready for review  |
+| [Geographic bounding box](geographic-bounding-box.md)           | Ready for review  |
+| [Ds temporal](ds-temporal.md)       | Ready for review  |
+| [Lineage](lineage.md)                   | Ready for review  |
+| [Ds conformity](ds-conformity.md)             | Ready for review  |
+| [Ds specification](ds-specification.md)       | Ready for review  |
+| [Ds public access](ds-public-access.md) | Ready for review  |
+| [Ds access use](ds-access-use.md)   | Ready for review  |
+| [Responsible party contact info](responsible-party-contact-info.md) | Ready for review  |
+| [Md contact](md-contact.md)                   | Ready for review  |
+| [Md contact role](md-contact-role.md)         | Ready for review  |
+| [Language](language.md)                       | Ready for review  |
+| [Ds spatial resolution](ds-spatial-resolution.md) | Ready for review  |
+| [Resource creation date](resource-creation-date.md) | Ready for review |
 
 Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are separated from above because they have a different timeline for implementation.
 
@@ -148,10 +147,10 @@ can give an indication of the availability of the document without fully downloa
 ## Open questions
 
 * There is no explicit Implementation Requirement in [TG MD](README.md#ref_TG_MD) for the following tests:
-  * [Check title](Check title.md)
-  * [Check abstract](Check abstract.md)
-  * [Responsible party role](Responsible party role.md)
-  * [A.28.md.creation.date](A.28.md.creation.date.md)
+  * [Check title](check-title.md)
+  * [Check abstract](check-abstract.md)
+  * [Responsible party role](responsible-party-role.md)
+  
 
 Should these be excluded or included in the ATS? Or added as requirements in the [TG MD](#ref_TG_MD)?
 

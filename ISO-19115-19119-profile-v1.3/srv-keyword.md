@@ -3,8 +3,8 @@
 **Purpose**: Srv keyword. If the resource is a service, the type of service should be specified
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Keyword](Keyword.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
+* [Keyword](keyword.md) must be passed
 
 **Test method**
 

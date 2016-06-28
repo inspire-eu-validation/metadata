@@ -4,8 +4,8 @@
 If the referenced resource is recognized as a Network Service, it checks whether the linkage to the dataset is declared and implemented.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Hierarchy](Hierarchy.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
+* [Hierarchy](hierarchy.md) must be passed
 
 **Test method**
 

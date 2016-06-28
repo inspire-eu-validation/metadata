@@ -3,8 +3,8 @@
 **Purpose**: Ds keyword. If the resource is a dataset or a dataset series, at least one keyword must originate from the INSPIRE theme of the GEMET Thesaurus
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Keyword](Keyword.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
+* [Keyword](keyword.md) must be passed
 
 **Test method**
 If the type of the resource is not dataset or series, this test is omitted.

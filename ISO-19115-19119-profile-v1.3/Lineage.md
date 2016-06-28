@@ -3,7 +3,7 @@
 **Purpose**: If the type of the resource was dataset or series, exactly one explanation about the lineage of a dataset must be given
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

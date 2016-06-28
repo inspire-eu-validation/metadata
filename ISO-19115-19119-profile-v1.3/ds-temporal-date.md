@@ -5,8 +5,8 @@
 Test whether dates are expressed in accordance with ISO 8601 (yyyy-mm-dd).
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Ds temporal](Ds temporal.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
+* [Ds temporal](ds-temporal.md) must be passed
 
 **Test method**
 

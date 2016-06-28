@@ -3,7 +3,7 @@
 **Purpose**: If the type of the resource was dataset or series, Each [spatial resolution](#spatialResolution) is either an [equivalentScale](#equivalentScale) OR a ground sample [distance](#distance).
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

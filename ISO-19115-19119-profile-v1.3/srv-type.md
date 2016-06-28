@@ -3,8 +3,8 @@
 **Purpose**: If the type of the resource was service, exactly one name describing the type of service must be given.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Hierarchy](Hierarchy.md) should contain "service"
+* [Schema validation](schema-validation.md) must be passed
+* [Hierarchy](hierarchy.md) should contain "service"
 
 **Test method**
 

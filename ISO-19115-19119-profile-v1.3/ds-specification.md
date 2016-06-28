@@ -3,7 +3,7 @@
 **Purpose**: For every conformity statement, one citation of the product specification or user requirement against which data is being evaluated must be given.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

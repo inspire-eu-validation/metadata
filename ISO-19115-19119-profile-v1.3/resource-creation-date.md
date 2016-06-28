@@ -3,7 +3,7 @@
 **Purpose**: There cannot be more than one creation date.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

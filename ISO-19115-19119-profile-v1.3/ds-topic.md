@@ -3,8 +3,8 @@
 **Purpose**: If the type of the resource is dataset or series, at least one Topic category describing the category of the resource must be given.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Hierarchy](Hierarchy.md) contains "dataset" or "series"
+* [Schema validation](schema-validation.md) must be passed
+* [Hierarchy](hierarchy.md) contains "dataset" or "series"
 
 **Test method**
 

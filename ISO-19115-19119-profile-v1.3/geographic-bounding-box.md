@@ -3,8 +3,8 @@
 **Purpose**: A geographic bounding box must be given and it should be as small as possible
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Hierarchy](Hierarchy.md) must be passed and must return dataset
+* [Schema validation](schema-validation.md) must be passed
+* [Hierarchy](hierarchy.md) must be passed and must return dataset
 
 
 **Test method**

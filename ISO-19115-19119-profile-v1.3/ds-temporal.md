@@ -3,7 +3,7 @@
 **Purpose**: INSPIRE provides 4 types of temporal reference, which are all conditional elements on their own. However, at least one of them must be provided. To be compliant with ISO 19115 it is necessary to use at least one among date of publication, date of last revision, or the date of creation.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

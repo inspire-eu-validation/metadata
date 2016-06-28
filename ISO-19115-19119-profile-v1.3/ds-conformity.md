@@ -4,8 +4,8 @@
 rules on interoperability of spatial data sets and services.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
-* [Hierarchy](Hierarchy.md) must be passed. The outcome has to be 'service' or 'dataset'.
+* [Schema validation](schema-validation.md) must be passed
+* [Hierarchy](hierarchy.md) must be passed. The outcome has to be 'service' or 'dataset'.
 
 **Test method**
 

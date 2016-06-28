@@ -3,7 +3,7 @@
 **Purpose**: Name and contact email to a responsible party must be given for every responsible organization in the metadata.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

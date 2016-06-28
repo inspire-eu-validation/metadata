@@ -5,7 +5,7 @@ target spatial data set(s) of the service. It is implemented by reference, i.e. 
 points to the metadata record of the data on which the service operates.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 

@@ -3,7 +3,7 @@
 **Purpose**: At least one point of contact must be given.
 
 **Prerequisites**
-* [Schema validation](Schema validation.md) must be passed
+* [Schema validation](schema-validation.md) must be passed
 
 **Test method**
 
