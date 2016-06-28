@@ -99,7 +99,7 @@ This Conformance Class contains the following tests:
 | [A.30.IR27.ds.spatial.resolution](a-30-ir27-ds-spatial-resolution.md) | Ready for review  |
 | [A.31.IR25.resource.creation.date](a-31-ir25-resource-creation-date.md) | Ready for review |
 
-Some additional metadata tests are available at [ats-interoperability-metadata](https://github.com/inspire-eu-validation/ats-interoperability-metadata). These tests are separated from above because they have a different timeline for implementation.
+Some additional metadata tests are available at [CC interoperability metadata](http://inspire.ec.europa.eu/id/ats/data-specification/3.1/Metadata-for-interoperability-ISO-TS-19139-profile-v3.0rc3). These tests are separated from above because they have a different timeline for implementation.
 
 ## Vocabulary
 
