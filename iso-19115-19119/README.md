@@ -10,7 +10,7 @@ ISO 19115/19119 metadata record
 
 ### Direct dependencies
 
-A direct dependency is another conformance class whose requirements must be met by the view service, too.
+A direct dependency is another conformance class whose requirements must be met by the metadata record, too.
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
@@ -117,7 +117,7 @@ This Conformance Class contains the following tests:
 | [Dataset spatial resolution](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/ds-spatial-resolution) | Ready for review  |
 | [Resource creation date](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/resource-creation-date) | Ready for review |
 
-Some additional metadata tests are available in the [conformance class 'interoperability metadata'](http://inspire.ec.europa.eu/id/ats/data/3.1/Metadata-for-interoperability-ISO-TS-19139-profile-v3.0rc3). These tests are separated from above because they have a different timeline for implementation.
+Some additional metadata tests are available in the [conformance class 'Metadata for interoperability'](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/Metadata-for-interoperability). These tests are separated from above because they have a different timeline for implementation.
 
 ## Vocabulary
 
