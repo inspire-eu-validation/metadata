@@ -1,7 +1,5 @@
 # Abstract Test Suite: INSPIRE Metadata Technical Guidance (DRAFT)
 
-*NOTE: Rename repository from "ats-metadata" to "metadata".*
-
 The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
