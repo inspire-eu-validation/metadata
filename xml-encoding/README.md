@@ -46,7 +46,7 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [Schema validation](http://inspire.ec.europa.eu/id/ats/metadata/1.3/schema-validation)  	                          | Ready for review  |
+| [Schema validation](http://inspire.ec.europa.eu/id/ats/metadata/1.3/xml-encoding/schema-validation)  	                          | Ready for review  |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 
