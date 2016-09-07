@@ -31,6 +31,12 @@ Any service response should be checked if it provides proper linkage. The servic
 
 **Notes**
 
+The test does not take WSDL files into account, sind there can be no WSDL document consistent with an INSPIRE technical guidance.
+
+The specification of how to perform the detailed test is insufficient. The following aspect has not been fully implemented yet in the ETS (it is not yet part of the ETS): "The service wsdl or capabilities document should have a featuretype that shares the resource unique identification. If WMS/WMTS/WFS, the link is in //layer[identifier={id}&&@authority={codespace}] if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}]."
+
+The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available service metadata records.  
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
@@ -38,4 +44,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="linkage"></a> Linkage   | distributionInfo/*/transferOptions/*/onLine/*/linkage
+<a name="linkage"></a> Linkage   | distributionInfo/\*/transferOptions/\*/onLine/\*/linkage

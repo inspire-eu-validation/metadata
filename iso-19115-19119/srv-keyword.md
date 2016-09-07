@@ -21,6 +21,10 @@ If the resource is a service, at least one [keyword](#keyword) must originate fr
 
 **Notes**
 
+The test method does not specify, if language independent codes shall be used or not (which would require support of language specific codes). However, MD TG requirement 15 only considers language independent codes. Dynamic access to all codes of codelist http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceCategory in all languages is therefore not necessary. The test method should be updated to be more specific.
+
+The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available service metadata records.  
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
@@ -28,4 +32,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="keyword"></a> keyword   | ./gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:keyword
+<a name="keyword"></a> keyword   | ./gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:keyword

@@ -23,6 +23,10 @@ It is then checked if the codeListValue attribute contains a valid 3-letter lang
 
 **Notes**
 
+The ETS does not check if a gmd:LanguageCode contains a codeList attribute, since that is required by the schema.
+
+The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available dataset (series) metadata records.  
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
@@ -30,4 +34,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="langcode"></a> LanguageCode  | gmd:identificationInfo[1]/*/gmd:language/gmd:LanguageCode
+<a name="langcode"></a> LanguageCode  | gmd:identificationInfo[1]/\*/gmd:language/gmd:LanguageCode

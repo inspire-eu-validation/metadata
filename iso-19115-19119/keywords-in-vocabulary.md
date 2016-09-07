@@ -26,5 +26,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="keyword"></a> Keyword   | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords
-<a name="title"></a> title  | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
+<a name="keyword"></a> Keyword   | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords
+<a name="title"></a> title  | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
