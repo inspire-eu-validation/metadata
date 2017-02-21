@@ -27,6 +27,8 @@ The test checks if a [linkage](#online) is provided. If none is given, the test 
 
 The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available dataset (series) metadata records.  
 
+Since WCS and SOS are now also supported by technical guidance documents, the ETS also accepts these service types.
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
