@@ -24,7 +24,6 @@ The bounding box shall be expressed in decimal degree with a precision of at lea
 
 The bounding box shall be as small as possible. This requires a manual check.
 
-
 **Reference(s)**	 
 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#ref_TG_MD) 2.5.1, Req 20, 21
@@ -33,10 +32,13 @@ The bounding box shall be as small as possible. This requires a manual check.
 
 **Notes**
 
+The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available dataset (series) metadata records.  
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="extent"></a> extent  | gmd:identificationInfo[1]/*/gmd:extent/*/gmd:geographicElement/*/<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="extent"></a> extent  | gmd:identificationInfo[1]/\*/gmd:extent/\*/gmd:geographicElement/gmd:EX_GeographicBoundingBox
+<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue

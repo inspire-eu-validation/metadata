@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Schema validation](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/schema-validation)
-
 **Test method**
 
 Validates if a [title](#title) is provided and not an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#emptychar)

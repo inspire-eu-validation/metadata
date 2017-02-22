@@ -18,6 +18,10 @@
 
 **Notes**
 
+It is not entirely clear, if each and every gmd:MD_Metadata/gmd:contact must have role 'pointOfContact', or if one is sufficient. This should be clarified.
+
+It is also not clear, if the abstract test "md-contact" should only apply to contact information with role 'pointOfContact'. TG MD section 2.11.1 is all about the "metadata point of contact". Therefore it looks like the ETS should test that there is at least one (or exactly one?) gmd:MD_Metadata/gmd:contact with role 'pointOfContact' and that it has an organisation name and email address. In that case the tests md-contact and md-contact-role could be merged.
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).

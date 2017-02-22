@@ -25,7 +25,7 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="thesaurus"></a> thesaurus  | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:thesaurusName
-<a name="title"></a> title  | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
-<a name="date"></a> date  | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:thesaurusName/gmd:CI_Citation/gmd:date/*/gmd:date/gco:Date
-<a name="dateType"></a> dateType  | gmd:identificationInfo[1]/*/gmd:descriptiveKeywords/*/gmd:thesaurusName//gmd:CI_Citation/gmd:date/*/gmd:dateType
+<a name="thesaurus"></a> thesaurus  | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:thesaurusName
+<a name="title"></a> title  | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
+<a name="date"></a> date  | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:date/\*/gmd:date/gco:Date
+<a name="dateType"></a> dateType  | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:thesaurusName//gmd:CI_Citation/gmd:date/\*/gmd:dateType

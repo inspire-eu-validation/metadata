@@ -21,6 +21,8 @@ If no parameter is provided, the encoding is determined by inspecting the [schem
 
 **Notes**
 
+The schemas above are only sufficient, if a single metadata record is vaölidated. If the metadata record is part of another document, e.g. a response to a CSW GetRecords request, validation will fail. 
+
 ## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/xml-encoding/README#namespaces).
