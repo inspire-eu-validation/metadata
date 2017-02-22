@@ -22,4 +22,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-abstract <a name="abstract"></a>   | gmd:identificationInfo[1]/*/gmd:abstract
+abstract <a name="abstract"></a>   | gmd:identificationInfo[1]/\*/gmd:abstract

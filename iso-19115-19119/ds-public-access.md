@@ -35,10 +35,17 @@ If none of the elements inside [gmd:resourceConstraints](#resourceConstraints) p
 
 **Notes**
 
+The test method does not state, if the test applies only to datasets, dataset series, or also services. TG MD sections 2.9 and 2.9.1 do not appear to be restricted to a specific resource type, either. ISO 19115:2003 and ISO 19119:2005 both define "resourceContraints" as optional parts of their respective identification info elements. The test has therefore been implemented as a common test in the ETS.
+
+The Xpath to reference resource constraints has been implemented as defined by TG MD 2.9.1: identificationInfo[1]/\*/resourceConstraints/\*/otherConstraints, not as defined below.
+
+* The use of gmd:MD_DataIdentification in the path appears to be unnecessarily restrictive
+* The ATS references only ISO 19115 chapter B.5.24. For the definition of MD_ClassificationCode, it should reference ISO 19115 B.5.11
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="resourceConstraints"></a> resourceConstraints  | ./gmd:identificationInfo/*/gmd:MD_DataIdentification/*/gmd:resourceConstraints/*
+<a name="resourceConstraints"></a> resourceConstraints  | ./gmd:identificationInfo/\*/gmd:MD_DataIdentification/\*/gmd:resourceConstraints/\*

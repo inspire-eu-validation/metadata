@@ -8,7 +8,7 @@
 
 The test first checks if a [contact](#contact) element is given. It then performs the following checks for every element at gmd:contact:
 *	There must not be an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#emptychar) at ./gmd:organisationName
-*	There must not be an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#emptychar) at ./gmd:contactInfo/*/gmd:address/*/gmd:electronicMailAddress. Check [electronicMailAddress](#electronicMailAddress) with the regular expresion ^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$.
+*	There must not be an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#emptychar) at ./gmd:contactInfo/\*/gmd:address/\*/gmd:electronicMailAddress. Check [electronicMailAddress](#electronicMailAddress) with the regular expresion ^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$.
 If the string does not match the regular expression, the test fails (note: regex built for case insensitive match).
 
 **Reference(s)**	 
@@ -18,6 +18,8 @@ If the string does not match the regular expression, the test fails (note: regex
 **Test type**: Automated
 
 **Notes**
+
+In the ETS, an updated regex '^[a-zA-Z0-9\._%\+-]+@[a-zA-Z0-9\.-]+\.[a-zA-Z]{2,}$' has been used (regex are case sensitive and special characters like "." and "+" have to be escaped).
 
 ##Contextual XPath references
 

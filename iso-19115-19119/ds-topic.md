@@ -25,6 +25,10 @@ The value saved in the XML metadata element shall be a language neutral name.
 
 **Notes**
 
+The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available dataset (series) metadata records.  
+
+The ETS only checks if at least one non-empty topicCategory element is given. That a topic category value is one of the enumeration values as defined by ISO 19115 is already covered by the XML Schema validation.
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
@@ -32,4 +36,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="topic"></a> topicCategory  | ./gmd:identificationInfo[1]/*/gmd:topicCategory
+<a name="topic"></a> topicCategory  | ./gmd:identificationInfo[1]/\*/gmd:topicCategory

@@ -23,6 +23,10 @@ the types given in http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServ
 
 **Notes**
 
+The test method does not mention that the language independent codes should be used. TG MD 1.3.1 and 2.3.2 do say so.
+
+The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available service metadata records.  
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
@@ -30,4 +34,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-serviceType <a name="serviceType"></a>   | ./gmd:identificationInfo[1]/*/srv:serviceType
+serviceType <a name="serviceType"></a>   | ./gmd:identificationInfo[1]/\*/srv:serviceType

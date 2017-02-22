@@ -27,4 +27,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="role"></a> role   | gmd:identificationInfo[1]/*/gmd:pointOfContact/*/gmd:role
+<a name="role"></a> role   | gmd:identificationInfo[1]/\*/gmd:pointOfContact/\*/gmd:role

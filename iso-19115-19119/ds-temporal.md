@@ -24,12 +24,18 @@ The test case will fail if the results to steps 2, 3 and 4 all equal false.
 
 **Notes**
 
+The test method does not explicitly state, if the test applies only to datasets, dataset series, or also services. TG MD is not clear on this point, either. For example, section 2.6 mostly talks about "resource" in general. In 2.6.1, however, the definition of "Temporal Extent" is: "Time period covered by the content of the dataset".  Nevertheless, in the detailed mapping sections 3.3.1 (spatial dataset and spatial dataset series) and 3.3.2 (service resources) the Temporal Extent is listed as an optional element of the identification section (in both cases, a reference to 2.6.1 is made).
+
+In the ETS, the test has therefore been implemented as a common test and checks that a temporal reference with gml:TimePeriod uses gml:begin and gml:end elements with gml:TimeInstant given inline. The possible combinations of gml:begin, gml:beginPosition, gml:end, and gml:endPosition are already covered by the XML Schema validation.
+
+The 'extent' property is not part of the gmd:AbstractMD_Identification_Type and therefore defined in two different namespaces: 'gmd' and 'srv' (the XPath below only uses 'gmd').
+
 ##Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="period"></a> TimePeriod   | gmd:identificationInfo[1]/*/gmd:extent/*/gmd:temporalElement/*/gmd:extent/gml:TimePeriod
-<a name="date"></a> date   | gmd:identificationInfo[1]/*/gmd:citation/*/gmd:date
-<a name="dateType"></a> dateType   | gmd:identificationInfo[1]/*/gmd:citation/*/gmd:date/*/gmd:dateType
+<a name="period"></a> TimePeriod   | gmd:identificationInfo[1]/\*/gmd:extent/\*/gmd:temporalElement/\*/gmd:extent/gml:TimePeriod
+<a name="date"></a> date   | gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:date
+<a name="dateType"></a> dateType   | gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:date/\*/gmd:dateType
