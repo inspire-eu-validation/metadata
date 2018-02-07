@@ -59,7 +59,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | 12     | Use language neutral name for serviceType | [Service type](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/srv-type) |[IR MD](#ref_IR_MD) Part B 2.2 |
 | 13     | Provide at least one keyword         |[Keyword](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/keyword) |[IR MD](#ref_IR_MD) Part B 3.1 |
 | 14     | Use theme for the only dataset keyword | [Dataset keyword](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/ds-keyword) |[IR MD](#ref_IR_MD) Part B 3.1  |
-| 15     | Use category for the inly service keyword | [Service keyword](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/srv-keyword) |[IR MD](#ref_IR_MD) Part B 1.5, Article 4, part D  |
+| 15     | Use category for the only service keyword | [Service keyword](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/srv-keyword) |[IR MD](#ref_IR_MD) Part B 1.5, Article 4, part D  |
 | 16     | Use citation for other controlled keywords | [Vocabulary](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/vocabulary) |[IR MD](#ref_IR_MD) Part B  3.2|
 | 17     | Cite the originating controlled vocabulary |[Vocabulary](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/vocabulary) |[IR MD](#ref_IR_MD) Part B 3.2|
 | 18     | At least title and date for controlled vocabulary citations |[Vocabulary](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/vocabulary) |[IR MD](#ref_IR_MD) Part B 3.2 |
