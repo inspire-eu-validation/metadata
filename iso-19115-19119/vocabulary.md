@@ -1,4 +1,4 @@
-#Vocabulary
+# Vocabulary
 
 **Purpose**: A keyword value reference can contain a controlled vocabulary from where it originates. This element is optional but, if given, must follow certain guidelines.
 
