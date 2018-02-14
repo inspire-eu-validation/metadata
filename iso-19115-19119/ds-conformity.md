@@ -29,7 +29,7 @@ According to TG MD 2.8.1 (and recommendation 21), the value of gmd:pass may also
 
 TG MD Requirement 29 is also relevant, because it states of which type the result of a dataQualityInfo shall be (DQ_DomainConsistency). The ETS covers this aspect, too.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
