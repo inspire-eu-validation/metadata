@@ -1,6 +1,6 @@
-# Data Encoding 'dataset' or 'series'
+# Character Encoding dataset or series
 
-**Purpose**: Evaluate encoding and the storage or transmission format of the provided data sets or data set series.
+**Purpose**: Evaluate the character encoding for data sets and datasets.
 
 **Prerequisites**
 
@@ -8,9 +8,9 @@
 
 **Test method**
 The coding (s) of characters in the data sets and data sets using non UTF-8 based 
-encodings are checked from the element [Distribution Format](#distributionFormat).
+encodings are checked from the element [Character Set Code](#CharacterSetCode).
 
-The multiplicity of this element is one or more.
+The multiplicity of this element is zero or more.
 
 **Reference(s)**	 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#ref_TG_MD) 3.2.2.2, Req 2.5
@@ -29,4 +29,5 @@ The namespace prefixes used as described in [README.md](http://github.com/inspir
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="distributionFormat"></a> distributionFormat  | gmd:distributionInfo/\*/gmd:distributionFormat/gmd:MD_Format/text()
+<a name="CharacterSetCode"></a> CharacterSetCode  | gmd:characterSet/gmd:MD_CharacterSetCode/@codeListValue
+<a name="codeListValue"></a> codeListValue  | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")//gmx:CodeListDictionary[@gml:id='MD_CharacterSetCode']//gml:identifier/text()
