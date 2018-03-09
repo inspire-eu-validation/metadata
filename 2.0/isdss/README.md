@@ -45,14 +45,14 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 2.1      | Coordinate Reference System               | [crs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
-| 2.2      | Coordinate Reference System Identifiers                  | [crs-id](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs-id) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
-| 2.3      | Temporal Reference System    | [temportal-rs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/temportal-rs) |[IR MD](#ref_IR_MD), Part B 1.4 |
-| 2.4      | Spatial Representation Type | [spatial-representation-type](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/spatial-representation-type) | [IR MD](#ref_IR_MD), Part B 1.4 |
-| 2.5      | Character Encoding | [character-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/character-encoding)|[IR MD](#ref_IR_MD) Part B 1.5 |
-| 2.6      | Data Encoding |[data-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/data-encoding) | [IR MD](#ref_IR_MD) Part B 1.5 |
-| 2.7      | Topological Consistency Descriptive Results     | [topological-consistency-quantitative-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-quantitative-results) | |
-| 2.8      | Topological Consistency Quantitative Results        | [topological-consistency-descriptive-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-descriptive-results) |[IR MD](#ref_IR_MD) Part B 1.7 |
+| 2.1      | Coordinate Reference System               | [crs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
+| 2.2      | Coordinate Reference System Identifiers                  | [crs-id](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs-id.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
+| 2.3      | Temporal Reference System    | [temportal-rs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/temportal-rs.md) |[IR MD](#ref_IR_MD), Part B 1.4 |
+| 2.4      | Spatial Representation Type | [spatial-representation-type](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/spatial-representation-type.md) | [IR MD](#ref_IR_MD), Part B 1.4 |
+| 2.5      | Character Encoding | [character-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/character-encoding.md)|[IR MD](#ref_IR_MD) Part B 1.5 |
+| 2.6      | Data Encoding |[data-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/data-encoding.md) | [IR MD](#ref_IR_MD) Part B 1.5 |
+| 2.7      | Topological Consistency Descriptive Results     | [topological-consistency-quantitative-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-quantitative-results.md) | |
+| 2.8      | Topological Consistency Quantitative Results        | [topological-consistency-descriptive-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-descriptive-results.md) |[IR MD](#ref_IR_MD) Part B 1.7 |
 
 ## Test
 
@@ -60,14 +60,14 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [crs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs)           | Ready for review  |
-| [crs-id](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs-id)                   | Ready for review  |
-| [temportal-rs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/temportal-rs)                   | Ready for review  |
-| [spatial-representation-type](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/spatial-representation-type) | Ready for review  |
-| [character-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/character-encoding)                   | Ready for review  |
-| [data-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/data-encoding)                 | Ready for review  |
-| [topological-consistency-quantitative-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-quantitative-results)       | Ready for review  |
-| [topological-consistency-descriptive-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-descriptive-results)                       | Ready for review  |
+| [crs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs.md)           | Ready for review  |
+| [crs-id](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/crs-id.md)                   | Ready for review  |
+| [temportal-rs](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/temportal-rs.md)                   | Ready for review  |
+| [spatial-representation-type](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/spatial-representation-type.md) | Ready for review  |
+| [character-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/character-encoding.md)                   | Ready for review  |
+| [data-encoding](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/data-encoding.md)                 | Ready for review  |
+| [topological-consistency-quantitative-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-quantitative-result.md)       | Ready for review  |
+| [topological-consistency-descriptive-results](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/topological-consistency-descriptive-results.md)                       | Ready for review  |
 
 Some additional metadata tests are available in the [conformance class 'Metadata for interoperability'](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/Metadata-for-interoperability). These tests are separated from above because they have a different timeline for implementation.
 
