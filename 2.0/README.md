@@ -4,7 +4,7 @@ The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [isdss](http://inspire.ec.europa.eu/id/ats/metadata/2.0/2.0/isdss) | ISO/TS 19139:2007 Interoperability metadata |
+| [isdss](https://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss) | ISO/TS 19139:2007 Interoperability metadata |
 
 ## Rules for HTTP requests
 

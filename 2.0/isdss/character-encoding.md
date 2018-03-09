@@ -13,7 +13,7 @@ encodings are checked from the element [Distribution Format](#distributionFormat
 The multiplicity of this element is one or more.
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/character-encoding/README#ref_TG_MD) 3.2.2.2, Req 2.5
+* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#ref_TG_MD) 3.2.2.2, Req 2.5
 * [ISO 10646](http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html)
 **Test type**: Automated
 
