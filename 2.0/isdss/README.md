@@ -1,4 +1,4 @@
-# Conformance class: INSPIRE Profile based on EN ISO 19115 and EN ISO 19119 (DRAFT)
+# Conformance class: INSPIRE Profile based on EN ISO/TS 19139:2007
 
 This conformance class is part of the [Abstract Test Suite for the INSPIRE Metadata Technical Guidance based on ISO/TS 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/2.0).
 
