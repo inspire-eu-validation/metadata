@@ -24,7 +24,7 @@ encodings, including UTF-8 (code list value "utf8"), shall be given using this e
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#namespaces).
+The namespace prefixes used as described in [README.md](http://github.com/inspire-eu-validation/metadata/tree/2.0/2.0/isdss/README#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
