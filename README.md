@@ -1,11 +1,10 @@
-# Abstract Test Suite: INSPIRE Metadata Technical Guidance
+# Abstract Test Suite: INSPIRE Metadata Technical Guidance 2.0 based on ISO/TS 19139:2007
 
 The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [INSPIRE Profile based on EN ISO 19115 and EN ISO 19119](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119) | ISO 19115/19119 metadata record |
-| [XML encoding](http://inspire.ec.europa.eu/id/ats/metadata/1.3/xml-encoding) | XML document (MD_Metadata) |
+| [ISO 19139:2007](https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf) | ISO/TS 19139:2007 Interoperability metadata |
 
 ## Rules for HTTP requests
 
