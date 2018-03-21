@@ -1,7 +1,8 @@
-# Baseline Metadata for Data Sets and Data Set Series
+# 2	Common Requirements for ISO/TC 19139:2007 based INSPIRE metadata records 
 
-Abstract Test Suite for Conformance Class 1 of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance 
-based on ISO/TS 19139:2007.
+This group describing metadata elements that shall be used in the same way in more than one of the mentioned Conformance Classes.
+
+This chapter does not comprise a Conformance Class, but is referred to from the others Conformance Class chapters of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance based on ISO/TS 19139:2007.
 
 *Note*: This ATS is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
@@ -17,7 +18,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [ISO 19139:2007](#https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf) | Common Requirements | n/a |
+| | | |
 
 ### Indirect dependencies
 
@@ -29,6 +30,7 @@ An indirect dependency is another conformance class whose requirements must be m
  
  
 ## External document references
+
 
 | Abbreviation | Document name                       |
 | ------------ | ----------------------------------- |
@@ -50,17 +52,28 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 1.1      | Resource Type               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) ||
-| 1.2      | Only One md Data Identification                  | [only-one-md-data-identification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/only-one-md-data-identification) ||
-| 1.3      | Unique Resource Identifier    | [dataset-ui](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-ui) ||
-| 1.4      | INSPIRE Theme Keyword | [inspire-theme-keyword](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/inspire-theme-keyword) ||
-| 1.5      | Spatial Resolution | [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/spatial-resolution)||
-| 1.6      | Resource Language |[resource-languaje](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-languaje) ||
-| 1.7      | Topic Category     | [topic-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/topic-category) | |
-| 1.8      | Resource Locator for Data Set or Series       | [resource-locator](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-locator) | |
-| 1.9      | Data quality info: One Data Quality Element        | [one-data-quality-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/one-data-quality-element) | |
-| 1.10      | Data quality info: Conformity        | [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity) | |
-| 1.11      | Data quality infi: Lineage        | [lineage](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/lineage) | |
+| C.1      | XML Schema               | [xml-schema](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/xml-schema) ||
+| C.2      | Root Element              | [root-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/root-element) ||
+| C.3      | Encoding of Code List Values               | [code-list-value](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/code-list-value) ||
+| C.4      | Encoding of Free Text Values               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) ||
+| C.5      | Language Code               | [metadata-language-code](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/metadata-language-code) ||
+| C.6      | Metadata Point of Contact                | [md-point-of-contact](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/md-point-of-contact) ||
+| C.7      | Metadata Date               | [md-date](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/md-date) ||
+| C.8      | Resource Title               | [resource-title](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-title) ||
+| C.9      | Resource Abstract               | [resource-abstract](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-abstract) ||
+| C.10      | Responsible Organization               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) ||
+| C.11      | Temporal References               | [responsible-organisation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/responsible-organisation) ||
+| C.12      | Not More than one Date of Creation               | [max-1-date-of-creation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/max-1-date-of-creation) ||
+| C.13      | Not More than one Date of Last Revision               | [max-1-date-of-last-revision](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/max-1-date-of-last-revision) ||
+| C.14      | Temporal Extent               | [temporal-extent](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/temporal-extent) ||
+| C.15      | Keyword Originating CV               | [keyword-originating-cv](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/keyword-originating-cv) ||
+| C.16      | Group Keywords by CV               | [group-keywords-by-cv](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/group-keywords-by-cv) ||
+| C.17      | Limitations on Public Access               | [limitations-on-public-access](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/limitations-on-public-access) ||
+| C.18      | Conditions for Access and Use               | [conditions-for-access-and-use](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conditions-for-access-and-use) ||
+| C.19      | Geographical Bounding Box               | [bounding-box](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/bounding-box) ||
+| C.20      | Conformity Statement               | [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity) ||
+| C.21      | Conformity Specification               | [conformity-specification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity-specification) ||
+| C.22      | Conformity Degree               | [conformity-degree](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity-degree) ||
 
 ## Test
 
@@ -68,18 +81,28 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) | Ready for review |
-| [only-one-md-data-identification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/only-one-md-data-identification) | Ready for review |
-| [dataset-ui](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-ui) | Ready for review |
-| [inspire-theme-keyword](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/inspire-theme-keyword) | Ready for review |
-| [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/spatial-resolution)| Ready for review |
-|[resource-languaje](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-languaje) | Ready for review |
-| [topic-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/topic-category) | Ready for review |
-| [resource-locator](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-locator) | Ready for review |
-| [one-data-quality-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/one-data-quality-element) | Ready for review |
-| [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity) | Ready for review |
-| [lineage](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/lineage) | Ready for review |
-
+| [xml-schema](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/xml-schema) | Ready for Review |
+| [root-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/root-element) | Ready for Review |
+| [code-list-value](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/code-list-value) | Ready for Review |
+| [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) | Ready for Review |
+| [metadata-language-code](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/metadata-language-code) | Ready for Review |
+| [md-point-of-contact](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/md-point-of-contact) | Ready for Review |
+| [md-date](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/md-date) | Ready for Review |
+| [resource-title](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-title) | Ready for Review |
+| [resource-abstract](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-abstract) | Ready for Review |
+| [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) | Ready for Review |
+| [responsible-organisation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/responsible-organisation) | Ready for Review |
+| [max-1-date-of-creation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/max-1-date-of-creation) | Ready for Review |
+| [max-1-date-of-last-revision](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/max-1-date-of-last-revision) | Ready for Review |
+| [temporal-extent](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/temporal-extent) | Ready for Review |
+| [keyword-originating-cv](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/keyword-originating-cv) | Ready for Review |
+| [group-keywords-by-cv](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/group-keywords-by-cv) | Ready for Review |
+| [limitations-on-public-access](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/limitations-on-public-access) | Ready for Review |
+| [conditions-for-access-and-use](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conditions-for-access-and-use) | Ready for Review |
+| [bounding-box](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/bounding-box) | Ready for Review |
+| [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity) | Ready for Review |
+| [conformity-specification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity-specification) | Ready for Review |
+| [conformity-degree](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity-degree) | Ready for Review |
 
 
 Some additional metadata tests are available in the [conformance class 'Metadata for interoperability'](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/Metadata-for-interoperability). These tests are separated from above because they have a different timeline for implementation.
