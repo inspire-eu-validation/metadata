@@ -28,6 +28,6 @@ The namespace prefixes used as described in [README.md](http://github.com/inspir
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="CharacterSetCode"></a> CharacterSetCode  | gmd:characterSet/gmd:MD_CharacterSetCode/@codeListValue
+<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="CharacterSetCode"></a> CharacterSetCode  | ./gmd:characterSet/gmd:MD_CharacterSetCode/@codeListValue
 <a name="codeListValue"></a> codeListValue  | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")//gmx:CodeListDictionary[@gml:id='MD_CharacterSetCode']//gml:identifier/text()

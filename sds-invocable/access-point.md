@@ -11,7 +11,7 @@ Internet address containing a detailed description of a spatial data service.
 Check that access point of the Invocable Spatial Data Service is described in the using a gmd:CI_OnlineResource element. 
 
 - The child element gmd: linkage must contain the access point URL that contains a detailed description of a spatial data service
-- The child element gmd: description must contain a gmx: Anchor element that points to the "accessPoint" value of the OnLineDescriptionCode codelist in the INSPIRE66 registry.
+- The child element gmd: description must contain a [Url Access Text](#urlAccessText) element that points to the "accessPoint" value of the OnLineDescriptionCode codelist in the INSPIRE66 registry.
 
 The multiplicity of the element is one or more.
 
@@ -35,4 +35,5 @@ Abbreviation                                   |  XPath expression (relative to 
 -----------------------------------------------| ------------------------------------------------------------------
 <a name="onlineAccess"></a> Online Access |  ./gmd:distributionInfo/\*/gmd:transferOptions/gmd:MD_DigitalTransferOptions/ \*/gmd:CI_OnlineResource[1]
 <a name="urlAccess"></a> URL Access |  ./gmd:distributionInfo/\*/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/ \*/gmd:linkage/gmd:URL
-<a name="urlAccess"></a> URL Access |  ./gmd:distributionInfo/\*/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/ \*/gmd:description/gmd:Anchor
+<a name="urlAccessText"></a> URL Access Text |  ./gmd:distributionInfo/\*/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/ \*/gmd:description/gmd:Anchor/@xlink:href='http://inspire.ec.europa.eu/metadata-
+codelist/OnLineDescriptionCode/accessPoint'

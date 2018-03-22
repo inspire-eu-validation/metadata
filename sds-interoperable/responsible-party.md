@@ -29,8 +29,8 @@ The namespace prefixes used as described in [README.md](README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-<a name="custodian">Point Of Contact</a>   | /gmd:identificationInfo/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]
-<a name="custodian">pointOfContact</a>   |/gmd:identificationInfo/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/\*/gmd:CI_RoleCode/@codeList 
+<a name="custodian">Point Of Contact</a>   | ./gmd:identificationInfo/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]
+<a name="custodian">pointOfContact</a>   | ./gmd:identificationInfo/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/\*/gmd:CI_RoleCode/@codeList 
 <a name="codeListValue"></a> code List Value | doc("http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='CI_RoleCode']//gml:identifier/text()
 <a name="organisationName">Name Organisation</a>   | /gmd:identificationInfo/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/<gmd:organisationName>/text()
 <a name="electronicMailAddress">Electronic Mail Adress</a>   | /gmd:identificationInfo/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/gmd:contactInfo/\*/gmd:address/\*/gmd:electronicMailAddress/text()

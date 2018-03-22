@@ -27,6 +27,6 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="operation_metadata">Operation Metadata</a> | gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]
-<a name="connectPoint">Connect Point</a> | gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata/srv:connectPoint 
+<a name="operation_metadata">Operation Metadata</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]
+<a name="connectPoint">Connect Point</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata/srv:connectPoint 
  

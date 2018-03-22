@@ -27,6 +27,6 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="referenceSystemIdentifier"></a> referenceSystemIdentifier  | gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/gmd:RS_Identifier
-<a name="code"></a> codeChild  | gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/\*/gmd:code/text()
+<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="referenceSystemIdentifier"></a> referenceSystemIdentifier  | ./gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/gmd:RS_Identifier
+<a name="code"></a> codeChild  | ./gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/\*/gmd:code/text()

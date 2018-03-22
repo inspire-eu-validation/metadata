@@ -33,8 +33,8 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="operation_metadata">Operation Metadata</a> | gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]
-<a name="operation_name">Operation Name</a> | gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/srv:operationName[1]/text()
-<a name="dcpList">DCP</a> | gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/srv:operationName[1]/\*/srv:DCPList/text()
-<a name="parameter ">Parameter</a> | <gmd:identificationInfo>/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter
-<a name="point_url ">Point URL</a> | gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata/srv:connectPoint/\*/gmd:URL[1]
+<a name="operation_metadata">Operation Metadata</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]
+<a name="operation_name">Operation Name</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/srv:operationName[1]/text()
+<a name="dcpList">DCP</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/srv:operationName[1]/\*/srv:DCPList/text()
+<a name="parameter ">Parameter</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter
+<a name="point_url ">Point URL</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata/srv:connectPoint/\*/gmd:URL[1]

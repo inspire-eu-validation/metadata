@@ -29,5 +29,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="online"></a> OnlineResource   | gmd:transferOptions/\*/gmd:onLine/gmd: linkage/gmd:URL
+<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="online"></a> OnlineResource   | ./gmd:transferOptions/\*/gmd:onLine/gmd: linkage/gmd:URL

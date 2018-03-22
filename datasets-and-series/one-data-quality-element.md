@@ -22,7 +22,7 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="dataquality"></a> dataQuality    | gmd:dataQualityInfo[count(gmd:DQ_DataQuality)=1]
-<a name="scopeCode"></a> scopeCode    | gmd:dataQualityInfo[1]/\*/gmd:scope/\*/gmd:level/gmd:MD_ScopeCode/@codeListValue
+<a name="dataquality"></a> dataQuality    | ./gmd:dataQualityInfo[count(gmd:DQ_DataQuality)=1]
+<a name="scopeCode"></a> scopeCode    | ./gmd:dataQualityInfo[1]/\*/gmd:scope/\*/gmd:level/gmd:MD_ScopeCode/@codeListValue
 <a name="codeListValue"></a> codeListValue | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='MD_ScopeCode']///gml:identifier/text()
 

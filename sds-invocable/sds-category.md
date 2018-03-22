@@ -11,7 +11,7 @@
 * The multiplicity of the element  is one.
 
 * This element shall contain a gmd:CI_Citation element for one of the three Conformance Classes for Invocable Spatial Data Service categories.
-* The title of the cited Conformance Class shall be encoded using the gmd:title/gmx:Anchor element. 
+* The title of the cited Conformance Class shall be encoded using the [title](#title) element. 
 **Reference(s)**	 
 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#ref_TG_MD), 4.3.3.2, Req 5.4
@@ -33,6 +33,6 @@ Abbreviation                                   |  XPath expression (relative to 
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-<a name="result_invocable">classification result invocable</a> | gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]
- <a name="citation">Citation</a> | gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]/\*/gmd:CI_Citation
- <a name="title">Title</a> | gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]/\*/gmd:CI_Citation/gmd:title/gmd:Anchor
+<a name="result_invocable">classification result invocable</a> | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]
+ <a name="citation">Citation</a> | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]/\*/gmd:CI_Citation
+ <a name="title">Title</a> | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]/\*/gmd:CI_Citation/gmd:title/gmd:Anchor/@xlink:href=' http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable'

@@ -1,24 +1,28 @@
 # Minimum estimated Quality of Service 
 
-**Purpose**: It is verified that each of the quality criteria of the services comply with minimum values.
+**Purpose**: The purpose is to describe the minimum provided service level for a Spatial Data Service.
 
 **Prerequisites**
 
 **Test method**
 
-Check that the [availability statement](#availability_statement) for availability is given. If so, pass the test. Otherwise fail the test.
+*The minimum values for each of the quality of service criteria are evaluated using a [Conceptual Consistency](#conceptualConsistency) element within the gmd element: DQ_DataQuality, with scope for the entire service.
+*These elements of a measurement will also be tested:
+
+* - The [name](#nameMeasurement) of the measurement.
+* - A description of the encoded measurement under the gmd: measureDescription element.
+* - The measurement [result](#resultMeasurement) value.
+* - The [unit](#) of measurement.
 
 **Reference(s)**
 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/README#ref_TG_MD) 4.4.3.1, Req 6.5
-
+* [Quality Of Service Criteria Code](http://inspire.ec.europa.eu/metadatacodelist/QualityOfServiceCriteriaCode)
 **Test type**: Automated
 
 **Notes**
 
-* Identifying the INSPIRE QoS indicator just be a specific ```gco:CharacterString``` value ```Availability``` is not sufficient, as there may be other conceptual consistency reports with measures with the same name. There should be reference to the definition of this indicator in the INSPIRE context.
-* The units of the measure must be identified in order to avoid misinterpretations, like whether the availability number should be interpreted as a percentage (0-100) or fraction (0 - 1).
-* The type of the ```gco:Record``` is not defined in GML. There should be clear guidance on the content for this element in [TG SDS](README.md#ref_TG_SDS) in order to harmonize it's use.
+* These values should reflect the true Quality of Service of the particular service evaluated in realistic test scenarios rather than the expected goals to reach for these criteria. 
 
 ## Contextual XPath references
 
@@ -26,4 +30,8 @@ The namespace prefixes used as described in [README.md](README.md#namespaces).
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-availability statement <a name="availability_statement"></a> | /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_ConceptualConsistency[child::gmd:nameOfMeasure/gco:CharacterString='Availability' and child::gmd:result/gmd:DQ_QualitativeResult/gmd:value/gco:Record]
+<a name="conceptualConsistency"></a> Conceptual Consistency | ./gmd:dataQualityInfo/\*/gmd:report/gmd:DQ_ConceptualConsistency
+<a name="nameMeasurement"></a> Name Measurement | ./gmd:dataQualityInfo/\*/gmd:report/gmd:DQ_ConceptualConsistency/gmd:nameOfMeasure/gmd:Anchor/@xlink:href='http://inspire.ec.europa.eu/metadatacodelist/QualityOfServiceCriteriaCode'
+<a name="descriptionMeasurement"></a> Description Measurement | ./gmd:dataQualityInfo/\*/gmd:report/gmd:DQ_ConceptualConsistency/gmd:measureDescription
+<a name="resultMeasurement"></a> Result Measurement | ./gmd:dataQualityInfo/\*/gmd:report/gmd:DQ_ConceptualConsistency/gmd:result/gmd:DQ_QuantitativeResult
+<a name="unitMeasurement"></a> Unit Measurement | ./gmd:dataQualityInfo/\*/gmd:report/gmd:DQ_ConceptualConsistency/gmd:valueUnit

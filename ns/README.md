@@ -18,7 +18,7 @@ A direct dependency is another conformance class whose requirements must be met 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
 | [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common) | Common Requirements | n/a |
-| [ISO 19139:2007](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds) | Conformance Class 3 | n/a |
+| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds) | Conformance Class 3 | n/a |
 
 ### Indirect dependencies
 

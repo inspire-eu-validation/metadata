@@ -1,12 +1,15 @@
-# Temporal Extent
+# Keyword Originating CV
 
-
-**Purpose**: 
+**Purpose**: Provide the citation of the source controlled vocabulary when giving the value of a keyword.
 
 **Prerequisites**
 
 **Test method**
-*  If a temporary reference is provided, its coding is checked through the element encoded using the element gmd:EX_Extent with one or more elements gmd:EX_TemporalExtent.
+*  The controlled vocabulary of origin of a keyword must be cited using [Citation](#citation) element, and its children elements:
+
+*  - The vocabulary title will be given using the [title](#title), and will be free text not empty.
+
+*  - The date of publication of the vocabulary will be given through the [Date](#date) elements and the [code](#codeListValue) for the [Date Type](#dateType).
 
 **Reference(s)**	 
 
@@ -25,4 +28,8 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="individual"></a> Individual Date   | ./gmd:identificationInfo[1]/\*/gmd:extent/\*/gmd:temporalElement/\*/gmd:extent/gml:TimeInstant/gml:timePosition 
+<a name="citation"></a> Date  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation
+<a name="title"></a> Date  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
+<a name="date"></a> Date  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/\*/gmd:date/gmd:CI_Date/gmd:date[1]/gco:Date
+<a name="dateType"></a> Date Type | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:date/gmd:CI_Date/gmd:date[1]/\*/gmd:dateType/gmd:CI_DateTypeCode/@codeListValue
+<a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='CI_DateTypeCode']//gml:identifier/text()

@@ -31,6 +31,6 @@ The namespace prefixes used as described in [README.md](#README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="LegalConstraints"></a> LegalConstraints |  gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints[1]
-<a name="Restriction"></a> Restriction |  gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints[1]/\*/<gmd:MD_RestrictionCode>/@codeListValue
+<a name="LegalConstraints"></a> LegalConstraints |  ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints[1]
+<a name="Restriction"></a> Restriction |  ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints[1]/\*/<gmd:MD_RestrictionCode>/@codeListValue
 <a name="codeListValue"></a> code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='MD_RestrictionCode']//gml:identifier/text()

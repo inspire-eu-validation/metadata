@@ -31,4 +31,4 @@ The namespace prefixes used as described in [README.md](#README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="referenceSystemIdentifier"></a> referenceSystemIdentifier  | gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/\*/gmd:code/(gmx:Anchor/@xlink:href&#124;gco:CharacterString)
+<a name="referenceSystemIdentifier"></a> referenceSystemIdentifier  | ./gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/\*/gmd:code
