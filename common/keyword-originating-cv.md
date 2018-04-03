@@ -5,11 +5,11 @@
 **Prerequisites**
 
 **Test method**
-*  The controlled vocabulary of origin of a keyword must be cited using [Citation](#citation) element, and its children elements:
+The controlled vocabulary of origin of a keyword must be cited using [Citation](#citation) element, and its children elements:
 
-*  - The vocabulary title will be given using the [title](#title), and will be free text not empty.
+*  The vocabulary title will be given using the [title](#title), and will be free text not empty.
 
-*  - The date of publication of the vocabulary will be given through the [Date](#date) elements and the [code](#codeListValue) for the [Date Type](#dateType).
+*  The date of publication of the vocabulary will be given through the [Date](#date) elements and the [code](#codeListValue) for the [Date Type](#dateType).
 
 **Reference(s)**	 
 

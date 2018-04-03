@@ -6,13 +6,13 @@
 
 **Test method**
 
-*The minimum values for each of the quality of service criteria are evaluated using a [Conceptual Consistency](#conceptualConsistency) element within the gmd element: DQ_DataQuality, with scope for the entire service.
-*These elements of a measurement will also be tested:
+The minimum values for each of the quality of service criteria are evaluated using a [Conceptual Consistency](#conceptualConsistency) element within the gmd element: DQ_DataQuality, with scope for the entire service.
+These elements of a measurement will also be tested:
 
-* - The [name](#nameMeasurement) of the measurement.
-* - A description of the encoded measurement under the gmd: measureDescription element.
-* - The measurement [result](#resultMeasurement) value.
-* - The [unit](#) of measurement.
+* The [name](#nameMeasurement) of the measurement.
+* A description of the encoded measurement under the gmd: measureDescription element.
+* The measurement [result](#resultMeasurement) value.
+* The [unit](#) of measurement.
 
 **Reference(s)**
 

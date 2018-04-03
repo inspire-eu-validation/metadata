@@ -51,7 +51,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | 5.2      | Resource Locator Access Point               | [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/access-point) | |
 | 5.3      | Data Quality Conformity               | [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/conformity) | |
 | 5.4      | Spatial Data Service Category              | [sds-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/sds-category) | |
-| 5.5      | Conformity to Technical Specifications               | [conformity-to-technical-specifications](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invoable/conformity-to-technical-specifications) | |
+| 5.5      | Conformity to Technical Specifications               | [conformity-to-technical-specifications](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/conformity-to-technical-specifications) | |
 
 
 ## Test

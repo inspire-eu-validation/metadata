@@ -50,9 +50,9 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
 | 2.1      | Coordinate Reference System               | [crs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
 | 2.2      | Coordinate Reference System Identifiers                  | [crs-id](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs-id) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
-| 2.3      | Temporal Reference System    | [temportal-rs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/temportal-rs) |[IR MD](#ref_IR_MD), Part B 1.4 |
+| 2.3      | Temporal Reference System    | [temporal-rs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/temporal-rs) |[IR MD](#ref_IR_MD), Part B 1.4 |
 | 2.4      | Spatial Representation Type | [spatial-representation-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type) | [IR MD](#ref_IR_MD), Part B 1.4 |
-| 2.5      | Character Encoding | [character-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/character-encoding.md)|[IR MD](#ref_IR_MD) Part B 1.5 |
+| 2.5      | Character Encoding | [character-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/character-encoding)|[IR MD](#ref_IR_MD) Part B 1.5 |
 | 2.6      | Data Encoding |[data-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/data-encoding) | [IR MD](#ref_IR_MD) Part B 1.5 |
 | 2.7      | Topological Consistency Descriptive Results     | [topological-consistency-quantitative-results](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/topological-consistency-quantitative-results) | |
 | 2.8      | Topological Consistency Quantitative Results        | [topological-consistency-descriptive-results](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/topological-consistency-descriptive-results) |[IR MD](#ref_IR_MD) Part B 1.7 |
@@ -65,7 +65,7 @@ This Conformance Class contains the following tests:
 | ----------------------------------------------------------------- | -------- |
 | [crs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs)           | Ready for review  |
 | [crs-id](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs-id)                   | Ready for review  |
-| [temportal-rs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/temportal-rs)                   | Ready for review  |
+| [temporal-rs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/temporal-rs)                   | Ready for review  |
 | [spatial-representation-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type) | Ready for review  |
 | [character-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/character-encoding)                   | Ready for review  |
 | [data-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/data-encoding)                 | Ready for review  |

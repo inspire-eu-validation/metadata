@@ -5,12 +5,12 @@
 **Prerequisites**
 
 **Test method**
-*  Check the information about the existence and its reasons in the limitations of public access to the data set. To do this, the element [Legal Constraints](#legalConstraints) will be used.
+Check the information about the existence and its reasons in the limitations of public access to the data set. To do this, the element [Legal Constraints](#legalConstraints) will be used.
 * The limitations (or lack thereof) will include both specifications of the restriction:
 
-* - An [Restriction Code](#restrictionCode) element will be given with a value from the "otherRestrictions" [Code List Value](#codeListValue)
+* An [Restriction Code](#restrictionCode) element will be given with a value from the "otherRestrictions" [Code List Value](#codeListValue)
 
-* - And at least one instance [Other Constraints](#otherConstraints) that points to one of the values in the code list for "LimitationsOnPublicAccess26". In the case of no access limitations, this element must point to the value of the "noLimitations" code list.
+* And at least one instance [Other Constraints](#otherConstraints) that points to one of the values in the code list for "LimitationsOnPublicAccess26". In the case of no access limitations, this element must point to the value of the "noLimitations" code list.
 
 **Reference(s)**	 
 

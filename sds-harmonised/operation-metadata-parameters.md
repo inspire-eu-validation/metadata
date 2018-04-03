@@ -3,21 +3,19 @@
 **Purpose**: For all the required and optional request parameters of the operations, its secondary elements will be checked.
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
-
 **Test method**
 
-* The required and optional request [parameter](#parameter) of the operation metadata have to be defined from a series of child elements:
+The required and optional request [parameter](#parameter) of the operation metadata have to be defined from a series of child elements:
 
-*- [Parameter Name](#parameter_name): name of the parameter as used by the service. The multiplicity of this element is one.
-* The child element aName is a Non-empty Free Text Element.
-* The child element attributeType shall contain the record or the type part of the attribute name.
+* [Parameter Name](#parameter_name): name of the parameter as used by the service. The multiplicity of this element is one.
+The child element aName is a Non-empty Free Text Element.
+The child element attributeType shall contain the record or the type part of the attribute name.
 
-*- [Optionality](#optionality): indicates whether the attribute is mandatory or optional. The multiplicity of this element is one and its content is free text type, not empty.
+* [Optionality](#optionality): indicates whether the attribute is mandatory or optional. The multiplicity of this element is one and its content is free text type, not empty.
 
-*- [Repeatability](#repeatability): from true/false values it is indicated if the attribute can be repeated.
+* [Repeatability](#repeatability): from true/false values it is indicated if the attribute can be repeated.
 
-*- [Type Name](#type_name): indicate the data type of the attribute.
+* [Type Name](#type_name): indicate the data type of the attribute.
 
 **Reference(s)**	 
 

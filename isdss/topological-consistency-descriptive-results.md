@@ -8,7 +8,7 @@ Checks so type of spatial representation is given using an element [spatialRepre
 One of the code list values "vector", "grid", "tin" or "textTable".
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type/README#ref_TG_MD) 3.2.2.1, Req 2.4
+* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type/README#ref_TG_MD) 3.2.4.1, Req 2.8
 
 **Test type**: Automated
 

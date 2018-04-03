@@ -7,16 +7,16 @@
 
 **Test method**
 
-* The information on the temporal dimension of the data will be described by a set of dates referring to a temporary reference system and will be expressed in accordance with [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601).
+The information on the temporal dimension of the data will be described by a set of dates referring to a temporary reference system and will be expressed in accordance with [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601).
 
-* The default reference system will be the Gregorian calendar.
-* For this there must be at least one [date](#date) element.
+The default reference system will be the Gregorian calendar.
+For this there must be at least one [date](#date) element.
 
-* - To specify the value of the [date precision](#datePrecision), the gco element will be used: Date
+* To specify the value of the [date precision](#datePrecision), the gco element will be used: Date
 
-* - To specify the value of the [date and time precision](#dateTimePrecision), the gco element will be used: DateTime
+* To specify the value of the [date and time precision](#dateTimePrecision), the gco element will be used: DateTime
 
-* - The date type will be specified through the [Date Type](#dateType) element with a corresponding value from the [Code List Value](#codeListValue) [ISO 19139].
+* The date type will be specified through the [Date Type](#dateType) element with a corresponding value from the [Code List Value](#codeListValue) [ISO 19139].
 
 **Reference(s)**	 
 

@@ -11,9 +11,9 @@ service and for reporting the possible technical or interoperability issues.
 This information is verified through the element [Point Of Contact](#pointOfContact). Its multiplicity is from one or more.
 
 This element shall be coded through the following child elements:
--  The value "custodian" of ISO 19139 code list CI_RoleCode [Role Code](#codeListValue).
-- The name of the organisation as the value of [organisation name](#organisationName) element with a Non-empty Free Text Element content. 
-- The email address of the organisation as the value of [electronic mail adress](#electronicMailAddress) element with a Non-empty Free Text Element
+* The value "custodian" of ISO 19139 code list CI_RoleCode [Role Code](#codeListValue).
+* The name of the organisation as the value of [organisation name](#organisationName) element with a Non-empty Free Text Element content. 
+* The email address of the organisation as the value of [electronic mail adress](#electronicMailAddress) element with a Non-empty Free Text Element
 
 **Reference(s)**
 

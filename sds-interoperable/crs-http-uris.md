@@ -6,8 +6,6 @@ supported CRSes for a service shall be given as a list in the service metadata r
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
-
 **Test method**
 It is checked that the value of the HTTP URI Identifier column is used as the value of [referenceSystemIdentifier](#referenceSystemIdentifier) element.
 

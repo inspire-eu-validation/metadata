@@ -6,15 +6,15 @@
 **Prerequisites**
 
 **Test method**
-*  If a temporary reference is provided, its coding is checked through the element encoded using the element gmd:EX_Extent with one or more elements gmd:EX_TemporalExtent.
+If a temporary reference is provided, its coding is checked through the element encoded using the element gmd:EX_Extent with one or more elements gmd:EX_TemporalExtent.
 
-*  The value of each of these elements can be an individual date or a period of time between two dates.
+The value of each of these elements can be an individual date or a period of time between two dates.
 
-*  For [individual](#individual) dates, the gml:timePosition element is evaluated with the date value given in accordance with [ISO 8601]
+For [individual](#individual) dates, the gml:timePosition element is evaluated with the date value given in accordance with [ISO 8601]
 
-*  For a period of time it must contain a TimePeriod child element that contains the start and end dates of the period:
-* - Check that [beginPosition](#beginPosition) does not have attribute @frame (which means that the default reference system is used) and whether the date is valid.
-* - Check that [endPosition](#endPosition) does not have attribute @frame (which means that the default reference system is used) and whether the date is valid.
+For a period of time it must contain a TimePeriod child element that contains the start and end dates of the period:
+* Check that [beginPosition](#beginPosition) does not have attribute @frame (which means that the default reference system is used) and whether the date is valid.
+* Check that [endPosition](#endPosition) does not have attribute @frame (which means that the default reference system is used) and whether the date is valid.
 
 **Reference(s)**	 
 

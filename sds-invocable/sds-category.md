@@ -3,8 +3,6 @@
 **Purpose**: 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
-
 **Test method**
 
 * Check that there is at least one DQ_ConformanceResult returned from query [classification result invocable](#result_invocable).

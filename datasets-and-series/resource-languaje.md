@@ -18,7 +18,7 @@ enumeration type [languageISO6392B](http://inspire.ec.europa.eu/schemas/common/1
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_TG_MD), 3.1.2.4, Req 1.5
+* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_TG_MD), 3.1.2.4, Req 1.6
 * [ISO 639-2](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_ISO_639_2)
 
 **Test type**: Automated

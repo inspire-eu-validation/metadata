@@ -5,7 +5,6 @@ To do this, it must provide all a series of technical elements necessary to allo
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
 * [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity)
 
 **Test method**
@@ -29,7 +28,6 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]
 <a name="citation"></a> Citation  | gmd:CI_Citation/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>
 <a name="title"></a> Title  | gmd:title/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>/<gmd:title>/text()
 <a name="dateType"></a> dateType |gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>/\*/<gmd:CI_Date>/\*/<gmd:CI_DateTypeCode>///gmd:CI_DateTypeCode/@codeListValue

@@ -2,14 +2,13 @@
 
 **Purpose**: The invocation metadata must be specified for the Spatial Data Harmonized Services
 **Prerequisites**
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
 
 **Test method**
 
-* It is checked if the metadata are encoded invocation from element [SV_OperationMetadata](#operation_metadata) considering that:
+It is checked if the metadata are encoded invocation from element [SV_OperationMetadata](#operation_metadata) considering that:
 
-* - The child element [Connect Point](#connectPoint) must be the same as the element that describes the [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/access-point).
-* - The contents of these element shall be given according to [ISO 19119, Section C.2] when the metadata record contains at least one of these elements.
+* The child element [Connect Point](#connectPoint) must be the same as the element that describes the [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/access-point).
+* The contents of these element shall be given according to [ISO 19119, Section C.2] when the metadata record contains at least one of these elements.
 
 
 **Reference(s)**	 

@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
-
 **Test method**
 * Check the restrictions of access and use of the service through the element [LegalConstraints](#legalConstraints), which is used to describe the non-technical access conditions and that.
 
@@ -18,7 +16,7 @@ In both cases, it will be verified that there is a child element [Restriction](#
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/README#ref_TG_MD) 4.4.1.1, Req 6.1
+* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/README#ref_TG_MD) 4.4.2.1, Req 6.3
 * [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/README#ref_ISO_19115) table B.8 MD_RestrictionCode
 
 **Test type**: Automated
