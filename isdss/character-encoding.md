@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
-
 **Test method**
 The coding (s) of characters in the data sets and data sets using non UTF-8 based 
 encodings are checked from the element [Character Set Code](#CharacterSetCode).

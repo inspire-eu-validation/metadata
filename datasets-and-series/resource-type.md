@@ -23,5 +23,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="codeListValue"></a> code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='MD_ScopeCode']//gml:identifier/text()

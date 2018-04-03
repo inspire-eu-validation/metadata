@@ -4,11 +4,12 @@
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
 
 **Test method**
 
-* This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
+This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
+
 * The test first checks if a unique [identifier](#identifier) is given and if it is of type MD_Identifier or RS_Identifier.
 
 TThe container of the CODE element is free text but should not be empty.
@@ -31,5 +32,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="identifier"></a> identifier   | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:identifier/\*/gmd:code

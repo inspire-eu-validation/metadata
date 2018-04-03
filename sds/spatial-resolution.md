@@ -8,9 +8,14 @@ resolution in using the ISO 19139 XML Schema.
 
 **Prerequisites**
 
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+
 **Test method**
-The spatial resolution restriction text shall include either an equivalent scale as integer valued scale denominator
- or a resolution distance using a numerical length value and with a unit of length.
+
+This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+
+* The spatial resolution restriction text shall include either an equivalent scale as integer valued scale denominator
+* or a resolution distance using a numerical length value and with a unit of length.
 
 **Reference(s)**	 
 
@@ -28,5 +33,6 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="spatialResolution"></a> spatialResolution | ./gmd:identificationInfo[1]/\*/gmd:abstract
 

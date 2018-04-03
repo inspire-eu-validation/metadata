@@ -4,9 +4,12 @@
 Internet address containing a detailed description of a spatial data service.
 
 **Prerequisites**
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
 
 **Test method**
+
+This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
 
 * Check that a resource locator linking to the described Spatial Data Service shall be given if online access to this service is available.
 
@@ -30,4 +33,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="onlineAccess"></a> Online Access |  ./gmd:distributionInfo/\*/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/ \*/gmd:linkage/gmd:URL

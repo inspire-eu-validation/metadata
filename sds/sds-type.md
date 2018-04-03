@@ -1,10 +1,10 @@
-# Srv type
+# Service type
 
 **Purpose**: If the type of the resource was service, exactly one name describing the type of service must be given.
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
 
 **Test method**
 
@@ -29,5 +29,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-serviceType <a name="serviceType"></a>   | ./gmd:identificationInfo[1]/\*/srv:serviceType/gco:LocalName
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="serviceType"> Service Type </a>   | ./gmd:identificationInfo[1]/\*/srv:serviceType/gco:LocalName

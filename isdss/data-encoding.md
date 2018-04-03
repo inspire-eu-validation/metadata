@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
-
 **Test method**
 *The coding and storage or transmission format of the provided 
 data sets or series of data sets through the element is tested [Distribution Format](#distributionFormat).

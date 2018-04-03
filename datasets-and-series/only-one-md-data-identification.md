@@ -6,11 +6,12 @@ that although more than one IdentificationInfo can be given within the MD_Metada
  is used for the identification of the INSPIRE resource.
 
 **Prerequisites**
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/datasets-and-series/resource-type)
+
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'data'.
+This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
 
 The test first checks if a property of gmd:MD_Metadata element shall contain only 
 one [dataIdentification](#dataIdentification) element.
@@ -37,5 +38,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-dataidentification <a name="dataIdentification"></a>   | ./gmd:identificationInfo[count(gmd:MD_DataIdentification)=1]
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="dataIdentification"> Data Identification </a>   | ./gmd:identificationInfo[count(gmd:MD_DataIdentification)=1]

@@ -6,9 +6,11 @@ points to the metadata record of the data on which the service operates.
 
 **Prerequisites**
 
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+
 **Test method**
 
-* This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
 
 * The operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element should be a HTTP URI that when retrieved using 
 HTTP GET should return the metadata document describing the dataset exposed by this service.
@@ -30,5 +32,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="coupling"></a> SV_ServiceIdentification   | ./gmd:identificationInfo/\*/srv:operatesOn

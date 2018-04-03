@@ -1,10 +1,10 @@
-# Dataset topic
+# Topic Category 
 
 **Purpose**: If the type of the resource is dataset or series, at least one Topic category describing the category of the resource must be given.
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
 
 **Test method**
 

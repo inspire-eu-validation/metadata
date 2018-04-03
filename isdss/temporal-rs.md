@@ -5,8 +5,6 @@ data sets with temporal coordinates provided in desired reference systems possib
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
-
 **Test method**
 
 Check if the temporal reference system is given using element[referenceSystemInfo]()

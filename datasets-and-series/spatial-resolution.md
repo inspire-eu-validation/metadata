@@ -6,11 +6,14 @@ how to maps or map products.
 
 **Prerequisites**
 
-**Test method**
+* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
 
-Each [spatialResolution](#spatialResolution) element must contain either:
-- [equivalentScale](#equivalentScale).
--Or [distance](#distance) but not both.
+**Test method**
+This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
+
+* Each [spatialResolution](#spatialResolution) element must contain either:
+* [equivalentScale](#equivalentScale).
+* Or [distance](#distance) but not both.
 
 **Reference(s)**	 
 
@@ -30,6 +33,7 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
+<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="spatialResolution"></a> spatialResolution | ./gmd:identificationInfo[1]/\*/gmd:spatialResolution
 <a name="equivalentScale"></a> equivalentScale  | ./gmd:spatialResolution/\*/gmd:equivalentScale
 <a name="distance"></a> distance   | ./gmd:spatialResolution/\*/gmd:distance
