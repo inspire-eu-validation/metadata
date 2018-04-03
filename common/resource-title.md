@@ -8,7 +8,7 @@
 **Test method**
 
 * Check the readability and clarity of the metadata [title](#title). Its content will be a free text element not empty in the metadata language. 
-* The multiplicity of the element is 1.
+* The multiplicity of the element is one.
 
 **Reference(s)**	 
 

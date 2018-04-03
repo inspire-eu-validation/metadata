@@ -5,7 +5,7 @@
 **Prerequisites**
 
 **Test method**
-Check if a resource type is provided ([hierarchyLevel](#hierarchyLevel)) and its value is taken from the list of [code List Value](#codeListValue).
+Check if a resource type is provided ([hierarchyLevel](#hierarchyLevel)) and its value is taken from the list of [Code List Value](#codeListValue).
 This value must be declared as 'service'.
 
 **Reference(s)**	 

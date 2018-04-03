@@ -7,12 +7,12 @@
 * [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
 
 **Test method**
-The coding and storage or transmission format of the provided 
+*The coding and storage or transmission format of the provided 
 data sets or series of data sets through the element is tested [Distribution Format](#distributionFormat).
 
-The multiplicity of this element is 1 or more
+* The multiplicity of this element is one or more.
 
-It is verified that the child elementschild exist and their value is free text but not empty.
+* It is verified that the child elementschild exist and their value is free text but not empty.
 
 **Reference(s)**	 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#ref_TG_MD) 3.2.3.1, Req 2.6

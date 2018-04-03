@@ -10,7 +10,7 @@
 * Provide a brief narrative summary on the content of the data set, data series or services described.
 * It will be coded using an [abstract](#abstract) element with a non-empty free text element content in the metadata language.
 
-* The multiplicity of the element is 1.
+* The multiplicity of this element is one.
 
 **Reference(s)**	 
 

@@ -11,12 +11,12 @@
 
 * If no updates have been made, the creation date of the metadata will be used.
 
-* The multiplicity of this element is 1 or more.
+* The multiplicity of this element is one or more.
 
 **Reference(s)**	 
 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.2.4 , Req c.7
-* [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#ref_ISO_8601)
+* [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601)
 
 
 **Test type**: Automated

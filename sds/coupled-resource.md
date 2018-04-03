@@ -8,12 +8,12 @@ points to the metadata record of the data on which the service operates.
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+* This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
 
-The operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element should be a HTTP URI that when retrieved using 
+* The operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element should be a HTTP URI that when retrieved using 
 HTTP GET should return the metadata document describing the dataset exposed by this service.
 
-The multiplicity of this element is 0 or more.
+* The multiplicity of this element is 0 or more.
 
 **Reference(s)**	 
 

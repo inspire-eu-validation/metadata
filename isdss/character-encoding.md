@@ -10,7 +10,7 @@
 The coding (s) of characters in the data sets and data sets using non UTF-8 based 
 encodings are checked from the element [Character Set Code](#CharacterSetCode).
 
-The multiplicity of this element is zero or more.
+The multiplicity of this element is 0 or more.
 
 **Reference(s)**	 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#ref_TG_MD) 3.2.2.2, Req 2.5

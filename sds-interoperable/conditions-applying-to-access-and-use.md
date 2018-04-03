@@ -1,4 +1,4 @@
-# Conditions applying to access and use – technical restrictions 
+# Conditions applying to access and use 
 
 **Purpose**: Check the technical restrictions of access and use of an interoperable spatial data service specified in the metadata.
 
@@ -7,13 +7,14 @@
 * [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
 
 **Test method**
-Check the restrictions of access and use of the service through the element LegalConstraints contained within the 
-<gmd:resourceConstraints> element, which is used to describe the non-technical access conditions and that.
+* Check the restrictions of access and use of the service through the element [LegalConstraints](#legalConstraints), which is used to describe the non-technical access conditions and that.
 
-The multiplicity of the MD_LegalConstraints element is one or more.
+* The multiplicity of this element is one or more.
 
-This information will be coded by giving an instance of the element gmd:AccessConstraints or gmd:UseConstraints.
-In both cases, it will be verified that there is a child element [Restriction](#Restriction) with a [code list value](#codeListValue) defined.
+* This information will be coded by giving an instance of the element gmd:AccessConstraints or gmd:UseConstraints.
+In both cases, it will be verified that there is a child element [Restriction](#Restriction) with a [Code List Value](#codeListValue) defined.
+
+* At least one instance of [Other Constraints](#otherConstraints) will also be given to describe the actual constraints from the code list ConditionsApplyingToAccessAndUse.
 
 **Reference(s)**	 
 
@@ -34,3 +35,5 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="LegalConstraints"></a> LegalConstraints |  ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints[1]
 <a name="Restriction"></a> Restriction |  ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints[1]/\*/<gmd:MD_RestrictionCode>/@codeListValue
 <a name="codeListValue"></a> code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='MD_RestrictionCode']//gml:identifier/text()
+<a name="otherConstraints"></a> Other Constraints | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gmx:Anchor/@xlink:href='http://inspire.ec.europa.eu/metadata-
+codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a'

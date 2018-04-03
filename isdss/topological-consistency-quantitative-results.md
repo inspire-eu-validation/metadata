@@ -1,4 +1,4 @@
-# Spatial representation type 'dataset' or 'series'
+# Topological consistency quantitative results
 
 **Purpose**: Evaluate the type of spatial representation of the data.
 
@@ -25,5 +25,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="spatialRepresentationTypeCode"></a> spatialRepresentationTypeCode  | gmd:referenceSystemInfo/\*/gmd:spatialRepresentationType/gmd:MD_SpatialRepresentationTypeCode/@codeListValue
-<a name="codeListValue"></a> codeListValue  | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")//gmx:CodeListDictionary[@gml:id='MD_SpatialRepresentationTypeCode ']//gml:identifier/text()
+

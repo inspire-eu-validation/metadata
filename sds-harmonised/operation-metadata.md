@@ -11,7 +11,7 @@
 
 *- [operation_name](#operation_metadata): unique identifier for the interface described by the element. The multiplicity of this element is 1 and its content is free text type, not empty.
 
-*- [Distributed Computing Platform](#dcpList): a reference to the distributed computing platform in which the operation was implemented. The multiplicity of this element is 1 or more.
+*- [Distributed Computing Platform](#dcpList): a reference to the distributed computing platform in which the operation was implemented. The multiplicity of this element is one or more.
 
 *- [Parameter](#parameter): description of a single request parameter to be used in invoking the operation.
 * The content of this element is coded according to [operation-metadata-parameters](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata-parameters) requirement, and its multiplicity is 0 or more.

@@ -1,5 +1,4 @@
-# Spatial representation type 'dataset' or 'series'
-
+# Topological consistency descriptive results
 **Purpose**: Evaluate the type of spatial representation of the data.
 
 **Prerequisites**

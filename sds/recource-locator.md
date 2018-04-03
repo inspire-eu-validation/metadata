@@ -8,9 +8,9 @@ Internet address containing a detailed description of a spatial data service.
 
 **Test method**
 
-Check that a resource locator linking to the described Spatial Data Service shall be given if online access to this service is available.
+* Check that a resource locator linking to the described Spatial Data Service shall be given if online access to this service is available.
 
-The multiplicity of this element is zero or more.
+* The multiplicity of this element is one or more.
 
 **Reference(s)**
 

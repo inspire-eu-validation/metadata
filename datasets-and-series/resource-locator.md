@@ -12,7 +12,7 @@
 This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
 
 The test checks if a [OnlineResource](#online) is provided. 
-The multiplicity of this element is 0..n. If none is given, the test will complete successfully.
+The multiplicity of this element is 0 or more. If none is given, the test will complete successfully.
 
 **Reference(s)**	 
 
