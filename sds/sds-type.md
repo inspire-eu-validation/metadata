@@ -12,7 +12,7 @@ This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) 
 
 If the type of the resource is service, exactly one name describing the type of service must be given.
 First, a check is performed to establish whether the [serviceType](#serviceType) element occurs exactly once in the document. The test then checks if the element [serviceType](#serviceType) contains text that equals one of
-the types given in [Spatial Data Service Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_Spatial Data Service Type) Chap. 1.3.1.
+the types given in [Spatial Data Service Type](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/SpatialDataServiceType.es.xml)
 
 **Reference(s)**
 
