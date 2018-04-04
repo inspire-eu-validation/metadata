@@ -10,11 +10,11 @@
 
 This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
 
-The test first checks if a [gmd:LanguageCode](#langcode) object is given and contains a codeList and 
+The test first checks if a [LanguageCode](#langcode) object is given and contains a codeList and 
 codeListValue attribute.
 
 It is then checked if the codeListValue attribute contains a valid 3-letter language code (one of the values of 
-enumeration type [languageISO6392B](http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd).
+enumeration type [ISO 6392B](http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd).
 
 **Reference(s)**	 
 

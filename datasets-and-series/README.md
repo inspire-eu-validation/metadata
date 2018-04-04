@@ -51,7 +51,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
 | 1.1      | Resource Type               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) ||
 | 1.2      | Only One md Data Identification                  | [only-one-md-data-identification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/only-one-md-data-identification) ||
-| 1.3      | Unique Resource Identifier    | [dataset-ui](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-ui) ||
+| 1.3      | Unique Resource Identifier    | [dataset-uid](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-uid) ||
 | 1.4      | INSPIRE Theme Keyword | [inspire-theme-keyword](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/inspire-theme-keyword) ||
 | 1.5      | Spatial Resolution | [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/spatial-resolution)||
 | 1.6      | Resource Language |[resource-languaje](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-languaje) ||
@@ -69,7 +69,7 @@ This Conformance Class contains the following tests:
 | ----------------------------------------------------------------- | -------- |
 | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) | Ready for review |
 | [only-one-md-data-identification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/only-one-md-data-identification) | Ready for review |
-| [dataset-ui](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-ui) | Ready for review |
+| [dataset-uid](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-uid) | Ready for review |
 | [inspire-theme-keyword](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/inspire-theme-keyword) | Ready for review |
 | [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/spatial-resolution)| Ready for review |
 |[resource-languaje](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-languaje) | Ready for review |

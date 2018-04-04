@@ -7,7 +7,9 @@ data sets with temporal coordinates provided in desired reference systems possib
 
 **Test method**
 
-Check if the temporal reference system is given using element[referenceSystemInfo]()
+Check if the temporal reference system is given using element[referenceSystemInfo](#referenceSystemIdentifier).
+
+
 The gmd:code child element of gmd:RS_Identifier is mandatory.
 
 **Reference(s)**	 

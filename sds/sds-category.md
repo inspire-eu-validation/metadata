@@ -9,8 +9,6 @@
 
 This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
 
-The test should verify if at least one gmd:keyword is available and matches a concept in the thesaurus.
-
 For each INSPIRE Spatial Data Theme, a gmd:keyword element shall be included with the title of the theme as a 
 Non-empty Free Text Element [empty CharacterString](http://inspire.ec.europa.eu/id/ats/metadata/2.0/iso-19115-19119/README#emptychar) content in the language of the metadata.
 
@@ -23,7 +21,10 @@ Non-empty Free Text Element [empty CharacterString](http://inspire.ec.europa.eu/
 
 **Notes**
 
+The test should verify if at least one gmd:keyword is available and matches a concept in the thesaurus.
+
 The test method is not clear on how a specific code list is referenced in a gmd:thesaurusName.
+
 The ETS assumes that the gmd:thesaurusName/\*/gmd:title/\*/text() equals 'GEMET - INSPIRE themes, version 1.0'. 
 
 ##Contextual XPath references

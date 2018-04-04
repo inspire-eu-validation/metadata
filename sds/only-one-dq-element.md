@@ -10,7 +10,7 @@
 
 This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
 
-The test first checks that shall be exactly one dataQualityInfo[#dataquality] element scoped to the entire described services. 
+The test first checks that shall be exactly one [dataQualityInfo](#dataquality) element scoped to the entire described services. 
 
 **Reference(s)**
 

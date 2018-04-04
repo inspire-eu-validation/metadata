@@ -7,7 +7,8 @@
 * [referenceSystemIdentifier](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/crs)
 
 **Test method**
-Check if the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Part D.4].
+
+*Check if the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Part D.4].
 Then the value of the HTTP URI Identifier column will be used as the value of [code](#code).
 
 **Reference(s)**	 

@@ -5,7 +5,8 @@
 **Prerequisites**
 
 **Test method**
-*The coding and storage or transmission format of the provided 
+
+* The coding and storage or transmission format of the provided 
 data sets or series of data sets through the element is tested [Distribution Format](#distributionFormat).
 
 * The multiplicity of this element is one or more.
