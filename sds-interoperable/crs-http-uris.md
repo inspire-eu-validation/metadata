@@ -7,9 +7,10 @@ supported CRSes for a service shall be given as a list in the service metadata r
 **Prerequisites**
 
 **Test method**
-It is checked that the value of the HTTP URI Identifier column is used as the value of [referenceSystemIdentifier](#referenceSystemIdentifier) element.
 
-The gmd:codeSpace element shall not be used in this case.
+* It is checked that the value of the HTTP URI Identifier column is used as the value of [referenceSystemIdentifier](#referenceSystemIdentifier) element.
+
+* The gmd:codeSpace element shall not be used in this case.
 
 **Reference(s)**	 
 

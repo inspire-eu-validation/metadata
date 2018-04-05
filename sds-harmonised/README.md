@@ -57,9 +57,9 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [sds-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/invocation-metadata) |  Ready for review  |
-| [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata) |  Ready for review  |
-| [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata-parameters) |  Ready for review  |
+| [invocation-metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/invocation-metadata) |  Ready for review  |
+| [operation-metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata) |  Ready for review  |
+| [operation-metadata-parameters](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata-parameters) |  Ready for review  |
 
 ## Open issues
 

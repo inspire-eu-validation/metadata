@@ -38,8 +38,7 @@ Abbreviation                                   |  XPath expression (relative to 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 <a name="parameter">Parameter</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter
-<a name="parameter_name">Parameter Name</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:name[1]
-and gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:name[1]/gco:aName/text() 
+<a name="parameter_name">Parameter Name</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:name[1] and gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:name[1]/gco:aName/text() 
 <a name="optionality">Optionality</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:optionality[1]/text()
 <a name="repeatability ">Repeatability</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:repeatability/true()
 <a name="type_name ">Type Name</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/\*/gco:TypeName/gco:Name

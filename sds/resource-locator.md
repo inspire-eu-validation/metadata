@@ -11,9 +11,9 @@ Internet address containing a detailed description of a spatial data service.
 
 This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
 
-* Check that a resource locator linking to the described Spatial Data Service shall be given if online access to this service is available.
+* Check that a resource locator linking to the described Spatial Data Service shall be given if [online access](#onlineAccess) to this service is available.
 
-* The multiplicity of this element is one or more.
+* The multiplicity of this element is zero or more.
 
 **Reference(s)**
 

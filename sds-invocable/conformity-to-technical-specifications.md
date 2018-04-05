@@ -10,7 +10,7 @@ To do this, it must provide all a series of technical elements necessary to allo
 **Test method**
 * Verify that the service fully complies with at least one technical specification that provides all the technical elements necessary to 
 invoke the service and allow its use.
-*This is tested from the DQ_ConformanceResult element (according to TG Requirement C.20). In addition, it must contain an [citation](#citation) for the coded technical specification according to requirement TG.C.21 [conformity-specification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity-specification).
+* This is tested from the DQ_ConformanceResult element (according to TG Requirement C.20). In addition, it must contain an [citation](#citation) for the coded technical specification according to requirement TG.C.21 [conformity-specification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity-specification).
 
 *The multiplicity of the element is one or more.
 

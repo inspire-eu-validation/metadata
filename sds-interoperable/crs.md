@@ -5,11 +5,13 @@
 **Prerequisites**
 
 **Test method**
-It is checked that only the [identifiers](#referenceSystemIdentifier) contained in a common record will be used 
-to refer to the coordinate reference systems of a interoperable 'service' .
-When the gmd:code does not uniquely identify the referenced coordinate reference system, the value of the child element gmd: codeSpace is checked also.
 
-The multiplicity of this element is one or more.
+* It is checked that only the [identifiers](#referenceSystemIdentifier) contained in a common record will be used 
+to refer to the coordinate reference systems of a interoperable 'service'.
+
+* When the gmd:code does not uniquely identify the referenced coordinate reference system, the value of the child element gmd:codeSpace is checked also.
+
+* The multiplicity of this element is one or more.
 
 **Reference(s)**	 
 

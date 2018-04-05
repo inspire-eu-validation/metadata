@@ -9,8 +9,8 @@ Internet address containing a detailed description of a spatial data service.
 
 Check that access point of the Invocable Spatial Data Service is described in the using a gmd:CI_OnlineResource element. 
 
-* The child element gmd: linkage must contain the access point URL that contains a detailed description of a spatial data service
-* The child element gmd: description must contain a [Url Access Text](#urlAccessText) element that points to the "accessPoint" value of the OnLineDescriptionCode codelist in the INSPIRE66 registry.
+* The child element gmd:linkage must contain the access point [URL](#urlAccess) that contains a detailed description of a spatial data service
+* The child element gmd:description must contain a [Url Access Text](#urlAccessText) element that points to the "accessPoint" value of the OnLineDescriptionCode codelist in the INSPIRE66 registry.
 
 * The multiplicity of this element is one or more.
 
