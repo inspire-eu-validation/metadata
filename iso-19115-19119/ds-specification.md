@@ -10,7 +10,7 @@ The test first checks if there is at least one [specification](#specification). 
 It then performs the following checks
 *	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:title which should not be an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#emptychar)
 *	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:date[./\*/gmd:dateType/\*/text()='{type}']/\*/gmd:date, where {type} is one of 'creation', 'revision' and 'publication'.
-*	The [specification](#specification) has gmd:DQ_DomainConsistency as a parent element.
+*	Metadata have at least one [DQ_ConformanceResult] (#DQ_ConformanceResult) element.
 
 **Reference(s)**
 
@@ -32,3 +32,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="specification"></a> specification    | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/\*/gmd:specification
+<a name="DQ_ConformanceResult"></a> DQ_ConformanceResult    | ./gmd:dataQualityInfo/*/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
