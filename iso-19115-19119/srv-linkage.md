@@ -43,6 +43,8 @@ Since WCS and SOS are now also supported by technical guidance documents, the ET
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
+The metadata validator should accept 'text/xml', 'application/xml', 'application/vnd.ogc.*' and 'application/atom' as a media type for distribution.
+
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
