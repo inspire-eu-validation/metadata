@@ -10,7 +10,7 @@ The test first checks if there is at least one [specification](#specification). 
 It then performs the following checks
 *	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:title which should not be an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#emptychar)
 *	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:date[./\*/gmd:dateType/\*/text()='{type}']/\*/gmd:date, where {type} is one of 'creation', 'revision' and 'publication'.
-*	Metadata have at least one [DQ_ConformanceResult] (#DQ_ConformanceResult) element.
+*	Metadata have at least one [DQ_ConformanceResult](#DQ_ConformanceResult) element.
 
 **Reference(s)**
 
