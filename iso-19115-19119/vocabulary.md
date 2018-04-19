@@ -10,7 +10,7 @@ The test performs the following check for each [vocabulary](#thesaurus):
 * the node must contain a [title](#title) and should not be an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#emptychar)
 * the node must contain a [date](#date)
 * the node must contain a [dateType](#dateType) which contains text that equals one of 'publication', 'revision' or 'creation'.
-* if the [title](#title) is 'GEMET - INSPIRE themes, version 1.0' the [date](#date) should be '2008-06-01' and [dateType](#dateType) should be 'publication'.
+* if the [title](#title) is 'GEMET - INSPIRE themes, version 1.0' the [date](#date) shall be '2008-06-01' and [dateType](#dateType) shall be 'publication'.
 
 **Reference(s)**	 
 
@@ -20,7 +20,7 @@ The test performs the following check for each [vocabulary](#thesaurus):
 
 **Notes**
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
