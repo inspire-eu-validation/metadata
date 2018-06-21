@@ -55,14 +55,14 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | C.1      | XML Schema               | [xml-schema](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/xml-schema) ||
 | C.2      | Root Element              | [root-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/root-element) ||
 | C.3      | Encoding of Code List Values               | [code-list-value](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/code-list-value) ||
-| C.4      | Encoding of Free Text Values               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-type) ||
-| C.5      | Language Code               | [metadata-language-code](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/metadata-language-code) ||
+| C.4      | Encoding of Free Text Values               | [free-text](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/free-text) ||
+| C.5      | Language Code               | [metadata-languaje-code](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/metadata-languaje-code) ||
 | C.6      | Metadata Point of Contact                | [md-point-of-contact](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/md-point-of-contact) ||
 | C.7      | Metadata Date               | [md-date](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/md-date) ||
 | C.8      | Resource Title               | [resource-title](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-title) ||
 | C.9      | Resource Abstract               | [resource-abstract](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-abstract) ||
-| C.10      | Responsible Organization               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-type) ||
-| C.11      | Temporal References               | [responsible-organisation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/responsible-organisation) ||
+| C.10      | Responsible Organisation               | [responsible-organisation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/responsible-organisation) ||
+| C.11      | Temporal References               | [temporal-reference](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/temporal-reference) ||
 | C.12      | Not More than one Date of Creation               | [max-1-date-of-creation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/max-1-date-of-creation) ||
 | C.13      | Not More than one Date of Last Revision               | [max-1-date-of-last-revision](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/max-1-date-of-last-revision) ||
 | C.14      | Temporal Extent               | [temporal-extent](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/temporal-extent) ||
@@ -84,14 +84,14 @@ This Conformance Class contains the following tests:
 | [xml-schema](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/xml-schema) | Ready for Review |
 | [root-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/root-element) | Ready for Review |
 | [code-list-value](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/code-list-value) | Ready for Review |
-| [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-type) | Ready for Review |
-| [metadata-language-code](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/metadata-language-code) | Ready for Review |
+| [free-text](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/free-text) | Ready for Review |
+| [metadata-languaje-code](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/metadata-languaje-code) | Ready for Review |
 | [md-point-of-contact](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/md-point-of-contact) | Ready for Review |
 | [md-date](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/md-date) | Ready for Review |
 | [resource-title](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-title) | Ready for Review |
 | [resource-abstract](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-abstract) | Ready for Review |
-| [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/resource-type) | Ready for Review |
 | [responsible-organisation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/responsible-organisation) | Ready for Review |
+| [temporal-reference](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/temporal-reference) | Ready for Review |
 | [max-1-date-of-creation](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/max-1-date-of-creation) | Ready for Review |
 | [max-1-date-of-last-revision](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/max-1-date-of-last-revision) | Ready for Review |
 | [temporal-extent](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/temporal-extent) | Ready for Review |

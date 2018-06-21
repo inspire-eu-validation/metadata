@@ -1,4 +1,4 @@
-# Dataset conformity
+# Dataset conformity specifications
 
 **Purpose**: The metadata shall include information on the degree of conformity with the implementing 
 rules on interoperability of spatial data sets.
