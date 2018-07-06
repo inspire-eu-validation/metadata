@@ -15,7 +15,7 @@ The test should check for each descriptiveKeywords block if it references either
 
 If a keyword from that source is found, the test succeeds, otherwise it will fail.
 
-The test also checks that the [date](#date) should be '2008-06-01' and [dateType](#dateType) sould be 'publication'.
+The test also checks that the [date](#date) should be '2008-06-01' and [dateType](#dateType) should be 'publication'.
 
 **Reference(s)**	 
 
