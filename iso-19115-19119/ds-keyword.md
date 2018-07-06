@@ -15,6 +15,8 @@ The test should check for each descriptiveKeywords block if it references either
 
 If a keyword from that source is found, the test succeeds, otherwise it will fail.
 
+The test also checks that the [date](#date) should be '2008-06-01' and [dateType](#dateType) sould be 'publication'.
+
 **Reference(s)**	 
 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#ref_TG_MD) Chap. 2.2.3, Req 14
@@ -40,3 +42,5 @@ Abbreviation                                   |  XPath expression (relative to 
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="keyword"></a> keyword   | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:keyword
+<a name="date"></a> date  | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:date/\*/gmd:date/gco:Date
+<a name="dateType"></a> dateType  | gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:thesaurusName//gmd:CI_Citation/gmd:date/\*/gmd:dateType
