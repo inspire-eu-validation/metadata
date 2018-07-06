@@ -35,4 +35,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="specification"></a> specification    | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/\*/gmd:specification
-<a name="DQ_ConformanceResult"></a> DQ_ConformanceResult    | ./gmd:dataQualityInfo/*/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
+<a name="DQ_ConformanceResult"></a> Conformance Result    | ./gmd:dataQualityInfo/*/gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult
