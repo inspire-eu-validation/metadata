@@ -5,6 +5,7 @@
 **Prerequisites**
 
 **Test method**
+
 * Check the restrictions of access and use of the service through the element [LegalConstraints](#legalConstraints), which is used to describe the non-technical access conditions and that.
 
 * The multiplicity of this element is one or more.

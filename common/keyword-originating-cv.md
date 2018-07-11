@@ -5,6 +5,7 @@
 **Prerequisites**
 
 **Test method**
+
 The controlled vocabulary of origin of a keyword must be cited using [Citation](#citation) element, and its children elements:
 
 *  The vocabulary title will be given using the [title](#title), and will be free text not empty.

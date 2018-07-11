@@ -5,6 +5,7 @@
 **Prerequisites**
 
 **Test method**
+
 Check the information about the existence and its reasons in the limitations of public access to the data set. To do this, the element [Legal Constraints](#legalConstraints) will be used.
 * The limitations (or lack thereof) will include both specifications of the restriction:
 

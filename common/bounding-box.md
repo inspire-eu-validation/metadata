@@ -5,6 +5,7 @@
 **Prerequisites**
 
 **Test method**
+
 Check if it's a valid geographic [extend](#extent). It is described by 4 elements: westBoundLongitude, eastBoundLongitude, southBoundLatitude and northBoundLatitude. The test performs the following checks on them:
 *	Is a correctly formatted westBoundLongitude given at gmd:westBoundLongitude/gco:Decimal.
 *	Is the following constraint given: -180.00 ≤ westBoundLongitude ≤ 180.00

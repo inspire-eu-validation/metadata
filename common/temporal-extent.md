@@ -6,6 +6,7 @@
 **Prerequisites**
 
 **Test method**
+
 If a temporary reference is provided, its coding is checked through the element encoded using the element gmd:EX_Extent with one or more elements gmd:EX_TemporalExtent.
 
 The value of each of these elements can be an individual date or a period of time between two dates.
