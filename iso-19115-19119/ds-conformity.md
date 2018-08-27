@@ -15,6 +15,8 @@ The test first checks if there is at least one conformance [result](#result) of 
 
 Every [gmd:DQ_ConformanceResult](#ConformanceResult) has an element gmd:pass that must contain a value of type gco:Boolean.
 
+One of the CI_Citation elements shall contain title and date of the [Regulation 1089/2010].
+
 **Reference(s)**	 
 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#ref_TG_MD),2.8.1, Req 28
