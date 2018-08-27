@@ -15,7 +15,7 @@ The test first checks if there is at least one conformance [result](#result) of 
 
 Every [gmd:DQ_ConformanceResult](#ConformanceResult) has an element gmd:pass that must contain a value of type gco:Boolean.
 
-One of the CI_Citation elements shall contain title and date of the [Regulation 1089/2010].
+One of the [CI_Citation](#CI_Citation) elements shall contain title and date of the [Regulation 1089/2010].
 
 **Reference(s)**	 
 
@@ -40,3 +40,4 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
 <a name="result"></a> Result   | gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result
 <a name="ConformanceResult"></a> Conformance Result   | gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult
+<a name="CI_Citation"></a> CI_Citation   | gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/gmd:CI_Citation
