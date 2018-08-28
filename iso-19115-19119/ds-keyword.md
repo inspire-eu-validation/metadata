@@ -1,6 +1,6 @@
 # Dataset keyword
 
-**Purpose**: Ds keyword. If the resource is a dataset or a dataset series, at least one keyword must originate from the INSPIRE theme of the GEMET Thesaurus
+**Purpose**: If the resource is a dataset or a dataset series, at least one keyword must originate from the INSPIRE theme of the GEMET Thesaurus
 
 **Prerequisites**
 
@@ -13,9 +13,9 @@ This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) 
 
 The test should check for each descriptiveKeywords block if it references either http://www.eionet.europa.eu/gemet/inspire_themes or any duplicate of that thesaurus, e.g. http://inspire.ec.europa.eu/theme. If a block is referencing that thesaurus the test should check if at least one [keyword](#keyword) is available and it matches with a concept in the thesaurus.
 
-If a keyword from that source is found, the test succeeds, otherwise it will fail.
+If a keyword from that source is found, the test succeeds, otherwise it fails.
 
-The test also checks that the [date](#date) should be '2008-06-01' and [dateType](#dateType) should be 'publication'.
+The test also checks that the [date](#date) is '2008-06-01' and the [dateType](#dateType) is 'publication'.
 
 **Reference(s)**	 
 
@@ -34,7 +34,7 @@ TG MD requirement 14 states that the keyword shall be expressed in one of the of
 
 The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/hierarchy) has not been implemented in the ETS as it still seems reasonable to test the available dataset (series) metadata records.  
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
