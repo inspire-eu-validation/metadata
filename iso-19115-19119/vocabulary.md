@@ -1,4 +1,4 @@
-#Vocabulary
+# Vocabulary
 
 **Purpose**: A keyword value reference can contain a controlled vocabulary from where it originates. This element is optional but, if given, must follow certain guidelines.
 
@@ -19,7 +19,7 @@ The test performs the following check for each [vocabulary](#thesaurus):
 
 **Notes**
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 

@@ -19,6 +19,8 @@ The test first checks if a linkage is provided. If none is given, the test will 
 
 If one or more are provided: For each linkage the test checks, if the linkage element contains an element of type gmd:URL. Retrieve the resource at the URL using HTTP GET.
 
+The metadata validator should accept 'text/xml', 'application/xml', 'application/vnd.ogc.*' and 'application/atom' as a media type for distribution.
+
 If the response indicates a linkage is a service capabilities or WSDL document consistent with an INSPIRE technical guidance, some basic parameters in the service response are analysed as described in the next paragraph. Else a final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions or a client application that directly accesses the service).
 
 Any service response should be checked if it provides proper linkage. The service wsdl or capabilities document should have a featuretype that shares the resource unique identification. If WMS/WMTS/WFS, the link is in //layer[identifier={id}&&@authority={codespace}] if Atom, the link is in //feed[@uuidhref={id}&&@namespace={codespace}].
@@ -39,7 +41,7 @@ The depencency to [Hierarchy](http://inspire.ec.europa.eu/id/ats/metadata/1.3/is
 
 Since WCS and SOS are now also supported by technical guidance documents, the ETS also accepts these service types.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/1.3/iso-19115-19119/README#namespaces).
 
