@@ -16,7 +16,7 @@ the types given in [Spatial Data Service Type](http://inspire.ec.europa.eu/metad
 
 **Reference(s)**
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_TG_MD) 2.2, Req 3.5
+* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_TG_MD) 4.1.2.3, Req 3.5
 * [Spatial Data Service Type](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/SpatialDataServiceType.es.xml)
 
 **Test type**: Automated
