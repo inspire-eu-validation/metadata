@@ -6,7 +6,7 @@
 
 **Test method**
 
-* The metadata for an INSPIRE data set, data set or service should be encoded using the [root element](#rootElement) MD_Metadata.
+* The metadata for an INSPIRE data set, data set series or service should be encoded using the [root element](#rootElement) MD_Metadata.
 
 **Reference(s)**	 
 
