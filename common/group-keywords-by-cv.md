@@ -1,11 +1,11 @@
 # Group Keywords by CV
 
-**Purpose**: Control grouping of keywords in the same controlled vocabulary of origin.
+**Purpose**: A gmd:MD_Keywords element may only contain keywords originating from the one cited controlled vocabulary, or its version.
 
 **Prerequisites**
 
 **Test method**
-*  The keywords that come from the same vocabulary controlled under an element [Keywords](#keywords) will be grouped.
+*  Check that the keywords defined in the same source controlled vocabulary are grouped into the same [Keywords](#keywords) element will be grouped.
 
 **Reference(s)**	 
 
@@ -23,5 +23,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="keywords"></a> Keywords  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/gmd:MD_Keywords
+<a name="keywords"></a> Keywords  | ./gmd:identificationInfo[1]/\*/<gdm:descriptiveKeywords>/<gmd:MD_Keywords>
 

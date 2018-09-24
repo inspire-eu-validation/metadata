@@ -1,13 +1,11 @@
 # Metadata Languaje
 
 
-**Purpose**: A resource language must be given.
+**Purpose**: A resource language must be given limited to the official languages of the Community expressed in conformity with ISO 639-2.
 
 **Prerequisites**
 
 **Test method**
-
-* This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
 
 * The test first checks if a [gmd:LanguageCode](#langcode) object is given and contains a codeList and 
 codeListValue attribute.

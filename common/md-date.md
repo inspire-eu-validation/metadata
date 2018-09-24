@@ -7,7 +7,7 @@
 
 **Test method**
 
-* You must indicate the last update date of the metadata description for each metadata record from the [dateStamp](#date).
+Shall be especificated the last update date of each metadata record from the [dateStamp](#date).
 
 * If no updates have been made, the creation date of the metadata will be used.
 
@@ -30,5 +30,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="date"></a> Date  | ./gmd:dateStamp[1]
+<a name="date"></a> Date Stamp  | ./gmd:dateStamp[1]
 

@@ -6,19 +6,19 @@
 
 **Test method**
 
-* Check the restrictions of access and use of the service through the element [LegalConstraints](#legalConstraints), which is used to describe the non-technical access conditions and that.
+Check the restrictions of access and use of the service through the element [LegalConstraints](#legalConstraints), which is used to describe the non-technical access conditions and that.
+This information will be coded by giving an instance of the element gmd:AccessConstraints or gmd:UseConstraints.
 
-* This information will be coded by giving an instance of the element gmd:AccessConstraints or gmd:UseConstraints.
+In both cases, it will be verified that there is a child element [Restriction](#restrictionCode) with a [Code List Value](#codeListValue) defined.
 
-* In both cases, it will be verified that there is a child element [Restriction](#restrictionCode) with a [Code List Value](#codeListValue) defined.
-
-* At least one instance of [Other Constraints](#otherConstraints) will also be given to describe the actual constraints from the code list [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
+At least one instance of [Other Constraints](#otherConstraints) will also be given to describe the actual constraints from the code list [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
 
 * If the conditions are unknown [Other Constraints](#otherConstraints) shall include a element pointing to the value [No Conditions Apply](#noConditionsApply) in the code list "ConditionsApplyingToAccessAndUse". 
 
 * In other cases shall include a Non-empty Free Text Element with a textual [description](#description) of the conditions in the language of the metadata. 
 
-* The multiplicity of this element is one or more.
+The multiplicity of this element is one or more.
+
 **Reference(s)**	 
 
 * [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.7 , Req c.18
@@ -28,21 +28,22 @@
 
 **Notes**
 
-*This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
-*Correct description example:
+This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
 
-|<gmd:resourceConstraints>
-||	<gmd:MD_LegalConstraints>
-|||		<gmd:useConstraints>
-||||			<gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions"/>
-|||		</gmd:useConstraints>
-|||		<gmd:otherConstraints>
-||||		<gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ ConditionsApplyingToAccessAndUse/noConditionsApply">
-|||||				No conditions apply to access and use 
-||||			</gmx:Anchor>
-|||		</gmd:otherConstraints>
-||	</gmd:MD_LegalConstraints>
-|</gmd:resourceConstraints>
+Correct description example:
+
+     <gmd:resourceConstraints>
+          <gmd:MD_LegalConstraints>
+               <gmd:useConstraints>
+                    <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions"/>
+               </gmd:useConstraints>
+               <gmd:otherConstraints>
+                    <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/ ConditionsApplyingToAccessAndUse/noConditionsApply">
+                         No conditions apply to access and use 
+                    </gmx:Anchor>
+               </gmd:otherConstraints>
+          </gmd:MD_LegalConstraints>
+     </gmd:resourceConstraints>
 
 ## Contextual XPath references
 

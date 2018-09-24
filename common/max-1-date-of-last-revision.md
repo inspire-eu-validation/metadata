@@ -4,6 +4,7 @@
 **Purpose**: Not more than one date of last revision for the metadata shall be given.
 
 **Prerequisites**
+[Temporal reference](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/temporal-reference)
 
 **Test method**
 
@@ -25,4 +26,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="revisionDate"></a> Revision Date  | ./gmd:identificationInfo[1]/\*/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date[gmd:dateType/gmd:CI_DateTypeCode/(@codeList='http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode' and (@codeListValue='revision'))]/gmd:date/gco:Date
+<a name="revisionDate"></a> Revision Date  | ./gmd:identificationInfo[1]/\*/gmd:CI_Citation/gmd:date/gmd:CI_Date[gmd:dateType/gmd:CI_DateTypeCode/(@codeList='http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode' and (@codeListValue='revision'))]/gmd:date/gco:Date

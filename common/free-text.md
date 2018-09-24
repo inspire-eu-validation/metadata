@@ -6,12 +6,16 @@
 
 **Test method**
 
-* Check the use of free text elements of type gco: CharacterString_PropertyType in the 
-* INSPIRE metadata and see if they meet any of the 3 ways to be defined:
+Check the use of free text elements of type gco:CharacterString_PropertyType in the 
+INSPIRE metadata and see if they meet any of the 3 ways to be defined:
 
-* 1. Using the gco:CharacterString child element.
-* 2. Using gmx:Anchor child element, or 
-* 3. Using the xsi:type attribute and provide both gco:CharacterString and gmd:PT_FreeText child elements. 
+* Using the [gco:CharacterString](#characterString) child element.
+* Using [gmx:Anchor](#anchor) child element, or 
+* Using the xsi:type attribute and provide both [gco:CharacterString](#characterString) and [gmd:PT_FreeText](#freeText) child elements. 
+
+For options 1 and 2 the character string content of elements shall be provided in the language of the metadata.
+
+For option 3 the definition of the used locale shall be provided either using an URI pointing to a [Locale](#locale) element within the same document or to an externally provided gmd:PT_Locale element.
 
 **Reference(s)**	 
 
@@ -32,3 +36,4 @@ Abbreviation                                   |  XPath expression ()
 <a name="characterString"></a> Character String   | <gmd:MD_Metadata>/\*/<gco:CharacterString>
 <a name="anchor"></a> Anchor   | <gmd:MD_Metadata>/\*/<gmx:Anchor>
 <a name="freeText"></a> Free Text   | <gmd:MD_Metadata>/\*/<gmd:PT_FreeText>
+<a name="locale"></a> Locale  | <gmd:MD_Metadata>/<gmd:locale>/<gmd:PT_Locale>(@id)

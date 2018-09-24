@@ -7,9 +7,7 @@
 
 **Test method**
 
-* Check the point of contact for the [organisation responsible](#organisationResponsable) for the establishment, management, maintenance and distribution of the described resource.
-The multiplicity of this element is one or more.
-
+Check the point of contact for the [organisation responsible](#organisationResponsable) for the establishment, management, maintenance and distribution of the described resource.
 They have to come defined through the children elements:
 
 * Name of the organisation [organization](#organisationName) with a non-empty free text element content.
@@ -17,6 +15,8 @@ They have to come defined through the children elements:
 * The [email address](#mailAddress) of the organization with a free text element not empty.
 
 * The value for the [Role](#role) coded from the [Code List Value](#codeListValue) [ISO 19139] CI_RoleCode.
+
+The multiplicity of [organisation responsible](#organisationResponsable) is one or more.
 
 **Reference(s)**	 
 

@@ -1,6 +1,6 @@
 # Metadata Structure and Encoding: Root Element
 
-**Purpose**: The encoding of the metadata must be encoded from a specific root element, MD_Metadata.
+**Purpose**: The specification of a metadata must be encoded through an element MD_Metadata.
 
 **Prerequisites**
 

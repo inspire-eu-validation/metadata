@@ -29,8 +29,8 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="citation"></a> Date  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation
-<a name="title"></a> Date  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
+<a name="citation"></a> Citation  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation
+<a name="title"></a> Title  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
 <a name="date"></a> Date  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/\*/gmd:date/gmd:CI_Date/gmd:date[1]/gco:Date
 <a name="dateType"></a> Date Type | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:date/gmd:CI_Date/gmd:date[1]/\*/gmd:dateType/gmd:CI_DateTypeCode/@codeListValue
 <a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='CI_DateTypeCode']//gml:identifier/text()
