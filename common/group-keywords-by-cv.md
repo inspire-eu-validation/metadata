@@ -1,11 +1,11 @@
 # Group Keywords by CV
 
-**Purpose**: A gmd:MD_Keywords element may only contain keywords originating from the one cited controlled vocabulary, or its version.
+**Purpose**: A Keywords element may only contain keywords originating from the one cited controlled vocabulary, or its version.
 
 **Prerequisites**
 
 **Test method**
-*  Check that the keywords defined in the same source controlled vocabulary are grouped into the same [Keywords](#keywords) element will be grouped.
+Check that the keywords defined in the same source controlled vocabulary are grouped into the same [Keywords](#keywords) element will be grouped.
 
 **Reference(s)**	 
 

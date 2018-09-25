@@ -43,8 +43,7 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="legalConstraints"></a> Legal Constraints  | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints
 <a name="restrictionCode"></a> Restriction Code | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:MD_RestrictionCode/@codeListValue
 <a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")/gmx:CodeListDictionary[@gml:id='MD_RestrictionCode']//gml:identifier/text()
-<a name="otherConstraints"></a> Other Constraints | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gmx:Anchor/@xlink:href='http://inspire.ec.europa.eu/metadata-
-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a'
+<a name="otherConstraints"></a> Other Constraints | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints/gmx:Anchor/@xlink:href='http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a'
 
 
 
