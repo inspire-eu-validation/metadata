@@ -32,7 +32,18 @@ The MD_LegalConstraints element shall include a combination of:
 
 **Notes**
 
-*This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
+This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
+
+An example of its implementation:
+     <gmd:MD_LegalConstraints>
+          <gmd:accessConstraints>
+               <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
+          </gmd:accessConstraints>
+          <gmd:otherConstraints>
+               <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/INSPIRE_Directive_Article13_1a"> Limitation d’accés public basé sur l’article 13(1) de la directive INSPIRE
+               </gmx:Anchor>
+          </gmd:otherConstraints>
+     </gmd:MD_LegalConstraints>
 
 ## Contextual XPath references
 
