@@ -25,7 +25,7 @@ The MD_LegalConstraints element shall include a combination of:
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.6 , Req c.17
+* [TG MD](./README#ref_TG_MD), 2.3.6 , Req c.17
 
 
 **Test type**: Automated
