@@ -35,6 +35,7 @@ The MD_LegalConstraints element shall include a combination of:
 This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
 
 An example of its implementation:
+     
      <gmd:MD_LegalConstraints>
           <gmd:accessConstraints>
                <gmd:MD_RestrictionCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions" />
@@ -44,7 +45,7 @@ An example of its implementation:
                </gmx:Anchor>
           </gmd:otherConstraints>
      </gmd:MD_LegalConstraints>
-
+     
 ## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
