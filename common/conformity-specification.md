@@ -39,5 +39,5 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="citation"></a> Citation  | gmd:CI_Citation/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>
 <a name="title"></a> Title  | gmd:title/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>/<gmd:title>/text()
 <a name="date"></a> Date |gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>/\*/<gmd:CI_Date>/\*/<gmd:CI_DateTypeCode>///gmd:CI_DateTypeCode/@codeListValue
-<a name="dateTypeCode"></a> Date Type Code | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode")/gmx:CodeListDictionary[@gml:id='CI_DateTypeCode']//gml:identifier/text()
+<a name="dateTypeCode"></a> Date Type Code | doc('http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode')/gmx:CodeListDictionary[@gml:id='CI_DateTypeCode']//gml:identifier/text()
 
