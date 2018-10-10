@@ -20,7 +20,7 @@ The first ATS contains 2 Conformance Classes and the second ATS contains 5. The 
 The conformance classes in this specification are dependent of each others as shown in the next figure.
 
 ![Diagram](./hierarchydiagram.jpg)
-Figure 1. Structure of metadata conformance classes. Source: [TG MD](ref_TG_MD) pag. 27.
+Figure 1. Structure of metadata conformance classes. Source: [TG MD](#ref_TG_MD) pag. 27.
 
 
 The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and Common requirements must be met too.
