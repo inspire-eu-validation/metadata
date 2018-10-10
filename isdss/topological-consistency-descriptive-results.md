@@ -1,37 +1,46 @@
-# Topological consistency descriptive results
-**Purpose**: Evaluate the quantitative results for topological consistency measures.
+# Topological Consistency Descriptive Results
+
+**Purpose**: Test that the topological consistency descriptive results is provided correctly.
 
 **Prerequisites**
 
 **Test method**
 
-*The quantitative results for topological consistency measures shall be reported using the [Topological Consistency](#TopologicalConsistency) 
-element with a gmd:DQ_QuantitativeResult element as the value of its mandatory gmd:result property. The multiplicity of the element is 0 or more.
+* If [Topological Consistency](#topologicalConsistency) and [Conformance Result](#conformanceResult) exist,
 
-*The [Value Unit](#valueUnit) and [Value Record](#valueRecord) child elements are mandatory and shall be used for giving a numerical or 
-otherwise quantitative value of the evaluated topology consistency measure.
+    * For every [Conformance Result](#conformanceResult),
 
-*The [Value Unit](#valueUnit) and [Value Record](#valueRecord) child elements are mandatory and shall be used for giving a numerical or 
-otherwise quantitative value of the evaluated topology consistency measure. The type of this element shall be chosen based on the result 
-type of the particular measure, and it shall be declared using the xsi:type attribute.
+        * Check that [Title](#title) element exists and its value is "INSPIRE Data Specifications - Base Models - Generic Network Model".
+        
+        * Check that [Date](#date) element exists.
 
+        * Check that [Date Type Code](#dateTypeCode) element exist and it has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" and an attribute codeListValue with value "publication".
+
+        * Check that [Pass](#pass) element exists and its value is false.
+
+        * Check that [Explanation](#explanation) element exists and its content is non-empty free text.
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type/README#ref_TG_MD) 3.2.4.1, Req 2.8
+* [TG MD](./README.md#ref_TG_MD) 3.2.4.1, Req 2.8
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is zero or more.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_TopologicalConsistency)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="TopologicalConsistency"></a> Topological Consistency | ./gmd:dataQualityInfo/\*/gmd:DQ_TopologicalConsistency[1]
-<a name="valueUnit"></a> Value Unit | ./gmd:dataQualityInfo/\*/gmd:DQ_TopologicalConsistency/*\/gmd:valueUnit
-<a name="valueRecord"></a> Value Record | ./gmd:dataQualityInfo/\*/gmd:DQ_TopologicalConsistency/*\/gmd:value/gco:Record
-
-
+<a name="topologicalConsistency"></a> Topological Consistency | /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_TopologicalConsistency
+<a name="conformanceResult"></a> Conformance Result | gmd:result/gmd:DQ_ConformanceResult
+<a name="title"></a> Title | gmd:result/gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation/gmd:title/gco:CharacterString
+<a name="date"></a> Date | gmd:result/gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date
+<a name="dateTypeCode"></a> Date Type Code | gmd:result/gmd:DQ_ConformanceResult/ gmd:specification/gmd:CI_Citation/ gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode
+<a name="pass"></a> Pass | gmd:result/gmd:DQ_ConformanceResult/gmd:pass
+<a name="explanation"></a> Explanation | gmd:result/gmd:DQ_ConformanceResult/gmd:explanation

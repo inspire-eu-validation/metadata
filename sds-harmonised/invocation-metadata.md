@@ -1,20 +1,25 @@
-# Invocation Metadata for Harmonised Spatial Data Services
+# Invocation Metadata
 
-**Purpose**: The invocation metadata must be specified for the Spatial Data Harmonized Services
+**Purpose**: Test that the invocation metadata for the Spatial Data Harmonized Services is provided.
+
 **Prerequisites**
 
 **Test method**
 
-It is checked if the metadata are encoded invocation from element [SV_OperationMetadata](#operation_metadata) considering that:
+* If at least one [Operation Metadata](#operationMetadata) element exists,
 
-* The child element [Connect Point](#connectPoint) must be the same as the element that describes the [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/access-point).
-* The contents of these element shall be given according to [ISO 19119, Section C.2] when the metadata record contains at least one of these elements.
+    * For every [Operation Metadata](#operationMetadata) element,
 
+        * The content of the element is element is in accordance with [ISO 19119, Section C.2](../README.md#ref_ISO_19119)
+
+* Else
+
+    * Check that [Connect Point](#connectPoint) exists and it is the same as the one described in [Access Point](../sds-invocable/access-point.md) requirement from conformance class 5.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/README#ref_TG_MD), 4.5.1.1 , Req 7.1
-* [ISO 19119](http://inspire.ec.europa.eu/id/ats/metadata/2.0/README#ref_ISO_19119)
+* [TG MD](./README.md#ref_TG_MD), 4.5.1.1 , Req 7.1
+* [ISO 19119](../README.md#ref_ISO_19119)
 
 **Test type**: Automated
 
@@ -22,10 +27,9 @@ It is checked if the metadata are encoded invocation from element [SV_OperationM
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="operation_metadata">Operation Metadata</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]
-<a name="connectPoint">Connect Point</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata/srv:connectPoint 
- 
+<a name="operationMetadata">Operation Metadata</a> | srv:containsOperations/srv:SV_OperationMetadata
+<a name="connectPoint">Connect Point</a> | srv:containsOperations/srv:SV_OperationMetadata/srv:connectPoint

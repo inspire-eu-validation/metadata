@@ -1,19 +1,20 @@
-# Not More than one Date of Last Revision
+# Max one Date of Last Revision
 
 
-**Purpose**: Not more than one date of last revision for the metadata shall be given.
+**Purpose**: Test that not more than one date of last revision for the metadata is given.
 
 **Prerequisites**
-[Temporal reference](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/temporal-reference)
+
+[Temporal reference](./temporal-reference.md)
 
 **Test method**
 
-Check that at most one [Revision date](#revisionDate) exists.
+* Check that at most one [Date Type](#dateType) element with attribute codeListValue equal 'revision' exists.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.4 , Req c.13
-* [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601)
+* [TG MD](./README.md#ref_TG_MD), 2.3.4 , Req c.13
+* [ISO 8601](./README.md#ref_ISO_8601)
 
 **Test type**: Automated
 
@@ -22,8 +23,8 @@ Check that at most one [Revision date](#revisionDate) exists.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="revisionDate"></a> Revision Date  | ./gmd:identificationInfo[1]/\*/gmd:CI_Citation/gmd:date/gmd:CI_Date[gmd:dateType/gmd:CI_DateTypeCode/(@codeList='http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode' and (@codeListValue='revision'))]/gmd:date/gco:Date
+<a name="dateType"></a> Date Type | gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode

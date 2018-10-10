@@ -1,9 +1,8 @@
-# Baseline Metadata for Spatial Data Services 
+# INSPIRE Spatial Data Service baseline metadata
 
-Abstract Test Suite for Conformance Class 3 of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance 
-based on ISO/TS 19139:2007.
+Conformance Class 3 of the implementation of "INSPIRE dataset and service metadata based on ISO/TS 19139:2007" [INSPIRE Metadata](../README.md) based on the corresponding technical guidance [TG MD](#ref_TG_MD).
 
-*Note*: This ATS is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: It is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
 ## Standardization target type
 
@@ -17,15 +16,13 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common) | Common Requirements | n/a |
+| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
 
 ### Indirect dependencies
 
 An indirect dependency is another conformance class whose requirements must be met by a related resource.
 
-| Specification | Conformance class | Related resource | Parameters |
-| ------------- | ----------------- | ---------------- | ---------- |
-| [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](#ref_TG_MD) |
+*There is not indirect dependencies for this set of requirements.*
  
 ## External document references
 
@@ -47,14 +44,14 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 3.1      | Resource Type               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type) | |
-| 3.2      | Service Identification Element               | [service-identification-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/service-identification-element) | |
-| 3.3      | Spatial Resolution               | [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/spatial-resolution) | |
-| 3.4      | Spatial Data Service Category               | [sds-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/sds-category) | |
-| 3.5      | Spatial Data Service Type               | [sds-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/sds-type) | |
-| 3.6      | Linking to Provided Data Sets Using Coupled Resource               | [coupled-resource](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/coupled-resource) | |
-| 3.7      | Resource Locator for Services               | [resource-locator](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-locator) | |
-| 3.8      | Data Quality Info Section               | [only-one-dq-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/only-one-dq-element) | |
+| 3.1      | Resource Type | [resource-type](./resource-type.md) | |
+| 3.2      | Service Identification Element | [service-identification-element](./service-identification-element.md) | |
+| 3.3      | Spatial Resolution | [spatial-resolution](./spatial-resolution.md) | |
+| 3.4      | Spatial Data Service Category | [sds-category](./sds-category.md) | |
+| 3.5      | Spatial Data Service Type | [sds-type](./sds-type.md) | |
+| 3.6      | Linking to Provided Data Sets Using Coupled Resource | [coupled-resource](./coupled-resource.md) | |
+| 3.7      | Resource Locator for Services | [resource-locator](./resource-locator.md) | |
+| 3.8      | Data Quality Info Section | [only-one-dq-element](./only-one-dq-element.md) | |
 
 
 ## Test
@@ -63,14 +60,14 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type) |  Ready for review  |
-| [service-identification-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/service-identification-element) |  Ready for review  |
-| [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/spatial-resolution) |  Ready for review  |
-| [sds-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/sds-category) |  Ready for review  |
-| [sds-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/sds-type) |  Ready for review  |
-| [coupled-resource](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/coupled-resource) |  Ready for review  |
-| [resource-locator](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-locator) |  Ready for review  |
-| [only-one-dq-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/only-one-dq-element) |  Ready for review  |
+| [resource-type](./resource-type.md) |  Ready for review  |
+| [service-identification-element](./service-identification-element.md) |  Ready for review  |
+| [spatial-resolution](./spatial-resolution.md) |  Ready for review  |
+| [sds-category](./sds-category.md) |  Ready for review  |
+| [sds-type](./sds-type.md) |  Ready for review  |
+| [coupled-resource](./coupled-resource.md) |  Ready for review  |
+| [resource-locator](./resource-locator.md) |  Ready for review  |
+| [only-one-dq-element](./only-one-dq-element.md) |  Ready for review  |
 
 Some additional metadata tests are available in the [conformance class 'Metadata for interoperability'](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/Metadata-for-interoperability). These tests are separated from above because they have a different timeline for implementation.
 

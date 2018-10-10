@@ -1,4 +1,4 @@
-# Data Encoding dataset or series
+# Data Encoding
 
 **Purpose**: Evaluate encoding and the storage or transmission format for data sets and datasets.
 
@@ -6,28 +6,35 @@
 
 **Test method**
 
-* The coding and storage or transmission format of the provided 
-data sets or series of data sets through the element is tested [Distribution Format](#distributionFormat).
+* Check that at least one [Distribution Format](#distributionFormat) element exists.
 
-* The multiplicity of this element is one or more.
+* For every [Distribution Format](#distributionFormat),
 
-* It is verified that the child elementschild exist and their value is free text but not empty.
+    * Check that [Name](#name) element exist and its content is a not-empty free text.
+
+    * Check that [Version](#version) element exists. Then,
+
+        * If content is not empty, check that its content is a non-empty free text.
+
+        * Else, check that it has an attribute gco:nilReason="unknown" or "inapplicable".
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#ref_TG_MD) 3.2.3.1, Req 2.6
+* [TG MD](./README.md#ref_TG_MD) 3.2.3.1, Req 2.6
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is one or more.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:distributionInfo/gmd:distributionFormat)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="distributionFormat"></a> Distribution Format  | ./gmd:distributionInfo/\*/gmd:distributionFormat/gmd:MD_Format
-<a name="name"></a> Name  | ./gmd:distributionInfo/\*/gmd:distributionFormat/\*/gmd:name/text()
-<a name="version"></a> Version  | ./gmd:distributionInfo/\*/gmd:distributionFormat/\*/gmd:version/text()
+<a name="distributionFormat"></a> Distribution Format | /gmd:MD_Metadata/gmd:distributionInfo/gmd:distributionFormat
+<a name="name"></a> Name | gmd:MD_Format/gmd:name
+<a name="version"></a> Version | gmd:MD_Format/gmd:version

@@ -1,32 +1,39 @@
 # Conditions for Access and Use
 
-**Purpose**: Check the technical restrictions of access and use of spatial data sets and services.
+**Purpose**: Test the technical restrictions of access and use of spatial data sets and services.
 
 **Prerequisites**
 
 **Test method**
 
-Check the restrictions of access and use of the service through the element [LegalConstraints](#legalConstraints), which is used to describe the non-technical access conditions and that.
-This information will be coded by giving an instance of the element gmd:AccessConstraints or gmd:UseConstraints.
+* Check that if [Access Constrains](#accessConstraints) and/or [Use Constrains](#useConstraints) elements exists they belong to the same [Legal Constraints](#legalConstraints) parent node.
 
-In both cases, it will be verified that there is a child element [Restriction](#restrictionCode) with a [Code List Value](#codeListValue) defined.
+    * If [Access Constrains](#accessConstraints) element exists,
 
-At least one instance of [Other Constraints](#otherConstraints) will also be given to describe the actual constraints from the code list [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
+        * Check that the attribute codeList is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
-* If the conditions are unknown [Other Constraints](#otherConstraints) shall include a element pointing to the value [No Conditions Apply](#noConditionsApply) in the code list "ConditionsApplyingToAccessAndUse". 
+    * If [Use Constrains](#useConstraints) element exists,
 
-* In other cases shall include a Non-empty Free Text Element with a textual [description](#description) of the conditions in the language of the metadata. 
+        * Check that the attribute codeList is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
-The multiplicity of this element is one or more.
+    * Check that at least one [Other Constraints](#otherConstraints) child element exists.
+
+        * If gmx:Anchor child element exists, check that it has an attribute xlink:href with URL value "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply" or with URL value "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/conditionsUnknown".
+
+        * Else, check that a non-empty free text element exist.
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.7 , Req c.18
+* [TG MD](./README.md#ref_TG_MD), 2.3.7 , Req c.18
 
 
 **Test type**: Automated
 
 **Notes**
+
+The multiplicity of this element is one or more.
 
 This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
 
@@ -47,19 +54,11 @@ Correct description example:
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="legalConstraints"></a> Legal Constraints  | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints
-<a name="restrictionCode"></a> Restriction Code | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/\*/gmd:MD_RestrictionCode/@codeListValue
-<a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")/gmx:CodeListDictionary[@gml:id='MD_RestrictionCode']//gml:identifier/text()
-<a name="otherConstraints"></a> Other Constraints | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints[1]
-<a name="noConditionsApply"></a> No Conditions Apply | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints[1]/gmx:Anchor/@xlink:href("http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply")
-<a name="description"></a> Description Other Constrains | ./gmd:identificationInfo/\*/gmd:resourceConstraints/gmd:MD_LegalConstraints/gmd:otherConstraints[1]/gco:CharacterString
-
-
-
-
-
-
+<a name="legalConstraints"></a> Legal Constraints | gmd:MD_LegalConstraints
+<a name="accesConstraints"></a> Access Constraints | gmd:MD_LegalConstraints/gmd:accessConstraints
+<a name="useConstraints"></a> Use Constraints | gmd:MD_LegalConstraints/gmd:useConstraints
+<a name="otherConstraints"></a> Other Constraints | gmd:MD_LegalConstraints/gmd:otherConstraints

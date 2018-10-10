@@ -1,38 +1,32 @@
 # Dataset conformity
 
-**Purpose**: The metadata shall include information on the degree of conformity with the implementing 
-rules on interoperability of spatial data sets..
+**Purpose**: Test that the metadata includes information on the degree of conformity with the implementing rules on interoperability of spatial data sets.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
-
-The test first checks if there is at least one conformance [result](#result) of type [gmd:DQ_ConformanceResult](#ConformanceResult).
-Every [gmd:DQ_ConformanceResult](#ConformanceResult) has an element gmd:pass that must contain a value of type gco:Boolean.
-
-This element must contain a citation of [Regulation 1089/2010] codified in accordance with the [Conformity  Specification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity-specification).
-
-The degree of compliance will be coded according to the common requirement of [Conformity  Degree](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity-degree).
+* Check that [Conformance Result](#conformanceResult) exists and it declares conformity to the Implementing Rules for interoperability of spatial data sets and services.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-locator/README#ref_TG_MD), 3.1.4.2, Req 1.10
-* [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_ISO_19115)
+* [TG MD](./README.md#ref_TG_MD), 3.1.4.2, Req 1.10
+* [ISO 19115](./README.md#ref_ISO_19115)
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is one.
+
+The specification for this requirement is defined in [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md).
+
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats//ata/2.0/sets-and-series/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:dataQualityInfo)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="result"></a> Result   | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result
-<a name="ConformanceResult"></a> Conformance Result   | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult
+<a name="conformanceResult"></a> Conformance Result | gmd:report/gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult

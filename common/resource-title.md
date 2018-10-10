@@ -1,30 +1,29 @@
 # Resource Title
 
-
-**Purpose**: A non-empty title of the described data shall be provided.
+**Purpose**: Test that a non-empty title of the described data is provided.
 
 **Prerequisites**
 
 **Test method**
 
-Check the readability and clarity of the metadata [Title](#title). Its content will be a free text element not empty in the metadata language. 
-The multiplicity of the element is one.
+* Check that exactly one [Title](#title) element exists. If it does:
+
+    * Check that its content is a non-empty free text element.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.1 , Req c.8
-
+* [TG MD](./README.md#ref_TG_MD), 2.3.1 , Req c.8
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of [Title](#title) is one.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="title"></a> Title  | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:title[1]/text()
-
+<a name="title"></a> Title  | gmd:citation/gmd:CI_Citation/gmd:title

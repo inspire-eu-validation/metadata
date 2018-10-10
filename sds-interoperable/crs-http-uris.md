@@ -1,16 +1,20 @@
-# Coordinates reference systems Interoperable Spatial Data Services
+# Coordinates Reference Systems HTTP URISs
 
-**Purpose**: For interoperability reasons, if appropriate for the offered datasets, the INSPIRE SDS should provide their data using a subset of the well-known
-2D and 3D coordinate reference systems listed in TG Annex D.4 of [INT SDS](#README.md#ref_TG_MD). The list of the
-supported CRSes for a service shall be given as a list in the service metadata record to make it easier to discover them.
+**Purpose**: Test that the default coordinate reference systems use a correct identifier.
 
 **Prerequisites**
 
+* [ReferenceSystemIdentifier](./crs.md)
+
 **Test method**
 
-* It is checked that the value of the HTTP URI Identifier column is used as the value of [referenceSystemIdentifier](#referenceSystemIdentifier) element.
+* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD),
 
-* The gmd:codeSpace element shall not be used in this case.
+    * Check that the value of the HTTP URI Identifier column is used as the value of [Code](#code) element.
+
+    * Check that [Code Space](#codeSpace) does not exists.
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
 
@@ -20,14 +24,13 @@ supported CRSes for a service shall be given as a list in the service metadata r
 **Test type**: Automated
 
 **Notes**
-* The list of the allowed INSPIRE CRS identifiers is only given as a recommendation, so it's not possible to automatically validate if the CRSes provided fulfill the 
-INSPIRE CRS criteria (ETRS89 based for data inside Europe, ITRS based otherwise).
-
+The gmd:codeSpace element shall not be used in this case.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](#README.md#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:referenceSystemInfo)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="referenceSystemIdentifier"></a> referenceSystemIdentifier  | ./gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/\*/gmd:code
+<a name="code"></a> Code  | gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier/gmd:code
+<a name="codeSpace"></a> Code Space | gmd:codeSpace

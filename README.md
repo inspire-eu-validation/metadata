@@ -1,64 +1,41 @@
-# Abstract Test Suite: INSPIRE Metadata Technical Guidance 2.0 based on ISO/TS 19139:2007
+# INSPIRE dataset and service metadata version 2.0 (DRAFT)
 
-The specification specifies the following conformance classes:
+The Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD), Annex A, defines 2 Abstract Test Suites and 7 Conformance Classes.
 
-| Conformance class | Standardization target |
-| ----------------- | ---------------------- |
-| [ISO 19139:2007](https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf) | ISO/TS 19139:2007 Interoperability metadata |
+## Abstract Test Suites & Conformance Classes
+The first ATS contains 2 Conformance Classes and the second ATS contains 5. The conformance classes are compound of requirements that must be passed to be INSPIRE conformance. Besides, a set of [Common Requirements](./common/README.md) must be passed in both ATS as described in [TG MD](#ref_TG_MD) section 2.
 
-## Rules for HTTP requests
+* ATS: Metadata for INSPIRE datasets and data set series
+    * [Conformance Class 1: Baseline metadata for data sets and data set series](./datasets-and-series/README.md)
+    * [Conformance Class 2: Interoperability metadata for data sets and data set series](./isdss/README.md)
 
-The INSPIRE technical guidance documents are in general unspecific on the details of HTTP requests to access resources. The following rules apply to all HTTP requests unless a test case explicitly states deviations from these rules.
+* ATS: Metadata for INSPIRE Spatial Data Services
+    * [Conformance Class 3: Baseline metadata for Spatial Data Services](./sds/README.md)
+    * [Conformance Class 4: Metadata for INSPIRE Network Services](./ns/README.md)
+    * [Conformance Class 5: Metadata for Invocable Spatial Data Services](./sds-invocable/README.md)
+    * [Conformance Class 6: Metadata for Interoperable Spatial Data Services](./sds-interoperable/README.md)
+    * [Conformance Class 7: Metadata for Harmonised Spatial Data Services](./sds-harmonised/README.md)
 
-### Use of HTTPS
+## Conformance classes relations and dependencies
+The conformance classes in this specification are dependent of each others as shown in the next figure.
 
-Where HTTP is mentioned as the protocol, HTTPS may be used, too. SSL certificates must be valid and issued by a trusted Certification Authority.
+![Diagram](./hierarchydiagram.jpg)
+Figure 1. Structure of metadata conformance classes. Source: [TG MD](ref_TG_MD) pag. 27.
 
-This also implies that where "HTTP URI" or "URL" is used, this includes URIs in the HTTPS scheme.
 
-### HTTP methods
+The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and common requirements must be satisfaied too.
 
-If a HTTP request is a request to an INSPIRE network service that is an OGC Web Service only HTTP GET and/or HTTP POST may be used as only the requriements for these methods are specified. Which of the two methods must or can be used in general depends in the requirements stated in the OGC standard and the support for the methods stated in the Capabilities document of a service. Where the choice is constrained by a requirement in the technical guidance, this information is included in the test method description of the test case. If both GET and POST are allowed and supported the service, the executable test is free to choose one of the two.  
+## External document references
 
-For requests to other resources that are accessed using a HTTP URI without payload, HTTP HEAD may be used, too, as HTTP 1.1 states that "the methods GET and HEAD MUST be supported by all general-purpose servers". "Other resources" are identified by the lack of query parameters "SERVICE" and "REQUEST" which are part of all OGC Web Service KVP GET requests.
 
-No conditional GET requests may be used to avoid the impact of HTTP caches. 
-
-### HTTP headers
-
-If a non-INSPIRE dependency (e.g. an OGC standard) specifies requirements on HTTP headers in requests or responses, these must be taken into account in the implementation of tests. This includes, for example, requirements on the content type.
-
-Unless explicitly noted in a test case, no additional HTTP headers should be sent as part of the request or expected as part of the response.  
-
-### HTTP status codes
-
-The expected status code for HTTP GET and POST responses is 200, the expected status code for HTTP HEAD responses is 200 and 204. All other status codes indicate a failure (unless a test case specifies different conditions).
- 
-Notes:
- 
-* In OGC Web Services the code 200 is often also used for service exceptions and tests may need to distinguish exceptions from successful completions of a request.
-* Redirects (status codes 301, 302, and 303) are in general not allowed as they are not supported by the OGC Web Service standards.
-
-### HTTP timeouts
-
-The timeout for HTTP requests in tests is 30 seconds (unless a test case specifies different conditions).
-
-### HTTP authentication
-
-Until an approved INSPIRE technical guidance for HTTP authentication mechanisms exists, this Abstract Test Suite will not support INSPIRE spatial data services that require HTTP authentication.
-
-I.e., testing of protected resources will require a local installation of the validator in order to connect to the protected service directly (bypassing the security gateway).
-
-### Typical assertions for HTTP requests
-
-Based on the rules specified above, the following assertions may typically be tested for a HTTP response. The first two apply to all responses, the others only in the case of specific requirements stated in the test case.
-
-1. Response is returned within the timeout limits
-2. Response has an expected HTTP status code
-3. Response has an expected media type in the content-type header
-4. Response content meets certain expectations
-
-For example, in the case of an XML response, typical types of expectations regarding the content are: 
-
-* the response is schema valid
-* the root element is an expected element (e.g. a Capabilties document) or not a forbidden element (e.g. an ows:ExceptionReport)   
+| Abbreviation | Document name                       |
+| ------------ | ----------------------------------- |
+| INSPIRE <a name="ref_INSPIRE"></a> | [Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32007L0002&from=EN)
+| IR MD <a name="ref_IR_MD"></a> | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
+| TG MD <a name="ref_TG_MD"></a> | [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0](https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf)
+| REG <a name="ref_REG"></a> | [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
+| ISO 19115 <a name="ref_ISO_19115"></a> | [ISO 19115:2003 Geographic information - Metadata](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26020)
+| ISO 19119 <a name="ref_ISO_19119"></a> | [ISO 19119:2005 Geographic information - Services](http://www.iso.org/iso/catalogue_detail.htm?csnumber=39890)
+| ISO 19108 <a name="ref_ISO_19108"></a> | [ISO 19108:2002 Geographic information -- Temporal schema](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26013)
+| ISO 8601 <a name="ref_ISO_8601"></a> | [ISO 8601:2004 Data elements and interchange formats -- Information interchange -- Representation of dates and times](http://www.iso.org/iso/catalogue_detail?csnumber=40874)
+| ISO 639-2/B  <a name="ref_ISO_639_2"></a> | [ISO 639-2/B: Codes for the Representation of Names of Languages](http://www.loc.gov/standards/iso639-2/)

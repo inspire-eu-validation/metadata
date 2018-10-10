@@ -1,33 +1,31 @@
-# Dataset conformity
+# Conformity
 
-**Purpose**: The metadata shall include information on the degree of conformity with the implementing 
-rules on interoperability of spatial services.
+**Purpose**: 
+Test that the conformity degree is given implementing rules for interoperability of spatial data sets and services.
 
 **Prerequisites**
 
 **Test method**
 
-The test first checks if there is at least one conformance [result](#result) of type [gmd:DQ_ConformanceResult](#ConformanceResult).
-Every [gmd:DQ_ConformanceResult](#ConformanceResult) has an element gmd:pass that must contain a value of type gco:Boolean.
-
-This element must contain a citation of [Regulation 1089/2010] codified in accordance with the [Conformity  Specification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity-specification).
-
-The degree of compliance will be coded according to the common requirement of [Conformity  Degree](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity-degree).
+* Check if is given a [Conformance Result](#ConformanceResult) element declaring the conformity to the Implementing Rules for interoperability of spatial data sets and services.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#ref_TG_MD), 4.3.3.1, Req 5.3
-* [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#ref_ISO_19115)
+* [TG MD](./README.md#ref_TG_MD), 4.3.3.1, Req 5.3
+* [ISO 19115](./README.md#ref_ISO_19115)
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of the [ConformanceResult](ConformanceResult) element is one for this purpose.
+
+The specification for this requirement is defined in [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md)
+
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="result"></a> Result   | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result
-<a name="ConformanceResult"></a> Conformance Result   | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult
+<a name="ConformanceResult"></a> Conformance Result   | gmd:result/gmd:DQ_ConformanceResult

@@ -1,33 +1,30 @@
 # Resource Abstract
 
-
-**Purpose**: Describe the content of the metadata through a brief narrative summary.
+**Purpose**: Test that a resource abstract is provided.
 
 **Prerequisites**
 
 **Test method**
 
-Provide a brief narrative summary on the content of the data set, data series or services described.
-It will be coded using an [Abstract](#abstract) element with a non-empty free text element content in the 
-metadata language.
+* Check that exactly one [Abstract](#abstract) element exists. If it does:
 
-The multiplicity of this element is one.
+    * Check that its content is a non-empty free text element.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.2 , Req c.9
+* [TG MD](./README.md#ref_TG_MD), 2.3.2 , Req c.9
 
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of [Abstract](#abstract) is one.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="abstract"></a> Abstract  | ./gmd:identificationInfo[1]/\*/gmd:abstract[1]/text()
-
+<a name="abstract"></a> Abstract  | gmd:citation/gmd:CI_Citation/gmd:abstract

@@ -1,9 +1,8 @@
-# Baseline Metadata for Data Sets and Data Set Series
+# INSPIRE data sets and data set series baseline metadata
 
-Abstract Test Suite for Conformance Class 1 of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance 
-based on ISO/TS 19139:2007.
+Conformance Class 1 of the implementation of "INSPIRE dataset and service metadata based on ISO/TS 19139:2007" [INSPIRE Metadata](../README.md) based on the corresponding technical guidance [TG MD](#ref_TG_MD).
 
-*Note*: This ATS is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: It is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
 ## Standardization target type
 
@@ -17,15 +16,13 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common) | Common Requirements | n/a |
+| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
 
 ### Indirect dependencies
 
 An indirect dependency is another conformance class whose requirements must be met by a related resource.
 
-| Specification | Conformance class | Related resource | Parameters |
-| ------------- | ----------------- | ---------------- | ---------- |
-| [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](#ref_TG_MD) |
+*There is not indirect dependencies for this set of requirements.*
  
  
 ## External document references
@@ -49,17 +46,17 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 1.1      | Resource Type               | [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) ||
-| 1.2      | Only One md Data Identification                  | [only-one-md-data-identification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/only-one-md-data-identification) ||
-| 1.3      | Unique Resource Identifier    | [dataset-uid](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-uid) ||
-| 1.4      | INSPIRE Theme Keyword | [inspire-theme-keyword](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/inspire-theme-keyword) ||
-| 1.5      | Spatial Resolution | [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/spatial-resolution)||
-| 1.6      | Resource Language |[resource-languaje](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-languaje) ||
-| 1.7      | Topic Category     | [topic-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/topic-category) | |
-| 1.8      | Resource Locator for Data Set or Series       | [resource-locator](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-locator) | |
-| 1.9      | Data quality info: One Data Quality Element        | [one-data-quality-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/one-data-quality-element) | |
-| 1.10      | Data quality info: Conformity        | [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity) | |
-| 1.11      | Data quality infi: Lineage        | [lineage](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/lineage) | |
+| 1.1      | Resource Type | [resource-type](./resource-type.md) ||
+| 1.2      | Only One md Data Identification | [only-one-md-data-identification](./only-one-md-data-identification.md) ||
+| 1.3      | Unique Resource Identifier | [dataset-uid](./dataset-uid.md) ||
+| 1.4      | INSPIRE Theme Keyword | [inspire-theme-keyword](./inspire-theme-keyword.md) ||
+| 1.5      | Spatial Resolution | [spatial-resolution](./spatial-resolution.md)||
+| 1.6      | Resource Language |[resource-languaje](./resource-languaje.md) ||
+| 1.7      | Topic Category | [topic-category](./topic-category.md) | |
+| 1.8      | Resource Locator for Data Set or Series | [resource-locator](./resource-locator.md) | |
+| 1.9      | Data quality info: One Data Quality Element | [one-data-quality-element](./one-data-quality-element.md) | |
+| 1.10      | Data quality info: Conformity | [conformity](./conformity.md) | |
+| 1.11      | Data quality infi: Lineage | [lineage](./lineage.md) | |
 
 ## Test
 
@@ -67,17 +64,17 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type) | Ready for review |
-| [only-one-md-data-identification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/only-one-md-data-identification) | Ready for review |
-| [dataset-uid](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/dataset-uid) | Ready for review |
-| [inspire-theme-keyword](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/inspire-theme-keyword) | Ready for review |
-| [spatial-resolution](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/spatial-resolution)| Ready for review |
-|[resource-languaje](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-languaje) | Ready for review |
-| [topic-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/topic-category) | Ready for review |
-| [resource-locator](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-locator) | Ready for review |
-| [one-data-quality-element](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/one-data-quality-element) | Ready for review |
-| [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/conformity) | Ready for review |
-| [lineage](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/lineage) | Ready for review |
+| [resource-type](./resource-type.md) | Ready for review |
+| [only-one-md-data-identification](./only-one-md-data-identification.md) | Ready for review |
+| [dataset-uid](./dataset-uid.md) | Ready for review |
+| [inspire-theme-keyword](./inspire-theme-keyword.md) | Ready for review |
+| [spatial-resolution](./spatial-resolution.md)| Ready for review |
+|[resource-languaje](./resource-languaje.md) | Ready for review |
+| [topic-category](./topic-category.md) | Ready for review |
+| [resource-locator](./resource-locator.md) | Ready for review |
+| [one-data-quality-element](./one-data-quality-element.md) | Ready for review |
+| [conformity](./conformity.md) | Ready for review |
+| [lineage](./lineage.md) | Ready for review |
 
 
 

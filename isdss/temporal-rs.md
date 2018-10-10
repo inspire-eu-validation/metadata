@@ -1,32 +1,38 @@
-# Temporal reference systems 'dataset' or 'series'
+# Temporal Reference Systems
 
-**Purpose**: Checks if the temporal reference system(s) used in the data set makes discovering 
-data sets with temporal coordinates provided in desired reference systems possible.
+**Purpose**: Test if the temporal reference system(s) is provided correctly.
 
 **Prerequisites**
 
 **Test method**
 
-Check if the temporal reference system is given using element[referenceSystemInfo](#referenceSystemIdentifier).
+* Check that at least one [RS Identifier](#rsIdentifier) element exists.
 
+    * For every [RS Identifier](#rsIdentifier),
 
-The gmd:code child element of gmd:RS_Identifier is mandatory.
+        * Check that [Code](#code) element exist and its content is a not-empty free text.
+
+        * If [Code Space](#codeSpace) exists, check that its content is a non-empty free text.
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#ref_TG_MD) 3.2.1.2, Req 2.3
+* [TG MD](./README.md#ref_TG_MD) 3.2.1.2, Req 2.3
 
 **Test type**: Automated
 
 **Notes**
-The gmd:codeSpace child element shall be used if the [code](#codeChild) alone does not uniquely 
-identify the referred coordinate reference system.
+
+The multiplicity of this element is zero or more.
+
+The gmd:codeSpace child element shall be used if the [code](#codeChild) alone does not uniquely identify the referred coordinate reference system.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:referenceSystemInfo)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="referenceSystemIdentifier"></a> referenceSystemIdentifier  | ./gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/gmd:RS_Identifier
-<a name="code"></a> codeChild  | ./gmd:referenceSystemInfo/\*/gmd:referenceSystemIdentifier[1]/\*/gmd:code/text()
+<a name="referenceSystemIdentifier"></a> referenceSystemIdentifier  | gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier
+<a name="code"></a> Code | gmd:code
+<a name="codeSpace"></a> Code Space | gmd:codeSpace

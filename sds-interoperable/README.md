@@ -1,9 +1,9 @@
-# Metadata for Interoperable Spatial Data Services
+# INSPIRE Interoperable Spatial Data Services metadata
 
-Abstract Test Suite for Conformance Class 6 of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance 
-based on ISO/TS 19139:2007.
+Conformance Class 6 of the implementation of "INSPIRE dataset and service metadata based on ISO/TS 19139:2007" [INSPIRE Metadata](../README.md) based on the corresponding technical guidance [TG MD](#ref_TG_MD).
 
-*Note*: This ATS is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: It is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+
 ## Standardization target type
 
  ISO/TS 19139:2007 Geographic information Metadata XML schema implementation.
@@ -16,8 +16,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common) | Common Requirements | n/a |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable) | Conformance Class 5 | n/a |
+| INSPIRE Metadata | [Conformance Class 5](../sds-invocable/README.md) | n/a |
 
 ### Indirect dependencies
 
@@ -25,7 +24,8 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](#ref_TG_MD) |
+| INSPIRE Metadata | [Conformance Class 3](../sds/README.md) | n/a |
+| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
  
 ## External document references
 
@@ -47,11 +47,11 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 6.1      | Coordinate Reference System Identifier              | [crs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/crs) | |
-| 6.2      | CRS http URIs               | [crs-http-uris](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/crs-http-uris) | |
-| 6.3      | Conditions Applying to Access and Use               | [conditions-applying-to-access-and-use](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use) | |
-| 6.4      | Responsible Party              | [responsible-party](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/responsible-party) | |
-| 6.5      | Quality of Service              | [quality-of-service](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/quality-of-service) | |
+| 6.1      | Coordinate Reference System Identifier | [crs](./crs.md) | |
+| 6.2      | CRS http URIs | [crs-http-uris](./crs-http-uris.md) | |
+| 6.3      | Conditions Applying to Access and Use | [conditions-applying-to-access-and-use](./conditions-applying-to-access-and-use.md) | |
+| 6.4      | Responsible Party | [responsible-party](./responsible-party.md) | |
+| 6.5      | Quality of Service | [quality-of-service](./quality-of-service.md) | |
 
 
 ## Test
@@ -60,11 +60,11 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [sds-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/crs) |  Ready for review  |
-| [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/crs-http-uris) |  Ready for review  |
-| [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use) |  Ready for review  |
-| [sds-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/responsible-party) |  Ready for review  |
-| [conformity-to-technical-specifications](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/quality-of-service) |  Ready for review  |
+| [sds-type](./crs.md) | Ready for review  |
+| [access-point](./crs-http-uris.md) | Ready for review  |
+| [conformity](./conditions-applying-to-access-and-use.md) | Ready for review  |
+| [sds-category](./responsible-party.md) | Ready for review |
+| [conformity-to-technical-specifications](./quality-of-service.md) | Ready for review  |
 
 
 ## Open issues

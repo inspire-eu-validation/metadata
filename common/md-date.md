@@ -1,34 +1,36 @@
 # Metadata Date
 
 
-**Purpose**: indicate the date which specifies when the metadata record was created or updated.
+**Purpose**: Test that the document indicates the date when the metadata record was created or updated.
 
 **Prerequisites**
 
 **Test method**
 
-Shall be especificated the last update date of each metadata record from the [dateStamp](#date).
+* Check that exactly one [dateStamp](#date) element exists. If it does, then,
 
-* If no updates have been made, the creation date of the metadata will be used.
+    * Check that the date is in conformity with [ISO 8601](./README.md#ref_ISO_8601).
 
-* The multiplicity of this element is one or more.
+* If any of the checks fails the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.2.4 , Req c.7
-* [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601)
+* [TG MD](./README.md#ref_TG_MD), 2.2.4 , Req c.7
+* [ISO 8601](./README.md#ref_ISO_8601)
 
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of [dateStamp](#date) is one.
+
+If no updates have been made, the creation date of the metadata will be used.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="date"></a> Date Stamp  | ./gmd:dateStamp[1]
-
+<a name="date"></a> Date Stamp  | /gmd:MD_Metadata/gmd:dateStamp

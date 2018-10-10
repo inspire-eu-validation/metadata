@@ -1,36 +1,38 @@
 # Keyword Originating CV
 
-**Purpose**: Provide the citation of the source controlled vocabulary when giving the value of a keyword.
+**Purpose**: Test that the citation of the source controlled vocabulary when giving the value of a keyword is provided correctly.
 
 **Prerequisites**
 
 **Test method**
 
-The controlled vocabulary of origin of a keyword must be cited using [Citation](#citation) element, and its children elements:
+* For every [Citation](#citation) element,
 
-*  The vocabulary title will be given using the [title](#title), and will be free text not empty.
+    * Check that the [title](#title) element exists and it is a non-empty free text.
 
-*  The date of publication of the vocabulary will be given through the [Date](#date) elements and the [code](#codeListValue) for the [Date Type](#dateType).
+    * Check that the [Date](#date) element exists.
+
+    * Check that the [Date Type](#dateType) element exists and it has an attribute codeList with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" and an attribute codeListValue with value "publication".
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.5 , Req c.15
-* [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601)
+* [TG MD](./README.md#ref_TG_MD), 2.3.5 , Req c.15
+* [ISO 8601](./README.md#ref_ISO_8601)
 
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of [Citation](#citation) is zero or more
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="citation"></a> Citation  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation
-<a name="title"></a> Title  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/gmd:CI_Citation/gmd:title
-<a name="date"></a> Date  | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:thesaurusName/\*/gmd:date/gmd:CI_Date/gmd:date[1]/gco:Date
-<a name="dateType"></a> Date Type | ./gmd:identificationInfo[1]/\*/descriptiveKeywords/\*/gmd:date/gmd:CI_Date/gmd:date[1]/\*/gmd:dateType/gmd:CI_DateTypeCode/@codeListValue
-<a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='CI_DateTypeCode']//gml:identifier/text()
+<a name="citation"></a> Citation  | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation
+<a name="title"></a> Title  | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title
+<a name="date"></a> Date  | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date
+<a name="dateType"></a> Date Type | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gmd:dateType/gmd:CI_DateTypeCode

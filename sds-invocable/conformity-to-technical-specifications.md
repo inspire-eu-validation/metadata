@@ -1,35 +1,43 @@
 # Conformity to Technical Specifications
 
-**Purpose**: The metadata element will contain technical specifications to which the invokable spatial data service must be fully adjusted. 
-To do this, it must provide all a series of technical elements necessary to allow its invocation.
+**Purpose**: 
+
+Test that is given the conformity degree with at least one technical specifications providing all the necessary technical elements to actually invoke the service and enable its usage.
 
 **Prerequisites**
 
-* [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity)
+* [Conformity](../common/conformity.md)
 
 **Test method**
-* Verify that the service fully complies with at least one technical specification that provides all the technical elements necessary to 
-invoke the service and allow its use.
-* This is tested from the DQ_ConformanceResult element (according to TG Requirement C.20). In addition, it must contain an [citation](#citation) for the coded technical specification according to requirement TG.C.21 [conformity-specification](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/conformity-specification).
 
-*The multiplicity of the element is one or more.
+* Check if full compliance is declared with at least one technical specification providing all the necessary technical elements to actually invoke the service and enable its usage, encoded using a [Conformance Result](#ConformanceResult) element.
+
+* For each [Conformance Result](#ConformanceResult) element,
+
+    * Check if is given a citation for the technical specification encoded using a  [Citation](#citation) element.
+
+    * Check if the degree of conformity with the given specification is defined as "true" in the [Conformity Degree](#conformityDegree) element.
 
 **Reference(s)**
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#ref_TG_MD) 4.3.3.3, Req 5.5
+* [TG MD](./README.md#ref_TG_MD) 4.3.3.3, Req 5.5
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of the [Conformance Result](#ConformanceResult) element is one or more.
+
+This test must be compliant with [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md).
+
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="citation"></a> Citation  | gmd:CI_Citation/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>
-<a name="title"></a> Title  | gmd:title/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>/<gmd:title>/text()
-<a name="dateType"></a> dateType |gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult/\*/<gmd:CI_Citation>/\*/<gmd:CI_Date>/\*/<gmd:CI_DateTypeCode>///gmd:CI_DateTypeCode/@codeListValue
-<a name="codeListValue"></a> codeListValue | doc("http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='CI_DateTypeCode']//gml:identifier/text()
+<a name="ConformanceResult"></a> Conformance Result   | gmd:result/gmd:DQ_ConformanceResult
+<a name="citation"></a> Citation  | gmd:specification/gmd:CI_Citation
+<a name="conformityDegree"></a> Conformity Degree | gmd:result/gmd:DQ_ConformanceResult/gmd:pass/gco:Boolean
+
 

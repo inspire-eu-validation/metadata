@@ -1,37 +1,37 @@
 # Resource Locator
 
-**Purpose**: If available Resource Locator for Services, is tested if it provides the access point of the service through an 
-Internet address containing a detailed description of a spatial data service.
+**Purpose**: 
+
+Test that a resource locator linking to the described Spatial Data Service is given if online access is available. If not, tests that is provided an URL pointing to an online resource providing additional information of the service, if available.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+* If online access to the service is available:
+    
+    * Check if a resource locator linking to the described Spatial Data Service is given encoded using an [online access](#onlineAccess) element.
 
-* Check that a resource locator linking to the described Spatial Data Service shall be given if [online access](#onlineAccess) to this service is available.
+* If online access is NOT available, but there is a publicly available online resource providing additional information about the described service:
 
-* The multiplicity of this element is zero or more.
+    * Check if the URL pointing to the resource is given encoded using an [online access](#onlineAccess) element.
 
 **Reference(s)**
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_TG_MD) 4.1.3.1, Req 3.7
+* [TG MD](*/README.md#ref_TG_MD) 4.1.3.1, Req 3.7
 
 **Test type**: Automated
 
 **Notes**
-If no online access is available, but there is a publicly available online resource providing additional information about the described service, 
-the URL pointing to this resource shall be given instead.
 
-A Resource Locator encoded using the gmd:CI_OnlineResource element may also include gmd:name, gmd:description, and gmd:function properties.
+The multiplicity of this element is zero or more.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="onlineAccess"></a> Online Access |  ./gmd:distributionInfo/\*/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/ \*/gmd:linkage/gmd:URL
+<a name="onlineAccess"></a> Online Access |  gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL

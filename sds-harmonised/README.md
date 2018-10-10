@@ -1,9 +1,9 @@
-# Metadata for Harmonised Spatial Data Services 
-Abstract Test Suite for Conformance Class 7 of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance 
-based on ISO/TS 19139:2007.
+# INSPIRE Harmonised Spatial Data Services metadata
 
+Conformance Class 7 of the implementation of "INSPIRE dataset and service metadata based on ISO/TS 19139:2007" [INSPIRE Metadata](../README.md) based on the corresponding technical guidance [TG MD](#ref_TG_MD).
 
-*Note*: This ATS is in ready for review stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: It is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+
 ## Standardization target type
 
  ISO/TS 19139:2007 Geographic information Metadata XML schema implementation.
@@ -16,8 +16,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common) | Common Requirements | n/a |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable) | Conformance Class 6 | n/a |
+| INSPIRE Metadata | [Conformance Class 6](../sds-interoperable/README.md) | n/a |
 
 ### Indirect dependencies
 
@@ -25,7 +24,9 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](#ref_TG_MD) |
+| INSPIRE Metadata | [Conformance Class 5](../sds-invocable/README.md) | n/a |
+| INSPIRE Metadata | [Conformance Class 3](../sds/README.md) | n/a |
+| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
  
 ## External document references
 
@@ -38,7 +39,7 @@ An indirect dependency is another conformance class whose requirements must be m
 | IR NS AMD <a name="ref_IR_NS_AMD"></a> | [Commission Regulation (EU) No 1311/2014 of 10 December 2014 amending Regulation (EC) No 976/2009 as regards the definition of an INSPIRE metadata element](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32014R1311&from=EN)
 | TG MD <a name="ref_TG_MD"></a> | [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0](https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf)
 | ISO 19118 <a name="ref_ISO_19118"></a> | [ISO 19118:2011 Geographic information – Encoding](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=44212)
-| SDS ALT <a name="ref_SDS_alt"></a> | Alternative approaches to implement Metadata for Spatial data services (not published?)
+| SDS ALT <a name="ref_SDS_alt"></a> | Alternative approaches to implement Metadata for Spatial data services
 
 ## TG Requirement coverage
 
@@ -46,9 +47,9 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 7.1      | Invocation Metadata              | [invocation-metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/invocation-metadata) | |
-| 7.2      | Operation Metadata               | [operation-metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata) | |
-| 7.3      | Operation Metadata Parameters               | [operation-metadata-parameters](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata-parameters) | |
+| 7.1 | Invocation Metadata | [invocation-metadata](./invocation-metadata.md) | |
+| 7.2 | Operation Metadata | [operation-metadata](./operation-metadata.md) | |
+| 7.3 | Operation Metadata Parameters | [operation-metadata-parameters](./operation-metadata-parameters.md) | |
 
 
 ## Test
@@ -57,9 +58,9 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [invocation-metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/invocation-metadata) |  Ready for review  |
-| [operation-metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata) |  Ready for review  |
-| [operation-metadata-parameters](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/operation-metadata-parameters) |  Ready for review  |
+| [invocation-metadata](./invocation-metadata.md) | Ready for review |
+| [operation-metadata](./operation-metadata.md) | Ready for review |
+| [operation-metadata-parameters](./operation-metadata-parameters.md) | Ready for review |
 
 ## Open issues
 

@@ -1,32 +1,30 @@
-# Service identification element
+# Service Identification Element
 
-**Purpose**: Resource identifier identifying the resource must be given.
+**Purpose**: Test that a resource identifier identifying the resource is given.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
-
-The test first checks if a [Service Identification](#serviceIdentification)  is contained in an element <gmd:identificationInfo>
- for identifying an INSPIRE Spatial Data Service.
+* Check if a [Service Identification](#serviceIdentification) is contained in the first gmd:identificationInfo element for identifying an INSPIRE Spatial Data Service.
 
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_TG_MD),4.1.2, Req 3.2
+* [TG MD](./README.md#ref_TG_MD), 4.1.2, Req 3.2
 
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is one.
+
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="serviceIdentification"></a> ServiceIdentification   | ./gmd:identificationInfo[1]/<srv:SV_ServiceIdentification>
+<a name="serviceIdentification"></a> ServiceIdentification   | gmd:identificationInfo[1]/srv:SV_ServiceIdentification

@@ -1,34 +1,32 @@
 # Lineage
 
-**Purpose**: If the type of the resource was dataset or series, exactly one explanation about the
-lineage of a dataset must be given
+**Purpose**: Test that exactly one explanation about the lineage of a dataset is provided.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
+* Check that exactly one [Lineage](#lineage) element exists.
 
-The test first checks if a valid lineage [statement](#statement) is given and it is not an [empty characterstring](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#emptychar). 
-It then validates that exactly one lineage statement like the one above is given.
+    * Check that content of every [Statement](#statement) is a non-empty free text.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/lineage/README#ref_TG_MD) 3.1.4.3, Req 1.11
+* [TG MD](./README.md#ref_TG_MD) 3.1.4.3, Req 1.11
 
 **Test type**: Automated
 
 **Notes**
 
-The "Test method" requires to validate "that exactly one lineage statement like the one above is given" and talks about a "valid lineage statement". It is not clear if there are additional requirements on the value of a lineage statement, other than that it shall not be empty.
+The multiplicity of this element is one.
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="statement"></a> statement  | ./gmd:dataQualityInfo/\*/gmd:lineage/\*/gmd:statement
+<a name="lineage"></a>Lineage | /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:lineage
+<a name="statement"></a> Statement | gmd:lineage/gmd:LI_Lineage/gmd:statement

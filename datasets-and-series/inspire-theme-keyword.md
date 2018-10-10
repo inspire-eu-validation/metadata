@@ -1,40 +1,40 @@
-# Inspire Theme Keyword
+# INSPIRE Theme Keyword
 
-**Purpose**: Ds keyword. If the resource is a dataset or a dataset series, at least one keyword must originate from the INSPIRE theme of the GEMET Thesaurus.
+**Purpose**: Test that the INSPIRE Data Themes, which the data belongs to, are declared using at least one keyword from the INSPIRE Spatial Data Themes vocabulary.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
+* Check that at least one of the [MD_Keywords](#mdKeywords) elements has a [Title](#title) child element with value "GEMET - INSPIRE themes, version 1.0". Then,
 
-The test should verify each descriptive block of keywords if it refers to the vocabulary controlled by GEMET INSPIRE topics.
-If a block references that thesaurus, the test should verify if at least one gmd:keyword is available and 
-matches a concept in the thesaurus.
+    * For every [MD_Keywords](#mdKeywords) which title child is "GEMET - INSPIRE themes, version 1.0":
 
-For each INSPIRE Spatial Data Theme, a gmd:keyword element shall be included with the title of the theme as a 
-Non-empty Free Text Element [empty CharacterString](http://inspire.ec.europa.eu/id/ats/metadata/2.0/iso-19115-19119/README#emptychar) content in the language of the metadata.
+        * Check that a [Keyword](#keyword) with the title of theme is included as a non-empty free text referencing the INSPIRE Spatial Data Themes vocabulary of the general environmental multilingual thesaurus [GEMET](http://www.eionet.europa.eu/gemet/en/inspire-themes/).
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_TG_MD), 3.1.2.2, Req 1.4
-* [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_ISO_19115) table B.5.25 MD_ScopeCode 
+* [TG MD](./README.md#ref_TG_MD), 3.1.2.2, Req 1.4
+* [ISO 19115](./README.md#ref_ISO_19115) table B.5.25 MD_ScopeCode 
 * [GEMET](http://www.eionet.europa.eu/gemet/en/inspire-themes/)
 
 **Test type**: Automated
 
 **Notes**
 
-The test method is not clear on how a specific code list is referenced in a gmd:thesaurusName.
-The ETS assumes that the gmd:thesaurusName/\*/gmd:title/\*/text() equals 'GEMET - INSPIRE themes, version 1.0'. 
+The multiplicity of this element is one or more.
+
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="keyword"></a> keyword   | ./gmd:identificationInfo[1]/\*/gmd:descriptiveKeywords/\*/gmd:keyword
+<a name="mdKeywords"></a> MD_Keywords | gmd:descriptiveKeywords/gmd:MD_Keywords
+<a name="title"></a> Title | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title
+<a name="keyword"></a> Keyword | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword

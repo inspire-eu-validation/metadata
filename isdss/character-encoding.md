@@ -1,31 +1,34 @@
-# Character Encoding dataset or series
+# Character Encoding
 
-**Purpose**: Evaluate the character encoding for data sets and datasets.
+**Purpose**: Test that the character encoding for data sets and series is provided correctly.
 
 **Prerequisites**
 
 **Test method**
-The coding (s) of characters in the data sets and data sets using non UTF-8 based 
-encodings are checked from the element [Character Set Code](#CharacterSetCode).
 
-The multiplicity of this element is 0 or more.
+* For every [Character Set Code](#characterSetCode),
+
+    * Check that it has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" and an attribute codeListValue with value from [ISO 19139](http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html).
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#ref_TG_MD) 3.2.2.2, Req 2.5
-* [ISO 10646](http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html)
+* [TG MD](./README.md#ref_TG_MD) 3.2.2.2, Req 2.5
+* [ISO 19139](http://standards.iso.org/iso/19139/resources/)
+
 **Test type**: Automated
 
 **Notes**
+
+The multiplicity of this element is zero or more.
+
 This element is mandatory only if an encoding is used that is not based on UTF-8.
+
 If more than one character encoding is used within the described data set or data sets series, all used character 
 encodings, including UTF-8 (code list value "utf8"), shall be given using this element.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://github.com/inspire-eu-validation/metadata/2.0/isdss/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:characterSet)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="CharacterSetCode"></a> CharacterSetCode  | ./gmd:characterSet/gmd:MD_CharacterSetCode/@codeListValue
-<a name="codeListValue"></a> codeListValue  | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")//gmx:CodeListDictionary[@gml:id='MD_CharacterSetCode']//gml:identifier/text()
+<a name="characterSetCode"></a> Character Set Code | gmd:MD_CharacterSetCode

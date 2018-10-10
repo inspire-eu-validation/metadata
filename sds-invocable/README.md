@@ -1,9 +1,9 @@
-# Metadata for Invocable Spatial Data Services 
+# INSPIRE Invocable Spatial Data Services metadata
 
-Abstract Test Suite for Conformance Class 5 of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance 
-based on ISO/TS 19139:2007.
+Conformance Class 5 of the implementation of "INSPIRE dataset and service metadata based on ISO/TS 19139:2007" [INSPIRE Metadata](../README.md) based on the corresponding technical guidance [TG MD](#ref_TG_MD).
 
-*Note*: This ATS is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: It is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+
 ## Standardization target type
 
  ISO/TS 19139:2007 Geographic information Metadata XML schema implementation.
@@ -16,8 +16,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common) | Common Requirements | n/a |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds) | Conformance Class 3 | n/a |
+| INSPIRE Metadata | [Conformance Class 3](../sds/README.md) | n/a |
 
 ### Indirect dependencies
 
@@ -25,7 +24,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](#ref_TG_MD) |
+| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
  
 ## External document references
 
@@ -47,11 +46,11 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 5.1      | Spatial Data Service Type               | [sds-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/sds-type) | |
-| 5.2      | Resource Locator Access Point               | [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/access-point) | |
-| 5.3      | Data Quality Conformity               | [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/conformity) | |
-| 5.4      | Spatial Data Service Category              | [sds-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/sds-category) | |
-| 5.5      | Conformity to Technical Specifications               | [conformity-to-technical-specifications](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/conformity-to-technical-specifications) | |
+| 5.1      | Spatial Data Service Type | [sds-type](./sds-type.md) | |
+| 5.2      | Resource Locator Access Point | [access-point](./access-point.md) | |
+| 5.3      | Data Quality Conformity | [conformity](./conformity.md) | |
+| 5.4      | Spatial Data Service Category | [sds-category](./sds-category.md) | |
+| 5.5      | Conformity to Technical Specifications | [conformity-to-technical-specifications](./conformity-to-technical-specifications.md) | |
 
 
 ## Test
@@ -60,11 +59,11 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [sds-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/sds-type) |  Ready for review  |
-| [access-point](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/access-point) |  Ready for review  |
-| [conformity](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/conformity) |  Ready for review  |
-| [sds-category](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/sds-category) |  Ready for review  |
-| [conformity-to-technical-specifications](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/conformity-to-technical-specifications) |  Ready for review  |
+| [sds-type](./sds-type.md) | Ready for review  |
+| [access-point](./access-point.md) | Ready for review  |
+| [conformity](./conformity.md) | Ready for review  |
+| [sds-category](./sds-category.md) | Ready for review  |
+| [conformity-to-technical-specifications](./conformity-to-technical-specifications.md) | Ready for review  |
 
 
 ## Open issues

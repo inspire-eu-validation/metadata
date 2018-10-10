@@ -1,42 +1,34 @@
 # Only One DataIdentification
 
 **Purpose**:
-The objective of this test is to harmonize the structure of the metadata for data sets and data set series declaring 
-that although more than one IdentificationInfo can be given within the MD_Metadata element, only the first instance
- is used for the identification of the INSPIRE resource.
+Test that the identification info section of the metadata for data sets and data set series is provided correctly.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
-
-The test first checks if a property of gmd:MD_Metadata element shall contain only 
-one [dataIdentification](#dataIdentification) element.
+* Check that the first [Identification Info](#identificationInfo) contains only one [Data Identification](#dataIdentification)
 
 **Reference(s)**
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_TG_MD),3.1.2, Req 1.2
-* [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_ISO_19115) table B.5.25 MD_ScopeCode 
+* [TG MD](./README.md#ref_TG_MD),3.1.2, Req 1.2
+* [ISO 19115](./README.md#ref_ISO_19115) table B.5.25 MD_ScopeCode
 
 **Test type**: Automated
 
 **Notes**
 
-The test method does not mention that the language independent codes should be used.
+The multiplicity of this element is one.
 
-A unique identifier of the gmd:MD_DataIdentification element is not necessary when building 
-the [Coupled resource](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/coupled-resource) 
-link by providing a Unique Resource Identifier that is resolved to a URL containing an abstract pointer 
-to the gmd:MD_DataIdentification element.
+Although more than one IdentificationInfo can be given within the MD_Metadata element, only the first instance is used for the identification of the INSPIRE resource.
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to root)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="dataIdentification"> Data Identification </a>   | ./gmd:identificationInfo[count(gmd:MD_DataIdentification)=1]
+<a name="identificationInfo"> Identification Info</a>   | /gmd:MD_Metadata/gmd:identificationInfo
+<a name="dataIdentification"> Data Identification</a>   | /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification

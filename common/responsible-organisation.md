@@ -1,42 +1,41 @@
 # Responsible Organization
 
-
-**Purpose**: Describe the organization responsible for the establishment, administration, maintenance and distribution of the resource.
+**Purpose**: Test that the responsible organization metadata is provided.
 
 **Prerequisites**
 
 **Test method**
 
-Check the point of contact for the [organisation responsible](#organisationResponsable) for the establishment, management, maintenance and distribution of the described resource.
-They have to come defined through the children elements:
+* Check that at least one [organisation responsible](#organisationResponsible) element exists.
 
-* Name of the organisation [organization](#organisationName) with a non-empty free text element content.
+* For every [organisation responsible](#organisationResponsible) element,
 
-* The [email address](#mailAddress) of the organization with a free text element not empty.
+    * Check that the [Organization Name](#organisationName) exists and its value is a non-empty free text element.
 
-* The value for the [Role](#role) coded from the [Code List Value](#codeListValue) [ISO 19139] CI_RoleCode.
+    * Check that the [Email Address](#emailAddress) of the organization is a non-empty free text element.
 
-The multiplicity of [organisation responsible](#organisationResponsable) is one or more.
+    * Check that the attribute codeList of the [Role](#role) node is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" and codeListValue attribute is "pointOfContact".
+
+* If any of the checks fails the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.3 , Req c.10
+* [TG MD](./README.md#ref_TG_MD), 2.3.3 , Req c.10
 
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of [organisation responsible](#organisationResponsible) is one or more.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="organisationResponsable"></a> Organisation Responsable  | ./gmd:identificationInfo[1]/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/gmd:CI_ResponsibleParty[1]
-<a name="organisationName"></a> Organisation Name  | ./gmd:identificationInfo[1]/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/gmd:organisationName/text()
-<a name="mailAddress"></a> Mail Address Organisation | ./gmd:identificationInfo[1]/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/gmd:contactInfo/\*/gmd:address/\*/gmd:electronicMailAddress/text()
-<a name="role"></a> Role  | ./gmd:identificationInfo[1]/\*/gmd:pointOfContact/gmd:CI_ResponsibleParty[1]/gmd:role/gmd:CI_RoleCode/@codeListValue
-<a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")//gmx:CodeListDictionary[@gml:id='CI_RoleCode']//gml:identifier/text()
-
+<a name="organisationResponsible"></a> Organisation Responsible | /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
+<a name="organisationName"></a> Organisation Name |gmd:organisationName
+<a name="emailAddress"></a> Email Address Organisation | gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress
+<a name="role"></a> Role | gmd:role/gmd:CI_RoleCode

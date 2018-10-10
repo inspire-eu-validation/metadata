@@ -1,36 +1,53 @@
-# Inovable Spatial Data Service category Keywords
+# SDS Category Keywords
 
-**Purpose**: 
+**Purpose**:
+
+Test that the service category is given implementing rules for interoperability of spatial data sets and services.
+
 **Prerequisites**
 
 **Test method**
 
-* Check that there is at least one DQ_ConformanceResult returned from query [classification result invocable](#result_invocable).
-* The multiplicity of the element  is one.
+* Check if is given a [Conformance Result](#ConformanceResult) element according with the [Conformity](../common/conformity.md) common requirement.
 
-* This element shall contain a gmd:CI_Citation element for one of the three Conformance Classes for Invocable Spatial Data Service categories.
-* The title of the cited Conformance Class shall be encoded using the [title](#title) element. 
+* Check if [Conformance Result](#ConformanceResult) contains a [Citation](#citation) for one of the three Conformance Classes for Invocable Spatial Data Service categories according with the [Conformity Specification](../common/conformity-specification.md) common requirement.
+
+* Check if the title of the cited Conformance Class is encoding using the [Title](#title) element.
+
+* Check if [Title](#title) element has an "xlink:href" attribute with the permanent unique identifier of a Conformance Class. The valid values are:
+    
+    * http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable
+    * http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable
+    * http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised
+
+* Check if [Title](#title) element contains the corresponding neutral name of the category. The valid values are:
+  
+    * invocable
+    * interoperable
+    * harmonised
+
+* Check if the degree of conformity with the cited Conformance Class is defined as "true" in the [Conformity Degree](#conformityDegree) element.
+
+
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#ref_TG_MD), 4.3.3.2, Req 5.4
-* [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#ref_ISO_19115)
+* [TG MD](./README.md#ref_TG_MD), 4.3.3.2, Req 5.4
+* [ISO 19115](./README.md#ref_ISO_19115)
 
 **Test type**: Automated
 
 **Notes**
 
-The test method is not clear on how a specific code list is referenced in a gmd:thesaurusName.
+The multiplicity of the [Conformance Result](#ConformanceResult) element is one for this purpose.
 
+This test must be compliant with [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md).
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_DomainConsistency)
 -----------------------------------------------| -------------------------------------------------------------------------
-
-Abbreviation                                               |  XPath expression
----------------------------------------------------------- | -------------------------------------------------------------------------
-<a name="result_invocable">classification result invocable</a> | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]
- <a name="citation">Citation</a> | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]/\*/gmd:CI_Citation
- <a name="title">Title</a> | ./gmd:dataQualityInfo/\*/gmd:report/\*/gmd:result/gmd:DQ_ConformanceResult[1]/\*/gmd:CI_Citation/gmd:title/gmd:Anchor/@xlink:href=' http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-invocable'
+<a name="ConformanceResult"></a> Conformance Result | gmd:result/gmd:DQ_ConformanceResult
+<a name="title"></a> Title | gmd:specification/gmd:CI_Citation/gmd:title/gmd:Anchor
+<a name="conformityDegree"></a> Conformity Degree | gmd:result/gmd:DQ_ConformanceResult/gmd:pass/gco:Boolean

@@ -1,9 +1,8 @@
-# Interoperability Metadata for Data Sets and Data Set Series
+# INSPIRE data sets and data set series interoperability metadata
 
-Abstract Test Suite for Conformance Class 2 of the [INSPIRE Metadata](http://inspire.ec.europa.eu/id/ats/metadata/2.0) Technical Guidance 
-based on ISO/TS 19139:2007.
+Conformance Class 2 of the implementation of "INSPIRE dataset and service metadata based on ISO/TS 19139:2007" [INSPIRE Metadata](../README.md) based on the corresponding technical guidance [TG MD](#ref_TG_MD).
 
-*Note*: This ATS is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: It is in Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
 ## Standardization target type
 
@@ -17,8 +16,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common) | Common Requirements | n/a |
-| [ISO 19139:2007](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series) | Conformance Class 1 | n/a |
+| INSPIRE Metadata | [Conformance Class 1](../datasets-and-series/README.md) | n/a |
 
 ### Indirect dependencies
 
@@ -26,7 +24,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Specification | Conformance class | Related resource | Parameters |
 | ------------- | ----------------- | ---------------- | ---------- |
-| [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](#ref_TG_MD) |
+| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
  
 ## External document references
 
@@ -48,14 +46,14 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| 2.1      | Coordinate Reference System               | [crs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
-| 2.2      | Coordinate Reference System Identifiers                  | [crs-id](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs-id) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
-| 2.3      | Temporal Reference System    | [temporal-rs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/temporal-rs) |[IR MD](#ref_IR_MD), Part B 1.4 |
-| 2.4      | Spatial Representation Type | [spatial-representation-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type) | [IR MD](#ref_IR_MD), Part B 1.4 |
-| 2.5      | Character Encoding | [character-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/character-encoding)|[IR MD](#ref_IR_MD) Part B 1.5 |
-| 2.6      | Data Encoding |[data-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/data-encoding) | [IR MD](#ref_IR_MD) Part B 1.5 |
-| 2.7      | Topological Consistency Descriptive Results     | [topological-consistency-quantitative-results](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/topological-consistency-quantitative-results) | |
-| 2.8      | Topological Consistency Quantitative Results        | [topological-consistency-descriptive-results](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/topological-consistency-descriptive-results) |[IR MD](#ref_IR_MD) Part B 1.7 |
+| 2.1 | Coordinate Reference System | [crs](./crs.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1 |
+| 2.2 | Coordinate Reference System Identifiers | [crs-id](./crs-id.md) |[IR MD](#ref_IR_MD), Part B 1.3, Part D 1  |
+| 2.3 | Temporal Reference System | [temporal-rs](./temporal-rs.md) |[IR MD](#ref_IR_MD), Part B 1.4 |
+| 2.4 | Spatial Representation Type | [spatial-representation-type](./spatial-representation-type.md) | [IR MD](#ref_IR_MD), Part B 1.4 |
+| 2.5 | Character Encoding | [character-encoding](./character-encoding.md)|[IR MD](#ref_IR_MD) Part B 1.5 |
+| 2.6 | Data Encoding |[data-encoding](./data-encoding.md) | [IR MD](#ref_IR_MD) Part B 1.5 |
+| 2.7 | Topological Consistency Descriptive Results | [topological-consistency-quantitative-results](./topological-consistency-quantitative-results.md) | |
+| 2.8 | Topological Consistency Quantitative Results | [topological-consistency-descriptive-results](./topological-consistency-descriptive-results.md) |[IR MD](#ref_IR_MD) Part B 1.7 |
 
 ## Test
 
@@ -63,14 +61,14 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [crs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs)           | Ready for review  |
-| [crs-id](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/crs-id)                   | Ready for review  |
-| [temporal-rs](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/temporal-rs)                   | Ready for review  |
-| [spatial-representation-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type) | Ready for review  |
-| [character-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/character-encoding)                   | Ready for review  |
-| [data-encoding](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/data-encoding)                 | Ready for review  |
-| [topological-consistency-quantitative-results](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/topological-consistency-quantitative-result)       | Ready for review  |
-| [topological-consistency-descriptive-results](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/topological-consistency-descriptive-results)                       | Ready for review  |
+| [crs](./crs.md) | Ready for review  |
+| [crs-id](./crs-id.md) | Ready for review  |
+| [temporal-rs](./temporal-rs.md) | Ready for review  |
+| [spatial-representation-type](./spatial-representation-type.md) | Ready for review  |
+| [character-encoding](./character-encoding.md) | Ready for review  |
+| [data-encoding](./data-encoding.md) | Ready for review  |
+| [topological-consistency-quantitative-results](./topological-consistency-quantitative-result.md) | Ready for review  |
+| [topological-consistency-descriptive-results](./topological-consistency-descriptive-results.md) | Ready for review  |
 
 Some additional metadata tests are available in the [conformance class 'Metadata for interoperability'](http://inspire.ec.europa.eu/id/ats/data/3.0rc3/Metadata-for-interoperability). These tests are separated from above because they have a different timeline for implementation.
 

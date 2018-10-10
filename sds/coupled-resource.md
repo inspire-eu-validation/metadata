@@ -1,30 +1,26 @@
-# Coupled resource
+# Coupled Resource
 
-**Purpose**: If the resource is a spatial data service, this metadata element refers to the
-target spatial data set(s) of the service. It is implemented by reference, i.e. through a URL that
-points to the metadata record of the data on which the service operates.
+**Purpose**: Test that an operatesOn element refers to the target spatial data set(s) of the service, being implemented by reference.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+* Check if the operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element is a HTTP URI that when retrieved using HTTP GET returns the metadata document describing the dataset exposed by the service.
 
-* The operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element shall be a HTTP URI that when retrieved using 
-HTTP GET should return the metadata document describing the dataset exposed by this service.
-
-* The multiplicity of this element is 0 or more.
+* Check if the property is implemented by reference. It means that the xlink:href attribute of each operatesOn element contains a URI pointing to the gmd:MD_DataIdentification element of the metadata record of the provided data set or data set series.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_TG_MD) 4.1.2.4, Req 3.6
+* [TG MD](./README.md#ref_TG_MD) 4.1.2.4, Req 3.6
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is zero or more with the following condition: "Mandatory if linkage to data sets on which the service operates are available".
 
 ##Contextual XPath references
 
@@ -32,5 +28,4 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="coupling"></a> SV_ServiceIdentification   | ./gmd:identificationInfo/\*/srv:operatesOn
+<a name="SV_ServiceIdentification"></a> SV_ServiceIdentification   | gmd:identificationInfo/srv:SV_ServiceIdentification/srv:operatesOn

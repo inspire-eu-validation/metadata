@@ -1,34 +1,31 @@
-# Srv type
+# SDS Type
 
-**Purpose**: If the type of the resource was service, exactly one name describing the type of service must be given.
+**Purpose**: 
+Test that exactly one valid service type value is provided.
 
 **Prerequisites**
 
-* [resource-type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
-
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+* Check that the [serviceType](#serviceType) element occurs exactly once in the document.
 
-If the type of the resource is service, exactly one name describing the type of service must be given.
-First, a check is performed to establish whether the [serviceType](#serviceType) element occurs exactly once in the document. The test then checks if the element [serviceType](#serviceType) contains text that shall be "view", "download", "discovery" or "transformation" depending on the kind of the described Network Service.
-
-The value for the element shall be "view", "download", "discovery" or "transformation".
+* Check that the element [serviceType](#serviceType) contains text that shall be "view", "download", "discovery" or "transformation" depending on the kind of the described Network Service.
 
 **Reference(s)**
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/ns/README#ref_TG_MD) 4.2.1.1, Req 4.1
+* [TG MD](./README.md#ref_TG_MD) 4.2.1.1, Req 4.1
 * [Spatial Data Service Type](http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/SpatialDataServiceType.es.xml)
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is one.
+
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/ns/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-serviceType <a name="serviceType"></a>   | ./gmd:identificationInfo[1]/\*/srv:serviceType/gco:LocalName
+serviceType <a name="serviceType"></a>   | /gmd:identificationInfo[1]/srv:SV_ServiceIdentification/srv:serviceType/gco:LocalName

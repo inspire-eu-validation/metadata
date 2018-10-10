@@ -1,40 +1,42 @@
 # Metadata Point of Contact
 
 
-**Purpose**: Evaluate the description of the organisation responsible for the creation and maintenance of the metadata.
+**Purpose**: Test that the description of the organisation responsible for the creation and maintenance of the metadata is provided.
 
 **Prerequisites**
 
 **Test method**
 
-Check the point of contact for the [party responsible](#partyResponsable) for the metadata.This element shall to defined through the child elements:
+* Check that at least one [Responsible Party](#responsibleParty) element exists.
 
-* Name of the responsible [organization](#organisationName) with a non-empty free text element content.
+* For every [Responsible Party](#responsibleParty) element,
 
-* The [email address](#mailAddress) of the organization with a free text element not empty.
+    * Check that the [Organization Name](#organizationName) exists and its value is a non-empty free text element.
 
-* The value for the [Role](#role) coded from the [Code List Value](#codeListValue) [ISO 19139]: [CI_RoleCode](http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode).
+    * Check that the [Email Address](#emailAddress) of the organization is a non-empty free text element.
 
-The multiplicity of this element is one or more.
+    * Check that the attribute codeList of the [Role](#role) node is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" and codeListValue attribute is "pointOfContact".
 
-**Reference(s)**	 
+* If any of the checks fails the test fails.
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.2.3 , Req c.6
+**Reference(s)**
+
+* [TG MD](./README.md#ref_TG_MD), 2.2.3 , Req c.6
 * [CI_RoleCode](http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode)
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is one or more.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_metadata/gmd:contact/gmd:CI_ResponsibleParty)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="partyResponsable"></a> Party Responsable  | ./gmd:contact/gmd:CI_ResponsibleParty[1]
-<a name="organisationName"></a> Organisation Name  | ./gmd:contact/gmd:CI_ResponsibleParty[1]/gmd:organisationName/text()
-<a name="mailAddress"></a> Mail Address Organisation | ./gmd:contact/gmd:CI_ResponsibleParty[1]/gmd:contactInfo/\*/gmd:address/\*/gmd:electronicMailAddress/text()
-<a name="role"></a> Role  | ./gmd:contact/gmd:CI_ResponsibleParty[1]/gmd:role/gmd:CI_RoleCode/@codeListValue
-<a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml")/gmx:CodeListDictionary[@gml:id='CI_RoleCode']//gml:identifier/text()
+<a name="partyResponsable"></a> Responsible Party | /gmd:MD_metadata/gmd:contact/gmd:CI_ResponsibleParty
+<a name="organizationName"></a> Organization Name | gmd:organisationName
+<a name="emailAddress"></a> Email Address | gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress
+<a name="role"></a> Role | gmd:role/gmd:CI_RoleCode

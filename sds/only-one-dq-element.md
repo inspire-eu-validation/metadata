@@ -1,33 +1,40 @@
 # Only One Data Quality Info Element
 
-**Purpose**: For every conformity statement, one citation of the product specification or user requirement against which data is being evaluated must be given.
+**Purpose**: 
+
+Test that a dataQuality element is given, and that the scope is encoded using an scopeCode element and described in a scopeDescription element.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+* Check if exactly one [dataQuality](#dataquality) is given scoped to the entire described service.
 
-The test first checks that shall be exactly one [dataQualityInfo](#dataquality) element scoped to the entire described services. 
+* Check if a [scopeCode](#scopeCode) element is provided referring the value "service". 
+
+  * Check if MD_ScopeCode element has a "codeList" attribute with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" and a "codeListValue" attribute with value "service".
+
+* Check if the a [scopeDescription](#scopeDescription) element is provided with an non-empty free text containing the term "service" in the language of the metadata.
 
 **Reference(s)**
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_TG_MD), 4.1.4.1, Req 3.8
+* [TG MD](./README.md#ref_TG_MD), 4.1.4.1, Req 3.8
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this elements is one.
+
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="dataquality"></a> dataQuality    | ./gmd:dataQualityInfo[count(gmd:DQ_DataQuality)=1]
-<a name="scopeCode"></a> scopeCode    | ./gmd:dataQualityInfo[1]/\*/gmd:scope/\*/gmd:level/gmd:MD_ScopeCode/@codeListValue
-<a name="codeListValue"></a> codeListValue | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='MD_ScopeCode']///gml:identifier/text()
+<a name="dataquality"></a> dataQuality    | gmd:dataQualityInfo/gmd:DQ_DataQuality
+<a name="scopeCode"></a> scopeCode    | gmd:dataQualityInfo[1]/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode
+<a name="scopeDescription"></a> scopeDescription    | gmd:dataQualityInfo[1]/gmd:scope/gmd:DQ_Scope/gmd:levelDescription/gmd:MD_ScopeDescription/gmd:other
 

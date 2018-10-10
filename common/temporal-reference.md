@@ -1,36 +1,38 @@
 # Temporal Reference
 
-
-**Purpose**: A metadata must have information about the temporal dimension of the data to which it refers.
+**Purpose**: Test that there is at least one temporal reference and it is codified correctly.
 
 **Prerequisites**
 
 **Test method**
 
-The information on the temporal dimension of the data will be described by a set of dates referring 
-to a temporary reference system and will be expressed in accordance with [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601).
+* Check that there is at least one [date](#date) element. If it does, for every [date](#date) element,
 
-The default reference system will be the Gregorian calendar.
-For this there must be at least one [date](#date) element.
+    * Check that one of [date precision](#datePrecision) or [date and time precision](#dateTimePrecision) exists and that it is codified correctly according with [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601).
 
-* To specify the value of the [date precision](#datePrecision), the gco element will be used: Date
+    * Check that [Date Type](#dateType) element exists. If it does,
 
-* To specify the value of the [date and time precision](#dateTimePrecision), the gco element will be used: DateTime
+        * Check that the [Date Type](#dateType) has an attribute named codeList which value is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode"
 
-* The date type will be specified through the [Date Type](#dateType) element with a corresponding value from the [Code List Value](#codeListValue) of [ISO 19139](http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode).
+        * Check that the [Date Type](#dateType) has an attribute named codeListValue which value is "publication", "revision" or "creation".
 
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.4 , Req c.11
-* [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601)
+* [TG MD](./README.md#ref_TG_MD), 2.3.4 , Req c.11
+* [ISO 8601](./README.md#ref_ISO_8601)
 * [ISO 19139](http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode) Date Type Code
 
 **Test type**: Automated
 
 **Notes**
-The profile of ISO 8601, the International Standard for the representation of dates and times,
-describes a large number of date/time formats:
+
+The multiplicity of [date](#date) is one or more.
+
+The default reference system will be the Gregorian calendar.
+
+The profile of ISO 8601, the International Standard for the representation of dates and times, describes a large number of date/time formats:
 
      Year:
      YYYY (eg 1997)
@@ -64,12 +66,11 @@ where:
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="date"></a> Date  | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:date/gmd:CI_Date/gmd:date[1]
-<a name="datePrecision"></a> Date Precision  | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:date/gmd:CI_Date/gmd:date[1]/gco:Date
-<a name="dateTimePrecision"></a> DateTime Precision  | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:date/gmd:CI_Date/gmd:date[1]/gco:DateTime
-<a name="dateType"></a> Date Type | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:date/gmd:CI_Date/gmd:date[1]/\*/gmd:dateType/gmd:CI_DateTypeCode/@codeListValue
-<a name="codeListValue"></a> Code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode")/gmx:CodeListDictionary[@gml:id='CI_DateTypeCode']//gml:identifier/text()
+<a name="date"></a> Date  | gmd:date/gmd:CI_Date/gmd:date
+<a name="datePrecision"></a> Date Precision  | gmd:date/gmd:CI_Date/gmd:date/gco:Date
+<a name="dateTimePrecision"></a> DateTime Precision  | gmd:date/gmd:CI_Date/gmd:date/gco:DateTime
+<a name="dateType"></a> Date Type | gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode

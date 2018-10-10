@@ -1,38 +1,37 @@
-# Spatial resolution services.
+# Spatial Resolution
 
-**Purpose**:
-Check the level of detail of the data set, both gridded type data and imagery-derived products,
-how to maps or map products.
-For services, it is not possible to express the restriction of a service concerning the spatial 
-resolution in using the ISO 19139 XML Schema.
+**Purpose**: Test that a spatial resolution restriction is provided being mandatory when there is a restriction on the spatial resolution for the service.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'service'.
+* For services with restriction on the spatial resolution, for each Spatial Resolution Element,
 
-* The spatial resolution restriction text shall include either an equivalent scale as integer valued scale denominator
-* or a resolution distance using a numerical length value and with a unit of length.
+    * Check if the spatial resolution restriction text includes either
+
+        * an equivalent scale as integer valued scale denominator
+        
+        * a resolution distance using a numerical length value and a unit of length.
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#ref_TG_MD) 4.1.2.1, Req 3.3
+* [TG MD](./README.md#ref_TG_MD), 4.1.2.1, Req 3.3
 
 **Test type**: Automated
 
 **Notes**
-The spatial resolution restriction text shall include either an equivalent scale as integer valued scale
- denominator or a resolution distance using a numerical length value and with a unit of length.
- 
+
+The multiplicity of this element is zero or more, with the following condition: "Mandatory when there is a restriction on the spatial resolution for this service".
+
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="spatialResolution"></a> spatialResolution | ./gmd:identificationInfo[1]/\*/gmd:abstract
-
+<a name="spatialResolution"></a> Spatial Resolution | gmd:identificationInfo[1]/gmd:MD_DataIdentification/gmd:abstract

@@ -1,27 +1,31 @@
 # Resource Type 'dataset' or 'series'
 
-**Purpose**: Checks that a resource type is provided as a dataset or series.
+**Purpose**: Test that a resource type is provided as a dataset or series.
 
 **Prerequisites**
 
 **Test method**
-Check if a resource type is provided ([hierarchyLevel](#hierarchyLevel)) and its value is taken from the list of [Code List Value](#codeListValue).
-This value must be declared as 'dataset' or 'series'.
+
+* Check that [Hierarchy Level](#hierarchyLevel) exists and it has a child element [Scope Code](#scopeCode).
+
+    * Check that [Scope Code](#scopeCode) has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" and an attribute codeListValue with value "dataset" or "series".
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_TG_MD),3.1.1.1, Req 1.1
-* [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_ISO_19115) table B.5.25 MD_ScopeCode 
+* [TG MD](./README#ref_TG_MD), 3.1.1.1, Req 1.1
+* [ISO 19115](./README#ref_ISO_19115) table B.5.25 MD_ScopeCode 
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is one.
+
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#namespaces).
+The namespace prefixes used as described in [README.md](./README#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="codeListValue"></a> code List Value | doc("http://standards.iso.org/iso/19139/resources/gmxCodelists.xml)//gmx:CodeListDictionary[@gml:id='MD_ScopeCode']//gml:identifier/text()
+<a name="hierarchyLevel"></a> Hierarchy Level | /gmd:MD_Metadata/gmd:hierarchyLevel
+<a name="scopeCode"></a> Scope Code | /gmd:MD_Metadata/gmd:hierarchyLevel/gmd:MD_ScopeCode

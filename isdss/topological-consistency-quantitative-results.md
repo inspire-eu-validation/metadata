@@ -1,26 +1,37 @@
-# Topological consistency quantitative results
+# Topological Consistency Quantitative Results
 
-**Purpose**: Evaluate the type of spatial representation of the data.
+**Purpose**: Test that the topological consistency quantitative results is provided correctly.
 
 **Prerequisites**
 
 **Test method**
-Checks so type of spatial representation is given using an element [spatialRepresentationTypeCode](#spatialRepresentationTypeCode).
-One of the code list values "vector", "grid", "tin" or "textTable".
+
+* If [Topological Consistency](#topologicalConsistency) and [Quantitative Result](#quantitativeResult) exist,
+
+    * For every [Quantitative Result](#quantitativeResult),
+
+        * Check that [Value Unit](#valueUnit) exists.
+
+        * Check that [Record](#record) exists and it has an attribute "xsi:type".
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/spatial-representation-type/README#ref_TG_MD) 3.2.4.1, Req 2.7
+* [TG MD](./README.md#ref_TG_MD) 3.2.4.1, Req 2.7
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of this element is zero or more.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/isdss/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_TopologicalConsistency)
 -----------------------------------------------| ------------------------------------------------------------------
-<a name="hierarchyLevel"></a> hierarchyLevel | gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-
+<a name="topologicalConsistency"></a> Topological Consistency | /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report/gmd:DQ_TopologicalConsistency
+<a name="quantitativeResult"></a> Quantitative Result | gmd:result/gmd:DQ_QuantitativeResult
+<a name="valueUnit"></a> Value Unit | gmd:result/gmd:DQ_QuantitativeResult/gmd:valueUnit
+<a name="record"></a> Record | gmd:result/gmd:DQ_QuantitativeResult/gmd:value/gco:Record

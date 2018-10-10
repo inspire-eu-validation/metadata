@@ -1,29 +1,31 @@
-# Not More than one Date of Creation
+# Max One Date of Creation
 
 
-**Purpose**: Not more than one date of creation for the metadata shall be given.
+**Purpose**: Test that not more than one date of creation for the metadata is given.
 
 **Prerequisites**
-[Temporal reference](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/temporal-reference)
 
+[Temporal reference](./temporal-reference.md)
 
 **Test method**
-Check that at most one [Creation date](#creationDate) exists.
+
+* Check that at most one [Date Type](#dateType) element with attribute codeListValue equal 'creation' exists.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_TG_MD), 2.3.4 , Req c.12
-* [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601)
+* [TG MD](./README.md#ref_TG_MD), 2.3.4 , Req c.12
+* [ISO 8601](./README.md#ref_ISO_8601)
 
 **Test type**: Automated
 
 **Notes**
 
+The multiplicity of the element is zero or one.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:citation/gmd:CI_Citation)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="creationDate"></a> Creation Date  | ./gmd:identificationInfo[1]/\*/gmd:CI_Citation/gmd:date/gmd:CI_Date[gmd:dateType/gmd:CI_DateTypeCode/(@codeList='http://www.isotc211.org/2005/resources/codeList.xml#CI_DateTypeCode' and (@codeListValue='creation'))]/gmd:date/gco:Date
+<a name="dateType"></a> Date Type | gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode

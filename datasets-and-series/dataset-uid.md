@@ -1,36 +1,46 @@
-# Dataset identification
+# Dataset UID
 
-**Purpose**: Unique resource identifier. If the type of the resource was dataset or series, a unique identifier identifying the resource must be given.
+**Purpose**: Test that every dataset or dataset series has an Unique Resource Identifier.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
 
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
+* For every [Data Identification](#dataIdentification):
 
-* The test first checks if a unique [identifier](#identifier) is given and if it is of type MD_Identifier or RS_Identifier.
+    * Check that a unique [Identifier](#identifier) element exists. Then,
 
-TThe container of the CODE element is free text but should not be empty.
+        * Check that its child is a [MD_Identifier](#mdIdentifier) or a [RS_Identifier](#rsIdentifier) element.
+
+            * Check that [Code](#code) exists and its child is a non-empty free text element.
+
+* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_TG_MD), 3.1.2.1, Req 1.3
-* [ISO 19115](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_ISO_19115) table B.5.25 MD_ScopeCode 
+* [TG MD](./README.md#ref_TG_MD), 3.1.2.1, Req 1.3
+* [ISO 19115](./README.md#ref_ISO_19115) table B.5.25 MD_ScopeCode 
 
 **Test type**: Automated
 
 **Notes**
 
-* The [ISO 19139] xml schemas allow the use of either the MD_Identifier type or its sub-type RS_Identifier, which, in addition to the mandatory code property, also contains an optional codeSpace property.
-* It is strongly recommended to use the MD_Identifier instead of the the RS_Identifier type and to encode the complete URI in the code element.
+The multiplicity of this element is one or more.
+
+The [ISO 19139] xml schemas allow the use of either the MD_Identifier type or its sub-type RS_Identifier, which, in addition to the mandatory code property, also contains an optional codeSpace property.
+
+It is strongly recommended to use the MD_Identifier instead of the the RS_Identifier type and to encode the complete URI in the code element.
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="identifier"></a> identifier   | ./gmd:identificationInfo[1]/\*/gmd:citation/\*/gmd:identifier/\*/gmd:code
+<a name="dataIdentification"></a> Data Identification | /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification
+<a name="identifier"></a> Identifier | gmd:citation/gmd:CI_Citation/gmd:identifier
+<a name="mdIdentifier"></a> MD_Identifier | gmd:citation/gmd:CI_Citation/gmd:identifier/gmd:MD_Identifier
+<a name="rsIdentifier"></a> RS_Identifier | gmd:citation/gmd:CI_Citation/gmd:identifier/gmd:RS_Identifier
+<a name="code"></a> Code | gmd:citation/gmd:CI_Citation/gmd:identifier/*/gmd:code

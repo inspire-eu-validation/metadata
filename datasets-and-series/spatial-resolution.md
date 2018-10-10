@@ -1,39 +1,37 @@
-# Spatial resolution
+# Spatial Resolution
 
-**Purpose**:
-Check the level of detail of the data set, both gridded type data and imagery-derived products,
-how to maps or map products.
+**Purpose**: Test that the spatial resolution is defined using either an scale or a distance resolution.
 
 **Prerequisites**
 
-* [Resource Type](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/resource-type)
+* [Resource Type](./resource-type.md)
 
 **Test method**
-This test case only applies to records with a [hierarchyLevel](#hierarchyLevel) value 'dataset' or 'series'.
 
-Each [spatialResolution](#spatialResolution) element must contain either:
-* [equivalentScale](#equivalentScale).
-* Or [distance](#distance) but not both.
+* For every [Spatial Resolution](#spatialResolution),
 
-**Reference(s)**	 
+    * Check that [Equivalent Scale](#equivalentScale) or [Distance](#distance) element exists.
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#ref_TG_MD) 3.1.2.3, Req 1.5
+* Check that all the [Spatial Resolution](#spatialResolution) children are either [Equivalent Scale](#equivalentScale) or [Distance](#distance) but not both.
+
+* If any of the checks fails, the test fails.
+
+**Reference(s)**
+
+* [TG MD](./README.md#ref_TG_MD) 3.1.2.3, Req 1.5
 
 **Test type**: Automated
 
 **Notes**
 
-This test is already covered by the XML Schema validation (the content of an MD_Resolution element is a choice between an 'equivalentScale' or 'distance').
-
-The Xpath references for equivalentScale and distance shown below are misleading. They should show the full path starting from MD_Metadata.
+The multiplicity of this element is zero or more.
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/datasets-and-series/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialResolution)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="hierarchyLevel"></a> Hierarchy Level | ./gmd:hierarchyLevel/gmd:MD_ScopeCode/@codeListValue
-<a name="spatialResolution"></a> spatialResolution | ./gmd:identificationInfo[1]/\*/gmd:spatialResolution/gmd:MD_Resolution
-<a name="equivalentScale"></a> equivalentScale  | ./gmd:spatialResolution/\*/gmd:equivalentScale
-<a name="distance"></a> distance   | ./gmd:spatialResolution/\*/gmd:distance
+<a name="spatialResolution"></a> Spatial Resolution | /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:spatialResolution
+<a name="equivalentScale"></a> Equivalent Scale | gmd:MD_Resolution/gmd:equivalentScale
+<a name="distance"></a> Distance | gmd:MD_Resolution/gmd:distance

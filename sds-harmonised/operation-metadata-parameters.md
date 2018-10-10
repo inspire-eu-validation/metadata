@@ -1,25 +1,30 @@
-# Operation Metadata Request Parameters for Harmonised Spatial Data Services
+# Operation Metadata Parameters
 
-**Purpose**: For all the required and optional request parameters of the operations, its secondary elements will be checked.
+**Purpose**: Test that operation metadata parameters are provided correctly.
+
 **Prerequisites**
 
 **Test method**
 
-The required and optional request [parameter](#parameter) of the operation metadata have to be defined from a series of child elements:
+* For every [Operation Metadata](#operationMetadata),
 
-* [Parameter Name](#parameter_name): name of the parameter as used by the service. The multiplicity of this element is one.
-The child element aName is a Non-empty Free Text Element.
-The child element attributeType shall contain the record or the type part of the attribute name.
+    * For every [Parameter](#paramter),
 
-* [Optionality](#optionality): indicates whether the attribute is mandatory or optional. The multiplicity of this element is one and its content is free text type, not empty.
+        * Check that exactly one [Parameter Name](#parameterName) element exists and its content is a non-empty free text.
 
-* [Repeatability](#repeatability): from true/false values it is indicated if the attribute can be repeated.
+        * Check that exactly one [Attribute Type](#attributeType) element exists.
 
-* [Type Name](#type_name): indicate the data type of the attribute.
+        * Check that exactly one [Optionality](#optionality) element exists and its content is a non-empty free text.
+
+        * Check that exactly one [Repeatability](#repeatability) element exists and its value is "true" or "false".
+
+        * Check that exactly one [Type Name](#typeName) element exists.
+
+* If any of the checks fails the test fails.
 
 **Reference(s)**	 
 
-* [TG MD](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/README#ref_TG_MD), 4.5.1.1 , Req 7.3
+* [TG MD](./README.md#ref_TG_MD), 4.5.1.1 , Req 7.3
 
 **Test type**: Automated
 
@@ -30,15 +35,17 @@ The test method is not clear on how a specific code list is referenced in a gmd:
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-harmonised/README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/srv:SV_ServiceIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-<a name="parameter">Parameter</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter
-<a name="parameter_name">Parameter Name</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:name[1] and gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:name[1]/gco:aName/text() 
-<a name="optionality">Optionality</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:optionality[1]/text()
-<a name="repeatability ">Repeatability</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/srv:repeatability/true()
-<a name="type_name ">Type Name</a> | ./gmd:identificationInfo/\*/srv:containsOperations/srv:SV_OperationMetadata[1]/\*/srv:SV_Parameter/\*/gco:TypeName/gco:Name
+<a name="operationMetadata"></a>Operation Metadata | srv:containsOperations/srv:SV_OperationMetadata
+<a name="parameter"></a>Parameter | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter
+<a name="parameterName"></a>Parameter Name | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:name/gco:aName/
+<a name="attributeType"></a>Attribute Type | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:name/gco:attributeType
+<a name="optionality"></a>Optionality | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:optionality
+<a name="repeatability"></a>Repeatability | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:repeatability/gco:Booleans
+<a name="typeName"></a>Type Name | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:valueType/gco:TypeName/gco:Name
