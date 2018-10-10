@@ -23,7 +23,7 @@ The conformance classes in this specification are dependent of each others as sh
 Figure 1. Structure of metadata conformance classes. Source: [TG MD](ref_TG_MD) pag. 27.
 
 
-The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and common requirements must be satisfaied too.
+The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and Common requirements must be met too.
 
 ## External document references
 
