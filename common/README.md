@@ -50,7 +50,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | C.2      | Root Element | [root-element](./root-element.md) ||
 | C.3      | Encoding of Code List Values | [code-list-value](./code-list-value.md) ||
 | C.4      | Encoding of Free Text Values | [free-text](./free-text.md) ||
-| C.5      | Language Code | [metadata-languaje-code](./metadata-languaje-code.md) ||
+| C.5      | Language Code | [metadata-language-code](./metadata-language-code.md) ||
 | C.6      | Metadata Point of Contact  | [md-point-of-contact](./md-point-of-contact.md) ||
 | C.7      | Metadata Date | [md-date](./md-date) ||
 | C.8      | Resource Title | [resource-title](./resource-title.md) ||
@@ -79,7 +79,7 @@ This Conformance Class contains the following tests:
 | [root-element](./root-element.md) | Ready for Review |
 | [code-list-value](./code-list-value.md) | Ready for Review |
 | [free-text](./free-text.md) | Ready for Review |
-| [metadata-languaje-code](./metadata-languaje-code.md) | Ready for Review |
+| [metadata-language-code](./metadata-language-code.md) | Ready for Review |
 | [md-point-of-contact](./md-point-of-contact.md) | Ready for Review |
 | [md-date](./md-date.md) | Ready for Review |
 | [resource-title](./resource-title.md) | Ready for Review |
