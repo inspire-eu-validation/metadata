@@ -52,7 +52,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | C.4      | Encoding of Free Text Values | [free-text](./free-text.md) ||
 | C.5      | Language Code | [metadata-language-code](./metadata-language-code.md) ||
 | C.6      | Metadata Point of Contact  | [md-point-of-contact](./md-point-of-contact.md) ||
-| C.7      | Metadata Date | [md-date](./md-date) ||
+| C.7      | Metadata Date | [md-date](./md-date.md) ||
 | C.8      | Resource Title | [resource-title](./resource-title.md) ||
 | C.9      | Resource Abstract | [resource-abstract](./resource-abstract.md) ||
 | C.10      | Responsible Organisation | [responsible-organisation](./responsible-organisation.md) ||
