@@ -27,4 +27,4 @@ The namespace prefixes used as described in [README](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="abstract"></a> Abstract  | gmd:citation/gmd:CI_Citation/gmd:abstract
+<a name="abstract"></a> Abstract  | gmd:abstract
