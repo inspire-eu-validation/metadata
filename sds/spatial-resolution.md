@@ -22,11 +22,17 @@
 
 * [TG MD](./README.md#ref_TG_MD), 4.1.2.1, Req 3.3
 
-**Test type**: Automated
+**Test type**: Manual
 
 **Notes**
 
 The multiplicity of this element is zero or more, with the following condition: "Mandatory when there is a restriction on the spatial resolution for this service".
+
+The test characteristics makes impossible to automate it.
+
+According to [TG MD](./README.md#ref_TG_MD), 4.1.2.1:
+
+"For services, it is not possible to express the restriction of a service concerning the spatial resolution in using the ISO 19139 XML Schema. This problem has been solved in the [ISO 19115-3] standard expected to be published in summer 2016. This slightly inconvenient way of declaring the Spatial resolution for Spatial Data Services shall be used until this specification has been revised to comply with XML Schema rules of [ISO 19115-3]."
 
 ##Contextual XPath references
 
@@ -34,4 +40,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="spatialResolution"></a> Spatial Resolution | gmd:identificationInfo[1]/gmd:MD_DataIdentification/gmd:abstract
+<a name="spatialResolution"></a> Spatial Resolution | gmd:identificationInfo[1]/*/gmd:abstract
