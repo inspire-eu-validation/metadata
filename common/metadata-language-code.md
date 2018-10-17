@@ -16,7 +16,7 @@
 
 **Reference(s)**	 
 
-* [TG MD](./README.mdE#ref_TG_MD), 2.2.2 , Req c.5
+* [TG MD](./README.md#ref_TG_MD), 2.2.2 , Req c.5
 * [ISO 639-2/B](./README.md#ref_ISO_639_2)
 
 **Test type**: Automated

@@ -25,7 +25,7 @@
 **Reference(s)**
 
 * [TG MD](./README.md#ref_TG_MD) 4.4.3.1, Req 6.5
-* [Quality Of Service Criteria Code](http://inspire.ec.europa.eu/metadatacodelist/QualityOfServiceCriteriaCode)
+* [TG MD](./README.md#ref_TG_MD) Table 4.2 "Quality of Service criteria for Interoperable Spatial Data Services"
 
 **Test type**: Automated
 
