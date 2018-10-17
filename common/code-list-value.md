@@ -10,8 +10,8 @@
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.1.1 , Req c.3
-* [ISO 19115](./README#ref_ISO_19115)
+* [TG MD](./README.md#ref_TG_MD), 2.1.1 , Req c.3
+* [ISO 19115](./README.md#ref_ISO_19115)
 * [ISO 19139](http://standards.iso.org/iso/19139/resources/)
 
 
@@ -21,7 +21,7 @@
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression
 -----------------------------------------------| -------------------------------------------------------------------------

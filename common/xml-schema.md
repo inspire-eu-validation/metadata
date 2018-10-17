@@ -34,7 +34,7 @@ All three of these XML Schemas declare the same [namespace](http://www.isotc211.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression
 -----------------------------------------------| -------------------------------------------------------------------------

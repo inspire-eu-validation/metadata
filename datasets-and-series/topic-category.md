@@ -29,7 +29,7 @@ The multiplicity of this element is one or more.
 
 Contrary to other code lists which are defined in the ISO 19139 XML Schema as references to an external code list, gmd:MD_TopicCategoryCode element is defined as a string enumeration.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

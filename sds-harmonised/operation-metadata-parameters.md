@@ -8,7 +8,7 @@
 
 * For every [Operation Metadata](#operationMetadata),
 
-    * For every [Parameter](#paramter),
+    * For every [Parameter](#parameter),
 
         * Check that exactly one [Parameter Name](#parameterName) element exists and its content is a non-empty free text.
 
@@ -33,7 +33,7 @@
 The test method is not clear on how a specific code list is referenced in a gmd:thesaurusName.
 
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

@@ -18,7 +18,7 @@ Test that the conformity degree is given implementing rules for interoperability
 
 **Notes**
 
-The multiplicity of the [ConformanceResult](ConformanceResult) element is one for this purpose.
+The multiplicity of the [ConformanceResult](#ConformanceResult) element is one for this purpose.
 
 The specification for this requirement is defined in [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md)
 

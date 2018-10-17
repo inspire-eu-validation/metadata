@@ -24,7 +24,7 @@ Test that a Spatial Data Service category or subcategory is given.
 
 The multiplicity of the [keyword](#keyword) element is one or more.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

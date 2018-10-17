@@ -10,7 +10,7 @@ Test that the service category is given implementing rules for interoperability 
 
 * Check if is given a [Conformance Result](#ConformanceResult) element according with the [Conformity](../common/conformity.md) common requirement.
 
-* Check if [Conformance Result](#ConformanceResult) contains a [Citation](#citation) for one of the three Conformance Classes for Invocable Spatial Data Service categories according with the [Conformity Specification](../common/conformity-specification.md) common requirement.
+* Check if [Conformance Result](#ConformanceResult) contains a citation for one of the three Conformance Classes for Invocable Spatial Data Service categories according with the [Conformity Specification](../common/conformity-specification.md) common requirement.
 
 * Check if the title of the cited Conformance Class is encoding using the [Title](#title) element.
 
@@ -42,7 +42,7 @@ The multiplicity of the [Conformance Result](#ConformanceResult) element is one 
 
 This test must be compliant with [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md).
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

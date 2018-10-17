@@ -8,7 +8,7 @@
 
 * For every [Character Set Code](#characterSetCode),
 
-    * Check that it has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" and an attribute codeListValue with value from [ISO 19139](http://standards.iso.org/ittf/PubliclyAvailableStandards/index.html).
+    * Check that it has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_CharacterSetCode" and an attribute codeListValue with value from [ISO 19139](http://standards.iso.org/iso/19139/resources/).
 
 **Reference(s)**	 
 * [TG MD](./README.md#ref_TG_MD) 3.2.2.2, Req 2.5

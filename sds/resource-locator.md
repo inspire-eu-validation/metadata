@@ -20,7 +20,7 @@ Test that a resource locator linking to the described Spatial Data Service is gi
 
 **Reference(s)**
 
-* [TG MD](*/README.md#ref_TG_MD) 4.1.3.1, Req 3.7
+* [TG MD](./README.md#ref_TG_MD) 4.1.3.1, Req 3.7
 
 **Test type**: Automated
 

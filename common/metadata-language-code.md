@@ -16,7 +16,7 @@
 
 **Reference(s)**	 
 
-* [TG MD](./READM.mdE#ref_TG_MD), 2.2.2 , Req c.5
+* [TG MD](./README.mdE#ref_TG_MD), 2.2.2 , Req c.5
 * [ISO 639-2/B](./README.md#ref_ISO_639_2)
 
 **Test type**: Automated
@@ -27,7 +27,7 @@ The multiplicity of [gmd:LanguageCode](#langcode) is 1.
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression
 -----------------------------------------------| -------------------------------------------------------------------------

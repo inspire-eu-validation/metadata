@@ -18,8 +18,8 @@
 
 **Reference(s)**	 
 
-* [TG MD](#README.md#ref_TG_MD) 4.4.1.1, Req 6.2
-* [Default CRS Identifiers](#README.md#ref_TG_MD) Annex D.4
+* [TG MD](./README.md#ref_TG_MD) 4.4.1.1, Req 6.2
+* [Default CRS Identifiers](./README.md#ref_TG_MD) Annex D.4
 
 **Test type**: Automated
 

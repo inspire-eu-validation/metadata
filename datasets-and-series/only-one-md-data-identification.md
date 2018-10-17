@@ -1,4 +1,4 @@
-# Only One DataIdentification
+# Only One Data Identification
 
 **Purpose**:
 Test that the identification info section of the metadata for data sets and data set series is provided correctly.
@@ -24,11 +24,11 @@ The multiplicity of this element is one.
 
 Although more than one IdentificationInfo can be given within the MD_Metadata element, only the first instance is used for the identification of the INSPIRE resource.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to root)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="identificationInfo"> Identification Info</a>   | /gmd:MD_Metadata/gmd:identificationInfo
-<a name="dataIdentification"> Data Identification</a>   | /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification
+<a name="identificationInfo"></a> Identification Info   | /gmd:MD_Metadata/gmd:identificationInfo
+<a name="dataIdentification"></a> Data Identification   | /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification

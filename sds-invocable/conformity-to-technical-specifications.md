@@ -30,7 +30,7 @@ The multiplicity of the [Conformance Result](#ConformanceResult) element is one 
 
 This test must be compliant with [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md).
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

@@ -12,7 +12,7 @@
 
     * Check that [Measurement Name](#measurementName) element exists and it has an attribute xlink:href with URL value starting with "http://inspire.ec.europa.eu/metadata-codelist/QualityOfServiceCriteriaCode/" and postfixed with one of values of code list QualityOfServiceCriteriaCode, see [Annex D.4 TG](./README.md#ref_TG_MD).
 
-    * Check that [Measurement Description](#measureDescription) element exists.
+    * Check that [Measurement Description](#measurementDescription) element exists.
 
     * Check that [Measurement Result](#measurementResult) element exists.
 

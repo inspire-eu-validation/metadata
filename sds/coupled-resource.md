@@ -22,7 +22,7 @@
 
 The multiplicity of this element is zero or more with the following condition: "Mandatory if linkage to data sets on which the service operates are available".
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds/README#namespaces).
 

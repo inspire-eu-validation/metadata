@@ -10,7 +10,7 @@
 
     * For every [Operation Metadata](#operationMetadata) element,
 
-        * The content of the element is element is in accordance with [ISO 19119, Section C.2](../README.md#ref_ISO_19119)
+        * The content of the element is in accordance with [ISO 19119, Section C.2](../README.md#ref_ISO_19119)
 
 * Else
 
@@ -25,7 +25,7 @@
 
 **Notes**
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

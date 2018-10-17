@@ -36,7 +36,7 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to /gmd:MD_metadata/gmd:contact/gmd:CI_ResponsibleParty)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="partyResponsable"></a> Responsible Party | /gmd:MD_metadata/gmd:contact/gmd:CI_ResponsibleParty
+<a name="responsibleParty"></a> Responsible Party | /gmd:MD_metadata/gmd:contact/gmd:CI_ResponsibleParty
 <a name="organizationName"></a> Organization Name | gmd:organisationName
 <a name="emailAddress"></a> Email Address | gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress
 <a name="role"></a> Role | gmd:role/gmd:CI_RoleCode

@@ -6,9 +6,9 @@
 
 **Test method**
 
-* Check that at least one [RS Identifier](#rsIdentifier) element exists.
+* Check that at least one [RS Identifier](#referenceSystemIdentifier) element exists.
 
-    * For every [RS Identifier](#rsIdentifier),
+    * For every [RS Identifier](#referenceSystemIdentifier),
 
         * Check that [Code](#code) element exist and its content is a not-empty free text.
 
@@ -25,7 +25,7 @@
 
 The multiplicity of this element is zero or more.
 
-The gmd:codeSpace child element shall be used if the [code](#codeChild) alone does not uniquely identify the referred coordinate reference system.
+The gmd:codeSpace child element shall be used if the [code](#code) alone does not uniquely identify the referred coordinate reference system.
 
 ## Contextual XPath references
 

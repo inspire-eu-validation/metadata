@@ -22,7 +22,7 @@ Test that exactly one valid service type value is provided.
 
 The multiplicity of this element is one.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

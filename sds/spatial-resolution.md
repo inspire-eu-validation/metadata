@@ -8,7 +8,7 @@
 
 **Test method**
 
-* For services with restriction on the spatial resolution, for each Spatial Resolution Element,
+* For services with restriction on the spatial resolution, for each [Spatial Resolution](#spatialResolution) element,
 
     * Check if the spatial resolution restriction text includes either
 
@@ -34,7 +34,7 @@ According to [TG MD](./README.md#ref_TG_MD), 4.1.2.1:
 
 "For services, it is not possible to express the restriction of a service concerning the spatial resolution in using the ISO 19139 XML Schema. This problem has been solved in the [ISO 19115-3] standard expected to be published in summer 2016. This slightly inconvenient way of declaring the Spatial resolution for Spatial Data Services shall be used until this specification has been revised to comply with XML Schema rules of [ISO 19115-3]."
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

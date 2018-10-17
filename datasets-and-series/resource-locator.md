@@ -24,7 +24,7 @@ The multiplicity of this element is zero or more.
 
 A Resource Locator encoded using the gmd:CI_OnlineResource element may also include gmd:name, gmd:description, and gmd:function properties.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

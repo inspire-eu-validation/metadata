@@ -25,7 +25,7 @@ This element shall not be the same used for describing limitations on public acc
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](#README.md#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:resourceConstraints)
 -----------------------------------------------| ------------------------------------------------------------------

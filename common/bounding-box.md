@@ -6,13 +6,13 @@
 
 **Test method**
 
-* If the codeListValue attribute of [Scope Code](#scopeCode) is 'dataset',
+* If the codeListValue attribute of [Scope Code](#scopeCode) is 'dataset' or 'series',
 
     * Check that at least one [Extent](#extent) element exists.
 
 * If [Extent](#extent) element exists, then,
 
-    * Check that [West Bound Longitude](#west). If it does,
+    * Check that [West Bound Longitude](#west) exists. If it does,
         * Check its value is valid according with EX_GeographicBoundingBox class of the [ISO 19115](https://www.iso.org/standard/53798.html), and it has a precision of at least two decimals.
     
     * Check that [East Bound Longitude](#east) exists. If it does,
@@ -36,7 +36,7 @@
 
 **Notes**
 
-For datasets, the multiplicity of this element is one or more.
+For datasets and series, the multiplicity of this element is one or more.
 
 For services, the multiplicity of this element is zero or more.
 

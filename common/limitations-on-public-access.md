@@ -10,13 +10,13 @@
 
 * For every [Legal Constraints](#legalConstraints) element,
 
-    * Check that [Restriction Code](#restrictionCode) element exists. Then, 
+    * Check that at least one [Restriction Code](#restrictionCode) element exists. Then, 
 
         * Check that the attribute codeList is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
     * Check that at least one [Anchor](#anchor) element exists. Then,
 
-        * Check that attribute xlink:href is a URL starting with "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/" and postfixed with one of values of code list LimitationsOnPublicAccess of the [TG MD](./README#ref_TG_MD) Annex D.1.
+        * Check that attribute xlink:href is a URL starting with "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/" and postfixed with one of values of code list LimitationsOnPublicAccess of the [TG MD](./README.md#ref_TG_MD) Annex D.1.
 
 * If any of the checks fails, the test fails. 
 
@@ -42,7 +42,7 @@ The limitations on public access based on reasons referred to Article 13 of INSP
      (g) the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned;
      (h) the protection of the environment to which such information relates, such as the location of rare species.
 
-This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](../sds-interoperable/conditions-applying-to-access-and-use).
+This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](../sds-interoperable/conditions-applying-to-access-and-use.md).
 
 An example of its implementation:
      
@@ -64,4 +64,4 @@ Abbreviation                                   |  XPath expression (relative to 
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="legalConstraints"></a> Legal Constraints  | gmd:MD_LegalConstraints
 <a name="restrictionCode"></a> Restriction Code | gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:MD_RestrictionCode
-<a name="anchor"></a> Anchor | gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:otherConstraints/gmx:Anchor
+<a name="anchor"></a> Anchor | gmd:MD_LegalConstraints/gmd:otherConstraints/gmx:Anchor

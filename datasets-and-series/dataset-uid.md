@@ -33,7 +33,7 @@ The [ISO 19139] xml schemas allow the use of either the MD_Identifier type or it
 
 It is strongly recommended to use the MD_Identifier instead of the the RS_Identifier type and to encode the complete URI in the code element.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 

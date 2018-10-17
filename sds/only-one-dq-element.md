@@ -28,7 +28,7 @@ Test that a dataQuality element is given, and that the scope is encoded using an
 
 The multiplicity of this elements is one.
 
-##Contextual XPath references
+## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
