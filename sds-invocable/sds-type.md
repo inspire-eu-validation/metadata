@@ -29,4 +29,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="serviceType"></a>Service Type | /gmd:identificationInfo/srv:SV_ServiceIdentification/srv:serviceType/gco:LocalName
+<a name="serviceType"></a>Service Type | gmd:identificationInfo[1]/srv:SV_ServiceIdentification/srv:serviceType/gco:LocalName
