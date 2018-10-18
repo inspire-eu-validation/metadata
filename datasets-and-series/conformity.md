@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * Check that [Conformance Result](#conformanceResult) exists and it declares conformity to the Implementing Rules for interoperability of spatial data sets and services.

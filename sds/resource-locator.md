@@ -1,12 +1,8 @@
 # Resource Locator
 
-**Purpose**: 
-
-Test that a resource locator linking to the described Spatial Data Service is given if online access is available. If not, tests that is provided an URL pointing to an online resource providing additional information of the service, if available.
+**Purpose**: Test that a resource locator linking to the described Spatial Data Service is given if online access is available. If not, tests that is provided an URL pointing to an online resource providing additional information of the service, if available.
 
 **Prerequisites**
-
-* [Resource Type](./resource-type.md)
 
 **Test method**
 

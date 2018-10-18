@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * For every [URL Resource](#urlResource),

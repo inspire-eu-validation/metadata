@@ -1,12 +1,8 @@
 # Only One Data Quality Info Element
 
-**Purpose**: 
-
-Test that a dataQuality element is given, and that the scope is encoded using an scopeCode element and described in a scopeDescription element.
+**Purpose**: Test that a dataQuality element is given, and that the scope is encoded using an scopeCode element and described in a scopeDescription element.
 
 **Prerequisites**
-
-* [Resource Type](./resource-type.md)
 
 **Test method**
 

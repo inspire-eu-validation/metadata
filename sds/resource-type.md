@@ -4,7 +4,6 @@
 
 **Prerequisites**
 
-
 **Test method**
 
 * Check if a resource type is provided exactly once in the [hierarchyLevel](#hierarchyLevel) element and the value is declared as 'service'.

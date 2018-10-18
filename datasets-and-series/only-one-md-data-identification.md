@@ -1,11 +1,8 @@
 # Only One Data Identification
 
-**Purpose**:
-Test that the identification info section of the metadata for data sets and data set series is provided correctly.
+**Purpose**: Test that the identification info section of the metadata for data sets and data set series is provided correctly.
 
 **Prerequisites**
-
-* [Resource Type](./resource-type.md)
 
 **Test method**
 

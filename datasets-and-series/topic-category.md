@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * Check that at least one [Topic Category](#topicCategory) element exists.

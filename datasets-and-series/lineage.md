@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * Check that exactly one [Lineage](#lineage) element exists.

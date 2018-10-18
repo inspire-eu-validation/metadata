@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * Check if the operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element is a HTTP URI that when retrieved using HTTP GET returns the metadata document describing the dataset exposed by the service.

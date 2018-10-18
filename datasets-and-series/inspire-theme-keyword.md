@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * Check that at least one of the [MD_Keywords](#mdKeywords) elements has a [Title](#title) child element with value "GEMET - INSPIRE themes, version 1.0". Then,

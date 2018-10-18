@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * Check if a [Service Identification](#serviceIdentification) is contained in the first gmd:identificationInfo element for identifying an INSPIRE Spatial Data Service.

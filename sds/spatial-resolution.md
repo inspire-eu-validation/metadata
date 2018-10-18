@@ -4,8 +4,6 @@
 
 **Prerequisites**
 
-* [Resource Type](./resource-type.md)
-
 **Test method**
 
 * For services with restriction on the spatial resolution, for each [Spatial Resolution](#spatialResolution) element,

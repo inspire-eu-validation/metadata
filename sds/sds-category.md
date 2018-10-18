@@ -1,11 +1,8 @@
 # SDS Category Keywords
 
-**Purpose**: 
-Test that a Spatial Data Service category or subcategory is given.
+**Purpose**: Test that a Spatial Data Service category or subcategory is given.
 
 **Prerequisites**
-
-* [Resource Type](./resource-type.md)
 
 **Test method**
 
