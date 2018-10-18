@@ -6,13 +6,13 @@
 
 **Test method**
 
-* Check that if [Access Constrains](#accessConstraints) and/or [Use Constrains](#useConstraints) elements exists they belong to the same [Legal Constraints](#legalConstraints) parent node.
+* Check that if [Access Constraints](#accessConstraints) and/or [Use Constraints](#useConstraints) elements exists they belong to the same [Legal Constraints](#legalConstraints) parent node.
 
-    * If [Access Constrains](#accessConstraints) element exists,
+    * If [Access Constraints](#accessConstraints) element exists,
 
         * Check that the attribute codeList is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
-    * If [Use Constrains](#useConstraints) element exists,
+    * If [Use Constraints](#useConstraints) element exists,
 
         * Check that the attribute codeList is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
