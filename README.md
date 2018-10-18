@@ -3,13 +3,15 @@
 The Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD), Annex A, defines 2 Abstract Test Suites and 7 Conformance Classes.
 
 ## Abstract Test Suites & Conformance Classes
-The first ATS contains 2 Conformance Classes and the second ATS contains 5. The conformance classes are compound of requirements that must be passed to be INSPIRE conformance. Besides, a set of [Common Requirements](./common/README.md) must be passed in both ATS as described in [TG MD](#ref_TG_MD) section 2.
+The first ATS contains 2 Conformance Classes and the second ATS contains 5. The conformance classes are compound of requirements that must be passed to be INSPIRE conformance. Besides, a set of Common Requirements must be passed in both ATS as described in [TG MD](#ref_TG_MD) section 2.
 
 * ATS: Metadata for INSPIRE datasets and data set series
+    * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
     * [Conformance Class 1: Baseline metadata for data sets and data set series](./datasets-and-series/README.md)
     * [Conformance Class 2: Interoperability metadata for data sets and data set series](./isdss/README.md)
 
 * ATS: Metadata for INSPIRE Spatial Data Services
+    * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
     * [Conformance Class 3: Baseline metadata for Spatial Data Services](./sds/README.md)
     * [Conformance Class 4: Metadata for INSPIRE Network Services](./ns/README.md)
     * [Conformance Class 5: Metadata for Invocable Spatial Data Services](./sds-invocable/README.md)
