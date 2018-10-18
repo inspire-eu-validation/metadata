@@ -51,7 +51,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | 1.3      | Unique Resource Identifier | [dataset-uid](./dataset-uid.md) ||
 | 1.4      | INSPIRE Theme Keyword | [inspire-theme-keyword](./inspire-theme-keyword.md) ||
 | 1.5      | Spatial Resolution | [spatial-resolution](./spatial-resolution.md)||
-| 1.6      | Resource Language |[resource-languaje](./resource-languaje.md) ||
+| 1.6      | Resource Language |[resource-language](./resource-language.md) ||
 | 1.7      | Topic Category | [topic-category](./topic-category.md) | |
 | 1.8      | Resource Locator for Data Set or Series | [resource-locator](./resource-locator.md) | |
 | 1.9      | Data quality info: One Data Quality Element | [one-data-quality-element](./one-data-quality-element.md) | |
@@ -69,7 +69,7 @@ This Conformance Class contains the following tests:
 | [dataset-uid](./dataset-uid.md) | Ready for review |
 | [inspire-theme-keyword](./inspire-theme-keyword.md) | Ready for review |
 | [spatial-resolution](./spatial-resolution.md)| Ready for review |
-|[resource-languaje](./resource-languaje.md) | Ready for review |
+|[resource-language](./resource-language.md) | Ready for review |
 | [topic-category](./topic-category.md) | Ready for review |
 | [resource-locator](./resource-locator.md) | Ready for review |
 | [one-data-quality-element](./one-data-quality-element.md) | Ready for review |
