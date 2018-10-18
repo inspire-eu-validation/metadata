@@ -10,7 +10,7 @@
 
 * For every [Distribution Format](#distributionFormat),
 
-    * Check that [Name](#name) element exist and its content is a not-empty free text.
+    * Check that [Name](#name1) element exist and its content is a not-empty free text.
 
     * Check that [Version](#version) element exists. Then,
 
@@ -36,5 +36,5 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:distributionInfo/gmd:distributionFormat)
 -----------------------------------------------| ------------------------------------------------------------------
 <a name="distributionFormat"></a> Distribution Format | /gmd:MD_Metadata/gmd:distributionInfo/gmd:distributionFormat
-<a name="name"></a> Name | gmd:MD_Format/gmd:name
+<a name="name1"></a> Name | gmd:MD_Format/gmd:name
 <a name="version"></a> Version | gmd:MD_Format/gmd:version
