@@ -45,7 +45,7 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:dataQualityInfo/gmd:DQ_DataQuality/gmd:report)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="result"></a> Result | gmd:DQ_DomainConsistency/gmd:result
-<a name="citation"></a> Citation | gmd:DQ_DomainConsistency/gmd:result/gmd:specification/gmd:CI_Citation
-<a name="title"></a> Title | gmd:DQ_DomainConsistency/gmd:result/gmd:specification/gmd:CI_Citation/gmd:title
-<a name="date"></a> Date | gmd:DQ_DomainConsistency/gmd:result/gmd:specification/gmd:CI_Citation/gmd:date
-<a name="dateTypeCode"></a> Date Type Code | gmd:DQ_DomainConsistency/gmd:result/gmd:specification/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode
+<a name="citation"></a> Citation | gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation
+<a name="title"></a> Title | gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation/gmd:title
+<a name="date"></a> Date | gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation/gmd:date
+<a name="dateTypeCode"></a> Date Type Code | gmd:DQ_DomainConsistency/gmd:result/gmd:DQ_ConformanceResult/gmd:specification/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode
