@@ -31,7 +31,7 @@ The multiplicity of this element is zero or more.
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="lang"></a> Language  | gmd:language
 <a name="langCode"></a> Language Code | gmd:language/gmd:LanguageCode

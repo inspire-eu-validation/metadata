@@ -25,7 +25,7 @@ The multiplicity of this element is one.
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------
 <a name="hierarchyLevel"></a> Hierarchy Level | /gmd:MD_Metadata/gmd:hierarchyLevel
 <a name="scopeCode"></a> Scope Code | /gmd:MD_Metadata/gmd:hierarchyLevel/gmd:MD_ScopeCode
