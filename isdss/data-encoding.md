@@ -1,6 +1,6 @@
 # Data Encoding
 
-**Purpose**: Evaluate encoding and the storage or transmission format for data sets and datasets.
+**Purpose**: Evaluate encoding and the storage or transmission format for data sets and series.
 
 **Prerequisites**
 
