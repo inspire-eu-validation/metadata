@@ -32,7 +32,7 @@ The multiplicity of [Temporal extent](#temporalExtent) is zero or more.
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent/gmd:EX_Extent)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:extent/gmd:EX_Extent)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="temporalExtent"></a> Temporal Extent | gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent
 <a name="individual"></a> Time Position | gmd:temporalElement/gmd:EX_TemporalExtent/gmd:extent/gml:TimeInstant/gml:timePosition 

@@ -56,7 +56,7 @@ Correct description example:
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:resourceConstraints)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:resourceConstraints)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="legalConstraints"></a> Legal Constraints | gmd:MD_LegalConstraints
 <a name="accessConstraints"></a> Access Constraints | gmd:MD_LegalConstraints/gmd:accessConstraints

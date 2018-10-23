@@ -30,7 +30,7 @@ The multiplicity of [Citation](#citation) is zero or more
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="citation"></a> Citation  | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation
 <a name="title"></a> Title  | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title

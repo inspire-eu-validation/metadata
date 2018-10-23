@@ -25,6 +25,6 @@ The multiplicity of [Abstract](#abstract) is one.
 
 The namespace prefixes used as described in [README](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="abstract"></a> Abstract  | gmd:abstract

@@ -33,9 +33,9 @@ The multiplicity of [organisation responsible](#organisationResponsible) is one 
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:pointOfContact/gmd:CI_ResponsibleParty)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="organisationResponsible"></a> Organisation Responsible | /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:pointOfContact/gmd:CI_ResponsibleParty
+<a name="organisationResponsible"></a> Organisation Responsible | /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:pointOfContact/gmd:CI_ResponsibleParty
 <a name="organisationName"></a> Organisation Name |gmd:organisationName
 <a name="emailAddress"></a> Email Address Organisation | gmd:contactInfo/gmd:CI_Contact/gmd:address/gmd:CI_Address/gmd:electronicMailAddress
 <a name="role"></a> Role | gmd:role/gmd:CI_RoleCode

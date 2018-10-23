@@ -45,7 +45,7 @@ For services, the multiplicity of this element is zero or more.
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
-Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:extent)
+Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:extent)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="scopeCode"></a> Scope Code | /gmd:MD_Metadata/gmd:hierarchyLevel/gmd:MD_ScopeCode
 <a name="extent"></a> Extent | gmd:EX_Extent/gmd:geographicElement/gmd:EX_GeographicBoundingBox
