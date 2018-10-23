@@ -1,4 +1,4 @@
-# Coordinates Reference Systems HTTP URISs
+# Coordinates Reference Systems HTTP URIs
 
 **Purpose**: Test that the default coordinate reference systems use a correct identifier.
 
