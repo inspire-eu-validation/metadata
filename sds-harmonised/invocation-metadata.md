@@ -6,13 +6,9 @@
 
 **Test method**
 
-* If at least one [Operation Metadata](#operationMetadata) element exists,
+* Check that at least one [Operation Metadata](#operationMetadata) element exists,
 
-    * For every [Operation Metadata](#operationMetadata) element,
-
-        * The content of the element is in accordance with [ISO 19119, Section C.2](../README.md#ref_ISO_19119)
-
-* Else
+* For every [Connect Point](#connectPoint) element,
 
     * Check that [Connect Point](#connectPoint) exists and it is the same as the one described in [Access Point](../sds-invocable/access-point.md) requirement from conformance class 5.
 
