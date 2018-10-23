@@ -18,7 +18,7 @@
 
     * Check that [Measurement Unit](#measurementUnit) element exists.
 
-    * Check that [Record](#record) element exists and it has an atttribute "xsi:type".
+    * Check that [Record](#record) element exists and it has an attribute "xsi:type".
 
 * If any of the checks fails, the test fails.
 
