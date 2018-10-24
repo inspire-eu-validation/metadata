@@ -28,7 +28,7 @@ Test that is given the conformity degree with at least one technical specificati
 
 The multiplicity of the [Conformance Result](#ConformanceResult) element is one or more.
 
-It is not possible to distinguish the purpose automatically, therefore, in the ETS will be checked that the multiplicity of the element [Conformance Result](#ConformanceResult) is at least 3. One element for the purpose in [Conformity](./conformity.md), one element for the purpose in [SDS Category Keywords](./sds-category.md) and one or more for this purpose.
+It is not possible to distinguish the purpose automatically, therefore, in the executable test will be checked that the multiplicity of the element [Conformance Result](#ConformanceResult) is at least 3. One element for the purpose in [Conformity](./conformity.md), one element for the purpose in [SDS Category Keywords](./sds-category.md) and one or more for this purpose.
 
 This test must be compliant with [Conformity](../common/conformity.md), [Conformity Specification](../common/conformity-specification.md), [Conformity Degree](../common/conformity-degree.md) requirements from [Common Requirements](../common/README.md).
 
