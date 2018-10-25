@@ -14,7 +14,7 @@
 
     * Check that the [Email Address](#emailAddress) of the organization is a non-empty free text element.
 
-    * Check that the attribute codeList of the [Role](#role) node is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" and codeListValue attribute is "pointOfContact".
+    * Check that the attribute codeList of the [Role](#role) node is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" and codeListValue attribute is the most relevant value of ISO 19139.
 
 * If any of the checks fails the test fails.
 
