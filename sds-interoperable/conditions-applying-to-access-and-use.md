@@ -6,7 +6,7 @@
 
 **Test method**
 
-* Check that exactly one [Legal Constraints](#legalConstraints) element exists.
+* Check that at least one [Legal Constraint](#legalConstraints) element exists.
 
 **Reference(s)**	 
 
