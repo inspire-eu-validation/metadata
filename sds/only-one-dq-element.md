@@ -12,7 +12,7 @@
 
   * Check if MD_ScopeCode element has a "codeList" attribute with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" and a "codeListValue" attribute with value "service".
 
-* Check if the a [scopeDescription](#scopeDescription) element is provided with an non-empty free text containing the term "service" in the language of the metadata.
+* Check if the a [scopeDescription](#scopeDescription) element is provided with an non-empty free text.
 
 **Reference(s)**
 
@@ -24,6 +24,8 @@
 
 The multiplicity of this elements is one.
 
+It is not included in the test but the non-empty free text into the scopeDescription element shall contains the term "service" in the language of the metadata.
+
 ## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
@@ -32,5 +34,5 @@ Abbreviation                                   |  XPath expression (relative to 
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="dataquality"></a> dataQuality    | gmd:dataQualityInfo/gmd:DQ_DataQuality
 <a name="scopeCode"></a> scopeCode    | gmd:dataQualityInfo[1]/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:level/gmd:MD_ScopeCode
-<a name="scopeDescription"></a> scopeDescription    | gmd:dataQualityInfo[1]/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:levelDescription/gmd:MD_ScopeDescription/gmd:other/gco:CharacterString
+<a name="scopeDescription"></a> scopeDescription    | gmd:dataQualityInfo[1]/gmd:DQ_DataQuality/gmd:scope/gmd:DQ_Scope/gmd:levelDescription/gmd:MD_ScopeDescription/gmd:other
 
