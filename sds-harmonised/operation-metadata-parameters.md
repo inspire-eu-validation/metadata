@@ -47,5 +47,5 @@ Abbreviation                                               |  XPath expression
 <a name="parameterName"></a>Parameter Name | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:name/gco:aName/
 <a name="attributeType"></a>Attribute Type | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:name/gco:attributeType
 <a name="optionality"></a>Optionality | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:optionality
-<a name="repeatability"></a>Repeatability | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:repeatability/gco:Booleans
+<a name="repeatability"></a>Repeatability | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:repeatability/gco:Boolean
 <a name="typeName"></a>Type Name | srv:containsOperations/srv:SV_OperationMetadata/srv:parameters/srv:SV_Parameter/srv:valueType/gco:TypeName/gco:Name
