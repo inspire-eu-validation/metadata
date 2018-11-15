@@ -40,6 +40,8 @@ For datasets and series, the multiplicity of this element is one or more.
 
 For services, the multiplicity of this element is zero or more.
 
+In addition, the bounding box shall be as small as possible. This requires a manual check.
+
 
 ## Contextual XPath references
 
