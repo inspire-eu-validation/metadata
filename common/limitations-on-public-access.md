@@ -12,7 +12,7 @@
 
     * Check that at least one [Restriction Code](#restrictionCode) element exists. Then, 
 
-        * Check that the attribute codeList is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
+        * Check that the attribute codeList starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
     * Check that at least one [Anchor](#anchor) element exists. Then,
 
