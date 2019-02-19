@@ -6,23 +6,19 @@
 
 **Test method**
 
-* Check that if [Access Constraints](#accessConstraints) and/or [Use Constraints](#useConstraints) elements exists they belong to the same [Legal Constraints](#legalConstraints) parent node.
+* Check that it exists exactly one [Legal Constraints](#legalConstraints) element with the following features:
 
-    * If [Access Constraints](#accessConstraints) element exists,
+     * Exactly one [Access Constraints](#accessConstraints) or one [Use Constraints](#useConstraints) element.
 
-        * Check that the attribute codeList starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
+          * The gmd:MD_RestrictionCode child element of either [Access Constraints](#accessConstraints) or [Use Constraints](#useConstraints) has attribute codeList that starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
-    * If [Use Constraints](#useConstraints) element exists,
+     * At least one [Other Constraints](#otherConstraints) element with:
 
-        * Check that the attribute codeList starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
+          * One [Anchor](#anchor) element which xlink:href attribute is a URL starting with "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/" and postfixed with one of values of code list ConditionsApplyingToAccessAndUse of the [TG MD](./README.md#ref_TG_MD) Annex D.2.
 
-    * Check that at least one [Other Constraints](#otherConstraints) child element exists.
+          * Or, a non-empty free text element. 
 
-        * If gmx:Anchor child element exists, check that it has an attribute xlink:href with URL value "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply" or with URL value "http://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/conditionsUnknown".
-
-        * Else, check that a non-empty free text element exist.
-
-* If any of the checks fails, the test fails.
+* If any of the checks fails, the test fails. 
 
 **Reference(s)**	 
 
@@ -33,7 +29,7 @@
 
 **Notes**
 
-The multiplicity of this element is one or more.
+The multiplicity of [Legal Constraints](#legalConstraints) is one to n. But only one shall exists for describing the 'conditions for access and use' with the features described above.
 
 This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
 
@@ -62,3 +58,4 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="accessConstraints"></a> Access Constraints | gmd:MD_LegalConstraints/gmd:accessConstraints
 <a name="useConstraints"></a> Use Constraints | gmd:MD_LegalConstraints/gmd:useConstraints
 <a name="otherConstraints"></a> Other Constraints | gmd:MD_LegalConstraints/gmd:otherConstraints
+<a name="anchor"></a> Anchor | gmd:MD_LegalConstraints/gmd:otherConstraints/gmx:Anchor

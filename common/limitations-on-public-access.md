@@ -6,17 +6,15 @@
 
 **Test method**
 
-* Check that at least one [Legal Constraints](#legalConstraints) element exists.
+* Check that it exists exactly one [Legal Constraints](#legalConstraints) element with the following features:
 
-* For every [Legal Constraints](#legalConstraints) element,
+     * Exactly one [Access Constraints](#accessConstraints) element.
 
-    * Check that at least one [Restriction Code](#restrictionCode) element exists. Then, 
+          * The [Restriction Code](#restrictionCode) element has attribute codeList that starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
 
-        * Check that the attribute codeList starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
+     * At least one [Other Constraints](#otherConstraints) element with:
 
-    * Check that at least one [Anchor](#anchor) element exists. Then,
-
-        * Check that attribute xlink:href is a URL starting with "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/" and postfixed with one of values of code list LimitationsOnPublicAccess of the [TG MD](./README.md#ref_TG_MD) Annex D.1.
+          * One [Anchor](#anchor) element which xlink:href attribute is a URL starting with "http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/" and postfixed with one of values of code list LimitationsOnPublicAccess of the [TG MD](./README.md#ref_TG_MD) Annex D.1.
 
 * If any of the checks fails, the test fails. 
 
@@ -29,7 +27,7 @@
 
 **Notes**
 
-The multiplicity of [Legal Constraints](#legalConstraints) is one.
+The multiplicity of [Legal Constraints](#legalConstraints) is one to n. But only one shall exists for describing the 'limitations on public access' with the features described above.
 
 The limitations on public access based on reasons referred to Article 13 of INSPIRE Directive quoted above:
 
@@ -63,5 +61,7 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:identificationInfo/*/gmd:resourceConstraints)
 -----------------------------------------------| -------------------------------------------------------------------------
 <a name="legalConstraints"></a> Legal Constraints  | gmd:MD_LegalConstraints
+<a name="accessConstraints"></a> Access Constraints | gmd:MD_LegalConstraints/gmd:accessConstraints
 <a name="restrictionCode"></a> Restriction Code | gmd:MD_LegalConstraints/gmd:accessConstraints/gmd:MD_RestrictionCode
+<a name="otherConstraints"></a> Other Constraints | gmd:MD_LegalConstraints/gmd:otherConstraints
 <a name="anchor"></a> Anchor | gmd:MD_LegalConstraints/gmd:otherConstraints/gmx:Anchor
