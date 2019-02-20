@@ -27,6 +27,8 @@
 
 The multiplicity of this element is one or more.
 
+If the described resource does not contain textual information expressed in a natural language the special code value "zxx" of the ISO 639-2/B reserved for "no linguistic content; not applicable" shall be used.
+
 ## Contextual XPath references
 
 The namespace prefixes used as described in [README.md](./README.md#namespaces).
