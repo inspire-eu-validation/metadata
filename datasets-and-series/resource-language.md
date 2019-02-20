@@ -25,7 +25,7 @@
 
 **Notes**
 
-The multiplicity of this element is zero or more.
+The multiplicity of this element is one or more.
 
 ## Contextual XPath references
 
