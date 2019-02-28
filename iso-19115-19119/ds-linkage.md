@@ -15,7 +15,7 @@ The test checks if a [linkage](#online) is provided. If none is given, the test 
 * if the [linkage](#online) element contains an element of type gmd:URL.
 * if the element content is a syntactically correct URL.
 * if the referenced resource is accessible.
-* if the response identifies the [linkage](#online) as a known Harmonised Spatial Data Service type or a Network Service type, the test checks if appropriate [linkage](#online) to dataset is available. The [linkage](#online) is established via the Metadata URL for WMS, WFS and Atom based services. Otherwise a final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions or a client application that directly accesses the service).
+* if the response identifies the [linkage](#online) as a known Harmonised Spatial Data Service type or a Network Service type, the test checks if at least one appropriate [linkage](#online) to dataset is available. The [linkage](#online) is established via the Metadata URL for WMS, WFS and Atom based services. Otherwise a final manual test is suggested to the tester (to test if any of the linkages points to a webpage with further instructions or a client application that directly accesses the service).
 
 **Reference(s)**	 
 
