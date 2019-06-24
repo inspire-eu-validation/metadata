@@ -26,7 +26,7 @@ The bounding box shall be as small as possible. This requires a manual check.
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD) 2.5.1, Req 20, 21
+* [TG MD](./README.md#ref_TG_MD) 2.5.1, Req 20, 21
 
 **Test type**: Automated/Manual
 
@@ -36,7 +36,7 @@ The depencency to [Hierarchy](./hierarchy) has not been implemented in the ETS a
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

@@ -16,8 +16,8 @@ In case of RS_identifier, the codespace element should not be empty.
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.2.5, Req 5 & 6
-* [ISO 19115](./README#ref_ISO_19115), B.2.7.3
+* [TG MD](./README.md#ref_TG_MD), 2.2.5, Req 5 & 6
+* [ISO 19115](./README.md#ref_ISO_19115), B.2.7.3
 
 **Test type**: Automated
 
@@ -27,7 +27,7 @@ In case of RS_identifier, the codespace element should not be empty.
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

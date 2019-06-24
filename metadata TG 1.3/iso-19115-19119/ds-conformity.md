@@ -22,9 +22,9 @@ One of the [CI_Citation](#CI_Citation) elements shall contain title and date of 
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.8.1, Req 28
-* [TG MD](./README#ref_TG_MD), 2.8
-* [ISO 19115](./README#ref_ISO_19115)
+* [TG MD](./README.md#ref_TG_MD), 2.8.1, Req 28
+* [TG MD](./README.md#ref_TG_MD), 2.8
+* [ISO 19115](./README.md#ref_ISO_19115)
 * [Regulation 1089/2010](https://eur-lex.europa.eu/eli/reg/2010/1089/oj)
 
 **Test type**: Automated
@@ -37,7 +37,7 @@ TG MD Requirement 29 is also relevant, because it states of which type the resul
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

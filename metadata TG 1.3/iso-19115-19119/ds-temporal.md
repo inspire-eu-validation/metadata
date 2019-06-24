@@ -16,9 +16,9 @@ The test case will fail if the results to steps 2, 3 and 4 all equal false.
 
 **Reference(s)**
 
-* [ISO 19108](./README#ref_ISO_19108)
-* [ISO 8601](./README#ref_ISO_8601)
-* [TG MD](./README#ref_TG_MD) Chap. 2.6, Req 22 & 23
+* [ISO 19108](./README.md#ref_ISO_19108)
+* [ISO 8601](./README.md#ref_ISO_8601)
+* [TG MD](./README.md#ref_TG_MD) Chap. 2.6, Req 22 & 23
 
 **Test type**: Automated
 
@@ -32,7 +32,7 @@ The 'extent' property is not part of the gmd:AbstractMD_Identification_Type and 
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

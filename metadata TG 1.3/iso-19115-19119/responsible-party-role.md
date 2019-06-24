@@ -13,17 +13,17 @@ The element must contain an element at gmd:CI_RoleCode[@codeListValue=x], where 
 **Reference(s)**
 
 * ISO 19115, B.5.5
-* [TG MD](./README#ref_TG_MD), 2.10.2
+* [TG MD](./README.md#ref_TG_MD), 2.10.2
 
 **Test type**: Automated
 
 **Notes**
 
-* There is no explicit Implementation Requirement in [TG MD](./README#ref_TG_MD) for this test.
+* There is no explicit Implementation Requirement in [TG MD](./README.md#ref_TG_MD) for this test.
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

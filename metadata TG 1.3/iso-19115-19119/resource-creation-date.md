@@ -10,7 +10,7 @@ Check that at most one [Creation date](#creationDate) exists. If it does, pass t
 
 **Reference(s)**
 
-* [TG MD](./README#ref_TG_MD) 2.6.4, TG Requirement 25
+* [TG MD](./README.md#ref_TG_MD) 2.6.4, TG Requirement 25
 
 **Test type**: Automated
 
@@ -23,7 +23,7 @@ The ETS currently allows both http://www.isotc211.org/2005/resources/codeList.xm
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

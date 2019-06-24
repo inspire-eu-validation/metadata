@@ -10,15 +10,15 @@ This test case only applies to records with a hierarchyLevel value 'dataset' or 
 
 The test first checks if there is at least one [specification](#specification). In case there is none, the test fails.
 It then performs the following checks
-*	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:title which should not be an [empty characterstring](./README#emptychar)
+*	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:title which should not be an [empty characterstring](./README.md#emptychar)
 *	The [specification](#specification) must contain an element of type gmd:CI_Citation/gmd:date[./\*/gmd:dateType/\*/text()='{type}']/\*/gmd:date, where {type} is one of 'creation', 'revision' and 'publication'.
 *	The [DQ_ConformanceResult](#DQ_ConformanceResult) has an element gmd:pass that must contain a value of type gco:Boolean.
 *	The [specification](#specification) has gmd:DQ_DomainConsistency as a parent element.
 
 **Reference(s)**
 
-* [TG MD](./README#ref_TG_MD), 2.8.2
-* [TG MD](./README#ref_TG_MD), 2.8, Req 29
+* [TG MD](./README.md#ref_TG_MD), 2.8.2
+* [TG MD](./README.md#ref_TG_MD), 2.8, Req 29
 
 **Test type**: Automated
 
@@ -30,7 +30,7 @@ The test method states that a warning is thrown, if a metadata record does not c
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

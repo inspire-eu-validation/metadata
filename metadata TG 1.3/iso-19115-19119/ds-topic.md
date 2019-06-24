@@ -18,7 +18,7 @@ The value saved in the XML metadata element shall be a language neutral name.
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.3.1, Req 10 & 11
+* [TG MD](./README.md#ref_TG_MD), 2.3.1, Req 10 & 11
 * [B.5.27 of ISO 19115](http://inspire.ec.europa.eu/metadata-codelist/TopicCategory)
 
 **Test type**: Automated
@@ -31,7 +31,7 @@ The ETS only checks if at least one non-empty topicCategory element is given. Th
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

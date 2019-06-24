@@ -19,7 +19,7 @@ The test also checks that the [date](#date) is '2008-06-01' and the [dateType](#
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD) Chap. 2.2.3, Req 14
+* [TG MD](./README.md#ref_TG_MD) Chap. 2.2.3, Req 14
 * http://inspire.ec.europa.eu/theme
 
 **Test type**: Automated
@@ -36,7 +36,7 @@ The depencency to [Hierarchy](./hierarchy) has not been implemented in the ETS a
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

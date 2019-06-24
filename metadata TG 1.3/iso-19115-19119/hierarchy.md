@@ -10,8 +10,8 @@ Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD),2.2.3, Req 1 & 2
-* [ISO 19115](./README#ref_ISO_19115) table B.5.25 MD_ScopeCode 
+* [TG MD](./README.md#ref_TG_MD),2.2.3, Req 1 & 2
+* [ISO 19115](./README.md#ref_ISO_19115) table B.5.25 MD_ScopeCode 
 
 **Test type**: Automated
 
@@ -19,7 +19,7 @@ Checks if a resource type ([hierarchyLevel](#hierarchyLevel)) is provided and is
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| ------------------------------------------------------------------

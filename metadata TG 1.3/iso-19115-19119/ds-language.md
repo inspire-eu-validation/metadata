@@ -16,7 +16,7 @@ It is then checked if the codeListValue attribute contains a valid 3-letter lang
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.2.7, Req 8 & 9
+* [TG MD](./README.md#ref_TG_MD), 2.2.7, Req 8 & 9
 * ISO 639-2
 
 **Test type**: Automated
@@ -29,7 +29,7 @@ The depencency to [Hierarchy](./hierarchy) has not been implemented in the ETS a
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

@@ -6,11 +6,11 @@
 
 **Test method**
 
-Validates if a [title](#title) is provided and not an [empty characterstring](./README#emptychar)
+Validates if a [title](#title) is provided and not an [empty characterstring](./README.md#emptychar)
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), Chap. 2.2.1
+* [TG MD](./README.md#ref_TG_MD), Chap. 2.2.1
 
 **Test type**: Automated
 
@@ -18,7 +18,7 @@ Validates if a [title](#title) is provided and not an [empty characterstring](./
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

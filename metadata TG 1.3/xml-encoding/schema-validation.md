@@ -15,7 +15,7 @@ If no parameter is provided, the encoding is determined by inspecting the [schem
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.1.2
+* [TG MD](./README.md#ref_TG_MD), 2.1.2
 
 **Test type**: Automated
 

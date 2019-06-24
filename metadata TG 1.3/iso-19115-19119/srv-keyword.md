@@ -15,7 +15,7 @@ If the resource is a service, at least one [keyword](#keyword) must originate fr
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.2.3, Req 15
+* [TG MD](./README.md#ref_TG_MD), 2.2.3, Req 15
 
 **Test type**: Automated
 
@@ -27,7 +27,7 @@ The depencency to [Hierarchy](./hierarchy) has not been implemented in the ETS a
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

@@ -6,11 +6,11 @@
 
 **Test method**
 
-Checks if an [abstract](#abstract) is present and not an [empty characterstring](./README#emptychar)
+Checks if an [abstract](#abstract) is present and not an [empty characterstring](./README.md#emptychar)
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), Chap. 2.2.2
+* [TG MD](./README.md#ref_TG_MD), Chap. 2.2.2
 
 **Test type**: Automated
 
@@ -18,7 +18,7 @@ Checks if an [abstract](#abstract) is present and not an [empty characterstring]
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

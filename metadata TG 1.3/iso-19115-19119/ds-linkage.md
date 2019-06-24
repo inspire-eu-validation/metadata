@@ -19,7 +19,7 @@ The test checks if a [linkage](#online) is provided. If none is given, the test 
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.2.4, Req 3
+* [TG MD](./README.md#ref_TG_MD), 2.2.4, Req 3
 
 **Test type**: Automated/Manual
 
@@ -31,7 +31,7 @@ Since WCS and SOS are now also supported by technical guidance documents, the ET
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

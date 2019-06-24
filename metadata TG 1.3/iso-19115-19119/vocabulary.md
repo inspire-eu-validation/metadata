@@ -7,13 +7,13 @@
 **Test method**
 
 The test performs the following check for each [vocabulary](#thesaurus):
-* the node must contain a [title](#title) and should not be an [empty characterstring](./README#emptychar)
+* the node must contain a [title](#title) and should not be an [empty characterstring](./README.md#emptychar)
 * the node must contain a [date](#date)
 * the node must contain a [dateType](#dateType) which contains text that equals one of 'publication', 'revision' or 'creation'.
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.4.2, Req 16, 17 & 18
+* [TG MD](./README.md#ref_TG_MD), 2.4.2, Req 16, 17 & 18
 
 **Test type**: Automated
 
@@ -21,7 +21,7 @@ The test performs the following check for each [vocabulary](#thesaurus):
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

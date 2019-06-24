@@ -14,7 +14,7 @@ Use the vocabulary [title](#title) in comparisons.
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD) 2.4.2, Req 19
+* [TG MD](./README.md#ref_TG_MD) 2.4.2, Req 19
 
 **Test type**: Automated
 
@@ -22,7 +22,7 @@ Use the vocabulary [title](#title) in comparisons.
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

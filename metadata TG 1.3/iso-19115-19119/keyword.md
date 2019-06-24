@@ -6,11 +6,11 @@
 
 **Test method**
 
-The test checks if at least one [keyword](#keyword) element is provided and it is not an [empty CharacterString](./README#emptychar)
+The test checks if at least one [keyword](#keyword) element is provided and it is not an [empty CharacterString](./README.md#emptychar)
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.4, Req 13
+* [TG MD](./README.md#ref_TG_MD), 2.4, Req 13
 
 **Test type**: Automated
 
@@ -18,7 +18,7 @@ The test checks if at least one [keyword](#keyword) element is provided and it i
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

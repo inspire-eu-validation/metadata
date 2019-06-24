@@ -1,6 +1,6 @@
 # Conformance class: XML encoding of ISO 19115/19119 metadata (DRAFT)
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Metadata Technical Guidance](http://inspire.ec.europa.eu/id/ats/metadata/1.3).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Metadata Technical Guidance](../README.md).
 
 ## Standardization target type
 
@@ -46,7 +46,7 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [Schema validation](./schema-validation)  	                          | Ready for review  |
+| [Schema validation](./schema-validation/README.md)  	                          | Ready for review  |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 

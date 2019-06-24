@@ -6,7 +6,7 @@
 
 **Test method**
 
-The test checks if a [useLimitation](#useLimitation) element is provided and it is not an [empty characterstring](./README#emptychar).
+The test checks if a [useLimitation](#useLimitation) element is provided and it is not an [empty characterstring](./README.md#emptychar).
 
 If no conditions apply to the access and use of the resource, "no conditions apply" shall be used. If conditions are unknown, "conditions unknown" shall be used.
 
@@ -14,7 +14,7 @@ Descriptions of terms and conditions, including where applicable, the correspond
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.9.2, Req 33,34
+* [TG MD](./README.md#ref_TG_MD), 2.9.2, Req 33,34
 
 **Test type**: Automated/Manual
 
@@ -24,7 +24,7 @@ According to TG MD 2.9.2 this appears to be a common test, not one specific for 
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

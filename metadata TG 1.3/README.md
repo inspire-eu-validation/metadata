@@ -5,7 +5,7 @@ The specification specifies the following conformance classes:
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
 | [INSPIRE Profile based on EN ISO 19115 and EN ISO 19119](./iso-19115-19119/README.md) | ISO 19115/19119 metadata record |
-| [XML encoding](https://github.com/inspire-eu-validation/metadata/tree/master/metadata TG 1.3/xml-encoding/README.md) | XML document (MD_Metadata) |
+| [XML encoding](./xml-encoding/README.md) | XML document (MD_Metadata) |
 
 ## Rules for HTTP requests
 

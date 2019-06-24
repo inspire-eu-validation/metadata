@@ -14,7 +14,7 @@ The operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentificati
 
 **Reference(s)**	 
 
-* [TG MD](./README#ref_TG_MD), 2.2.6, req 7
+* [TG MD](./README.md#ref_TG_MD), 2.2.6, req 7
 
 **Test type**: Automated
 
@@ -26,7 +26,7 @@ How to identify that the service operates on a dataset? Only services with servi
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------

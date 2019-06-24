@@ -19,10 +19,10 @@ The test case fails if any of the above steps returns false.
 
 **Reference(s)**
 
-* [ISO 19115](./README#ref_ISO_19115)
-* [ISO 19108](./README#ref_ISO_19108)
-* [ISO 8601](./README#ref_ISO_8601)
-* [TG MD](./README#ref_TG_MD) Chap. 2.6.1 - 2.6.4, Req 24
+* [ISO 19115](./README.md#ref_ISO_19115)
+* [ISO 19108](./README.md#ref_ISO_19108)
+* [ISO 8601](./README.md#ref_ISO_8601)
+* [TG MD](./README.md#ref_TG_MD) Chap. 2.6.1 - 2.6.4, Req 24
 
 **Test type**: Automated
 
@@ -38,7 +38,7 @@ TG MD requirement 24 indicates that only xs:date is allowed. However, the schema
 
 ##Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README#namespaces).
+The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
