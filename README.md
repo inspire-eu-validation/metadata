@@ -4,8 +4,8 @@ The Abstract Test Suites for INSPIRE Metadata Technical Guidance 1.3 and 2.0 can
 
 | Abstract Test Suite |
 | ----------------- |
-|[INSPIRE Metadata version 1.3](./metadata%20TG%201.3/README.md)|
-|[INSPIRE Metadata version 2.0](./metadata%20TG%202.0/README.md)|
+|[INSPIRE Metadata version 1.3](https://github.com/inspire-eu-validation/metadata/tree/1.3/README.md)|
+|[INSPIRE Metadata version 2.0](https://github.com/inspire-eu-validation/metadata/tree/2.0/README.md)|
 
 ## External document references
 
