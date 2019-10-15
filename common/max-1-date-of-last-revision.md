@@ -20,6 +20,7 @@
 
 **Notes**
 
+According to ISO/TS 19139:2007, it is also recommended that the [Date Type](#dateType) element has a non-empty free text value.
 
 ## Contextual XPath references
 

@@ -15,7 +15,7 @@
 
     * Check that the [Email Address](#emailAddress) of the organization is a non-empty free text element.
 
-    * Check that the attribute codeList of the [Role](#role) node is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" and codeListValue attribute is "pointOfContact".
+    * Check that the attribute codeListValue of the [Role](#role) node is "pointOfContact".
 
 * If any of the checks fails the test fails.
 
@@ -29,6 +29,8 @@
 **Notes**
 
 The multiplicity of this element is one or more.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Role](#role) element has a non-empty free text value.
 
 ## Contextual XPath references
 

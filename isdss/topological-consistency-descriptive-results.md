@@ -14,7 +14,7 @@
         
         * Check that [Date](#date) element exists.
 
-        * Check that [Date Type Code](#dateTypeCode) element exist and it has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" and an attribute codeListValue with value "publication".
+        * Check that [Date Type Code](#dateTypeCode) element exist and it has an attribute codeListValue with value "publication".
 
         * Check that [Pass](#pass) element exists and its value is false.
 
@@ -30,6 +30,8 @@
 **Notes**
 
 The multiplicity of this element is zero or more.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Date Type](#dateType) element has a non-empty free text value.
 
 ## Contextual XPath references
 
