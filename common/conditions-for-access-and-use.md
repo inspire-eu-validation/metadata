@@ -10,7 +10,7 @@
 
      * Exactly one [Access Constraints](#accessConstraints) or one [Use Constraints](#useConstraints) element.
 
-          * The gmd:MD_RestrictionCode child element of either [Access Constraints](#accessConstraints) or [Use Constraints](#useConstraints) has attribute codeList that starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
+          * The gmd:MD_RestrictionCode child element of either [Access Constraints](#accessConstraints) or [Use Constraints](#useConstraints) has attribute codeListValue with value "otherRestrictions".
 
      * At least one [Other Constraints](#otherConstraints) element with:
 
@@ -30,6 +30,8 @@
 **Notes**
 
 The multiplicity of [Legal Constraints](#legalConstraints) is one to n. But only one shall exists for describing the 'conditions for access and use' with the features described above.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Access Constraints](#accessConstraints) or [Use Constraints](#useConstraints) element has a non-empty free text value.
 
 This element shall not be the same one as used for describing conditions applying to [conditions-applying-to-access-and-use](#http://inspire.ec.europa.eu/id/ats/metadata/2.0/sds-interoperable/conditions-applying-to-access-and-use).
 

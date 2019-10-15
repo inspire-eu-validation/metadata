@@ -10,7 +10,7 @@
 
 * Check if a [scopeCode](#scopeCode) element is provided referring the value "service". 
 
-  * Check if MD_ScopeCode element has a "codeList" attribute with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" and a "codeListValue" attribute with value "service".
+    * Check if MD_ScopeCode element has a "codeListValue" attribute with value "service".
 
 * Check if the a [scopeDescription](#scopeDescription) element is provided with an non-empty free text.
 
@@ -25,6 +25,8 @@
 The multiplicity of this elements is one.
 
 It is not included in the test but the non-empty free text into the scopeDescription element shall contains the term "service" in the language of the metadata.
+
+According to ISO/TS 19139:2007, it is also recommended that the [scopeCode](#scopeCode) element has a non-empty free text value.
 
 ## Contextual XPath references
 

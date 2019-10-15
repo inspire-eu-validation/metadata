@@ -16,7 +16,7 @@
 
         * Check that [Date](#date) element exists and its value is in accordance with [ISO 8601](http://inspire.ec.europa.eu/id/ats/metadata/2.0/common/README#ref_ISO_8601) with only the date part included.
 
-            * Check that [Date Type Code](#dateTypeCode) exists, its attribute codeList is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" and its attribute codeListValue is "publication".
+            * Check that [Date Type Code](#dateTypeCode) exists and its attribute codeListValue is "publication".
 
 * If any of the checks fails, the test fails.
 
@@ -36,6 +36,8 @@ The multiplicity of this element is one or more.
 For each specification, a separate element gmd:DQ_ConformanceResult must be used.
 
 For the INSPIRE Implementation Rule documents the value of the title element shall match exactly the official title of the cited document in the language of the metadata.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Date Type](#dateType) element has a non-empty free text value.
 
 
 ## Contextual XPath references

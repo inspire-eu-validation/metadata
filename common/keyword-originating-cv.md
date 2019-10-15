@@ -14,8 +14,6 @@
 
     * Check that the [Date Type](#dateType) element exists and it has an attribute codeList with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" and an attribute codeListValue with value "publication".
 
-NOTE: according to ISO/TS 19139:2007, it is also recommended that the [Date Type](#dateType) element has a non-empty free text value.
-
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD), 2.3.5 , Req c.15
@@ -26,7 +24,9 @@ NOTE: according to ISO/TS 19139:2007, it is also recommended that the [Date Type
 
 **Notes**
 
-The multiplicity of [Citation](#citation) is zero or more
+The multiplicity of [Citation](#citation) is zero or more.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Date Type](#dateType) element has a non-empty free text value.
 
 ## Contextual XPath references
 

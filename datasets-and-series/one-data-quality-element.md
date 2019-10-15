@@ -8,7 +8,7 @@
 
 * Check that exactly one [Data Quality](#dataQuality) element exists.
 
-    * Check that [Scope Code](#scopeCode) exists and the attribute codeList value is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_ScopeCode" and the attribute codeListValue is "dataset" or "series".
+    * Check that [Scope Code](#scopeCode) exists and the attribute codeListValue is "dataset" or "series".
 
 **Reference(s)**
 
@@ -19,6 +19,8 @@
 **Notes**
 
 The multiplicity of this element is one.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Scope Code](#scopeCode) element has a non-empty free text value.
 
 ## Contextual XPath references
 

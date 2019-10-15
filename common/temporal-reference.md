@@ -12,8 +12,6 @@
 
     * Check that [Date Type](#dateType) element exists. If it does,
 
-        * Check that the [Date Type](#dateType) has an attribute named codeList which value is "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode"
-
         * Check that the [Date Type](#dateType) has an attribute named codeListValue which value is "publication", "revision" or "creation".
 
 * If any of the checks fails, the test fails.
@@ -29,6 +27,8 @@
 **Notes**
 
 The multiplicity of [date](#date) is one or more.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Date Type](#dateType) element has a non-empty free text value.
 
 The default reference system will be the Gregorian calendar.
 

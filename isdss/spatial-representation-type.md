@@ -8,7 +8,7 @@
 
 * Check that [Spatial Representation Type Code](#spatialRepresentationTypeCode) element exists. If it does,
 
-    * Check that it has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" and an attribute codeListValue with value "vector", "grid", "tin" or "textTable".
+    * Check that it has an attribute codeListValue with value "vector", "grid", "tin" or "textTable".
 
 **Reference(s)**	 
 * [TG MD](./README.md#ref_TG_MD) 3.2.2.1, Req 2.4
@@ -18,6 +18,8 @@
 **Notes**
 
 The multiplicity of this element is one or more.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Spatial Representation Type Code](#spatialRepresentationTypeCode) element has a non-empty free text value.
 
 ## Contextual XPath references
 

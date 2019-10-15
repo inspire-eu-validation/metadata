@@ -11,7 +11,7 @@ Test that the interoperable spatial data service metadata contains information a
 
 * For every [Responsible Party](#responsibleParty),
 
-    * Check that [Role Code](#roleCode) element exists and it has an attribute codeList with value "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_RoleCode" and an attribute codeListValue with "custodian" value.
+    * Check that [Role Code](#roleCode) element exists and it has an attribute codeListValue with "custodian" value.
 
 **Reference(s)**
 
@@ -24,6 +24,8 @@ Test that the interoperable spatial data service metadata contains information a
 The multiplicity of this element is one or more.
 
 The specification for this requirement is defined in [Responsible organisation](../common/responsible-organisation.md) requirement from [Common Requirements](../common/README.md).
+
+According to ISO/TS 19139:2007, it is also recommended that the [Role Code](#roleCode) element has a non-empty free text value.
 
 ## Contextual XPath references
 

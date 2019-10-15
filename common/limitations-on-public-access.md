@@ -10,7 +10,7 @@
 
      * Exactly one [Access Constraints](#accessConstraints) element.
 
-          * The [Restriction Code](#restrictionCode) element has attribute codeList that starts with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml" and attribute codeListValue is "otherRestrictions".
+          * The codeListValue attribute of [Restriction Code](#restrictionCode) element is "otherRestrictions".
 
      * At least one [Other Constraints](#otherConstraints) element with:
 
@@ -28,6 +28,8 @@
 **Notes**
 
 The multiplicity of [Legal Constraints](#legalConstraints) is one to n. But only one shall exists for describing the 'limitations on public access' with the features described above.
+
+According to ISO/TS 19139:2007, it is also recommended that the [Restriction Code](#restrictionCode) element has a non-empty free text value.
 
 The limitations on public access based on reasons referred to Article 13 of INSPIRE Directive quoted above:
 
