@@ -15,7 +15,7 @@
 
     * Check that the [Email Address](#emailAddress) of the organization is a non-empty free text element.
 
-    * Check that the attribute codeListValue of the [Role](#role) node is "pointOfContact".
+* Check that there is at least one [Responsible Party](#responsibleParty) element with "pointOfContact" as codeListValue of its [Role](#role) node.
 
 * If any of the checks fails the test fails.
 
