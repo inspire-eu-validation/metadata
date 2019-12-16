@@ -6,9 +6,9 @@
 
 **Test method**
 
-* Check if at least one [keyword](#keyword) element is included with the title of the theme as a Non-empty Free Text Element [empty CharacterString](./README.md#emptychar) content in the language of the metadata.
+* Check if all [keyword](#keyword) elements included are Non-empty Free Text.
 
-* Check if the keyword value is one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD).
+* Check if at least one [keyword](#keyword) has a child Anchor which xlink:href attribute is one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD).
 
 **Reference(s)**	 
 
