@@ -6,7 +6,7 @@
 
 **Test method**
 
-* Check that at least one of the following options are satisfied:
+* Check that at least one of the following conditions are satisfied:
 
     * At least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
 
