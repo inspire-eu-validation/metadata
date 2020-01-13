@@ -1,10 +1,10 @@
 # INSPIRE dataset and service metadata version 2.0 (DRAFT)
 
-The Abstract Test Suites (ATS) defined in this section is based on the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD).
+The Abstract Test Suites (ATS's) defined in this section are based on the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD).
 
 ## Abstract Test Suites & Conformance Classes
 
-The conformance classes (CC) are compound of requirements that must be passed to be INSPIRE conformance. An ATS has been created for every CC in order to clarify the process of validation of the requirements.
+The conformance classes (CC) are compound of requirements that must be passed to be conformant with INSPIRE. An ATS has been created for every CC in order to clarify the process of validation of the requirements.
 
 The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requirements for datasets, data set series and data services. CC1 and CC2 are for datasets and data set series only. Then, from CC3 to CC7 are for data services only. Additionaly, a new ATS is included with addtional monitoring requirements.
 
@@ -33,7 +33,7 @@ Figure 1. Structure of metadata conformance classes. Source: [TG MD](#ref_TG_MD)
 
 The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and Common requirements must be met too.
 
-Besides, Additional Common Requirements depends on Common Requirements.
+Besides, Monitoring Requirements depends on Common Requirements.
 
 ## External document references
 
