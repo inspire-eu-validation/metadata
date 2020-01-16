@@ -1,4 +1,4 @@
-# INSPIRE dataset and service metadata version 2.0 (DRAFT)
+# INSPIRE dataset and service metadata version 2.0
 
 The Abstract Test Suites (ATS's) defined in this section are based on the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD).
 
