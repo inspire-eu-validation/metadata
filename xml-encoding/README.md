@@ -1,4 +1,4 @@
-# Conformance class: XML encoding of ISO 19115/19119 metadata (DRAFT)
+# Conformance class: XML encoding of ISO 19115/19119 metadata
 
 This conformance class is part of the [Abstract Test Suite for the INSPIRE Metadata Technical Guidance](http://inspire.ec.europa.eu/id/ats/metadata/1.3).
 
