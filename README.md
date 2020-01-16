@@ -6,12 +6,13 @@ The Abstract Test Suites (ATS's) defined in this section are based on the Techni
 
 The conformance classes (CC) are compound of requirements that must be passed to be conformant with INSPIRE. An ATS has been created for every CC in order to clarify the process of validation of the requirements.
 
-The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requirements for datasets, data set series and data services. CC1 and CC2 are for datasets and data set series only. Then, from CC3 to CC7 are for data services only. Additionaly, a new ATS is included with addtional monitoring requirements.
+The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requirements for datasets, data set series and data services. CC1 and CC2 are for datasets and data set series only. Additionaly, a new ATS is included named CC2b with addtional monitoring requirements. Then, from CC3 to CC7 are for data services only.
 
 * Metadata for INSPIRE datasets and data set series
     * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
     * [Conformance Class 1: Baseline metadata for data sets and data set series](./datasets-and-series/README.md)
     * [Conformance Class 2: Interoperability metadata for data sets and data set series](./isdss/README.md)
+    * [Conformance Class 2b: Monitoring metadata requirements for data sets and data set series](./monitoring/README.md)
 
 * Metadata for INSPIRE Spatial Data Services
     * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
@@ -20,9 +21,6 @@ The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requireme
     * [Conformance Class 5: Metadata for Invocable Spatial Data Services](./sds-invocable/README.md)
     * [Conformance Class 6: Metadata for Interoperable Spatial Data Services](./sds-interoperable/README.md)
     * [Conformance Class 7: Metadata for Harmonised Spatial Data Services](./sds-harmonised/README.md)
-
-* Monitoring Requirements
-    * [Monitoring Requirements for INSPIRE metadata](./monitoring/README.md)
 
 ## Conformance classes relations and dependencies
 The conformance classes in this specification are dependent of each others as shown in the next figure.
@@ -33,7 +31,7 @@ Figure 1. Structure of metadata conformance classes. Source: [TG MD](#ref_TG_MD)
 
 The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and Common requirements must be met too.
 
-Besides, Monitoring Requirements depends on Common Requirements.
+Besides, Monitoring metadata requirements (CC2b) depends on Common Requirements.
 
 ## External document references
 
