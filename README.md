@@ -31,7 +31,7 @@ Figure 1. Structure of metadata conformance classes. Source: [TG MD](#ref_TG_MD)
 
 The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and Common requirements must be met too.
 
-Besides, Monitoring metadata requirements (CC2b) depends on Common Requirements.
+Besides, Monitoring metadata requirements (CC2b) depends on CC1 and Common Requirements.
 
 ## External document references
 

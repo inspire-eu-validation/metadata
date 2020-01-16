@@ -16,7 +16,7 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
+| INSPIRE Metadata | [Conformance Class 1](../datasets-and-series/README.md) | n/a |
 
 ### Indirect dependencies
 
