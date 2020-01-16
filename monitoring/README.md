@@ -1,4 +1,4 @@
-# Conformance Class 2b: Monitoring metadata requirements for data sets and data set series
+# Conformance Class 2b: Monitoring metadata for data sets and data set series
 
 This Abstract Test Suite (ATS) describes a set of additional requirements for monitoring purposes not included currently in the [Technical Guidance](#ref_TG_MD).
 
