@@ -1,18 +1,20 @@
 # Spatial Scope Code List
 
-**Purpose**: Test that the spatial scope covered by the data set, data series or service is provided.
+**Purpose**: Test that the spatial scope covered by the data set or data set series.
 
 **Prerequisites**
 
 **Test method**
 
-* Check that at least one of the following conditions are satisfied:
+* If the following conditions are satisfied the test pass:
 
-    * At least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
+    * At least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
 
-    * At least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
+    * Check that at least one of the [MD_Keywords](#mdKeywords) elements has a [Citation Title](#citationtitle) child element with value "Spatial scope".
 
-* Check that at least one of the [MD_Keywords](#mdKeywords) elements has a [Citation Title](#citationtitle) child element with value "Spatial scope".
+* Else
+
+    * A manual test is requested asking the user to provide the keyword with the spatial scope in case it is _National_ or _Regional_.
 
 **Reference(s)**
 
