@@ -1,4 +1,4 @@
-# INSPIRE dataset and service metadata version 2.0 (DRAFT)
+# INSPIRE dataset and service metadata version 2.0
 
 The Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD), Annex A, defines 2 Abstract Test Suites and 7 Conformance Classes.
 
