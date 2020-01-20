@@ -26,7 +26,7 @@ The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requireme
 The conformance classes in this specification are dependent of each others as shown in the next figure.
 
 ![Diagram](./hierarchydiagram.jpg)
-Figure 1. Structure of metadata conformance classes. Source: [TG MD](#ref_TG_MD) pag. 27.
+Figure 1. Structure of metadata conformance classes.
 
 
 The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and Common requirements must be met too.
