@@ -46,8 +46,8 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| M.1      | Spatial scope code list | [spatial-scope](./spatial-scope.md) ||
-| M.2      | Priority datasets code list | [priority-datasets](./priority-datasets.md) ||
+| M.1      | Spatial scope keyword | [spatial-scope](./spatial-scope.md) ||
+| M.2      | Priority datasets keyword | [priority-datasets](./priority-datasets.md) ||
 
 ## Test
 

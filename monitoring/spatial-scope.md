@@ -1,6 +1,6 @@
-# Spatial Scope Code List
+# Spatial Scope Keyword
 
-**Purpose**: Test that the spatial scope covered by the data set or data set series.
+**Purpose**: Test that the spatial scope covered by the data set or data set series is provided.
 
 **Prerequisites**
 
