@@ -47,6 +47,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
 | M.1      | Spatial scope code list | [spatial-scope](./spatial-scope.md) ||
+| M.2      | Priority datasets code list | [priority-datasets](./priority-datasets.md) ||
 
 ## Test
 
@@ -55,6 +56,7 @@ This Conformance Class contains the following tests:
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
 | [spatial-scope](./spatial-scope.md) | Ready for Review |
+| [priority-datasets](./priority-datasets.md) | Ready for Review |
 
 ## Open issues
 
