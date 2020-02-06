@@ -6,15 +6,17 @@
 
 **Test method**
 
-* If the following conditions are satisfied the test pass:
+* If exactly one [MD_Keywords](#mdKeywords) for spatial scope is provided:
 
-    * At least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
+    * Check that exactly one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope) OR exactly one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
 
-    * Check that at least one of the [MD_Keywords](#mdKeywords) elements has a [Citation Title](#citationtitle) child element with value "Spatial scope".
+    * Check that exactly one [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "Spatial scope".
 
-* Else
+    * Check that the [Citation Date](#citationdate) for the thesaurus is exactly '2019-05-22'.
 
-    * A manual test is requested asking the user to provide the keyword with the spatial scope in case it is _National_ or _Regional_.
+* Else if more than one [MD_Keywords](#mdKeywords) for spatial scope is provided the test fails.
+
+* Else a manual test is requested asking the user to provide the keyword with the spatial scope in case it is _National_ or _Regional_.
 
 **Reference(s)**
 
@@ -93,3 +95,4 @@ Abbreviation                                   |  XPath expression (relative to 
 <a name="keywordcharacterstring"></a> Keyword CharacterString | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString
 <a name="mdKeywords"></a> MD_Keywords | gmd:descriptiveKeywords/gmd:MD_Keywords
 <a name="citationtitle"></a> Citation Title | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title
+<a name="citationdate"></a> Citation Date | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date
