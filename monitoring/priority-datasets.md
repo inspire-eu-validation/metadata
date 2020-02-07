@@ -1,6 +1,6 @@
 # Priority Datasets Keyword
 
-**Purpose**: Test that the priority datasets provide the corresponding keyword.
+**Purpose**: Test that the metadata for priority datasets provide the corresponding keyword.
 
 **Prerequisites**
 
