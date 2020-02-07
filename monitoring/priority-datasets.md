@@ -8,7 +8,7 @@
 
 * If exactly one [MD_Keywords](#mdKeywords) for priority datasets is provided:
 
-    * Check that exactly one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Datasets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) OR exactly one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Datasets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
+    * Check that at least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Datasets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Datasets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
 
     * Check that exactly one [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "INSPIRE priority data set".
 
