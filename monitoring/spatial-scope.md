@@ -20,8 +20,8 @@
 
 **Reference(s)**
 
-* [MIWP action](https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/Spatial+scope+code+list)
-* [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope)
+* [Implementation guidance and support](https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/Spatial+scope+code+list)
+* [Spatial Scope Code List in the INSPIRE Registry](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope)
 
 **Test type**: Automated
 
