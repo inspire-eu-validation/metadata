@@ -1,6 +1,6 @@
 # Spatial Scope Keyword
 
-**Purpose**: Test that the spatial scope covered by the data set or data set series is provided.
+**Purpose**: Test that the spatial scope of the data set or data set series is provided.
 
 **Prerequisites**
 
@@ -8,7 +8,7 @@
 
 * If exactly one [MD_Keywords](#mdKeywords) for spatial scope is provided:
 
-    * Check that exactly one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope) OR exactly one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
+    * Check that exactly one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope) (see _Option 1_) OR exactly one [Keyword CharacterString](#keywordcharacterstring) (see _Option 2_) is provided with a valid value from [Spatial Scope Code List](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope).
 
     * Check that exactly one [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "Spatial scope".
 
@@ -20,14 +20,14 @@
 
 **Reference(s)**
 
-* [Implementation guidance and support](https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/Spatial+scope+code+list)
+* [Spatial Scope Code List Implementation guidance and support](https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/Spatial+scope+code+list)
 * [Spatial Scope Code List in the INSPIRE Registry](http://inspire.ec.europa.eu/metadata-codelist/SpatialScope)
 
 **Test type**: Automated
 
 **Notes**
 
-_Option 1: Using the gmx:Anchor element_
+#_Option 1: Using the gmx:Anchor element_
 ```
 <gmd:descriptiveKeywords>
     <gmd:MD_Keywords>
@@ -55,7 +55,7 @@ _Option 1: Using the gmx:Anchor element_
 </gmd:descriptiveKeywords>
 ```
 
-_Option 2: Using the gco:CharacterString element_
+#_Option 2: Using the gco:CharacterString element_
 ```
 <gmd:descriptiveKeywords>
     <gmd:MD_Keywords>
