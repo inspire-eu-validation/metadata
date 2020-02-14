@@ -1,4 +1,4 @@
-# Conformance Class 2b: Monitoring metadata for data sets and data set series
+# Conformance Class 2b: INSPIRE data sets and data set series metadata for Monitoring
 
 This Abstract Test Suite (ATS) describes a set of additional requirements for INSPIRE Monitoring and Reporting, which are not currently included in the [Technical Guidance](#ref_TG_MD).
 
