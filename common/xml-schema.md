@@ -12,7 +12,7 @@
 
     * [ISO 19139](http://www.isotc211.org/2005/gmd/gmd.xsd) XML Schema as available in the ISO repository
 
-    * [ISO 19139](http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd) XML Schema as available in the OGC schema repository15.
+    * [ISO 19139](http://schemas.opengis.net/iso/19139/20070417/gmd/gmd.xsd) XML Schema for GML version 3.2.1 or [ISO 19139](http://schemas.opengis.net/iso/19139/20060504/gmd/gmd.xsd) XML Schema for GML version 3.2.0 as available in the OGC schema repository.
 
 **Reference(s)**	 
 
