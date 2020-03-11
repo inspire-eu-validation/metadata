@@ -6,9 +6,9 @@
 
 **Test method**
 
-* Check that that the document pass at least one of the following XML schema:
+* Check that the document validates against at least one of the following XML schemas:
 
-    * [CSW2 AP ISO](http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas) XML Schema
+    * [CSW2 AP ISO](http://inspire.ec.europa.eu/draft-schemas/inspire-md-schemas-temp/apiso-inspire/apiso-inspire.xsd) XML Schema
 
     * [ISO 19139](http://www.isotc211.org/2005/gmd/gmd.xsd) XML Schema as available in the ISO repository
 
