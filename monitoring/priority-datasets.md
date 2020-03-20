@@ -1,14 +1,14 @@
 # Priority Datasets Keyword
 
-**Purpose**: Test that the metadata for priority datasets provide the corresponding keyword.
+**Purpose**: Test that keyword(s) for priority data sets are provided in the metadata.
 
 **Prerequisites**
 
 **Test method**
 
-* If exactly one [MD_Keywords](#mdKeywords) for priority datasets is provided:
+* If exactly one [MD_Keywords](#mdKeywords) for priority data sets is provided:
 
-    * Check that at least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Datasets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Datasets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset).
+    * Check that at least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 1_) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 2_).
 
     * Check that exactly one [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "INSPIRE priority data set".
 
@@ -16,9 +16,9 @@
 
     * Check that the [Citation Date Type](#citationdate) codeListValue is 'publication'.
 
-* Else if more than one [MD_Keywords](#mdKeywords) for priority datasets is provided the test fails.
+* Else if more than one [MD_Keywords](#mdKeywords) for priority data sets is provided the test fails.
 
-* Else a manual test is requested asking the user to provide the keyword with in case it is a priority dataset.
+* Else a manual test is requested asking the user to provide the keyword with in case it is a priority data set.
 
 **Reference(s)**
 
