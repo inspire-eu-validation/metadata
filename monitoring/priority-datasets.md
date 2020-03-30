@@ -6,7 +6,7 @@
 
 **Test method**
 
-* If exactly one [MD_Keywords](#mdKeywords) for priority data sets is provided:
+* For every [MD_Keywords](#mdKeywords) provided for priority data sets:
 
     * Check that at least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 1_) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 2_).
 
@@ -16,9 +16,9 @@
 
     * Check that the [Citation Date Type](#citationdate) codeListValue is 'publication'.
 
-* Else if more than one [MD_Keywords](#mdKeywords) for priority data sets is provided the test fails.
+* If there is not any [MD_Keywords](#mdKeywords) for priority data sets:
 
-* Else a manual test is requested asking the user to provide the keyword with in case it is a priority data set.
+    * A manual test is requested asking the user to provide the keyword with in case it is a priority data set.
 
 **Reference(s)**
 
