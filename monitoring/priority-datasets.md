@@ -6,15 +6,15 @@
 
 **Test method**
 
-* For every [MD_Keywords](#mdKeywords) provided for priority data sets:
+* Among the [MD_Keywords](#mdKeywords) provided in the metadata, check that at least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 1_) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 2_).
 
-    * Check that at least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 1_) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 2_).
+    * For each identified [MD_Keywords](#mdKeywords) provided for priority data sets:
 
-    * Check that exactly one [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "INSPIRE priority data set".
+       * Check that the [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "INSPIRE priority data set".
 
-    * Check that the [Citation Date](#citationdate) for the thesaurus is exactly '2018-04-04'.
+       * Check that the [Citation Date](#citationdate) for the thesaurus is exactly '2018-04-04'.
 
-    * Check that the [Citation Date Type](#citationdate) codeListValue is 'publication'.
+       * Check that the [Citation Date Type](#citationdate) codeListValue is 'publication'.
 
 * If there is not any [MD_Keywords](#mdKeywords) for priority data sets:
 
@@ -22,8 +22,8 @@
 
 **Reference(s)**
 
-* [MIWP action](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki/Implementation)
-* [Priority Datasets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset)
+* [Priority Datasets Keyword Implementation guidance and support](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki/Implementation)
+* [Priority Datasets Code List in the INSPIRE Registry](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset)
 
 **Test type**: Automated
 
