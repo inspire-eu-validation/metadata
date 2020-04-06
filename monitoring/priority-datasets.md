@@ -6,19 +6,19 @@
 
 **Test method**
 
-* For every [MD_Keywords](#mdKeywords) provided for priority data sets:
+* For every [MD_Keywords](#mdKeywords) element:
 
     * Check that at least one [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 1_) OR at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid value from [Priority Data Sets Code List](http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset) (see _Option 2_).
 
-    * Check that exactly one [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "INSPIRE priority data set".
+    * Check that the [MD_Keywords](#mdKeywords) element has a [Citation Title](#citationtitle) child element with value "INSPIRE priority data set".
 
     * Check that the [Citation Date](#citationdate) for the thesaurus is exactly '2018-04-04'.
 
     * Check that the [Citation Date Type](#citationdate) codeListValue is 'publication'.
 
-* If there is not any [MD_Keywords](#mdKeywords) for priority data sets:
+* If there is no [MD_Keywords](#mdKeywords) element satisfying the conditions above:
 
-    * A manual test is requested asking the user to provide the keyword with in case it is a priority data set.
+    * A manual test is requested asking the user to provide the priority data set keyword(s), in case the data set described by the metadata is a priority data set.
 
 **Reference(s)**
 
