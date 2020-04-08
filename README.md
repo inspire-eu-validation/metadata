@@ -1,16 +1,20 @@
 # INSPIRE dataset and service metadata version 2.0
 
-The Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD), Annex A, defines 2 Abstract Test Suites and 7 Conformance Classes.
+The Abstract Test Suites (ATSs) defined in this section are based on the Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007 version 2.0 [TG MD](#ref_TG_MD).
 
 ## Abstract Test Suites & Conformance Classes
-The first ATS contains 2 Conformance Classes and the second ATS contains 5. The conformance classes are compound of requirements that must be passed to be INSPIRE conformance. Besides, a set of Common Requirements must be passed in both ATS as described in [TG MD](#ref_TG_MD) section 2.
 
-* ATS: Metadata for INSPIRE datasets and data set series
+The conformance classes (CC), described in the abovementioned TG, are compound of requirements that must be met to be conformant with INSPIRE. An ATS is created for every CC in order to make the metadata validation process as clear as possible.
+
+The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requirements for datasets, data set series and data services. CC1 and CC2 are relevant to data sets and data set series only. Additionally, a new ATS (CC2b) is developed, which is not yet part of the TG MD and includes requirements relevant for INSPIRE Monitoring and Reporting. Finally, CC from CC3 to CC7 are relevant to services only.
+
+* Metadata for INSPIRE datasets and data set series
     * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
     * [Conformance Class 1: Baseline metadata for data sets and data set series](./datasets-and-series/README.md)
     * [Conformance Class 2: Interoperability metadata for data sets and data set series](./isdss/README.md)
+    * [Conformance Class 2b: Monitoring metadata for data sets and data set series](./monitoring/README.md)
 
-* ATS: Metadata for INSPIRE Spatial Data Services
+* Metadata for INSPIRE Spatial Data Services
     * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
     * [Conformance Class 3: Baseline metadata for Spatial Data Services](./sds/README.md)
     * [Conformance Class 4: Metadata for INSPIRE Network Services](./ns/README.md)
@@ -19,13 +23,13 @@ The first ATS contains 2 Conformance Classes and the second ATS contains 5. The 
     * [Conformance Class 7: Metadata for Harmonised Spatial Data Services](./sds-harmonised/README.md)
 
 ## Conformance classes relations and dependencies
-The conformance classes in this specification are dependent of each others as shown in the next figure.
+The mutual dependencies between conformance classes are shown in Figure 1.
 
 ![Diagram](./hierarchydiagram.jpg)
-Figure 1. Structure of metadata conformance classes. Source: [TG MD](#ref_TG_MD) pag. 27.
+Figure 1. Dependencies between conformance classes in the TG MD and link with the TG chapters.
 
 
-The conformance class at one level is dependents of the above levels. For instance, to satisfy conformance class 6 (CC6), the CC5, CC3 and Common requirements must be met too.
+Conformance classes at each level depend on conformance classes at the above levels. For instance, to satisfy CC6, three conformance classes (CC5, CC3 and Common Requirements) must be also satisfied. Similarly, to satisfy the Monitoring metadata requirements (CC2b), both CC1 and Common Requirements must be also satisfied.
 
 ## External document references
 
@@ -35,6 +39,7 @@ The conformance class at one level is dependents of the above levels. For instan
 | INSPIRE <a name="ref_INSPIRE"></a> | [Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32007L0002&from=EN)
 | IR MD <a name="ref_IR_MD"></a> | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
 | TG MD <a name="ref_TG_MD"></a> | [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0](https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf)
+| ID MON <a name="ref_ID_MON"></a> | [Commission Implementing Decision of 19.8.2019 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards monitoring and reporting](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32019D1372&from=EN)
 | REG <a name="ref_REG"></a> | [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
 | ISO 19115 <a name="ref_ISO_19115"></a> | [ISO 19115:2003 Geographic information - Metadata](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26020)
 | ISO 19119 <a name="ref_ISO_19119"></a> | [ISO 19119:2005 Geographic information - Services](http://www.iso.org/iso/catalogue_detail.htm?csnumber=39890)
