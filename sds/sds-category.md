@@ -6,9 +6,7 @@
 
 **Test method**
 
-* Check if all [keyword](#keyword) elements included are Non-empty Free Text.
-
-* Check if at least one [keyword](#keyword) has a child Anchor which xlink:href attribute is one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD).
+* Check if at least one [keyword](#keyword) has a child CharacterString or Anchor which xlink:href attribute  is one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD).
 
 **Reference(s)**	 
 
