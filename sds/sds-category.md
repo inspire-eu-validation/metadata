@@ -8,7 +8,7 @@
 
 * Check if all [keyword](#keyword) elements included are Non-empty Free Text.
 
-* Check if at least one [keyword](#keyword) has a child CharacterString or Anchor which value is one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD).
+* Check if at least one [keyword](#keyword) has a child Anchor including an xlink:href attribute pointing to INSPIRE codelist or CharacterString with one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD).
 
 **Reference(s)**	 
 
