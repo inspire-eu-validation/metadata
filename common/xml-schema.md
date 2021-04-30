@@ -8,7 +8,7 @@
 
 * Check that the document validates against at least one of the following XML schemas:
 
-    * [ISO 19139](http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd) XML Schema
+    * [CSW2 AP ISO](http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd) XML Schema
 
     * [ISO 19139](http://www.isotc211.org/2005/gmd/gmd.xsd) XML Schema as available in the ISO repository
 
