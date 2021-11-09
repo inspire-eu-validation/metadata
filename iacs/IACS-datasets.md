@@ -19,16 +19,11 @@
 
   * Check that the [Citation Date Type](#citationdatetype) codeListValue is equal to 'publication'.
 
-* If there is no [MD_Keywords](#mdKeywords) element satisfying the conditions above:
-
-  * A manual test is requested asking the user to provide the priority data set keyword(s), in case the data set described by the metadata is a IACS data set.
-
 **Reference(s)**
 
-* ??[MIWP action](https://ies-svn.jrc.ec.europa.eu/projects/2016-5/wiki/Implementation)
 * [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData)
 
-**Test type**: Automated + Manual
+**Test type**: Automated
 
 **Notes**
 
@@ -40,6 +35,9 @@ _Option 1: Using the gmx:Anchor element_
         <gmd:keyword>
             <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/IACSData/lpis">LPIS</gmx:Anchor>
         </gmd:keyword>
+        <gmd:keyword>
+            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/IACSData/iacs">IACS</gmx:Anchor>
+        </gmd:keyword>
         <gmd:thesaurusName>
             <gmd:CI_Citation>
                 <gmd:title>
@@ -48,7 +46,7 @@ _Option 1: Using the gmx:Anchor element_
                 <gmd:date>
                     <gmd:CI_Date>
                         <gmd:date>
-                            <gco:Date>2019-05-22</gco:Date>
+                            <gco:Date>2021-06-08</gco:Date>
                         </gmd:date>
                         <gmd:dateType>
                             <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
@@ -71,7 +69,7 @@ _Option 2: Using the gco:CharacterString element_
             <gco:CharacterString>LPIS</gco:CharacterString>
         </gmd:keyword>
         <gmd:keyword>
-            <gco:CharacterString>GSAA</gco:CharacterString>
+            <gco:CharacterString>IACS</gco:CharacterString>
         </gmd:keyword>
         <gmd:thesaurusName>
             <gmd:CI_Citation>
@@ -81,7 +79,7 @@ _Option 2: Using the gco:CharacterString element_
                 <gmd:date>
                     <gmd:CI_Date>
                         <gmd:date>
-                            <gco:Date>2019-05-22</gco:Date>
+                            <gco:Date>2021-06-08</gco:Date>
                         </gmd:date>
                         <gmd:dateType>
                             <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
