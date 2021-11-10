@@ -11,11 +11,11 @@
   * Check that at least one [Keyword Anchor](#keywordanchor) is provided with **xlink:href** attribute pointing to a valid value from [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 1](#option1))
   **OR** at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid **value** from [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 2](#option2)).
 
-  * Check that has a [Citation Title](#citationtitle) child element with **xlink:href** attribute pointing to a valid value from [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 1](#option1))
+  * Check that the [Citation Title](#citationtitle) has a child element with **xlink:href** attribute pointing to a valid value from [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 1](#option1))
   **OR**
   at least one [Keyword CharacterString](#keywordcharacterstring) is provided with a valid **value** from [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 2](#option2)).
 
-  * Check that the [Citation Date](#citationdate) for the thesaurus is exactly '2021-06-8'.
+  * Check that the [Citation Date](#citationdate) for the thesaurus is exactly '2021-06-08'.
 
   * Check that the [Citation Date Type](#citationdatetype) codeListValue is equal to 'publication'.
 
