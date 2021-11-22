@@ -56,8 +56,8 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [spatial-scope](./spatial-scope.md) | Ready for Review |
-| [priority-datasets](./priority-datasets.md) | Ready for Review |
+|  |  |
+|  |  |
 
 ## Open issues
 
