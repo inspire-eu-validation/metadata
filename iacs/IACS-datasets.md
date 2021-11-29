@@ -24,7 +24,7 @@
 **Prerequisites**
 
 **Test method**
-* Check *manually* that the Resource title [Citation Title](#citationtitle) has a unambiguous title. [Manual message](#manualcitationtitle)
+* Check *manually* that in case the Resource title [Citation Title](#citationtitle) is present, has a unambiguous title. [Manual message](#manualcitationtitle)
   * LPIS: name of the Member State
   * GSAA: claim year, the Member stateand and if applicable, the region.
 
