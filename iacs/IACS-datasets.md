@@ -37,7 +37,7 @@
 * Check that the [Topic category](#topiccategory) is equal to *"farming"* value. Otherwise report [Topic category error](#topiccategoryerror) message.
 
 **Test method**
-* Check that the [Citation Date](#citationdate) contains at least the date of the last revision and the [Citation Date Type](#citationdatetype) codeListValue is equal to *"publication"*. Otherwise report [Temporal reference error message](#temporalreferenceerror).
+* Check that the [Citation Date](#citationdate) contains at least a date and the [Citation Date Type](#citationdatetype) codeListValue is equal to *"publication"*. Otherwise report [Temporal reference error message](#temporalreferenceerror).
 
 **Test method**
 * Check *manually* that when publishing an updated a LPIS datasets in INSPIRE, the [Citation Date](#citationdate) value is updated with the value of the last revision. [Manual Review Citation Date Updated](#manualcitationdate1)
