@@ -1,4 +1,4 @@
-# IACS Datasets Keyword
+# IACS Keyword information
 
 **Purpose**: Test that keyword(s) for IACS data sets are provided in the metadata.
 
@@ -35,6 +35,8 @@
 
 **Test method**
 * Check that the [Topic category](#topiccategory) is equal to *"farming"* value. Otherwise report [Topic category error](#topiccategoryerror) message.
+
+# IACS Temporal reference
 
 **Test method**
 * Check that the [Citation Date](#citationdate) contains at least a date and the [Citation Date Type](#citationdatetype) codeListValue is equal to *"publication"*. Otherwise report [Temporal reference error message](#temporalreferenceerror).
