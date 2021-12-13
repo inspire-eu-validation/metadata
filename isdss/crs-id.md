@@ -24,7 +24,8 @@
 
 **Notes**
 
-The gmd:codeSpace element shall not be used in this case.
+The gmd:codeSpace element shall not be used in this case. <br>
+The CRSs '5013', '514' and '5015' have been added at a second stage, see [issue #307](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/307) for reference. 
 
 ## Contextual XPath references
 
