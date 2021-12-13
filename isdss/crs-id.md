@@ -8,7 +8,7 @@
 
 **Test method**
 
-* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD),
+* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD) or if the coordinate reference system is '5013', '5014' or '5015',
 
     * Check that the value of the HTTP URI Identifier column is used as the value of [Code](#code) element.
 
