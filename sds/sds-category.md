@@ -6,7 +6,7 @@
 
 **Test method**
 
-* Check if at least one [keyword](#keyword) has a child CharacterString or Anchor which xlink:href attribute  is one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD).
+* Check if at least one [keyword](#keyword) has a child CharacterString or Anchor which xlink:href attribute is one of the language-natural keyword values as defined in Classification of Spatial Data Services Part D 4 [IR_MD](./README.md#ref_IR_MD) or if is '5013', '5014' or '5015'.
 
 **Reference(s)**	 
 
