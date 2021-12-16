@@ -47,7 +47,20 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| | M.2      | Priority datasets keyword | [priority-datasets](./priority-datasets.md) ||
+| TG5      | Resource title of LPIS | [IACS-datasets](./IACS-datasets.md) |
+| TG6      | Resource title of GSAA | [IACS-datasets](./IACS-datasets.md) |
+| TG7      | Resource locator | [IACS-datasets](./IACS-datasets.md) |
+| TG8      | Topic category of LPIS and GSAA | [IACS-datasets](./IACS-datasets.md) |
+| TG9      | INSPIRE data theme for LPIS | [IACS-datasets](./IACS-datasets.md) |
+| TG10      | INSPIRE data theme for GSAA | [IACS-datasets](./IACS-datasets.md) |
+| TG11      | Mandatory keyword from GEMET | [IACS-datasets](./IACS-datasets.md) |
+| TG12      | Other mandatory keywords for LPIS | [IACS-datasets](./IACS-datasets.md) |
+| TG13      | Other mandatory keywords for GSAA | [IACS-datasets](./IACS-datasets.md) |
+| TG14      | Mandatory value of the temporal reference type of the LPIS and GSAA datasets | [IACS-datasets](./IACS-datasets.md) |
+| TG15      | Updating the value of the last revision metadata element for an LPIS dataset | [IACS-datasets](./IACS-datasets.md) |
+| TG16      | Minimum frequency of publishing the updated LPIS datasets | [IACS-datasets](./IACS-datasets.md) |
+| TG17      | Value of the last revision of GSAA dataset | [IACS-datasets](./IACS-datasets.md) |
+| TG18      | Minimum frequency of publishing the GSAA dataset | [IACS-datasets](./IACS-datasets.md) |
 
 ## Test
 
