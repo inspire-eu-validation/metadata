@@ -43,7 +43,7 @@ An indirect dependency is another conformance class whose requirements must be m
 
 ## TG Requirement coverage
 
-Based on requirement numbering in [TG MD](#ref_TG_MD).
+Based on requirement numbering in [TG IACS](#ref_TG_IACS).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
