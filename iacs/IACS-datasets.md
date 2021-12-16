@@ -8,7 +8,7 @@
   **Test method** 
   * Check that [Keyword CharacterString](#keywordcharacterstring) is provided with *"Common Agricultural Policy"* value and at least one these values: *"Land cover"* for LPIS datasets OR *"Land use"* for GSAA datasets (see Option 2).
   
-    OR [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to [GEMET common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value and at least one these values: [GEMET land cover](https://www.eionet.europa.eu/gemet/en/inspire-theme/lc) for LPIS datasets OR [GEMET land use](https://www.eionet.europa.eu/gemet/en/inspire-theme/lu) for GSAA datasets (see Option 1).
+    OR [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to [GEMET common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value and at least one these values: [GEMET land cover](https://www.eionet.europa.eu/gemet/en/concept/4612) for LPIS datasets OR [GEMET land use](https://www.eionet.europa.eu/gemet/en/concept/4678) for GSAA datasets (see Option 1).
   
   **Test method**  
   * Check that [Keyword CharacterString](#keywordcharacterstring) is provided with *"IACS"* value and at least one these values: *"LPIS"* for LPIS datasets OR *"GSAA"* for GSAA datasets (see Option 2).  
@@ -54,8 +54,8 @@
 * Check *manually* that GSAA datasets contains in the [Citation Date](#citationdate) element the value of the last revision date  within 6 month from the validation of the last change in the dataset. [Manual Review Citation Date Last Revision](#manualcitationdate4)
 
 **Reference(s)**
-* [GEMET land cover](https://www.eionet.europa.eu/gemet/en/inspire-theme/lc)
-* [GEMET land use](https://www.eionet.europa.eu/gemet/en/inspire-theme/lu)
+* [GEMET land cover](https://www.eionet.europa.eu/gemet/en/concept/4612)
+* [GEMET land use](https://www.eionet.europa.eu/gemet/en/concept/4678)
 * [GEMET common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600)
 * [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData)
 
