@@ -19,6 +19,7 @@
     In addition: 
     * Check that the [Thesaurus Name Title](#thesaurusNameTitle) contains the xlink:href attribute pointing to [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (for [Option 1](#option1)) OR contains the *"IACS Data"* value (for [Option 2](#option2)).
     * Check that the [Thesaurus Name Date](#thesaurusNameDate) is exactly '2021-06-08'.
+    * Check that the [Thesaurus Date type](#thesaurusDateType) is exactly 'publication'.
 
   Otherwise report [Keyword error](#keyworderrormessage) message.
 
@@ -165,6 +166,7 @@ Abbreviation                                               |  XPath expression  
 <a name="keywordcharacterstring"></a> Keyword CharacterString | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString | 1 
 <a name="thesaurusNameTitle"></a> Thesaurus Name Title | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title | 0..1 
 <a name="thesaurusNameDate"></a> Thesaurus Name Date | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date | 0..1 
+<a name="thesaurusDateType"></a> Thesaurus Date Type | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode | 0..1
 <a name="citationtitle"></a> Citation Title | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString | 0..1 
 <a name="resourcelocator"></a> Resource locator | gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL | 0..*  
 <a name="topiccategory"></a> Topic Category | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/gmd:MD_TopicCategoryCode | 1..* for datasets and dataset series 0 for services 
