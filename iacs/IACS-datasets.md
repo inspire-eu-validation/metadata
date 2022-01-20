@@ -6,14 +6,19 @@
 * For every [MD_Keywords](#mdKeywords) element:
 
   **Test method** 
-  * Check that [Keyword CharacterString](#keywordcharacterstring) is provided with *"Common Agricultural Policy"* value and at least one these values: *"Land cover"* for LPIS datasets OR *"Land use"* for GSAA datasets (see Option 2).
+  * Check that [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to [GEMET - Concepts, common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value and at least one these values related to an INSPIRE data theme: [Land cover](http://inspire.ec.europa.eu/theme/lc) for LPIS datasets OR [Land use](http://inspire.ec.europa.eu/theme/lu) for GSAA datasets (see [Option 1](#option1)).
   
-    OR [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to [GEMET common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value and at least one these values: [GEMET land cover](https://www.eionet.europa.eu/gemet/en/concept/4612) for LPIS datasets OR [GEMET land use](https://www.eionet.europa.eu/gemet/en/concept/4678) for GSAA datasets (see Option 1).
+  
+    OR [Keyword CharacterString](#keywordcharacterstring) is provided with *"Common Agricultural Policy"* value and at least one these values related to an INSPIRE data theme: *"Land cover"* for LPIS datasets OR *"Land use"* for GSAA datasets (see [Option 2](#option2)).
   
   **Test method**  
-  * Check that [Keyword CharacterString](#keywordcharacterstring) is provided with *"IACS"* value and at least one these values: *"LPIS"* for LPIS datasets OR *"GSAA"* for GSAA datasets (see Option 2).  
+  * Check that [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to [IACS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/iacs) value and at least one these values: [LPIS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/lpis) for LPIS datasets OR [GSAA](http://inspire.ec.europa.eu/metadata-codelist/IACSData/gsaa) for GSAA datasets, from [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 1](#option1)).
     
-    OR [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to *"IACS"* value and at least one these values: *"LPIS"* for LPIS datasets OR *"GSAA"* for GSAA datasets, from [IACS data controlled vocabulary CodeList](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (see Option 1).
+    OR [Keyword CharacterString](#keywordcharacterstring) is provided with *"IACS"* value and at least one these values: *"LPIS"* for LPIS datasets OR *"GSAA"* for GSAA datasets (see [Option 2](#option2)).
+    
+    In addition: 
+    * Check that the [Thesaurus Name Title](#thesaurusNameTitle) contains the xlink:href attribute pointing to [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (for [Option 1](#option1)) OR contains the *"IACS Data"* value (for [Option 2](#option2)).
+    * Check that the [Thesaurus Name Date](#thesaurusNameDate) is exactly '2021-06-08'.
 
   Otherwise report [Keyword error](#keyworderrormessage) message.
 
@@ -39,7 +44,9 @@
 # IACS Temporal reference
 
 **Test method**
-* Check that the [Citation Date](#citationdate) contains at least a date and the [Citation Date Type](#citationdatetype) codeListValue is equal to *"publication"*. Otherwise report [Temporal reference error message](#temporalreferenceerror).
+* Check that the Temporal reference of the dataset contains at least the date of last revision:
+	* Check that the [Citation Date](#citationdate) element contains at least a date
+	* Check that for the [Citation Date Type](#citationdatetype) element the attribute codeListValue is equal to *"revision"*. Otherwise report [Temporal reference error message](#temporalreferenceerror).
 
 **Test method**
 * Check *manually* that when publishing an updated a LPIS datasets in INSPIRE, the [Citation Date](#citationdate) value is updated with the value of the last revision. [Manual Review Citation Date Updated](#manualcitationdate1)
@@ -54,17 +61,17 @@
 * Check *manually* that GSAA datasets contains in the [Citation Date](#citationdate) element the value of the last revision date  within 6 month from the validation of the last change in the dataset. [Manual Review Citation Date Last Revision](#manualcitationdate4)
 
 **Reference(s)**
-* [GEMET land cover](https://www.eionet.europa.eu/gemet/en/concept/4612)
-* [GEMET land use](https://www.eionet.europa.eu/gemet/en/concept/4678)
-* [GEMET common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600)
-* [IACS data controlled vocabulary CodeList](http://inspire.ec.europa.eu/metadata-codelist/IACSData)
+* [GEMET - INSPIRE themes, Land cover](http://inspire.ec.europa.eu/theme/lc)
+* [GEMET - INSPIRE themes, Land use](http://inspire.ec.europa.eu/theme/lu)
+* [GEMET - Concepts, Common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600)
+* [IACS data controlled vocabulary](http://inspire.ec.europa.eu/metadata-codelist/IACSData)
 
 **Test type**: Automated + Manual
 
 **Notes**
 
 <a name="option1"></a> 
-> _Option 1: Using the gmx:Anchor element_
+_Encoding Option 1: Using the gmx:Anchor element_
 ```
 <gmd:descriptiveKeywords>
     <gmd:MD_Keywords>
@@ -93,11 +100,10 @@
         </gmd:thesaurusName>
     </gmd:MD_Keywords>
 </gmd:descriptiveKeywords>
-
 ```
 
 <a name="option2"></a> 
-_Option 2: Using the gco:CharacterString element_
+_Encoding Option 2: Using the gco:CharacterString element_
 ```
 <gmd:descriptiveKeywords>
     <gmd:MD_Keywords>
@@ -154,11 +160,14 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                               |  XPath expression                     |Multiplicity  
 ---------------------------------------------------------- | ------------------------------------- | -------------
-<a name="mdKeywords"></a> MD_Keywords | gmd:descriptiveKeywords/gmd:MD_Keywords |  0..1
-<a name="keywordanchor"></a> Keyword Anchor | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor | 1 
-<a name="keywordcharacterstring"></a> Keyword CharacterString | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString | 1 
+<a name="mdKeywords"></a> MD_Keywords | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor |  0..1
+<a name="keywordanchor"></a> Keyword Anchor | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor | 1 
+<a name="keywordcharacterstring"></a> Keyword CharacterString | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString | 1 
+<a name="thesaurusNameTitle"></a> Thesaurus Name Title | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title | 0..1 
+<a name="thesaurusNameDate"></a> Thesaurus Name Date | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date | 0..1 
 <a name="citationtitle"></a> Citation Title | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString | 0..1 
 <a name="resourcelocator"></a> Resource locator | gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL | 0..*  
 <a name="topiccategory"></a> Topic Category | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/gmd:MD_TopicCategoryCode | 1..* for datasets and dataset series 0 for services 
-<a name="citationdate"></a> Citation Date | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date | 0..1 
-<a name="citationdatetype"></a> Citation Date Type | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode |  0..1 
+<a name="citationdate"></a> Citation Date | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date | 0..1 
+<a name="citationdatetype"></a> Citation Date Type | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode/@codeListValue |  0..1
+
