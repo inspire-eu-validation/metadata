@@ -8,7 +8,7 @@
 
 * Check that exactly one [LanguageCode](#langcode) node exists. If it does:
 
-    * Check that the attribute codeList is "http://www.loc.gov/standards/iso639-2/" or "http://id.loc.gov/vocabulary/iso639-2" (Also the values in https and with/without the final slash are accepted)
+    * Check that the attribute codeList is "http://www.loc.gov/standards/iso639-2/" or "http://id.loc.gov/vocabulary/iso639-2" (Values in https and with/without the final slash are also accepted)
 
     * Check that the attribute codeListValue is one of the three-letter language codes of the [ISO 639-2/B](./README.md#ref_ISO_639_2) valid for the official languages of the Community: 'bul', 'hrv', 'cze', 'dan', 'dut', 'eng', 'est', 'fin', 'fre', 'ger', 'gre', 'hun', 'ice', 'gle', 'ita', 'lav', 'lit', 'mlt', 'nor', 'pol', 'por', 'rum', 'slo', 'slv', 'spa' or 'swe'.
     
