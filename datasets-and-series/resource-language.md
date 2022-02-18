@@ -12,7 +12,7 @@
 
     * For every [Language Code](#langCode) node,
 
-        * Check that the attribute codeList is "http://www.loc.gov/standards/iso639-2/" and the attribute codeListValue is one of the three-letter bibliographic language code values [ISO 6392B](http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd) or "zxx" value.
+        * Check that the attribute codeList is "http://www.loc.gov/standards/iso639-2/" or "http://id.loc.gov/vocabulary/iso639-2" (Values in https and with/without the final slash are also accepted) and the attribute codeListValue is one of the three-letter bibliographic language code values [ISO 6392B](http://inspire.ec.europa.eu/schemas/common/1.0/common.xsd) or "zxx" value.
 
 * If any of the checks fails, the test fails.
 
