@@ -13,6 +13,7 @@ The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requireme
     * [Conformance Class 1: Baseline metadata for data sets and data set series](./datasets-and-series/README.md)
     * [Conformance Class 2: Interoperability metadata for data sets and data set series](./isdss/README.md)
     * [Conformance Class 2b: Monitoring metadata for data sets and data set series](./monitoring/README.md)
+    * [Conformance Class 2c: INSPIRE data sets and data set series metadata for IACS](./iacs/README.md)
 
 * Metadata for INSPIRE Spatial Data Services
     * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
