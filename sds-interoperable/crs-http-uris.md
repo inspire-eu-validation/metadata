@@ -8,7 +8,7 @@
 
 **Test method**
 
-* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD),
+* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD) or if it is a new approved coordinate reference system (all coordinate reference systems approved for use in INSPIRE are available in the following table: https://github.com/INSPIRE-MIF/helpdesk/blob/main/crs.md),
 
     * Check that the value of the HTTP URI Identifier column is used as the value of [Code](#code) element.
 
