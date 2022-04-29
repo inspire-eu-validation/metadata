@@ -8,7 +8,7 @@
 
 **Test method**
 
-* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD) or if the coordinate reference system is '5013', '5014' or '5015',
+* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD) or if it is a new approved coordinate reference system (all coordinate reference systems approved for use in INSPIRE are available in the following table: https://github.com/INSPIRE-MIF/helpdesk/blob/main/crs.md),
 
     * Check that the value of the HTTP URI Identifier column is used as the value of [Code](#code) element.
 
@@ -25,7 +25,6 @@
 **Notes**
 
 The gmd:codeSpace element shall not be used in this case. <br>
-The CRSs '5013', '514' and '5015' have been added at a second stage, see [issue #307](https://github.com/INSPIRE-MIF/helpdesk-validator/issues/307) for reference. 
 
 ## Contextual XPath references
 
