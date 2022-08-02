@@ -12,7 +12,7 @@
 
     * Check that the [Date](#date) element exists.
 
-    * Check that the [Date Type](#dateType) element exists and it has an attribute codeList with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" and an attribute codeListValue with value "publication".
+    * Check that the [Date Type](#dateType) element exists and it has an attribute codeList with "http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" and an attribute codeListValue with value "publication", "revision" or "creation".
 
 **Reference(s)**	 
 
