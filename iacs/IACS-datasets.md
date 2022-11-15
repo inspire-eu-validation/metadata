@@ -40,7 +40,7 @@
   * Otherwise report [brokenLink](#brokenLink). 
 
 **Test method**
-* Check that the [Topic category](#topiccategory) is equal to *"farming"* value. Otherwise report [Topic category error](#topiccategoryerror) message.
+* Check that at least one [Topic category](#topiccategory) is equal to *"farming"* value. Otherwise report [Topic category error](#topiccategoryerror) message.
 
 # IACS Temporal reference
 
