@@ -1,6 +1,6 @@
 # Conformance Class 2c: INSPIRE data sets and data set series metadata for IACS
 
-This Abstract Test Suite (ATS) describes a set of additional requirements for INSPIRE Monitoring and Reporting, which are not currently included in the [Technical Guidance](#ref_TG_IACS).
+This Abstract Test Suite (ATS) describes a set of additional requirements for INSPIRE metadata, which are not currently included in the [Technical Guidance](#ref_TG_IACS).
 
 *Note*: It is Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
