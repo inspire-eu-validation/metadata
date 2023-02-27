@@ -50,7 +50,7 @@
 	* Check that for the [Citation Date Type](#citationdatetype) element the attribute codeListValue is equal to *"revision"*. Otherwise report [Temporal reference error message](#temporalreferenceerror).
 
 **Test method**
-* Check *manually* that when publishing an updated a LPIS datasets in INSPIRE, the [Citation Date](#citationdate) value is updated with the value of the last revision. [Manual Review Citation Date Updated](#manualcitationdate1)
+* Check *manually* that when publishing an updated LPIS datasets in INSPIRE, the [Citation Date](#citationdate) value is updated with the value of the last revision. [Manual Review Citation Date Updated](#manualcitationdate1)
 
 **Test method**
 * Check *manually* that LPIS datasets together with the updated metadata are published at least once and in the [Citation Date](#citationdate) element the value of the last revision date is within 6 month from the start of the campaign year. [Manual Review Citation Date](#manualcitationdate2)
