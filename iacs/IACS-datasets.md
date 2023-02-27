@@ -32,7 +32,7 @@
 **Test method**
 * Check *manually* that in case the Resource title [Citation Title](#citationtitle) is present, has a unambiguous title. [Manual message](#manualcitationtitle)
   * LPIS: name of the Member State
-  * GSAA: claim year, the Member stateand and if applicable, the region.
+  * GSAA: claim year, the Member state and and if applicable, the region.
 
 **Test method**
 * Verify that the [Resource locator](#resourcelocator) metadata pointing to valid URI.
