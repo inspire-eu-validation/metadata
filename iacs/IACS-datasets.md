@@ -6,20 +6,20 @@
 * For every [MD_Keywords](#mdKeywords) element:
 
   **Test method** 
-  * Check that [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to [GEMET - Concepts, common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value and at least one these values related to an INSPIRE data theme: [Land cover](http://inspire.ec.europa.eu/theme/lc) for LPIS datasets OR [Land use](http://inspire.ec.europa.eu/theme/lu) for GSAA datasets (see [Option 1](#option1)).
+  * Check that [Keyword Anchor](#keywordanchor) is provided with `xlink:href` attribute pointing to [GEMET - Concepts, common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value and at least one these values related to an INSPIRE data theme: [Land cover](http://inspire.ec.europa.eu/theme/lc) for LPIS datasets OR [Land use](http://inspire.ec.europa.eu/theme/lu) for GSAA datasets (see [Option 1](#option1)).
   
   
-    OR [Keyword CharacterString](#keywordcharacterstring) is provided with *"Common Agricultural Policy"* value and at least one these values related to an INSPIRE data theme: *"Land cover"* for LPIS datasets OR *"Land use"* for GSAA datasets (see [Option 2](#option2)).
+    OR [Keyword CharacterString](#keywordcharacterstring) is provided with `Common Agricultural Policy` value and at least one these values related to an INSPIRE data theme: `Land cover` for LPIS datasets OR `Land use` for GSAA datasets (see [Option 2](#option2)).
   
   **Test method**  
-  * Check that [Keyword Anchor](#keywordanchor) is provided with xlink:href attribute pointing to [IACS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/iacs) value and at least one these values: [LPIS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/lpis) for LPIS datasets OR [GSAA](http://inspire.ec.europa.eu/metadata-codelist/IACSData/gsaa) for GSAA datasets, from [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 1](#option1)).
+  * Check that [Keyword Anchor](#keywordanchor) is provided with `xlink:href` attribute pointing to the [IACS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/iacs) value and at least one these values: [LPIS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/lpis) for LPIS datasets OR [GSAA](http://inspire.ec.europa.eu/metadata-codelist/IACSData/gsaa) for GSAA datasets, from [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 1](#option1)).
     
-    OR [Keyword CharacterString](#keywordcharacterstring) is provided with *"IACS"* value and at least one these values: *"LPIS"* for LPIS datasets OR *"GSAA"* for GSAA datasets (see [Option 2](#option2)).
+    OR [Keyword CharacterString](#keywordcharacterstring) is provided with `IACS` value and at least one these values: `LPIS` for LPIS datasets OR `GSAA` for GSAA datasets (see [Option 2](#option2)).
     
     In addition: 
-    * Check that the [Thesaurus Name Title](#thesaurusNameTitle) contains the xlink:href attribute pointing to [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (for [Option 1](#option1)) OR contains the *"IACS Data"* value (for [Option 2](#option2)).
-    * Check that the [Thesaurus Name Date](#thesaurusNameDate) is exactly '2021-06-08'.
-    * Check that the [Thesaurus Date type](#thesaurusDateType) is exactly 'publication'.
+    * Check that the [Thesaurus Name Title](#thesaurusNameTitle) contains the `xlink:href` attribute pointing to the [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (for [Option 1](#option1)) OR contains the *"IACS Data"* value (for [Option 2](#option2)).
+    * Check that the [Thesaurus Name Date](#thesaurusNameDate) is exactly `2021-06-08`.
+    * Check that the [Thesaurus Date type](#thesaurusDateType) is exactly `publication`.
 
   Otherwise report [Keyword error](#keyworderrormessage) message.
 
@@ -40,14 +40,14 @@
   * Otherwise report [brokenLink](#brokenLink). 
 
 **Test method**
-* Check that at least one [Topic category](#topiccategory) is equal to *"farming"* value. Otherwise report [Topic category error](#topiccategoryerror) message.
+* Check that at least one [Topic category](#topiccategory) is equal to `farming` value. Otherwise report [Topic category error](#topiccategoryerror) message.
 
 # IACS Temporal reference
 
 **Test method**
 * Check that the Temporal reference of the dataset contains at least the date of last revision:
 	* Check that the [Citation Date](#citationdate) element contains at least a date
-	* Check that for the [Citation Date Type](#citationdatetype) element the attribute codeListValue is equal to *"revision"*. Otherwise report [Temporal reference error message](#temporalreferenceerror).
+	* Check that for the [Citation Date Type](#citationdatetype) element the attribute codeListValue is equal to `revision`. Otherwise report [Temporal reference error message](#temporalreferenceerror).
 
 **Test method**
 * Check *manually* that when publishing an updated LPIS datasets in INSPIRE, the [Citation Date](#citationdate) value is updated with the value of the last revision. [Manual Review Citation Date Updated](#manualcitationdate1)
