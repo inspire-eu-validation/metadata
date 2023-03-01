@@ -17,7 +17,7 @@
     OR [Keyword CharacterString](#keywordcharacterstring) is provided with `IACS` value and at least one these values: `LPIS` for LPIS datasets OR `GSAA` for GSAA datasets (see [Option 2](#option2)).
     
     In addition: 
-    * Check that the [Thesaurus Name Title](#thesaurusNameTitle) contains the `xlink:href` attribute pointing to the [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (for [Option 1](#option1)) OR contains the *"IACS Data"* value (for [Option 2](#option2)).
+    * Check that the [Thesaurus Name Title](#thesaurusNameTitle) contains the `xlink:href` attribute pointing to the [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (for [Option 1](#option1)) OR contains the `IACS Data` value (for [Option 2](#option2)).
     * Check that the [Thesaurus Name Date](#thesaurusNameDate) is exactly `2021-06-08`.
     * Check that the [Thesaurus Date type](#thesaurusDateType) is exactly `publication`.
 
@@ -25,18 +25,18 @@
 
 # IACS Identification information
 
-**Purpose**: Test that Identification information for IACS data sets are provided in the metadata.
+**Purpose**: Test that Identification information for IACS data sets is provided in the metadata.
 
 **Prerequisites**
 
 **Test method**
-* Check *manually* that in case the Resource title [Citation Title](#citationtitle) is present, has a unambiguous title. [Manual message](#manualcitationtitle)
+* Check *manually* that in case the Resource title [Citation Title](#citationtitle) is present, it has a unambiguous title. [Manual message](#manualcitationtitle)
   * LPIS: name of the Member State
-  * GSAA: claim year, the Member state and and if applicable, the region.
+  * GSAA: claim year, the Member state and if applicable, the region.
 
 **Test method**
-* Verify that the [Resource locator](#resourcelocator) metadata pointing to valid URI.
-  * In case of valid URI, check manually that is pointing to a spatial data service (to a download service WMS, WFS view service, etc). It should not point to a general information web page. [Resource locator](#manualresourcelocatormessage) message. 
+* Verify that the [Resource locator](#resourcelocator) metadata points to a valid URI.
+  * In case of valid URI, check manually that it points to a spatial data service (e.g a WMS view service, a WFS download service, etc). It should not point to a general information web page. [Resource locator](#manualresourcelocatormessage) message. 
   * Otherwise report [brokenLink](#brokenLink). 
 
 **Test method**
@@ -50,16 +50,16 @@
 	* Check that for the [Citation Date Type](#citationdatetype) element the attribute codeListValue is equal to `revision`. Otherwise report [Temporal reference error message](#temporalreferenceerror).
 
 **Test method**
-* Check *manually* that when publishing an updated LPIS datasets in INSPIRE, the [Citation Date](#citationdate) value is updated with the value of the last revision. [Manual Review Citation Date Updated](#manualcitationdate1)
+* Check *manually* that when publishing an updated LPIS dataset in INSPIRE, the [Citation Date](#citationdate) value is updated with the value of the last revision. [Manual Review Citation Date Updated](#manualcitationdate1)
 
 **Test method**
-* Check *manually* that LPIS datasets together with the updated metadata are published at least once and in the [Citation Date](#citationdate) element the value of the last revision date is within 6 month from the start of the campaign year. [Manual Review Citation Date](#manualcitationdate2)
+* Check *manually* that LPIS datasets together with the updated metadata are published at least once and that in the [Citation Date](#citationdate) element the value of the last revision date is within 6 months from the start of the campaign year. [Manual Review Citation Date](#manualcitationdate2)
 
 **Test method**
-* Check *manually* that GSAA datasets in the [Citation Date](#citationdate) element the value of the last revision date is within the campaign year. [Manual Review Citation Date Campaign](#manualcitationdate3)
+* Check *manually* that for GSAA datasets, in the [Citation Date](#citationdate) element the value of the last revision date is within the campaign year. [Manual Review Citation Date Campaign](#manualcitationdate3)
 
 **Test method**
-* Check *manually* that GSAA datasets contains in the [Citation Date](#citationdate) element the value of the last revision date  within 6 month from the validation of the last change in the dataset. [Manual Review Citation Date Last Revision](#manualcitationdate4)
+* Check *manually* that GSAA datasets contain in the [Citation Date](#citationdate) element the value of the last revision date within 6 months from the validation of the last change in the dataset. [Manual Review Citation Date Last Revision](#manualcitationdate4)
 
 **Reference(s)**
 * [GEMET - INSPIRE themes, Land cover](http://inspire.ec.europa.eu/theme/lc)
