@@ -6,15 +6,19 @@
 
 **Test method**
 
-* Check if the operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element is a HTTP URI that when retrieved using HTTP GET returns the metadata document describing the dataset exposed by the service.
+* Automatic check:
+  * Check if the operatesOn element in the [SV_ServiceIdentification](#SV_ServiceIdentification) element is a HTTP URI that when retrieved using HTTP GET returns the metadata document describing the dataset exposed by the service.
 
-* Check if the property is implemented by reference. It means that the xlink:href attribute of each operatesOn element contains a URI pointing to the gmd:MD_DataIdentification element of the metadata record of the provided data set or data set series.
+  * Check if the property is implemented by reference. It means that the xlink:href attribute of each operatesOn element contains a URI pointing to the gmd:MD_DataIdentification element of the metadata record of the provided data set or data set series.
+
+* Manual check:
+  * If the operatesOn element is not present in the metadata, provide a warning message asking to: "Check manually if the operatesOn element need to be provided being mandatory if linkage to data sets on which the service operates are available".
 
 **Reference(s)**	 
 
 * [TG MD](./README.md#ref_TG_MD) 4.1.2.4, Req 3.6
 
-**Test type**: Automated
+**Test type**: Automated + Manual
 
 **Notes**
 
