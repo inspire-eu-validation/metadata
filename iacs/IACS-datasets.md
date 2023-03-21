@@ -2,16 +2,23 @@
 
 **Purpose**: Test that keyword(s) for IACS data sets are provided in the metadata.
 
-**Prerequisites**
-* For every [MD_Keywords](#mdKeywords) element:
+**Prerequisites**:
 
-  **Test method** 
-  * Check that [Keyword Anchor](#keywordanchor) is provided with `xlink:href` attribute pointing to [GEMET - Concepts, common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value and at least one these values related to an INSPIRE data theme: [Land cover](http://inspire.ec.europa.eu/theme/lc) for LPIS datasets OR [Land use](http://inspire.ec.europa.eu/theme/lu) for GSAA datasets (see [Option 1](#option1)).
+**Test method**:
+
+* Check that the following keywords are provided (using the [MD_Keywords](#mdKeywords) element):
+
+  **INSPIRE data theme**
+  * Check that at least one of these values related to an INSPIRE data theme: [Land cover](http://inspire.ec.europa.eu/theme/lc) for LPIS datasets OR [Land use](http://inspire.ec.europa.eu/theme/lu) for GSAA datasets is provided using the [Keyword Anchor](#keywordanchor) encoding (see [Option 1](#option1)). 
+    
+    OR at least one of these values related to an INSPIRE data theme: `Land cover` for LPIS datasets OR `Land use` for GSAA datasets is provided using the [Keyword CharacterString](#keywordcharacterstring) encoding (see [Option 2](#option2)).
+    
+  **GEMET value**
+  * Check that [Keyword Anchor](#keywordanchor) is provided with `xlink:href` attribute pointing to [common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value of the "GEMET - Concepts" Thesaurus (see [Option 1](#option1)).
+    
+    OR [Keyword CharacterString](#keywordcharacterstring) is provided with `Common Agricultural Policy` value (see [Option 2](#option2)).
   
-  
-    OR [Keyword CharacterString](#keywordcharacterstring) is provided with `Common Agricultural Policy` value and at least one these values related to an INSPIRE data theme: `Land cover` for LPIS datasets OR `Land use` for GSAA datasets (see [Option 2](#option2)).
-  
-  **Test method**  
+  **IACS codelist value**  
   * Check that [Keyword Anchor](#keywordanchor) is provided with `xlink:href` attribute pointing to the [IACS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/iacs) value and at least one these values: [LPIS](http://inspire.ec.europa.eu/metadata-codelist/IACSData/lpis) for LPIS datasets OR [GSAA](http://inspire.ec.europa.eu/metadata-codelist/IACSData/gsaa) for GSAA datasets, from [IACS data controlled vocabulary](https://inspire.ec.europa.eu/metadata-codelist/IACSData) (see [Option 1](#option1)).
     
     OR [Keyword CharacterString](#keywordcharacterstring) is provided with `IACS` value and at least one these values: `LPIS` for LPIS datasets OR `GSAA` for GSAA datasets (see [Option 2](#option2)).
