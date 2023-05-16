@@ -6,15 +6,14 @@
 
 **Test method**
 
-* For services with restriction on the spatial resolution, for each [Spatial Resolution](#spatialResolution) element,
+* For services with restriction on the spatial resolution, check manually that these restrictions are expressed in the [gmd:abstract](#abstract) element with a Non-empty Free Text Element content.
 
-    * Check if the spatial resolution restriction text includes either
+    * Check that the spatial resolution restriction text includes either:
 
-        * an equivalent scale as integer valued scale denominator
+        * an equivalent scale as integer valued scale denominator, or
         
         * a resolution distance using a numerical length value and a unit of length.
 
-* If any of the checks fails, the test fails.
 
 **Reference(s)**	 
 
@@ -38,4 +37,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to gmd:MD_Metadata)
 -----------------------------------------------| -------------------------------------------------------------------------
-<a name="spatialResolution"></a> Spatial Resolution | gmd:identificationInfo[1]/*/gmd:abstract
+<a name="abstract"></a> Abstract metadata element | /gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:abstract
