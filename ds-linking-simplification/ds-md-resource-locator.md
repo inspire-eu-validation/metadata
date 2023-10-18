@@ -10,27 +10,27 @@
 
   **Resource Locator for View Service linkage**
   
-A	A Resource Locator to an INSPIRE View Service providing view access to the described data set or data set series SHALL be given. It SHALL be encoded using the /gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource element.
-B	The element gmd:URL SHALL point to the response of the Get View Service Metadata request of the View Service
-C	The element gmd:protocol SHALL be present.
-D	If the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
-E	If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
-F	The element gmd:applicationProfile SHALL be present.
-G	If the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view.
-H	If the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view in the language of the metadata language.
+ * A	A Resource Locator to an INSPIRE View Service providing view access to the described data set or data set series SHALL be given. It SHALL be encoded using the /gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource element.
+ * B	The element gmd:URL SHALL point to the response of the Get View Service Metadata request of the View Service
+ * C	The element gmd:protocol SHALL be present.
+ * D	If the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
+ * E	If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
+ * F	The element gmd:applicationProfile SHALL be present.
+ * G	If the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view.
+ * H	If the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view in the language of the metadata language.
   
   
     
   **Resource Locator for Download Service linkage**
   
-A	A Resource Locator to an INSPIRE Download Service providing download access to the described data set or data set series SHALL be given. It SHALL be encoded using the /gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource element.
-B	The element gmd:URL SHALL point to the response of the Get Download Service Metadata request of the Download Service
-C	The element gmd:protocol SHALL be present.
-D	If the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
-E	If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
-F	The element gmd:applicationProfile SHALL be present.
-G	If the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download.
-H	If the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download in the language of the metadata language.
+ * A	A Resource Locator to an INSPIRE Download Service providing download access to the described data set or data set series SHALL be given. It SHALL be encoded using the /gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource element.
+ * B	The element gmd:URL SHALL point to the response of the Get Download Service Metadata request of the Download Service
+ * C	The element gmd:protocol SHALL be present.
+ * D	If the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
+ * E	If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
+ * F	The element gmd:applicationProfile SHALL be present.
+ * G	If the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download.
+ * H	If the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download in the language of the metadata language.
   
 
 
