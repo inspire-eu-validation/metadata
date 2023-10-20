@@ -22,7 +22,9 @@ A direct dependency is another conformance class whose requirements must be met 
 
 An indirect dependency is another conformance class whose requirements must be met by a related resource.
 
- *There is not indirect dependencies for this set of requirements.*
+| Specification | Conformance class | Related resource | Parameters |
+| ------------- | ----------------- | ---------------- | ---------- |
+| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
  
 ## External document references
 

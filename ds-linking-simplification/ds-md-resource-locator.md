@@ -6,33 +6,30 @@
 
 **Test method**:
 
-* Check that at least the following two Resource Locator elements are provided:
+Check that at least the following two Resource Locator elements are provided:
 
-  **Resource Locator for View Service linkage**
-  
- * A	A Resource Locator to an INSPIRE View Service providing view access to the described data set or data set series SHALL be given. It SHALL be encoded using the /gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource element.
- * B	The element gmd:URL SHALL point to the response of the Get View Service Metadata request of the View Service
- * C	The element gmd:protocol SHALL be present.
- * D	If the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
- * E	If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
- * F	The element gmd:applicationProfile SHALL be present.
- * G	If the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view.
- * H	If the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view in the language of the metadata language.
-  
-  
-    
-  **Resource Locator for Download Service linkage**
-  
- * A	A Resource Locator to an INSPIRE Download Service providing download access to the described data set or data set series SHALL be given. It SHALL be encoded using the /gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource element.
- * B	The element gmd:URL SHALL point to the response of the Get Download Service Metadata request of the Download Service
- * C	The element gmd:protocol SHALL be present.
- * D	If the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
- * E	If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
- * F	The element gmd:applicationProfile SHALL be present.
- * G	If the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download.
- * H	If the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download in the language of the metadata language.
-  
+**Resource Locator for View Service linkage**
 
+* Check that a [Resource Locator](#ResourceLocator) element is present and contains the following sub-elements:
+  * element gmd:URL that point to the response of the Get View Service Metadata request of the View Service
+  * element gmd:protocol:
+    * if the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
+    * If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
+  * element gmd:applicationProfile:
+    * if the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view.
+    * if the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view in the language of the metadata language.
+
+
+**Resource Locator for Download Service linkage**
+
+* Check that a [Resource Locator](#ResourceLocator) element is present and contains the following sub-elements:
+  * element gmd:URL that point to the response of the Get Download Service Metadata  request of the Download Service
+  * element gmd:protocol:
+    * if the element gmd:protocol is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to the URI of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue.
+    * If the element gmd:protocol is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of one of the values in https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue in the language of the metadata language.
+  * element gmd:applicationProfile:
+    * if the element gmd:applicationProfile is encoded using gmx:Anchor, the attribute gmx:Anchor/@xlink:href SHALL point to https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download.
+    * if the element gmd:applicationProfile is encoded using gco:CharacterString, the text value of gco:CharacterString SHALL match the label of https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download in the language of the metadata language.
 
 
 
@@ -40,68 +37,63 @@
 
 **Notes**
 
+* Examples of Resource Locator for INSPIRE View Service
+
 <a name="option1"></a> 
-_Encoding Option 1: Using the gmx:Anchor element_
-```
-<gmd:descriptiveKeywords>
-    <gmd:MD_Keywords>
-        <gmd:keyword>
-            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/IACSData/lpis">LPIS</gmx:Anchor>
-        </gmd:keyword>
-        <gmd:keyword>
-            <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/IACSData/iacs">IACS</gmx:Anchor>
-        </gmd:keyword>
-        <gmd:thesaurusName>
-            <gmd:CI_Citation>
-                <gmd:title>
-                    <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/IACSData">IACS Data</gmx:Anchor>
-                </gmd:title>
-                <gmd:date>
-                    <gmd:CI_Date>
-                        <gmd:date>
-                            <gco:Date>2021-06-08</gco:Date>
-                        </gmd:date>
-                        <gmd:dateType>
-                            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/iso/19139/resources/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
-                        </gmd:dateType>
-                    </gmd:CI_Date>
-                </gmd:date>
-            </gmd:CI_Citation>
-        </gmd:thesaurusName>
-    </gmd:MD_Keywords>
-</gmd:descriptiveKeywords>
+_Encoding Option 1: Resource Locator to a "Get View Service Metadata" operation - WMS GetCapabilities_
+
+```xml
+<gmd:transferOptions>
+  <gmd:MD_DigitalTransferOptions>
+      [...]
+    <gmd:onLine>
+      <gmd:CI_OnlineResource>
+        <gmd:linkage>
+          <gmd:URL>http://.../wms?request=GetCapabilities&amp;service=WMS&amp;version=1.3.0</gmd:URL>
+        </gmd:linkage>
+        <gmd:protocol>
+          <gmx:Anchor xlink:href="http://www.opengis.net/def/serviceType/ogc/wms">OGC Web Map Service</gmx:Anchor>
+        </gmd:protocol>
+        <gmd:applicationProfile>
+          <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view">View Service</gmx:Anchor>
+        </gmd:applicationProfile>
+        <gmd:name>
+          <gco:CharacterString>INSPIRE WMS</gco:CharacterString>
+        </gmd:name>
+      </gmd:CI_OnlineResource>
+    </gmd:onLine>
+      [...]
+  </gmd:MD_DigitalTransferOptions>
+</gmd:transferOptions>
 ```
 
+* Examples of Resource Locator for INSPIRE Download Service
+
 <a name="option2"></a> 
-_Encoding Option 2: Using the gco:CharacterString element_
+_Encoding Option 2: Resource Locator to a "Get Download Service Metadata" operation - ATOM topfeed_
 ```
-<gmd:descriptiveKeywords>
-    <gmd:MD_Keywords>
-        <gmd:keyword>
-            <gco:CharacterString>LPIS</gco:CharacterString>
-        </gmd:keyword>
-        <gmd:keyword>
-            <gco:CharacterString>IACS</gco:CharacterString>
-        </gmd:keyword>
-        <gmd:thesaurusName>
-            <gmd:CI_Citation>
-                <gmd:title>
-                    <gco:CharacterString>IACS Data</gco:CharacterString>
-                </gmd:title>
-                <gmd:date>
-                    <gmd:CI_Date>
-                        <gmd:date>
-                            <gco:Date>2021-06-08</gco:Date>
-                        </gmd:date>
-                        <gmd:dateType>
-                            <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
-                        </gmd:dateType>
-                    </gmd:CI_Date>
-                </gmd:date>
-            </gmd:CI_Citation>
-        </gmd:thesaurusName>
-    </gmd:MD_Keywords>
-</gmd:descriptiveKeywords>
+<gmd:transferOptions>
+  <gmd:MD_DigitalTransferOptions>
+      [...]
+    <gmd:onLine>
+      <gmd:CI_OnlineResource>
+        <gmd:linkage>
+          <gmd:URL>http://.../atom/INSPIRE_DW_dataset_2021</gmd:URL>
+        </gmd:linkage>
+        <gmd:protocol>
+          <gmx:Anchor xlink:href="https://tools.ietf.org/html/rfc4287">ATOM Syndication Format</gmx:Anchor>
+        </gmd:protocol>
+        <gmd:applicationProfile>
+          <gmx:Anchor xlink:href="http://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/download">Download Service</gmx:Anchor>
+        </gmd:applicationProfile>
+        <gmd:name>
+          <gco:CharacterString>INSPIRE Download Service (ATOM)</gco:CharacterString>
+        </gmd:name>
+      </gmd:CI_OnlineResource>
+    </gmd:onLine>
+      [...]
+  </gmd:MD_DigitalTransferOptions>
+</gmd:transferOptions>
 
 ```
 ## Messages (automated)
@@ -130,15 +122,5 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                               |  XPath expression                     |Multiplicity  
 ---------------------------------------------------------- | ------------------------------------- | -------------
-<a name="mdKeywords"></a> MD_Keywords | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor |  0..1
-<a name="keywordanchor"></a> Keyword Anchor | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gmx:Anchor | 1 
-<a name="keywordcharacterstring"></a> Keyword CharacterString | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:keyword/gco:CharacterString | 1 
-<a name="thesaurusNameTitle"></a> Thesaurus Name Title | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:title | 0..1 
-<a name="thesaurusNameDate"></a> Thesaurus Name Date | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date | 0..1 
-<a name="thesaurusDateType"></a> Thesaurus Date Type | gmd:descriptiveKeywords/gmd:MD_Keywords/gmd:thesaurusName/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode | 0..1
-<a name="citationtitle"></a> Citation Title | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:title/gco:CharacterString | 0..1 
-<a name="resourcelocator"></a> Resource locator | gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource/gmd:linkage/gmd:URL | 0..*  
-<a name="topiccategory"></a> Topic Category | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:topicCategory/gmd:MD_TopicCategoryCode | 1..* for datasets and dataset series 0 for services 
-<a name="citationdate"></a> Citation Date | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:Date OR gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:date/gco:DateTime | 0..1 
-<a name="citationdatetype"></a> Citation Date Type | gmd:MD_Metadata/gmd:identificationInfo/gmd:MD_DataIdentification/gmd:citation/gmd:CI_Citation/gmd:date/gmd:CI_Date/gmd:dateType/gmd:CI_DateTypeCode/@codeListValue |  0..1
+<a name="ResourceLocator"></a> Resource Locator | gmd:MD_Metadata/gmd:distributionInfo/gmd:MD_Distribution/gmd:transferOptions/gmd:MD_DigitalTransferOptions/gmd:onLine/gmd:CI_OnlineResource |  0..1
 
