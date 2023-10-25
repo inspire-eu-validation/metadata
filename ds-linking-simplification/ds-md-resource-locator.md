@@ -64,7 +64,7 @@ Broken link <a name="brokenLink"/> | XML document '{filename}', {featureType} '{
 
 Identifier  |  Message text (parameters start with '$')
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-Resource locator URL<a name="resourcelocatorurlcheck"/> | XML document '{filename}', {featureType} '{gmlid}': Please review that the Resource locator URL points to the response of the Get View Service Metadata request of the View Service.
+Resource locator URL<a name="resourcelocatorurlcheck"/> | XML document '{filename}', {featureType} '{gmlid}': Please review that the Resource locator URL points to the response of the Get View Service Metadata request of the related Network Service.
 
 
 ## Contextual XPath references
