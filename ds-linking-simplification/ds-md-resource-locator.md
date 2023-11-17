@@ -13,8 +13,8 @@ Check that at least the following two Resource Locator elements are provided:
 * Check that a [Resource Locator](#ResourceLocator) element is present and contains the following sub-elements:
   * element [`gmd:URL`](#ResourceLocatorURL) that point to the response of the Get View Service Metadata request of the View Service.
     * If the URL doesn't work the test is failed ([Broken link](#brokenLink) message).
-    * If the URL works and contains the string `request=GetCapabilities&service=WMS` the test is passed.
-    * If the URL works and does not contain the string `request=GetCapabilities&service=WMS`, check manually that it points to the response of the Get View Service Metadata request of the View Service ([Resource locator URL](#resourcelocatorurlcheck) message). 
+    * If the URL works and contains the parameters `request=GetCapabilities` and `service=WMS` the test is passed.
+    * If the URL works and does not contain the parameters `request=GetCapabilities` and `service=WMS`, check manually that it points to the response of the Get View Service Metadata request of the View Service ([Resource locator URL](#resourcelocatorurlcheck) message). 
   * element `gmd:protocol`:
     * if the element is encoded using `gmx:Anchor`, check that the attribute [`gmx:Anchor/@xlink:href`](#protocolanchor) points to the URI of one of the values in [Protocol values](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue) codelist.
     * if the element is encoded using `gco:CharacterString`, check that the text value of [`gco:CharacterString`](#protocolstring) matches the label of one of the values in [Protocol values](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue) codelist, in the language of the metadata language. See the related [note regarding the labels](#labelnote).
@@ -28,8 +28,8 @@ Check that at least the following two Resource Locator elements are provided:
 * Check that a [Resource Locator](#ResourceLocator) element is present and contains the following sub-elements:
   * element [`gmd:URL`](#ResourceLocatorURL) that point to the response of the Get Download Service Metadata request of the Download Service.
     * If the URL doesn't work the test is failed ([Broken link](#brokenLink) message).
-    * If the URL works and contains the string `request=GetCapabilities&service=WFS` the test is passed.
-    * If the URL works and does not contain the string `request=GetCapabilities&service=WFS`, check manually that it points to the response of the Get Download Service Metadata request of the Download Service ([Resource locator URL](#resourcelocatorurlcheck) message). 
+    * If the URL works and contains the parameters `request=GetCapabilities` and `service=WFS` the test is passed.
+    * If the URL works and does not contain the parameters `request=GetCapabilities` and `service=WFS`, check manually that it points to the response of the Get Download Service Metadata request of the Download Service ([Resource locator URL](#resourcelocatorurlcheck) message). 
   * element `gmd:protocol`:
     * if the element is encoded using `gmx:Anchor`, check that the attribute [`gmx:Anchor/@xlink:href`](#protocolanchor) points to the URI of one of the values in [Protocol values](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue) codelist.
     * if the element is encoded using `gco:CharacterString`, check that the text value of [`gco:CharacterString`](#protocolstring) matches the label of one of the values in [Protocol values](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue) codelist, in the language of the metadata language. See the related [note regarding the labels](#labelnote).
