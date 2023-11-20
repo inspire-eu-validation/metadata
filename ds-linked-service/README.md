@@ -1,8 +1,8 @@
-# Conformance Class 2d: INSPIRE Data-Service Linking Simplification Good Practice
+# Conformance Class 8: INSPIRE data sets and data set series linked service metadata
 
 This Abstract Test Suite (ATS) describes a set of additional requirements for INSPIRE metadata, which were defined in the [Data Service Linking Simplification: Good Practice guidelines](#ref_GP_DSLS).
 
-*Note*: It is Ready for review stage, none of the tests have an official INSPIRE MIG approval.
+*Note*: It is Ready for the review stage, none of the tests have an official INSPIRE MIG approval. This new conformance class will be added to the MD TG if the [related change proposal](https://github.com/INSPIRE-MIF/technical-guidelines/issues/108) is endorsed.
 
 ## Standardization target type
 
