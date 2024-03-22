@@ -6,7 +6,7 @@ The Abstract Test Suites (ATSs) defined in this section are based on the Technic
 
 The conformance classes (CC), described in the abovementioned TG, are compound of requirements that must be met to be conformant with INSPIRE. An ATS is created for every CC in order to make the metadata validation process as clear as possible.
 
-The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requirements for datasets, data set series and data services. CC1 and CC2 are relevant to data sets and data set series only. Additionally, two new ATSs (CC2b and CC2c) are developed, which is not yet part of the TG MD and include requirements relevant for INSPIRE Monitoring and Reporting and requirements for IACS datasets, respectively. Finally, CC from CC3 to CC7 are relevant to services only.
+The [TG MD](#ref_TG_MD) defines 9 CC. The first one is a set of Common Requirements for datasets, data set series and data services. CC1 and CC2 are relevant to data sets and data set series only. CC8 implements the [INSPIRE Data set Metadata Resource Locator - Requirements class](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification/blob/main/good-practice/data-service-linking-simplification-spec.md#811-inspire-data-set-metadata-resource-locator---requirements-class-) defined in by [Data Service Linking Simplification: Good Practice guidelines](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification/blob/main/good-practice/data-service-linking-simplification-spec.md#data-service-linking-simplification-good-practice-guidelines). Additionally, two new ATSs (CC2b and CC2c) are developed, which is not yet part of the TG MD and include requirements relevant for INSPIRE Monitoring and Reporting and requirements for IACS datasets, respectively. Finally, CC from CC3 to CC7 are relevant to services only.
 
 * Metadata for INSPIRE datasets and data set series
     * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
@@ -14,6 +14,7 @@ The [TG MD](#ref_TG_MD) defines 8 CC. The first one is a set of Common Requireme
     * [Conformance Class 2: Interoperability metadata for data sets and data set series](./isdss/README.md)
     * [Conformance Class 2b: Monitoring metadata for data sets and data set series](./monitoring/README.md)
     * [Conformance Class 2c: INSPIRE data sets and data set series metadata for IACS](./iacs/README.md)
+    * [Conformance Class 8: INSPIRE data sets and data set series linked service metadata](./ds-linked-service/README.md)
 
 * Metadata for INSPIRE Spatial Data Services
     * [Common Requirements for XML Encoded INSPIRE metadata](./common/README.md)
