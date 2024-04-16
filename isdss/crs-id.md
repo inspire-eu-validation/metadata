@@ -1,6 +1,6 @@
 # Coordinates Reference Systems ID
 
-**Purpose**: Test that the default coordinate reference systems uses a correct identifier.
+**Purpose**: Test that the default coordinate reference systems use a correct identifier.
 
 **Prerequisites**
 
@@ -8,13 +8,13 @@
 
 **Test method**
 
-* If the coordinate reference system is listed in the Default Coordinate Reference System Identifiers table in [Annex D.4 - TG MD](./README.md#ref_TG_MD) or if it is a new approved coordinate reference system (all coordinate reference systems approved for use in INSPIRE are available in the following table: https://github.com/INSPIRE-MIF/helpdesk/blob/main/crs.md),
+* If the coordinate reference system is listed in the INSPIRE coordinate reference systems register (https://inspire.ec.europa.eu/crs):
 
-    * Check that the value of the HTTP URI Identifier column is used as the value of [Code](#code) element.
+    * Check that the value of the "CRS External URI Identifier" column is used as the value of [Code](#code) element.
 
     * Check that [Code Space](#codeSpace) does not exists.
 
-* If any of the checks fails, the test fails.
+* If any of the checks fail, the test fails.
 
 **Reference(s)**	 
 
@@ -28,7 +28,7 @@ The gmd:codeSpace element shall not be used in this case. <br>
 
 ## Contextual XPath references
 
-The namespace prefixes used as described in [README.md](./README.md#namespaces).
+The namespace prefixes are used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                   |  XPath expression (relative to /gmd:MD_Metadata/gmd:referenceSystemInfo)
 -----------------------------------------------| ------------------------------------------------------------------
