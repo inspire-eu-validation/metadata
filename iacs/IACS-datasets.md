@@ -14,7 +14,7 @@
     OR at least one of these values related to an INSPIRE data theme: `Land cover` for LPIS datasets OR `Land use` for GSAA datasets is provided using the [Keyword CharacterString](#keywordcharacterstring) encoding (see [Option 2](#option2)).
     
   **GEMET value**
-  * Check that [Keyword Anchor](#keywordanchor) is provided with `xlink:href` attribute pointing to [common agricultural policy](https://www.eionet.europa.eu/gemet/en/concept/1600) value of the "GEMET - Concepts" Thesaurus (see [Option 1](#option1)).
+  * Check that [Keyword Anchor](#keywordanchor) is provided with `xlink:href` attribute pointing to [common agricultural policy](http://www.eionet.europa.eu/gemet/concept/1600) value of the "GEMET - Concepts" Thesaurus (see [Option 1](#option1)).
     
     OR [Keyword CharacterString](#keywordcharacterstring) is provided with `Common Agricultural Policy` value (see [Option 2](#option2)).
   
