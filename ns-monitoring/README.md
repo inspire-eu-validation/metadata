@@ -39,13 +39,11 @@ An indirect dependency is another conformance class whose requirements must be m
 | ISO 639-2/B  <a name="ref_ISO_639_2"></a> | [ISO 639-2/B: Codes for the Representation of Names of Languages](http://www.loc.gov/standards/iso639-2/)
 
 
-## TG Requirement coverage
-
-Based on requirement numbering in [TG MD](#ref_TG_MD).
+## IR Requirement coverage
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| M.1    | NS conformity declaration            | [ns-conformity](./ns-conformity.md)| Article 7     |
+| S.1    | NS conformity declaration            | [ns-conformity](./ns-conformity.md)| Article 7     |
 
 ## Test
 
