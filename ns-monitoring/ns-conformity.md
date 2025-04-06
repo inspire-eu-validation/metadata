@@ -1,6 +1,6 @@
-# Dataset conformity
+# Network services conformity
 
-**Purpose**: Test that the metadata includes information on the degree of conformity with the implementing rules on interoperability of spatial data sets.
+**Purpose**: Test that the service metadata includes information on the degree of conformity with the implementing rules on interoperability of spatial data sets.
 
 **Prerequisites**
 
