@@ -1,6 +1,6 @@
 # Conformance Class 2b: INSPIRE data sets and data set series metadata for Monitoring
 
-This Abstract Test Suite (ATS) describes a set of additional requirements for INSPIRE Monitoring and Reporting, which are not currently included in the [Technical Guidance](#ref_TG_MD).
+This Abstract Test Suite (ATS) describes a set of additional requirements for [INSPIRE Monitoring and Reporting](#ref_ID_MON), which are not currently included in the [Technical Guidance](#ref_TG_MD).
 
 *Note*: It is Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
