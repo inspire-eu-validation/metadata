@@ -45,7 +45,7 @@ Based on requirement numbering in [TG MD](#ref_TG_MD).
 
 | Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
 | ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
-| M.1      | NS conformity declaration | [spatial-scope](./ns-conformity.md) ||
+| M.1    | NS conformity declaration            | [ns-conformity](./ns-conformity.md)| Article 7     |
 
 ## Test
 
