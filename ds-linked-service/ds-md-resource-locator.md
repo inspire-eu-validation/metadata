@@ -16,7 +16,7 @@ Check that at least the following two Resource Locator elements are provided:
     * If the URL works and contains the parameters `request=GetCapabilities` and `service=WMS` the test is passed.
     * If the URL works and does not contain the parameters `request=GetCapabilities` and `service=WMS`, check manually that it points to the response of the Get View Service Metadata request of the View Service ([Resource locator URL](#resourcelocatorurlcheck) message). 
   * element `gmd:protocol`:
-    * if the element is encoded using `gmx:Anchor`, check that the attribute [`gmx:Anchor/@xlink:href`](#protocolanchor) points to the URI of one of the values in [Protocol values](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue) codelist.
+    * if the element is encoded using `gmx:Anchor`, check that the attribute [`gmx:Anchor/@xlink:href`](#protocolanchor) points to the URI of one of the values in [Protocol values](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue) codelist. See the related [note regarding the accepted values](#valuesnote).
     * if the element is encoded using `gco:CharacterString`, check that the text value of [`gco:CharacterString`](#protocolstring) matches the label of one of the values in [Protocol values](https://inspire.ec.europa.eu/metadata-codelist/ProtocolValue) codelist, in the language of the metadata language. See the related [note regarding the labels](#labelnote).
   * element `gmd:applicationProfile`:
     * if the element is encoded using `gmx:Anchor`, check that the attribute [`gmx:Anchor/@xlink:href`](#appproanchor) points to the [View Service](https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/view) value of the [Spatial data service type](https://inspire.ec.europa.eu/metadata-codelist/SpatialDataServiceType/) codelist.
@@ -47,9 +47,18 @@ _Examples:_
 
 Encoding examples of the Resource Locator element can be found in the [Annex A: Examples](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification/blob/main/good-practice/data-service-linking-simplification-spec.md#annex-a-examples-) of the Data Service Linking Simplification: Good Practice guidelines.
 
+
+<a name="valuesnote"></a>_Accepted values for the _Protocol values_ codelist_:
+
+Please note that not all the codelist values refer to an INSPIRE Download/View Network Service. For an overview of accepted values, please refer to the table below.
+
 <a name="labelnote"></a>_Labels of _Protocol values_ codelist_:
 
 Since there is a mismatch between INSPIRE labels and OGC preferred labels ([See related issue](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification/issues/68)), the related test is relaxed and all the values are considered valid by the Validator (e.g. "OGC Web Map Service" and "wms"). The test is also case-insensitive (e.g. "WMS" is considered as valid).
+
+To have a quick overview of all possible values (including the label that can be used for the Protocol values codelist), please see the table below:
+
+![image](https://github.com/user-attachments/assets/b39e8bc6-fabe-4c74-b661-98df5125e557)
 
 
 
