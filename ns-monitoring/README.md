@@ -1,8 +1,6 @@
-# Conformance Class 8: INSPIRE data sets and data set series linked service metadata
+# Conformance Class 4b: INSPIRE Network Services metadata for Monitoring
 
-This Abstract Test Suite (ATS) describes a set of additional requirements for INSPIRE metadata, which were defined in the [Data Service Linking Simplification: Good Practice guidelines](#ref_GP_DSLS).
-
-*Note*: It is Ready for the review stage, none of the tests have an official INSPIRE MIG approval. This new conformance class will be added to the MD TG if the [related change proposal](https://github.com/INSPIRE-MIF/technical-guidelines/issues/108) is endorsed.
+This Abstract Test Suite (ATS) describes a set of additional requirements for [INSPIRE Monitoring and Reporting](#ref_ID_MON), which are not currently included in the [Technical Guidance](#ref_TG_MD).
 
 ## Standardization target type
 
@@ -16,15 +14,13 @@ A direct dependency is another conformance class whose requirements must be met 
 
 | Specification | Conformance class | Parameters | 
 | ------------- | ----------------- | ---------- |
-| INSPIRE Metadata | [Conformance Class 1](../datasets-and-series/README.md) | n/a |
+| INSPIRE Network Services metadata | [Conformance Class 4](../ns/README.md) | n/a |
 
 ### Indirect dependencies
 
 An indirect dependency is another conformance class whose requirements must be met by a related resource.
 
-| Specification | Conformance class | Related resource | Parameters |
-| ------------- | ----------------- | ---------------- | ---------- |
-| INSPIRE Metadata | [Common Requirements](../common/README.md) | n/a |
+ *There is not indirect dependencies for this set of requirements.*
  
 ## External document references
 
@@ -33,7 +29,7 @@ An indirect dependency is another conformance class whose requirements must be m
 | ------------ | ----------------------------------- |
 | INSPIRE <a name="ref_INSPIRE"></a> | [Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)](https://eur-lex.europa.eu/eli/dir/2007/2)
 | IR MD <a name="ref_IR_MD"></a> | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](https://eur-lex.europa.eu/eli/reg/2008/1205)
-| GP DSLS <a name="ref_GP_DSLS"></a> | [Data Service Linking Simplification: Good Practice guidelines](https://github.com/INSPIRE-MIF/gp-data-service-linking-simplification/blob/main/good-practice/data-service-linking-simplification-spec.md)
+| TG MD <a name="ref_TG_MD"></a> | [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139)
 | ID MON <a name="ref_ID_MON"></a> | [Commission Implementing Decision (EU) 2019/1372 of 19 August 2019 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards monitoring and reporting](http://data.europa.eu/eli/dec_impl/2019/1372/oj)
 | REG <a name="ref_REG"></a> | [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
 | ISO 19115 <a name="ref_ISO_19115"></a> | [ISO 19115:2003 Geographic information - Metadata](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26020)
@@ -43,15 +39,11 @@ An indirect dependency is another conformance class whose requirements must be m
 | ISO 639-2/B  <a name="ref_ISO_639_2"></a> | [ISO 639-2/B: Codes for the Representation of Names of Languages](http://www.loc.gov/standards/iso639-2/)
 
 
-## TG Requirement coverage
+## IR Requirement coverage
 
-Based on requirement numbering in [GP DSLS](#ref_GP_DSLS).
-
-| Req#   | Description                          | Covered by test(s)                 |
-| ------ | ------------------------------------ | ---------------------------------- |
-| view-linkage      | View Service linkage | [Data set Metadata Resource Locator](./ds-md-resource-locator.md) |
-| download-linkage  | Download Service linkage | [Data set Metadata Resource Locator](./ds-md-resource-locator.md) |
-
+| Req#   | Description                          | Covered by test(s)                 | IR reference(s)                  |
+| ------ | ------------------------------------ | ---------------------------------- | -------------------------------- |
+| S.1    | NS conformity declaration            | [ns-conformity](./ns-conformity.md)| Article 7     |
 
 ## Test
 
@@ -59,7 +51,7 @@ This Conformance Class contains the following tests:
 
 | Identifier                                                        | Status   |
 | ----------------------------------------------------------------- | -------- |
-| [Data set Metadata Resource Locator](./ds-md-resource-locator.md) | Ready for review  |
+| [ns-conformity](./ns-conformity.md) | Ready for Review |
 
 ## Open issues
 

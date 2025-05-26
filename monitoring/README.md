@@ -1,6 +1,6 @@
 # Conformance Class 2b: INSPIRE data sets and data set series metadata for Monitoring
 
-This Abstract Test Suite (ATS) describes a set of additional requirements for INSPIRE Monitoring and Reporting, which are not currently included in the [Technical Guidance](#ref_TG_MD).
+This Abstract Test Suite (ATS) describes a set of additional requirements for [INSPIRE Monitoring and Reporting](#ref_ID_MON), which are not currently included in the [Technical Guidance](#ref_TG_MD).
 
 *Note*: It is Ready for review stage, none of the tests have an official INSPIRE MIG approval.
 
@@ -29,10 +29,10 @@ An indirect dependency is another conformance class whose requirements must be m
 
 | Abbreviation | Document name                       |
 | ------------ | ----------------------------------- |
-| INSPIRE <a name="ref_INSPIRE"></a> | [Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32007L0002&from=EN)
-| IR MD <a name="ref_IR_MD"></a> | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2008:326:0012:0030:EN:PDF)
-| TG MD <a name="ref_TG_MD"></a> | [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007, version 2.0](https://inspire.ec.europa.eu/sites/default/files/documents/metadata/inspire-tg-metadata-iso19139-2.0.1.pdf)
-| ID MON <a name="ref_ID_MON"></a> | [Commission Implementing Decision of 19.8.2019 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards monitoring and reporting](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32019D1372&from=EN)
+| INSPIRE <a name="ref_INSPIRE"></a> | [Directive 2007/2/EC of the European Parliament and of the Council of 14 March 2007 establishing an Infrastructure for Spatial Information in the European Community (INSPIRE)](https://eur-lex.europa.eu/eli/dir/2007/2)
+| IR MD <a name="ref_IR_MD"></a> | [COMMISSION REGULATION (EC) No 1205/2008 of 3 December 2008 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata](https://eur-lex.europa.eu/eli/reg/2008/1205)
+| TG MD <a name="ref_TG_MD"></a> | [Technical Guidance for the implementation of INSPIRE dataset and service metadata based on ISO/TS 19139:2007](http://inspire.ec.europa.eu/id/document/tg/metadata-iso19139)
+| ID MON <a name="ref_ID_MON"></a> | [Commission Implementing Decision (EU) 2019/1372 of 19 August 2019 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards monitoring and reporting](http://data.europa.eu/eli/dec_impl/2019/1372/oj)
 | REG <a name="ref_REG"></a> | [INSPIRE Registry](http://inspire.ec.europa.eu/registry/)
 | ISO 19115 <a name="ref_ISO_19115"></a> | [ISO 19115:2003 Geographic information - Metadata](http://www.iso.org/iso/catalogue_detail.htm?csnumber=26020)
 | ISO 19119 <a name="ref_ISO_19119"></a> | [ISO 19119:2005 Geographic information - Services](http://www.iso.org/iso/catalogue_detail.htm?csnumber=39890)
