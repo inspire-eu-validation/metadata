@@ -1,12 +1,12 @@
 # Network services conformity
 
-**Purpose**: Test that the service metadata includes information on the degree of conformity with the implementing rules for network services.
+**Purpose**: Test that the service metadata includes information on the degree of conformity with the Implementing Rules for Network Services.
 
 **Prerequisites**
 
 **Test method**
 
-* Check that [Conformance Result](#conformanceResult) exists and it declares conformity to the Implementing Rules for network services [Regulation 976/2009](http://data.europa.eu/eli/reg/2009/976).
+* Check that [Conformance Result](#conformanceResult) exists and it declares conformity to the Implementing Rules for Network Services [Regulation 976/2009](http://data.europa.eu/eli/reg/2009/976).
 
 **Reference(s)**	 
 
@@ -19,7 +19,7 @@
 
 **Notes**
 
-The multiplicity of this element is one.
+The multiplicity of the [Conformance Result](#conformanceResult) element used for this purpose is one. Additional conformity declarations to other specifications are also possible.
 
 Sample encoding for this metadata element is contained in the [4.2.2.1. Conformity](https://github.com/INSPIRE-MIF/technical-guidelines/blob/main/metadata/metadata-iso19139/metadata-iso19139.adoc#4221-conformity) section of the TG MD.
 
